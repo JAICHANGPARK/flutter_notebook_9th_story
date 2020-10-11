@@ -9,9 +9,17 @@ class _DiscoveryHomePageState extends State<DiscoveryHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      floatingActionButton: Container(
+        height: 64,
+        width: 64,
+        decoration: BoxDecoration(
+          color: Colors.red
+        ),
+      ),
       body: SingleChildScrollView(
         child: Column(
           children: [
+
 
           ],
         ),
