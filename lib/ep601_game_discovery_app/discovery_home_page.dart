@@ -16,12 +16,41 @@ class _DiscoveryHomePageState extends State<DiscoveryHomePage> {
         decoration: BoxDecoration(
           color: Colors.indigo,
           shape: BoxShape.circle,
-          border: Border.all(color: Colors.white,width: 2),
+          border: Border.all(color: Colors.white, width: 4),
         ),
         child: Center(
           child: Icon(Icons.add, size: 38,
           color: Colors.white,),
         ),
+      ),
+      bottomNavigationBar: BottomAppBar(
+        child: Container(
+          height: 64,
+          child: Row(
+            children: [
+              IconButton(
+                icon: Icon(Icons.home),
+                onPressed: (){},
+              ),
+              IconButton(
+                icon: Icon(Icons.video),
+                onPressed: (){},
+              ),
+              IconButton(
+                icon: Icon(Icons.home),
+                onPressed: (){},
+              ),
+              IconButton(
+                icon: Icon(Icons.home),
+                onPressed: (){},
+              )
+            ],
+          ),
+        ),
+        shape: CircularNotchedRectangle(),
+
+
+
       ),
       body: SingleChildScrollView(
         child: Column(
@@ -34,3 +63,18 @@ class _DiscoveryHomePageState extends State<DiscoveryHomePage> {
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
