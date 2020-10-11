@@ -27,21 +27,22 @@ class _DiscoveryHomePageState extends State<DiscoveryHomePage> {
         child: Container(
           height: 64,
           child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               IconButton(
                 icon: Icon(Icons.home),
                 onPressed: (){},
               ),
               IconButton(
-                icon: Icon(Icons.video),
+                icon: Icon(Icons.personal_video),
                 onPressed: (){},
               ),
               IconButton(
-                icon: Icon(Icons.home),
+                icon: Icon(Icons.person_outlined),
                 onPressed: (){},
               ),
               IconButton(
-                icon: Icon(Icons.home),
+                icon: Icon(Icons.person_outlined),
                 onPressed: (){},
               )
             ],
