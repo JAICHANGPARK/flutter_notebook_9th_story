@@ -8,6 +8,14 @@ class DiscoveryHomePage extends StatefulWidget {
 class _DiscoveryHomePageState extends State<DiscoveryHomePage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+
+          ],
+        ),
+      ),
+    );
   }
 }
