@@ -26,6 +26,7 @@ class _DiscoveryHomePageState extends State<DiscoveryHomePage> {
       bottomNavigationBar: BottomAppBar(
         child: Container(
           height: 64,
+          padding: EdgeInsets.symmetric(horizontal: 16),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
