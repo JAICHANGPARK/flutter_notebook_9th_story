@@ -15,7 +15,10 @@ class _DiscoveryHomePageState extends State<DiscoveryHomePage> {
         decoration: BoxDecoration(
           color: Colors.indigo,
           shape: BoxShape.circle,
-          border: Border.all(color: Colors.white)
+          border: Border.all(color: Colors.white,width: 2),
+        ),
+        child: Center(
+          child: Icon(Icons.add, size: 38,),
         ),
       ),
       body: SingleChildScrollView(
