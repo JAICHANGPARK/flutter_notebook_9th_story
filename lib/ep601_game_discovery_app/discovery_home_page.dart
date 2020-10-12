@@ -59,19 +59,22 @@ class _DiscoveryHomePageState extends State<DiscoveryHomePage> {
         child: SingleChildScrollView(
           child: Column(
             children: [
-              Row(
-                children: [
-                  Expanded(
-                    flex: 6,
-                    child: Container(),
-                  ),
-                  Expanded(
-                    flex: 2,
-                    child: Badge(
-                      child: Icon(Icons.notifications_active_outlined),
+              Padding(
+                padding: const EdgeInsets.only(top: 24, left: 16, right: 16),
+                child: Row(
+                  children: [
+                    Expanded(
+                      flex: 6,
+                      child: Container(),
                     ),
-                  )
-                ],
+                    Expanded(
+                      flex: 1,
+                      child: Badge(
+                        child: Icon(Icons.notifications_active_outlined),
+                      ),
+                    )
+                  ],
+                ),
               )
             ],
           ),
