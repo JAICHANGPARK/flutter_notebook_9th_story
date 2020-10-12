@@ -19,8 +19,11 @@ class _DiscoveryHomePageState extends State<DiscoveryHomePage> {
           border: Border.all(color: Colors.white, width: 4),
         ),
         child: Center(
-          child: Icon(Icons.add, size: 38,
-          color: Colors.white,),
+          child: Icon(
+            Icons.add,
+            size: 38,
+            color: Colors.white,
+          ),
         ),
       ),
       bottomNavigationBar: BottomAppBar(
@@ -32,51 +35,30 @@ class _DiscoveryHomePageState extends State<DiscoveryHomePage> {
             children: [
               IconButton(
                 icon: Icon(Icons.home),
-                onPressed: (){},
+                onPressed: () {},
               ),
               IconButton(
                 icon: Icon(Icons.personal_video),
-                onPressed: (){},
+                onPressed: () {},
               ),
               IconButton(
                 icon: Icon(Icons.person_outlined),
-                onPressed: (){},
+                onPressed: () {},
               ),
               IconButton(
                 icon: Icon(Icons.person_outlined),
-                onPressed: (){},
+                onPressed: () {},
               )
             ],
           ),
         ),
         shape: CircularNotchedRectangle(),
-
-
-
       ),
       body: SingleChildScrollView(
         child: Column(
-          children: [
-
-
-          ],
+          children: [],
         ),
       ),
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
