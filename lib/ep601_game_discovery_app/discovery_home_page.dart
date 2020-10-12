@@ -66,8 +66,10 @@ class _DiscoveryHomePageState extends State<DiscoveryHomePage> {
                     Expanded(
                       flex: 6,
                       child: Container(
+                        height: 48,
                         decoration: BoxDecoration(
-                          color: Colors.indigo[50]
+                          color: Colors.indigo[50],
+                          borderRadius: BorderRadius.circular(24),
                         ),
                       ),
                     ),
