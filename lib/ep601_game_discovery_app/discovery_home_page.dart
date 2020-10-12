@@ -56,7 +56,20 @@ class _DiscoveryHomePageState extends State<DiscoveryHomePage> {
       ),
       body: SingleChildScrollView(
         child: Column(
-          children: [],
+          children: [
+            Row(
+              children: [
+                Expanded(
+                  flex: 6,
+                  child: Container(),
+                ),
+                Expanded(
+                  flex: 2,
+                  child: Placeholder(),
+                )
+              ],
+            )
+          ],
         ),
       ),
     );
