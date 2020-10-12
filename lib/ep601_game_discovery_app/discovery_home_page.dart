@@ -116,6 +116,7 @@ class _DiscoveryHomePageState extends State<DiscoveryHomePage> {
                 padding: EdgeInsets.only(left: 16, top: 16),
                 height: MediaQuery.of(context).size.height / 2,
                 child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
                       "Arena",
@@ -123,6 +124,11 @@ class _DiscoveryHomePageState extends State<DiscoveryHomePage> {
                         fontSize: 24,
                         fontWeight: FontWeight.bold,
                       ),
+                    ),
+                    Row(
+                      children: [
+
+                      ],
                     )
                   ],
                 ),
