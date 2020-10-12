@@ -100,6 +100,11 @@ class _DiscoveryHomePageState extends State<DiscoveryHomePage> {
                       child: Center(
                         child: Badge(
                           child: Icon(Icons.notifications_active_outlined),
+                          badgeContent: Text("12",style: TextStyle(
+                            fontSize: 10,
+                            color: Colors.white
+                          ),),
+                          borderRadius: 3,
                         ),
                       ),
                     )
@@ -113,3 +118,18 @@ class _DiscoveryHomePageState extends State<DiscoveryHomePage> {
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
