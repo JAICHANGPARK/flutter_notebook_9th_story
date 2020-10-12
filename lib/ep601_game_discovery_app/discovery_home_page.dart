@@ -65,12 +65,18 @@ class _DiscoveryHomePageState extends State<DiscoveryHomePage> {
                   children: [
                     Expanded(
                       flex: 6,
-                      child: Container(),
+                      child: Container(
+                        decoration: BoxDecoration(
+                          color: Colors.indigo[50]
+                        ),
+                      ),
                     ),
                     Expanded(
                       flex: 1,
-                      child: Badge(
-                        child: Icon(Icons.notifications_active_outlined),
+                      child: Center(
+                        child: Badge(
+                          child: Icon(Icons.notifications_active_outlined),
+                        ),
                       ),
                     )
                   ],
