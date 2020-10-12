@@ -127,6 +127,14 @@ class _DiscoveryHomePageState extends State<DiscoveryHomePage> {
                     ),
                     Row(
                       children: [
+                      Expanded(
+                        flex: 2,
+                        child: Placeholder(),
+                      ),
+                        Expanded(
+                          flex: 9,
+                          child: Placeholder(),
+                        )
 
                       ],
                     )
