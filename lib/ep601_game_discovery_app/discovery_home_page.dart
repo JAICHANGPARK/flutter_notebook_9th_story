@@ -73,7 +73,14 @@ class _DiscoveryHomePageState extends State<DiscoveryHomePage> {
                         ),
                         child: Row(
                           children: [
-                            
+                            Expanded(
+                              flex: 8,
+                              child: TextField(),
+                            ),
+                            Expanded(
+                              flex: 2,
+                              child: CircleAvatar(),
+                            )
                           ],
                         ),
                       ),
