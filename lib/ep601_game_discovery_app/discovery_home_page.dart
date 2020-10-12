@@ -55,24 +55,26 @@ class _DiscoveryHomePageState extends State<DiscoveryHomePage> {
         ),
         shape: CircularNotchedRectangle(),
       ),
-      body: SingleChildScrollView(
-        child: Column(
-          children: [
-            Row(
-              children: [
-                Expanded(
-                  flex: 6,
-                  child: Container(),
-                ),
-                Expanded(
-                  flex: 2,
-                  child: Badge(
-                    child: Icon(Icons.notifications_active_outlined),
+      body: SafeArea(
+        child: SingleChildScrollView(
+          child: Column(
+            children: [
+              Row(
+                children: [
+                  Expanded(
+                    flex: 6,
+                    child: Container(),
                   ),
-                )
-              ],
-            )
-          ],
+                  Expanded(
+                    flex: 2,
+                    child: Badge(
+                      child: Icon(Icons.notifications_active_outlined),
+                    ),
+                  )
+                ],
+              )
+            ],
+          ),
         ),
       ),
     );
