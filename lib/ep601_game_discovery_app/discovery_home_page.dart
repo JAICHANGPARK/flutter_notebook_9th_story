@@ -79,14 +79,17 @@ class _DiscoveryHomePageState extends State<DiscoveryHomePage> {
                             Expanded(
                               flex: 8,
                               child: TextField(
-                                decoration:InputDecoration(
-                                  border: InputBorder.none
-                                ),
+                                style: TextStyle(fontSize: 16),
+                                decoration: InputDecoration(border: InputBorder.none),
                               ),
                             ),
                             Expanded(
                               flex: 2,
-                              child: CircleAvatar(),
+                              child: CircleAvatar(
+                                backgroundColor: Colors.indigo,
+                                child: Icon(Icons.search),
+                                foregroundColor: Colors.white,
+                              ),
                             )
                           ],
                         ),
@@ -110,31 +113,3 @@ class _DiscoveryHomePageState extends State<DiscoveryHomePage> {
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
