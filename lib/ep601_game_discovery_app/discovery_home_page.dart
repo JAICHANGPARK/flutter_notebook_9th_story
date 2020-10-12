@@ -71,6 +71,11 @@ class _DiscoveryHomePageState extends State<DiscoveryHomePage> {
                           color: Colors.indigo[50],
                           borderRadius: BorderRadius.circular(24),
                         ),
+                        child: Row(
+                          children: [
+                            
+                          ],
+                        ),
                       ),
                     ),
                     Expanded(
