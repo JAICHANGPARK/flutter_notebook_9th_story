@@ -1,3 +1,4 @@
+import 'package:badges/badges.dart';
 import 'package:flutter/material.dart';
 
 class DiscoveryHomePage extends StatefulWidget {
@@ -65,7 +66,9 @@ class _DiscoveryHomePageState extends State<DiscoveryHomePage> {
                 ),
                 Expanded(
                   flex: 2,
-                  child: Placeholder(),
+                  child: Badge(
+                    
+                  ),
                 )
               ],
             )
