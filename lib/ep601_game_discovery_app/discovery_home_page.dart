@@ -118,25 +118,31 @@ class _DiscoveryHomePageState extends State<DiscoveryHomePage> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(
-                      "Arena",
-                      style: TextStyle(
-                        fontSize: 24,
-                        fontWeight: FontWeight.bold,
+                    Expanded(
+                      flex:1 ,
+                      child: Text(
+                        "Arena",
+                        style: TextStyle(
+                          fontSize: 24,
+                          fontWeight: FontWeight.bold,
+                        ),
                       ),
                     ),
-                    Row(
-                      children: [
-                      Expanded(
-                        flex: 2,
-                        child: Placeholder(),
-                      ),
+                    Expanded(
+                      flex: 8,
+                      child: Row(
+                        children: [
                         Expanded(
-                          flex: 9,
+                          flex: 2,
                           child: Placeholder(),
-                        )
+                        ),
+                          Expanded(
+                            flex: 9,
+                            child: Placeholder(),
+                          )
 
-                      ],
+                        ],
+                      ),
                     )
                   ],
                 ),
