@@ -60,6 +60,7 @@ class _DiscoveryHomePageState extends State<DiscoveryHomePage> {
       body: SafeArea(
         child: SingleChildScrollView(
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Padding(
                 padding: const EdgeInsets.only(top: 24, left: 16, right: 16),
@@ -112,6 +113,7 @@ class _DiscoveryHomePageState extends State<DiscoveryHomePage> {
                 ),
               ),
               Container(
+                padding: EdgeInsets.only(left: 16, top: 16),
                 height: MediaQuery.of(context).size.height / 2,
                 child: Column(
                   children: [
