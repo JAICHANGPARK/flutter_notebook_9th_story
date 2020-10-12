@@ -100,10 +100,10 @@ class _DiscoveryHomePageState extends State<DiscoveryHomePage> {
                       child: Center(
                         child: Badge(
                           child: Icon(Icons.notifications_active_outlined),
-                          badgeContent: Text("12",style: TextStyle(
-                            fontSize: 10,
-                            color: Colors.white
-                          ),),
+                          badgeContent: Text(
+                            "12",
+                            style: TextStyle(fontSize: 10, color: Colors.white),
+                          ),
                           borderRadius: 3,
                         ),
                       ),
@@ -113,7 +113,17 @@ class _DiscoveryHomePageState extends State<DiscoveryHomePage> {
               ),
               Container(
                 height: MediaQuery.of(context).size.height / 2,
-                child: Placeholder(),
+                child: Column(
+                  children: [
+                    Text(
+                      "Arena",
+                      style: TextStyle(
+                        fontSize: 24,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    )
+                  ],
+                ),
               )
             ],
           ),
@@ -122,11 +132,6 @@ class _DiscoveryHomePageState extends State<DiscoveryHomePage> {
     );
   }
 }
-
-
-
-
-
 
 
 
