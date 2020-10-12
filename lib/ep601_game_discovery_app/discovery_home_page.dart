@@ -67,8 +67,7 @@ class _DiscoveryHomePageState extends State<DiscoveryHomePage> {
                 Expanded(
                   flex: 2,
                   child: Badge(
-                    child: Icon(Icons.nofitication),
-
+                    child: Icon(Icons.notifications_active_outlined),
                   ),
                 )
               ],
