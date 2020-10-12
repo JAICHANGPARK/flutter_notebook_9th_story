@@ -76,7 +76,11 @@ class _DiscoveryHomePageState extends State<DiscoveryHomePage> {
                           children: [
                             Expanded(
                               flex: 8,
-                              child: TextField(),
+                              child: TextField(
+                                decoration:InputDecoration(
+                                  border: InputBorder.none
+                                ),
+                              ),
                             ),
                             Expanded(
                               flex: 2,
