@@ -110,6 +110,10 @@ class _DiscoveryHomePageState extends State<DiscoveryHomePage> {
                     )
                   ],
                 ),
+              ),
+              Container(
+                height: MediaQuery.of(context).size.height / 2,
+                child: Placeholder(),
               )
             ],
           ),
