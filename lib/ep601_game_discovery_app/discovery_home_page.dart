@@ -158,6 +158,7 @@ class _DiscoveryHomePageState extends State<DiscoveryHomePage> {
                                       fit: BoxFit.cover
                                     )
                                   ),
+                                  padding: EdgeInsets.all(16),
                                   child: Column(
                                     crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
