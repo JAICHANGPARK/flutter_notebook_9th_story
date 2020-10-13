@@ -221,7 +221,7 @@ class _DiscoveryHomePageState extends State<DiscoveryHomePage> {
                         padding: EdgeInsets.symmetric(horizontal: 16),
                         child: GestureDetector(
                           onTap: (){
-                            
+
                           },
                           child: Container(
                             padding: EdgeInsets.symmetric(horizontal: 16),
