@@ -133,7 +133,7 @@ class _DiscoveryHomePageState extends State<DiscoveryHomePage> {
                       child: Row(
                         children: [
                         Expanded(
-                          flex: 2,
+                          flex: 1,
                           child: Placeholder(),
                         ),
                           Expanded(
