@@ -1,6 +1,6 @@
 # flutter_notebook_9th_story
 
-A new Flutter application.
+- https://www.youtube.com/playlist?list=PLnz10ftgq9R8iJEoWYEmVCMF4gxId8dGi
 
 ## Getting Started
 
