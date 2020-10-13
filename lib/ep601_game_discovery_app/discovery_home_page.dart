@@ -209,7 +209,7 @@ class _DiscoveryHomePageState extends State<DiscoveryHomePage> {
                 ),),
               ),
               Container(
-                height: 64,
+                height: 48,
                 decoration: BoxDecoration(
                   color: Colors.grey,
                 ),
@@ -222,8 +222,8 @@ class _DiscoveryHomePageState extends State<DiscoveryHomePage> {
                         child: Container(
                           padding: EdgeInsets.symmetric(horizontal: 16),
                           decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(16),
-                            border: Border.all(color: Colors.indigo)
+                            borderRadius: BorderRadius.circular(24),
+                            border: Border.all(color: Colors.indigo, width: 3)
                           ),
                           child: Center(
                             child: Text(_tabList[index], style: TextStyle(
