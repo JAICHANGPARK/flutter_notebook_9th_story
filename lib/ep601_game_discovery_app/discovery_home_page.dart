@@ -145,10 +145,19 @@ class _DiscoveryHomePageState extends State<DiscoveryHomePage> {
                               scrollDirection: Axis.horizontal,
                               children: [
                                 Container(
-                                  
-                                  width: MediaQuery.of(context).size.width / 1.5,
+                                  margin: EdgeInsets.all(8),                                  
+                                  width: MediaQuery.of(context).size.width / 1.8,
                                   decoration: BoxDecoration(
                                     color: Colors.blue,
+                                    borderRadius: BorderRadius.circular(16)
+                                  ),
+                                ),
+                                Container(
+                                  margin: EdgeInsets.all(8),
+                                  width: MediaQuery.of(context).size.width / 1.8,
+                                  decoration: BoxDecoration(
+                                      color: Colors.blue,
+                                      borderRadius: BorderRadius.circular(16)
                                   ),
                                 )
                               ],
