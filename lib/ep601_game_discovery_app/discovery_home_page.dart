@@ -134,7 +134,11 @@ class _DiscoveryHomePageState extends State<DiscoveryHomePage> {
                         children: [
                         Expanded(
                           flex: 1,
-                          child: Placeholder(),
+                          child: RotatedBox(
+                            
+                            quarterTurns: -1,
+                            child: Text("Global + Multi-Language"),
+                          ),
                         ),
                           Expanded(
                             flex: 9,
