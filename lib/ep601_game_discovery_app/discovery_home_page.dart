@@ -218,6 +218,7 @@ class _DiscoveryHomePageState extends State<DiscoveryHomePage> {
                   itemCount: _tabList.length,
                   itemBuilder: (context, index){
                       return Container(
+                        padding: EdgeInsets.symmetric(horizontal: 16),
                         child: Center(
                           child: Text(_tabList[index]),
                         ),
