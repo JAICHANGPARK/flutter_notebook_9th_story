@@ -217,10 +217,16 @@ class _DiscoveryHomePageState extends State<DiscoveryHomePage> {
                   scrollDirection: Axis.horizontal,
                   itemCount: _tabList.length,
                   itemBuilder: (context, index){
-                      return Container(
+                      return Padding(
                         padding: EdgeInsets.symmetric(horizontal: 16),
-                        child: Center(
-                          child: Text(_tabList[index]),
+                        child: Container(
+                          padding: EdgeInsets.symmetric(horizontal: 16),
+                          child: Center(
+                            child: Text(_tabList[index], style: TextStyle(
+                              fontSize: 20,
+                              fontWeight: FontWeight.bold,
+                            ),),
+                          ),
                         ),
                       );
                   },
