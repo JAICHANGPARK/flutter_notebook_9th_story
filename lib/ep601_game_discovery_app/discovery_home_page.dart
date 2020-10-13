@@ -119,7 +119,7 @@ class _DiscoveryHomePageState extends State<DiscoveryHomePage> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Expanded(
-                      flex:1 ,
+                      flex: 1,
                       child: Text(
                         "Arena",
                         style: TextStyle(
@@ -132,41 +132,40 @@ class _DiscoveryHomePageState extends State<DiscoveryHomePage> {
                       flex: 8,
                       child: Row(
                         children: [
-                        Expanded(
-                          flex: 1,
-                          child: RotatedBox(
-                            quarterTurns: -1,
-                            child: Text("Global + Multi-Language",style: TextStyle(
-                              fontSize: 16,
-                              color: Colors.grey
-                            ),),
+                          Expanded(
+                            flex: 1,
+                            child: RotatedBox(
+                              quarterTurns: -1,
+                              child: Text(
+                                "Global + Multi-Language",
+                                style: TextStyle(fontSize: 16, color: Colors.grey),
+                              ),
+                            ),
                           ),
-                        ),
                           Expanded(
                             flex: 9,
                             child: ListView(
                               scrollDirection: Axis.horizontal,
                               children: [
                                 Container(
-                                  margin: EdgeInsets.all(8),                                  
+                                  margin: EdgeInsets.all(8),
                                   width: MediaQuery.of(context).size.width / 1.8,
                                   decoration: BoxDecoration(
-                                    color: Colors.blue,
-                                    borderRadius: BorderRadius.circular(16),
-                                    image: DecorationImage(
-                                      image: NetworkImage("https://cdn.pixabay.com/photo/2015/02/07/13/36/computer-627220_960_720.jpg"),
-                                      fit: BoxFit.cover
-                                    )
-                                  ),
+                                      color: Colors.blue,
+                                      borderRadius: BorderRadius.circular(16),
+                                      image: DecorationImage(
+                                          image: NetworkImage(
+                                              "https://cdn.pixabay.com/photo/2015/02/07/13/36/computer-627220_960_720.jpg"),
+                                          fit: BoxFit.cover)),
                                   padding: EdgeInsets.all(16),
                                   child: Column(
                                     crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
                                       Spacer(),
-                                      Text("GAME TITLE 01", style: TextStyle(
-                                        fontSize: 24,
-                                        color: Colors.white
-                                      ),)
+                                      Text(
+                                        "GAME TITLE 01",
+                                        style: TextStyle(fontSize: 24, color: Colors.white),
+                                      )
                                     ],
                                   ),
                                 ),
@@ -177,25 +176,36 @@ class _DiscoveryHomePageState extends State<DiscoveryHomePage> {
                                       color: Colors.blue,
                                       borderRadius: BorderRadius.circular(16),
                                       image: DecorationImage(
-                                          image: NetworkImage("https://cdn.pixabay.com/photo/2015/02/07/13/36/computer-627220_960_720.jpg"),
-                                          fit: BoxFit.cover
-                                      )
-                                  ),
+                                          image: NetworkImage(
+                                              "https://cdn.pixabay.com/photo/2015/02/07/13/36/computer-627220_960_720.jpg"),
+                                          fit: BoxFit.cover)),
+                                  padding: EdgeInsets.all(16),
                                   child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
-                                      
+                                      Text(
+                                        "GAME TITLE 02",
+                                        style: TextStyle(fontSize: 24, color: Colors.white),
+                                      )
+
                                     ],
                                   ),
                                 )
                               ],
                             ),
                           )
-
                         ],
                       ),
                     )
                   ],
                 ),
+              ),
+              Padding(
+                padding: const EdgeInsets.all(16.0),
+                child: Text("Categories", style: TextStyle(
+                  fontSize: 22,
+                  fontWeight: FontWeight.bold,
+                ),),
               )
             ],
           ),
@@ -204,6 +214,9 @@ class _DiscoveryHomePageState extends State<DiscoveryHomePage> {
     );
   }
 }
+
+
+
 
 
 
