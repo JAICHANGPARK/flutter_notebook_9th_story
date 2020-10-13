@@ -221,6 +221,10 @@ class _DiscoveryHomePageState extends State<DiscoveryHomePage> {
                         padding: EdgeInsets.symmetric(horizontal: 16),
                         child: Container(
                           padding: EdgeInsets.symmetric(horizontal: 16),
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(16),
+                            border: Border.all(color: Colors.indigo)
+                          ),
                           child: Center(
                             child: Text(_tabList[index], style: TextStyle(
                               fontSize: 20,
