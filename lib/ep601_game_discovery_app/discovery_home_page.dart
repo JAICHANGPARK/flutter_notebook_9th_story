@@ -7,6 +7,7 @@ class DiscoveryHomePage extends StatefulWidget {
 }
 
 class _DiscoveryHomePageState extends State<DiscoveryHomePage> {
+  List<String> _tabList = ["AR Games", "Adventure", "Sports", "Arcade"];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -206,6 +207,17 @@ class _DiscoveryHomePageState extends State<DiscoveryHomePage> {
                   fontSize: 22,
                   fontWeight: FontWeight.bold,
                 ),),
+              ),
+              Container(
+                height: 64,
+                decoration: BoxDecoration(
+                  color: Colors.grey,
+                ),
+                child: ListView(
+                  children: [
+
+                  ],
+                ),
               )
             ],
           ),
