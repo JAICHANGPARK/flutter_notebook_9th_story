@@ -211,7 +211,7 @@ class _DiscoveryHomePageState extends State<DiscoveryHomePage> {
               Container(
                 height: 48,
                 decoration: BoxDecoration(
-                  color: Colors.grey,
+                  
                 ),
                 child: ListView.builder(
                   scrollDirection: Axis.horizontal,
@@ -219,17 +219,22 @@ class _DiscoveryHomePageState extends State<DiscoveryHomePage> {
                   itemBuilder: (context, index){
                       return Padding(
                         padding: EdgeInsets.symmetric(horizontal: 16),
-                        child: Container(
-                          padding: EdgeInsets.symmetric(horizontal: 16),
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(24),
-                            border: Border.all(color: Colors.indigo, width: 3)
-                          ),
-                          child: Center(
-                            child: Text(_tabList[index], style: TextStyle(
-                              fontSize: 20,
-                              fontWeight: FontWeight.bold,
-                            ),),
+                        child: GestureDetector(
+                          onTap: (){
+                            
+                          },
+                          child: Container(
+                            padding: EdgeInsets.symmetric(horizontal: 16),
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(24),
+                              border: Border.all(color: Colors.indigo, width: 3)
+                            ),
+                            child: Center(
+                              child: Text(_tabList[index], style: TextStyle(
+                                fontSize: 20,
+                                fontWeight: FontWeight.bold,
+                              ),),
+                            ),
                           ),
                         ),
                       );
