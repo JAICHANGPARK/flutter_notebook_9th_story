@@ -145,7 +145,8 @@ class _DiscoveryHomePageState extends State<DiscoveryHomePage> {
                               scrollDirection: Axis.horizontal,
                               children: [
                                 Container(
-                                  width: MediaQuery.of(context).size.width / 3,
+                                  
+                                  width: MediaQuery.of(context).size.width / 1.5,
                                   decoration: BoxDecoration(
                                     color: Colors.blue,
                                   ),
