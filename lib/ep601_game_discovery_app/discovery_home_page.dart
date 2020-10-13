@@ -142,8 +142,14 @@ class _DiscoveryHomePageState extends State<DiscoveryHomePage> {
                           Expanded(
                             flex: 9,
                             child: ListView(
+                              scrollDirection: Axis.horizontal,
                               children: [
-                                
+                                Container(
+                                  width: MediaQuery.of(context).size.width / 3,
+                                  decoration: BoxDecoration(
+                                    color: Colors.blue,
+                                  ),
+                                )
                               ],
                             ),
                           )
