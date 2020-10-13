@@ -159,7 +159,9 @@ class _DiscoveryHomePageState extends State<DiscoveryHomePage> {
                                     )
                                   ),
                                   child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
+                                      Spacer(),
                                       Text("GAME TITLE 01", style: TextStyle(
                                         fontSize: 24,
                                         color: Colors.white
