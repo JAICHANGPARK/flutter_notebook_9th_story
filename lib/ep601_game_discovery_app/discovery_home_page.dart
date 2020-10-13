@@ -217,7 +217,11 @@ class _DiscoveryHomePageState extends State<DiscoveryHomePage> {
                   scrollDirection: Axis.horizontal,
                   itemCount: _tabList.length,
                   itemBuilder: (context, index){
-
+                      return Container(
+                        child: Center(
+                          child: Text(_tabList[index]),
+                        ),
+                      );
                   },
                 ),
               )
