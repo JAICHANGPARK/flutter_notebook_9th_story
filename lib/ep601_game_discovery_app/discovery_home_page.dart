@@ -213,10 +213,12 @@ class _DiscoveryHomePageState extends State<DiscoveryHomePage> {
                 decoration: BoxDecoration(
                   color: Colors.grey,
                 ),
-                child: ListView(
-                  children: [
+                child: ListView.builder(
+                  scrollDirection: Axis.horizontal,
+                  itemCount: _tabList.length,
+                  itemBuilder: (context, index){
 
-                  ],
+                  },
                 ),
               )
             ],
