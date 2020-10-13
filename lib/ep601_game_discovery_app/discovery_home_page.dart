@@ -158,6 +158,14 @@ class _DiscoveryHomePageState extends State<DiscoveryHomePage> {
                                       fit: BoxFit.cover
                                     )
                                   ),
+                                  child: Column(
+                                    children: [
+                                      Text("GAME TITLE 01", style: TextStyle(
+                                        fontSize: 24,
+                                        color: Colors.white
+                                      ),)
+                                    ],
+                                  ),
                                 ),
                                 Container(
                                   margin: EdgeInsets.all(8),
