@@ -175,7 +175,11 @@ class _DiscoveryHomePageState extends State<DiscoveryHomePage> {
                                   width: MediaQuery.of(context).size.width / 1.8,
                                   decoration: BoxDecoration(
                                       color: Colors.blue,
-                                      borderRadius: BorderRadius.circular(16)
+                                      borderRadius: BorderRadius.circular(16),
+                                      image: DecorationImage(
+                                          image: NetworkImage("https://cdn.pixabay.com/photo/2015/02/07/13/36/computer-627220_960_720.jpg"),
+                                          fit: BoxFit.cover
+                                      )
                                   ),
                                 )
                               ],
