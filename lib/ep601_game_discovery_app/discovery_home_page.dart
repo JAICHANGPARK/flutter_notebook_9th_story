@@ -181,6 +181,11 @@ class _DiscoveryHomePageState extends State<DiscoveryHomePage> {
                                           fit: BoxFit.cover
                                       )
                                   ),
+                                  child: Column(
+                                    children: [
+                                      
+                                    ],
+                                  ),
                                 )
                               ],
                             ),
