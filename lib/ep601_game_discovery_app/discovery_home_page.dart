@@ -279,9 +279,12 @@ class _DiscoveryHomePageState extends State<DiscoveryHomePage> {
                         margin: EdgeInsets.only(right: 16),
                         width: MediaQuery.of(context).size.width / 2.8,
                         decoration: BoxDecoration(
-                          color: Colors.blue,
-                          borderRadius: BorderRadius.circular(16)
-                        ),
+                            color: Colors.blue,
+                            borderRadius: BorderRadius.circular(16),
+                            image: DecorationImage(
+                                image: NetworkImage(
+                                    "https://cdn.pixabay.com/photo/2015/02/07/13/36/computer-627220_960_720.jpg"),
+                                fit: BoxFit.cover)),
                       );
                     },
                   ),
@@ -294,23 +297,3 @@ class _DiscoveryHomePageState extends State<DiscoveryHomePage> {
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
