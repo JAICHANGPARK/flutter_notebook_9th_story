@@ -15,6 +15,13 @@ class DiscoveryHomePage extends StatefulWidget {
 
 class _DiscoveryHomePageState extends State<DiscoveryHomePage> {
   List<String> _tabList = ["AR Games", "Adventure", "Sports", "Arcade"];
+  List<GameTab> _tabListV2 = [
+    GameTab("AR Games", true),
+    GameTab("Adventure", false),
+    GameTab("Sports", true),
+    GameTab("Arcade", true),
+
+  ];
   int _tabIndex  = 0;
   @override
   Widget build(BuildContext context) {
