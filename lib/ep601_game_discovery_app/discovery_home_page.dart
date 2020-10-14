@@ -1,6 +1,13 @@
 import 'package:badges/badges.dart';
 import 'package:flutter/material.dart';
 
+class GameTab{
+  final String title;
+  final bool isSelected;
+
+  GameTab(this.title, this.isSelected);
+}
+
 class DiscoveryHomePage extends StatefulWidget {
   @override
   _DiscoveryHomePageState createState() => _DiscoveryHomePageState();
