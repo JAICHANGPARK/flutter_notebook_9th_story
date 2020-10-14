@@ -235,7 +235,7 @@ class _DiscoveryHomePageState extends State<DiscoveryHomePage> {
                       padding: EdgeInsets.symmetric(horizontal: 16),
                       child: GestureDetector(
                         onTap: () {
-
+                          _tabListV2[_tabIndex].isSelected = false;
                           setState(() {
                             _tabListV2[index].isSelected = true;
                             _tabIndex = index;
