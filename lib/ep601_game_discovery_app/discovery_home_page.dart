@@ -270,6 +270,11 @@ class _DiscoveryHomePageState extends State<DiscoveryHomePage> {
                   decoration: BoxDecoration(
                     color: Colors.red,
                   ),
+                  child: ListView.builder(itemBuilder: (BuildContext context, int index) {
+                    return Container();
+                  },
+
+                  ),
                 ),
               )
 
