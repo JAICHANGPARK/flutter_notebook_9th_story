@@ -276,7 +276,11 @@ class _DiscoveryHomePageState extends State<DiscoveryHomePage> {
                     scrollDirection: Axis.horizontal,
                     itemBuilder: (BuildContext context, int index) {
                       return Container(
+                        margin: EdgeInsets.only(right: 16),
                         width: MediaQuery.of(context).size.width / 3,
+                        decoration: BoxDecoration(
+                          color: Colors.blue
+                        ),
                       );
                     },
                   ),
