@@ -261,7 +261,15 @@ class _DiscoveryHomePageState extends State<DiscoveryHomePage> {
                     );
                   },
                 ),
+              ),
+              Container(
+                height: MediaQuery.of(context).size.height/3,
+                decoration: BoxDecoration(
+                  color: Colors.red,
+                ),
+                
               )
+
             ],
           ),
         ),
@@ -269,3 +277,24 @@ class _DiscoveryHomePageState extends State<DiscoveryHomePage> {
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
