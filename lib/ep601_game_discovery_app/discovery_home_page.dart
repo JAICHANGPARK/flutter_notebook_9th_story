@@ -275,7 +275,9 @@ class _DiscoveryHomePageState extends State<DiscoveryHomePage> {
                     itemCount: 9,
                     scrollDirection: Axis.horizontal,
                     itemBuilder: (BuildContext context, int index) {
-                      return Container();
+                      return Container(
+                        width: MediaQuery.of(context).size.width / 3,
+                      );
                     },
                   ),
                 ),
