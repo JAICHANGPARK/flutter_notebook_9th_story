@@ -2,8 +2,8 @@ import 'package:badges/badges.dart';
 import 'package:flutter/material.dart';
 
 class GameTab{
-  final String title;
-  final bool isSelected;
+   String title;
+   bool isSelected;
 
   GameTab(this.title, this.isSelected);
 }
@@ -235,7 +235,9 @@ class _DiscoveryHomePageState extends State<DiscoveryHomePage> {
                       padding: EdgeInsets.symmetric(horizontal: 16),
                       child: GestureDetector(
                         onTap: () {
+
                           setState(() {
+                            _tabListV2[index].isSelected = true;
                             _tabIndex = index;
                           });
                         },
@@ -250,7 +252,7 @@ class _DiscoveryHomePageState extends State<DiscoveryHomePage> {
                               _tabListV2[index].title,
                               style: TextStyle(
                                 fontSize: 20,
-                                fontWeight: FontWeight.bold,
+                                fontWeight: _tabListV2[index].isSelected ? FontWeight.bold : FontWeight.normal,
                               ),
                             ),
                           ),
