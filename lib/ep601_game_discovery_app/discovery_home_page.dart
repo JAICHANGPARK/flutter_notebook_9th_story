@@ -1,9 +1,9 @@
 import 'package:badges/badges.dart';
 import 'package:flutter/material.dart';
 
-class GameTab{
-   String title;
-   bool isSelected;
+class GameTab {
+  String title;
+  bool isSelected;
 
   GameTab(this.title, this.isSelected);
 }
@@ -21,7 +21,8 @@ class _DiscoveryHomePageState extends State<DiscoveryHomePage> {
     GameTab("Sports", false),
     GameTab("Arcade", false),
   ];
-  int _tabIndex  = 0;
+  int _tabIndex = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -244,8 +245,8 @@ class _DiscoveryHomePageState extends State<DiscoveryHomePage> {
                         child: Container(
                           padding: EdgeInsets.symmetric(horizontal: 24),
                           decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(24),
-                              border: _tabListV2[index].isSelected ? Border.all(color: Colors.indigo, width: 2) : null,
+                            borderRadius: BorderRadius.circular(24),
+                            border: _tabListV2[index].isSelected ? Border.all(color: Colors.indigo, width: 2) : null,
                           ),
                           child: Center(
                             child: Text(
@@ -266,18 +267,19 @@ class _DiscoveryHomePageState extends State<DiscoveryHomePage> {
                 padding: const EdgeInsets.only(bottom: 24),
                 child: Container(
                   margin: EdgeInsets.only(left: 16, top: 16),
-                  height: MediaQuery.of(context).size.height/3,
+                  height: MediaQuery.of(context).size.height / 3,
                   decoration: BoxDecoration(
                     color: Colors.red,
                   ),
-                  child: ListView.builder(itemBuilder: (BuildContext context, int index) {
-                    return Container();
-                  },
-
+                  child: ListView.builder(
+                    itemCount: 9,
+                    scrollDirection: Axis.horizontal,
+                    itemBuilder: (BuildContext context, int index) {
+                      return Container();
+                    },
                   ),
                 ),
               )
-
             ],
           ),
         ),
@@ -285,7 +287,6 @@ class _DiscoveryHomePageState extends State<DiscoveryHomePage> {
     );
   }
 }
-
 
 
 
