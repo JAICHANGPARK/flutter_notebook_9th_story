@@ -8,7 +8,7 @@ class DiscoveryHomePage extends StatefulWidget {
 
 class _DiscoveryHomePageState extends State<DiscoveryHomePage> {
   List<String> _tabList = ["AR Games", "Adventure", "Sports", "Arcade"];
-
+  int _tabIndex  = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -221,12 +221,16 @@ class _DiscoveryHomePageState extends State<DiscoveryHomePage> {
                     return Padding(
                       padding: EdgeInsets.symmetric(horizontal: 16),
                       child: GestureDetector(
-                        onTap: () {},
+                        onTap: () {
+                          setState(() {
+                            _tabIndex = index;
+                          });
+                        },
                         child: Container(
-                          padding: EdgeInsets.symmetric(horizontal: 16),
+                          padding: EdgeInsets.symmetric(horizontal: 24),
                           decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(24),
-                              border: Border.all(color: Colors.indigo, width: 3)),
+                              border: Border.all(color: Colors.indigo, width: 2)),
                           child: Center(
                             child: Text(
                               _tabList[index],
