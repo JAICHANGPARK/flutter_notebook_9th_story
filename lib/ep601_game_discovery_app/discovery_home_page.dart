@@ -262,12 +262,15 @@ class _DiscoveryHomePageState extends State<DiscoveryHomePage> {
                   },
                 ),
               ),
-              Container(
-                height: MediaQuery.of(context).size.height/3,
-                decoration: BoxDecoration(
-                  color: Colors.red,
+              Padding(
+                padding: const EdgeInsets.only(bottom: 24),
+                child: Container(
+                  margin: EdgeInsets.only(left: 16, top: 16),
+                  height: MediaQuery.of(context).size.height/3,
+                  decoration: BoxDecoration(
+                    color: Colors.red,
+                  ),
                 ),
-                
               )
 
             ],
