@@ -229,7 +229,7 @@ class _DiscoveryHomePageState extends State<DiscoveryHomePage> {
                 decoration: BoxDecoration(),
                 child: ListView.builder(
                   scrollDirection: Axis.horizontal,
-                  itemCount: _tabList.length,
+                  itemCount: _tabListV2.length,
                   itemBuilder: (context, index) {
                     return Padding(
                       padding: EdgeInsets.symmetric(horizontal: 16),
@@ -243,10 +243,11 @@ class _DiscoveryHomePageState extends State<DiscoveryHomePage> {
                           padding: EdgeInsets.symmetric(horizontal: 24),
                           decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(24),
-                              border: Border.all(color: Colors.indigo, width: 2)),
+                              border: _tabListV2[index].isSelected ? Border.all(color: Colors.indigo, width: 2) : null,
+                          ),
                           child: Center(
                             child: Text(
-                              _tabList[index],
+                              _tabListV2[index].title,
                               style: TextStyle(
                                 fontSize: 20,
                                 fontWeight: FontWeight.bold,
