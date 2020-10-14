@@ -268,7 +268,7 @@ class _DiscoveryHomePageState extends State<DiscoveryHomePage> {
                 child: Container(
                   margin: EdgeInsets.only(left: 16, top: 16),
                   height: MediaQuery.of(context).size.height / 4,
-                  
+
                   child: ListView.builder(
                     itemCount: 9,
                     scrollDirection: Axis.horizontal,
