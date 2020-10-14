@@ -267,7 +267,7 @@ class _DiscoveryHomePageState extends State<DiscoveryHomePage> {
                 padding: const EdgeInsets.only(bottom: 24),
                 child: Container(
                   margin: EdgeInsets.only(left: 16, top: 16),
-                  height: MediaQuery.of(context).size.height / 3,
+                  height: MediaQuery.of(context).size.height / 4,
                   decoration: BoxDecoration(
                     color: Colors.red,
                   ),
@@ -277,9 +277,10 @@ class _DiscoveryHomePageState extends State<DiscoveryHomePage> {
                     itemBuilder: (BuildContext context, int index) {
                       return Container(
                         margin: EdgeInsets.only(right: 16),
-                        width: MediaQuery.of(context).size.width / 3,
+                        width: MediaQuery.of(context).size.width / 2.8,
                         decoration: BoxDecoration(
-                          color: Colors.blue
+                          color: Colors.blue,
+                          borderRadius: BorderRadius.circular(16)
                         ),
                       );
                     },
