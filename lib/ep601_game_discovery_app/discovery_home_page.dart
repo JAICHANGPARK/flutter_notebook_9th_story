@@ -8,6 +8,7 @@ class DiscoveryHomePage extends StatefulWidget {
 
 class _DiscoveryHomePageState extends State<DiscoveryHomePage> {
   List<String> _tabList = ["AR Games", "Adventure", "Sports", "Arcade"];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -188,7 +189,6 @@ class _DiscoveryHomePageState extends State<DiscoveryHomePage> {
                                         "GAME TITLE 02",
                                         style: TextStyle(fontSize: 24, color: Colors.white),
                                       )
-
                                     ],
                                   ),
                                 )
@@ -203,41 +203,42 @@ class _DiscoveryHomePageState extends State<DiscoveryHomePage> {
               ),
               Padding(
                 padding: const EdgeInsets.all(16.0),
-                child: Text("Categories", style: TextStyle(
-                  fontSize: 22,
-                  fontWeight: FontWeight.bold,
-                ),),
+                child: Text(
+                  "Categories",
+                  style: TextStyle(
+                    fontSize: 22,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
               ),
               Container(
                 height: 48,
-                decoration: BoxDecoration(
-                  
-                ),
+                decoration: BoxDecoration(),
                 child: ListView.builder(
                   scrollDirection: Axis.horizontal,
                   itemCount: _tabList.length,
-                  itemBuilder: (context, index){
-                      return Padding(
-                        padding: EdgeInsets.symmetric(horizontal: 16),
-                        child: GestureDetector(
-                          onTap: (){
-
-                          },
-                          child: Container(
-                            padding: EdgeInsets.symmetric(horizontal: 16),
-                            decoration: BoxDecoration(
+                  itemBuilder: (context, index) {
+                    return Padding(
+                      padding: EdgeInsets.symmetric(horizontal: 16),
+                      child: GestureDetector(
+                        onTap: () {},
+                        child: Container(
+                          padding: EdgeInsets.symmetric(horizontal: 16),
+                          decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(24),
-                              border: Border.all(color: Colors.indigo, width: 3)
-                            ),
-                            child: Center(
-                              child: Text(_tabList[index], style: TextStyle(
+                              border: Border.all(color: Colors.indigo, width: 3)),
+                          child: Center(
+                            child: Text(
+                              _tabList[index],
+                              style: TextStyle(
                                 fontSize: 20,
                                 fontWeight: FontWeight.bold,
-                              ),),
+                              ),
                             ),
                           ),
                         ),
-                      );
+                      ),
+                    );
                   },
                 ),
               )
@@ -248,16 +249,3 @@ class _DiscoveryHomePageState extends State<DiscoveryHomePage> {
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
