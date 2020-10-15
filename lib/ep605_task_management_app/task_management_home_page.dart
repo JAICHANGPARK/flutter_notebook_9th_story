@@ -21,9 +21,9 @@ class _TaskManagementHomePageState extends State<TaskManagementHomePage> {
         currentIndex: _pageIndex,
         items: [
           BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
-          BottomNavigationBarItem(icon: Icon(Icons.home), label: "My Task"),
-          BottomNavigationBarItem(icon: Icon(Icons.home), label: "Subscription"),
-          BottomNavigationBarItem(icon: Icon(Icons.home), label: "Calendar")
+          BottomNavigationBarItem(icon: Icon(Icons.list), label: "My Task"),
+          BottomNavigationBarItem(icon: Icon(Icons.apps), label: "Subscription"),
+          BottomNavigationBarItem(icon: Icon(Icons.calendar), label: "Calendar")
         ],
       ),
     );
