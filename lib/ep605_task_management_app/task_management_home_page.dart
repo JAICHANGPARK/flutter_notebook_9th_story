@@ -10,10 +10,21 @@ class _TaskManagementHomePageState extends State<TaskManagementHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.grey[200],
       body: SafeArea(
         child: Stack(
           children: [
-            
+            Positioned(
+              left: 0,
+              right: 0,
+              top: 64,
+              bottom: 0,
+              child: Container(
+                decoration: BoxDecoration(
+                  color: Colors.white
+                ),
+              ),
+            )
           ],
         ),
       ),
