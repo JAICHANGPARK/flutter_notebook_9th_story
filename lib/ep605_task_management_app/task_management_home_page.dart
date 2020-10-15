@@ -10,7 +10,14 @@ class _TaskManagementHomePageState extends State<TaskManagementHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       bottomNavigationBar: BottomNavigationBar(items: [
-        BottomNavigationBarItem(icon: Icon(Icons.home), )
+        BottomNavigationBarItem(icon: Icon(Icons.home),
+        label: "Home"),
+        BottomNavigationBarItem(icon: Icon(Icons.home),
+            label: "Home"),
+        BottomNavigationBarItem(icon: Icon(Icons.home),
+            label: "Home"),
+        BottomNavigationBarItem(icon: Icon(Icons.home),
+            label: "Home")
       ],),
     );
   }
