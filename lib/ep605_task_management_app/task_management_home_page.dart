@@ -6,19 +6,24 @@ class TaskManagementHomePage extends StatefulWidget {
 }
 
 class _TaskManagementHomePageState extends State<TaskManagementHomePage> {
+  int _pageIndex = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      bottomNavigationBar: BottomNavigationBar(items: [
-        BottomNavigationBarItem(icon: Icon(Icons.home),
-        label: "Home"),
-        BottomNavigationBarItem(icon: Icon(Icons.home),
-            label: "Home"),
-        BottomNavigationBarItem(icon: Icon(Icons.home),
-            label: "Home"),
-        BottomNavigationBarItem(icon: Icon(Icons.home),
-            label: "Home")
-      ],),
+      bottomNavigationBar: BottomNavigationBar(
+        onTap: (index){
+          setState(() {
+            _pageIndex = index;
+          });
+        },
+        currentIndex: _pageIndex,
+        items: [
+          BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
+          BottomNavigationBarItem(icon: Icon(Icons.home), label: "My Task"),
+          BottomNavigationBarItem(icon: Icon(Icons.home), label: "Subscription"),
+          BottomNavigationBarItem(icon: Icon(Icons.home), label: "Calendar")
+        ],
+      ),
     );
   }
 }
