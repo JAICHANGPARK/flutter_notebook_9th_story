@@ -11,6 +11,8 @@ class _TaskManagementHomePageState extends State<TaskManagementHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       bottomNavigationBar: BottomNavigationBar(
+        type: BottomNavigationBarType.fixed,
+        selectedItemColor: Colors.deepOrange,
         onTap: (index){
           setState(() {
             _pageIndex = index;
