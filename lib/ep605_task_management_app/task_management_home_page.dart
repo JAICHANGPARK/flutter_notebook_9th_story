@@ -10,7 +10,15 @@ class _TaskManagementHomePageState extends State<TaskManagementHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      body: SafeArea(
+        child: Stack(
+          children: [
+            
+          ],
+        ),
+      ),
       bottomNavigationBar: BottomNavigationBar(
+        elevation: 8,
         type: BottomNavigationBarType.fixed,
         selectedItemColor: Colors.deepOrange,
         onTap: (index){
