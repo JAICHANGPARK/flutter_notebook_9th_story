@@ -21,7 +21,11 @@ class _TaskManagementHomePageState extends State<TaskManagementHomePage> {
               bottom: 0,
               child: Container(
                 decoration: BoxDecoration(
-                  color: Colors.white
+                  color: Colors.white,
+                  borderRadius: BorderRadius.only(
+                    topLeft: Radius.circular(32),
+                    topRight: Radius.circular(32),
+                  )
                 ),
               ),
             )
