@@ -9,7 +9,9 @@ class _TaskManagementHomePageState extends State<TaskManagementHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
+      bottomNavigationBar: BottomNavigationBar(items: [
+        BottomNavigationBarItem()
+      ],),
     );
   }
 }
