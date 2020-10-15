@@ -7,6 +7,7 @@ class TaskManagementHomePage extends StatefulWidget {
 
 class _TaskManagementHomePageState extends State<TaskManagementHomePage> {
   int _pageIndex = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -21,12 +22,11 @@ class _TaskManagementHomePageState extends State<TaskManagementHomePage> {
               bottom: 0,
               child: Container(
                 decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.only(
-                    topLeft: Radius.circular(32),
-                    topRight: Radius.circular(32),
-                  )
-                ),
+                    color: Colors.white,
+                    borderRadius: BorderRadius.only(
+                      topLeft: Radius.circular(32),
+                      topRight: Radius.circular(32),
+                    )),
               ),
             )
           ],
@@ -36,7 +36,7 @@ class _TaskManagementHomePageState extends State<TaskManagementHomePage> {
         elevation: 8,
         type: BottomNavigationBarType.fixed,
         selectedItemColor: Colors.deepOrange,
-        onTap: (index){
+        onTap: (index) {
           setState(() {
             _pageIndex = index;
           });
