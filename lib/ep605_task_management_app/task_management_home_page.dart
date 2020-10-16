@@ -71,7 +71,7 @@ class _TaskManagementHomePageState extends State<TaskManagementHomePage> {
                               padding: const EdgeInsets.symmetric(horizontal: 28),
                               child: Text("CHECKLIST",
                               style: TextStyle(
-                                color: _topTabIndex == 1 ? Colors.deepOrange : Colors.grey
+                                color: _topTabIndex == 1 ? Colors.white : Colors.grey
                               ),),
                             ),
                             onPressed: (){
