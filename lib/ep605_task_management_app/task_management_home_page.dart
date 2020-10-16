@@ -54,9 +54,18 @@ class _TaskManagementHomePageState extends State<TaskManagementHomePage> {
                     Expanded(
                       flex: 1,
                       child: Row(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           ElevatedButton(
-
+                            child: Padding(
+                              padding: const EdgeInsets.symmetric(horizontal: 28),
+                              child: Text("Tasks"),
+                            ),
+                            onPressed: (){},
+                            style: ButtonStyle(),
+                          ),
+                          ElevatedButton(
                             child: Padding(
                               padding: const EdgeInsets.symmetric(horizontal: 28),
                               child: Text("Tasks"),
