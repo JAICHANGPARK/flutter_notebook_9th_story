@@ -12,7 +12,12 @@ class _TaskManagementHomePageState extends State<TaskManagementHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.grey[200],
+      appBar: AppBar(
+        centerTitle: true,
+        title: Text("TODOS",style: TextStyle(),),
+      ),
       body: SafeArea(
+
         child: Stack(
           children: [
             Positioned(
