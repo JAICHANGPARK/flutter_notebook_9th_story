@@ -50,9 +50,13 @@ class _TaskManagementHomePageState extends State<TaskManagementHomePage> {
                 child: Column(
                   children: [
                     Expanded(
+                      flex: 1,
                       child: Placeholder(),
                     ),
-                    Expanded()
+                    Expanded(
+                      flex: 10,
+                      child: Placeholder(),
+                    )
                   ],
                 ),
               ),
