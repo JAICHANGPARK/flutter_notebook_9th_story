@@ -7,6 +7,7 @@ class TaskManagementHomePage extends StatefulWidget {
 
 class _TaskManagementHomePageState extends State<TaskManagementHomePage> {
   int _pageIndex = 0;
+  int _topTabIndex = 0;
 
   @override
   Widget build(BuildContext context) {
