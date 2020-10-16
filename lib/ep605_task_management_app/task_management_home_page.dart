@@ -22,6 +22,14 @@ class _TaskManagementHomePageState extends State<TaskManagementHomePage> {
         title: Text("TODOS",style: TextStyle(
           color: Colors.deepOrange
         ),),
+        actions: [
+          IconButton(
+            icon: Icon(Icons.notifications_none),
+          ),
+          IconButton(
+            icon: Icon(Icons.search),
+          )
+        ],
       ),
       body: SafeArea(
 
