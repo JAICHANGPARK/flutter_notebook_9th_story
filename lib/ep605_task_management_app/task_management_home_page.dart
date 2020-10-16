@@ -14,7 +14,10 @@ class _TaskManagementHomePageState extends State<TaskManagementHomePage> {
       backgroundColor: Colors.grey[200],
       appBar: AppBar(
         centerTitle: true,
-        backgroundColor: Colors.white,
+        leading: IconButton(
+          icon: Icon(Icons.menu),
+        ),
+        backgroundColor: Colors.grey[200],
         elevation: 0,
         title: Text("TODOS",style: TextStyle(
           color: Colors.deepOrange
