@@ -65,13 +65,21 @@ class _TaskManagementHomePageState extends State<TaskManagementHomePage> {
                             onPressed: (){},
                             style: ButtonStyle(),
                           ),
+                          SizedBox(width: 12,),
                           ElevatedButton(
                             child: Padding(
                               padding: const EdgeInsets.symmetric(horizontal: 28),
-                              child: Text("Tasks"),
+                              child: Text("CHECKLIST"),
                             ),
-                            onPressed: (){},
-                            style: ButtonStyle(),
+                            onPressed: (){
+                              setState(() {
+                                _topTabIndex = 1;
+                              });
+                            },
+                            style: ButtonStyle(
+                              backgroundColor:MaterialStateProperty.all<Color>(Colors.green),
+                              // backgroundColor: _topTabIndex == 1 ? Colors.deepOrange : Colors.grey
+                            ),
                           )
                         ],
                       ),
