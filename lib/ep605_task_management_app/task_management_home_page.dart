@@ -47,6 +47,7 @@ class _TaskManagementHomePageState extends State<TaskManagementHomePage> {
                       topLeft: Radius.circular(32),
                       topRight: Radius.circular(32),
                     )),
+                padding: EdgeInsets.only(top: 16, left: 16, right: 16),
                 child: Column(
                   children: [
                     Expanded(
