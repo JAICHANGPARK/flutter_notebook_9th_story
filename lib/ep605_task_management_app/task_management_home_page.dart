@@ -19,9 +19,10 @@ class _TaskManagementHomePageState extends State<TaskManagementHomePage> {
         ),
         backgroundColor: Colors.grey[200],
         elevation: 0,
-        title: Text("TODOS",style: TextStyle(
-          color: Colors.deepOrange
-        ),),
+        title: Text(
+          "TODOS",
+          style: TextStyle(color: Colors.deepOrange),
+        ),
         actions: [
           IconButton(
             icon: Icon(Icons.notifications_none),
@@ -32,7 +33,6 @@ class _TaskManagementHomePageState extends State<TaskManagementHomePage> {
         ],
       ),
       body: SafeArea(
-
         child: Stack(
           children: [
             Positioned(
@@ -47,6 +47,14 @@ class _TaskManagementHomePageState extends State<TaskManagementHomePage> {
                       topLeft: Radius.circular(32),
                       topRight: Radius.circular(32),
                     )),
+                child: Column(
+                  children: [
+                    Expanded(
+                      child: Placeholder(),
+                    ),
+                    Expanded()
+                  ],
+                ),
               ),
             )
           ],
