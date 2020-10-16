@@ -53,7 +53,19 @@ class _TaskManagementHomePageState extends State<TaskManagementHomePage> {
                   children: [
                     Expanded(
                       flex: 1,
-                      child: Placeholder(),
+                      child: Row(
+                        children: [
+                          ElevatedButton(
+
+                            child: Padding(
+                              padding: const EdgeInsets.symmetric(horizontal: 28),
+                              child: Text("Tasks"),
+                            ),
+                            onPressed: (){},
+                            style: ButtonStyle(),
+                          )
+                        ],
+                      ),
                     ),
                     Expanded(
                       flex: 10,
