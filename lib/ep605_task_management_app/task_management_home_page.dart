@@ -149,6 +149,18 @@ class _TaskManagementHomePageState extends State<TaskManagementHomePage> {
                                                             color: Colors.orange[50],
                                                             borderRadius: BorderRadius.circular(2),
                                                           ),
+                                                        ),
+                                                        Container(
+                                                          child: Text("DESIGN", style: TextStyle(
+                                                              color: Colors.orange,
+                                                              fontSize: 12,
+                                                              fontWeight: FontWeight.bold
+                                                          ),),
+                                                          padding: EdgeInsets.symmetric(horizontal: 12, vertical: 4),
+                                                          decoration: BoxDecoration(
+                                                            color: Colors.orange[50],
+                                                            borderRadius: BorderRadius.circular(2),
+                                                          ),
                                                         )
                                                       ],
                                                     ),
