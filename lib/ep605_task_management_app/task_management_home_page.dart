@@ -128,7 +128,10 @@ class _TaskManagementHomePageState extends State<TaskManagementHomePage> {
                                                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                                     children: [
                                                       Text("Brands.Co Landing page\nIdea"),
-                                                      Text("Due Today\n14 Ocd")
+                                                      Text("Due Today\n14 Ocd", style: TextStyle(
+                                                        color: Colors.deepOrange,
+                                                        fontSize: 12
+                                                      ),)
                                                     ],
                                                   ),
                                                   Padding(
