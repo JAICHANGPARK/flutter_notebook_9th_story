@@ -120,6 +120,16 @@ class _TaskManagementHomePageState extends State<TaskManagementHomePage> {
                                     child: ListView.builder(
                                       itemBuilder: (context, index){
                                           return Card(
+                                            shape: index == 0 ? RoundedRectangleBorder(
+                                              side: BorderSide(
+                                                color: Colors.grey,
+                                              )
+                                            ) :null,
+                                            margin: EdgeInsets.only(
+                                              bottom: 16,
+                                              left: 4,
+                                              right: 4
+                                            ),
                                             child: Padding(
                                               padding: const EdgeInsets.all(12.0),
                                               child: Column(
