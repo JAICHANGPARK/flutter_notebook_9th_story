@@ -131,20 +131,24 @@ class _TaskManagementHomePageState extends State<TaskManagementHomePage> {
                                                       Text("Due Today\n14 Ocd")
                                                     ],
                                                   ),
-                                                  Row(
-                                                    children: [
-                                                      Container(
-                                                        child: Text("HIGH", style: TextStyle(
-                                                          color: Colors.orange,
-                                                          fontSize: 12,
-                                                          fontWeight: FontWeight.bold
-                                                        ),),
-                                                        padding: EdgeInsets.symmetric(horizontal: 12, vertical: 2),
-                                                        decoration: BoxDecoration(
-                                                          color: Colors.orange[50],
-                                                        ),
-                                                      )
-                                                    ],
+                                                  Padding(
+                                                    padding: const EdgeInsets.symmetric(vertical: 8),
+                                                    child: Row(
+                                                      children: [
+                                                        Container(
+                                                          child: Text("HIGH", style: TextStyle(
+                                                            color: Colors.orange,
+                                                            fontSize: 12,
+                                                            fontWeight: FontWeight.bold
+                                                          ),),
+                                                          padding: EdgeInsets.symmetric(horizontal: 12, vertical: 4),
+                                                          decoration: BoxDecoration(
+                                                            color: Colors.orange[50],
+                                                            borderRadius: BorderRadius.circular(2),
+                                                          ),
+                                                        )
+                                                      ],
+                                                    ),
                                                   )
                                                 ],
                                               ),
