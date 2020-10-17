@@ -60,39 +60,41 @@ class _TaskManagementHomePageState extends State<TaskManagementHomePage> {
                           ElevatedButton(
                             child: Padding(
                               padding: const EdgeInsets.symmetric(horizontal: 28),
-                              child: Text("TASKS",
-                                style: TextStyle(
-                                    color: _topTabIndex == 0 ? Colors.white : Colors.grey
-                                ),),
+                              child: Text(
+                                "TASKS",
+                                style: TextStyle(color: _topTabIndex == 0 ? Colors.white : Colors.grey),
+                              ),
                             ),
-                            onPressed: (){
+                            onPressed: () {
                               setState(() {
-                                _topTabIndex = 0 ;
+                                _topTabIndex = 0;
                               });
                             },
-
                             style: ButtonStyle(
-                              backgroundColor:MaterialStateProperty.all<Color>(_topTabIndex == 0 ? Colors.deepOrange : Colors.grey[100]),
+                              backgroundColor: MaterialStateProperty.all<Color>(
+                                  _topTabIndex == 0 ? Colors.deepOrange : Colors.grey[100]),
                               // backgroundColor: _topTabIndex == 1 ? Colors.deepOrange : Colors.grey
                             ),
                           ),
-                          SizedBox(width: 12,),
+                          SizedBox(
+                            width: 12,
+                          ),
                           ElevatedButton(
                             child: Padding(
                               padding: const EdgeInsets.symmetric(horizontal: 16),
-                              child: Text("CHECKLIST",
-                              style: TextStyle(
-                                color: _topTabIndex == 1 ? Colors.white : Colors.grey
-                              ),),
+                              child: Text(
+                                "CHECKLIST",
+                                style: TextStyle(color: _topTabIndex == 1 ? Colors.white : Colors.grey),
+                              ),
                             ),
-                            onPressed: (){
+                            onPressed: () {
                               setState(() {
                                 _topTabIndex = 1;
                               });
                             },
-
                             style: ButtonStyle(
-                              backgroundColor:MaterialStateProperty.all<Color>(_topTabIndex == 1 ? Colors.deepOrange : Colors.grey[100]),
+                              backgroundColor: MaterialStateProperty.all<Color>(
+                                  _topTabIndex == 1 ? Colors.deepOrange : Colors.grey[100]),
                               // backgroundColor: _topTabIndex == 1 ? Colors.deepOrange : Colors.grey
                             ),
                           )
