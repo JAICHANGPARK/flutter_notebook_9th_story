@@ -102,13 +102,22 @@ class _TaskManagementHomePageState extends State<TaskManagementHomePage> {
                       ),
                     ),
                     Expanded(
-                      flex: 10,
-                      child: _topTabIndex == 0 ? Column(
-                        children: [
+                        flex: 10,
+                        child: _topTabIndex == 0
+                            ? Column(
+                                children: [
+                                  Expanded(
+                                    flex: 1,
+                                    child: Placeholder(),
+                                  ),
+                                  Expanded(
+                                    flex: 15,
+                                    child: Placeholder(),
+                                  )
 
-                        ],
-                      ): Placeholder()
-                    )
+                                ],
+                              )
+                            : Placeholder())
                   ],
                 ),
               ),
@@ -136,5 +145,3 @@ class _TaskManagementHomePageState extends State<TaskManagementHomePage> {
     );
   }
 }
-
-
