@@ -119,6 +119,7 @@ class _TaskManagementHomePageState extends State<TaskManagementHomePage> {
                                   Expanded(
                                     flex: 15,
                                     child: ListView.builder(
+                                      itemCount: 10,
                                       itemBuilder: (context, index) {
                                         return TaskItem(index);
                                       },
