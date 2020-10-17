@@ -10,9 +10,9 @@ class TaskItem extends StatelessWidget {
     return Card(
       shape: index == 0
           ? RoundedRectangleBorder(
-          side: BorderSide(
-            color: Colors.grey,
-          ))
+              side: BorderSide(
+              color: Colors.grey,
+            ))
           : null,
       margin: EdgeInsets.only(bottom: 16, left: 4, right: 4),
       child: Padding(
@@ -36,10 +36,7 @@ class TaskItem extends StatelessWidget {
                   Container(
                     child: Text(
                       "HIGH",
-                      style: TextStyle(
-                          color: Colors.orange,
-                          fontSize: 12,
-                          fontWeight: FontWeight.bold),
+                      style: TextStyle(color: Colors.orange, fontSize: 12, fontWeight: FontWeight.bold),
                     ),
                     padding: EdgeInsets.symmetric(horizontal: 12, vertical: 4),
                     decoration: BoxDecoration(
@@ -53,10 +50,7 @@ class TaskItem extends StatelessWidget {
                   Container(
                     child: Text(
                       "DESIGN",
-                      style: TextStyle(
-                          color: Colors.teal,
-                          fontSize: 12,
-                          fontWeight: FontWeight.bold),
+                      style: TextStyle(color: Colors.teal, fontSize: 12, fontWeight: FontWeight.bold),
                     ),
                     padding: EdgeInsets.symmetric(horizontal: 12, vertical: 4),
                     decoration: BoxDecoration(
