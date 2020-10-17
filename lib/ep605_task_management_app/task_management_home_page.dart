@@ -120,16 +120,30 @@ class _TaskManagementHomePageState extends State<TaskManagementHomePage> {
                                     child: ListView.builder(
                                       itemBuilder: (context, index){
                                           return Card(
-                                            child: Column(
-                                              children: [
-                                                Row(
-                                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                                  children: [
-                                                    Text("Brands.Co Landing page\nIdea"),
-                                                    Text("Due Today\n14 Ocd")
-                                                  ],
-                                                )
-                                              ],
+                                            child: Padding(
+                                              padding: const EdgeInsets.all(8.0),
+                                              child: Column(
+                                                children: [
+                                                  Row(
+                                                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                                    children: [
+                                                      Text("Brands.Co Landing page\nIdea"),
+                                                      Text("Due Today\n14 Ocd")
+                                                    ],
+                                                  ),
+                                                  Row(
+                                                    children: [
+                                                      Container(
+                                                        child: Text("HIGH"),
+                                                        padding: EdgeInsets.symmetric(horizontal: 12, vertical: 2),
+                                                        decoration: BoxDecoration(
+                                                          color: Colors.orangeAccent[200],
+                                                        ),
+                                                      )
+                                                    ],
+                                                  )
+                                                ],
+                                              ),
                                             ),
                                           );
                                       },
