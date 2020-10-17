@@ -173,7 +173,13 @@ class _TaskManagementHomePageState extends State<TaskManagementHomePage> {
                                                       Icon(Icons.attach_file_outlined, size: 16,),
                                                       Text("1"),
                                                       Spacer(),
-                                                      Text("Dreamwalker", style: TextStyle(),),
+                                                      Padding(
+                                                        padding: const EdgeInsets.all(8.0),
+                                                        child: Text("Dreamwalker", style: TextStyle(
+                                                          fontSize: 13,
+                                                          fontWeight: FontWeight.bold
+                                                        ),),
+                                                      ),
                                                       CircleAvatar(),
                                                     ],
                                                   )
