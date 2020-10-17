@@ -150,15 +150,17 @@ class _TaskManagementHomePageState extends State<TaskManagementHomePage> {
                                                             borderRadius: BorderRadius.circular(2),
                                                           ),
                                                         ),
+                                                        SizedBox(width: 12,),
                                                         Container(
+
                                                           child: Text("DESIGN", style: TextStyle(
-                                                              color: Colors.orange,
+                                                              color: Colors.teal,
                                                               fontSize: 12,
                                                               fontWeight: FontWeight.bold
                                                           ),),
                                                           padding: EdgeInsets.symmetric(horizontal: 12, vertical: 4),
                                                           decoration: BoxDecoration(
-                                                            color: Colors.orange[50],
+                                                            color: Colors.teal[50],
                                                             borderRadius: BorderRadius.circular(2),
                                                           ),
                                                         )
