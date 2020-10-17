@@ -117,7 +117,11 @@ class _TaskManagementHomePageState extends State<TaskManagementHomePage> {
                                   ),
                                   Expanded(
                                     flex: 15,
-                                    child: Placeholder(),
+                                    child: ListView.builder(
+                                      itemBuilder: (context, index){
+
+                                      },
+                                    ),
                                   )
 
                                 ],
