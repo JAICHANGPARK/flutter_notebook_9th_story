@@ -108,7 +108,12 @@ class _TaskManagementHomePageState extends State<TaskManagementHomePage> {
                                 children: [
                                   Expanded(
                                     flex: 1,
-                                    child: Placeholder(),
+                                    child: Row(
+                                      children: [
+                                        Text('In Progress'),
+                                        Icon(Icons.arrow_drop_down),
+                                      ],
+                                    ),
                                   ),
                                   Expanded(
                                     flex: 15,
