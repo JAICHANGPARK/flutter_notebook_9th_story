@@ -8,12 +8,12 @@ class TaskItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
-      elevation: index == 0 ? 8 : 4,
-      shape: index == 0
+      elevation: index = 0 ? 8 : 4,
+      shape: index != 0
           ? RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(4),
               side: BorderSide(
-              color: Colors.grey,
+              color: Colors.grey[400],
             ))
           : null,
       margin: EdgeInsets.only(bottom: 16, left: 4, right: 4),
