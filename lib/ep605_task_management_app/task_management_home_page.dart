@@ -119,7 +119,19 @@ class _TaskManagementHomePageState extends State<TaskManagementHomePage> {
                                     flex: 15,
                                     child: ListView.builder(
                                       itemBuilder: (context, index){
-
+                                          return Card(
+                                            child: Column(
+                                              children: [
+                                                Row(
+                                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                                  children: [
+                                                    Text("Brands.Co Landing page\nIdea"),
+                                                    Text("Due Today\n14 Ocd")
+                                                  ],
+                                                )
+                                              ],
+                                            ),
+                                          );
                                       },
                                     ),
                                   )
