@@ -135,11 +135,13 @@ class _TaskManagementHomePageState extends State<TaskManagementHomePage> {
                                                     children: [
                                                       Container(
                                                         child: Text("HIGH", style: TextStyle(
-                                                          color: Colors.orange
+                                                          color: Colors.orange,
+                                                          fontSize: 12,
+                                                          fontWeight: FontWeight.bold
                                                         ),),
                                                         padding: EdgeInsets.symmetric(horizontal: 12, vertical: 2),
                                                         decoration: BoxDecoration(
-                                                          color: Colors.orangeAccent[200],
+                                                          color: Colors.orange[50],
                                                         ),
                                                       )
                                                     ],
