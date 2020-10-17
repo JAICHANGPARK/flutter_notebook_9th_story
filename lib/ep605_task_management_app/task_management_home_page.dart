@@ -121,7 +121,7 @@ class _TaskManagementHomePageState extends State<TaskManagementHomePage> {
                                       itemBuilder: (context, index){
                                           return Card(
                                             child: Padding(
-                                              padding: const EdgeInsets.all(8.0),
+                                              padding: const EdgeInsets.all(12.0),
                                               child: Column(
                                                 children: [
                                                   Row(
