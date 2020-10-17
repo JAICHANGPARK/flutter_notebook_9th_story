@@ -170,10 +170,10 @@ class _TaskManagementHomePageState extends State<TaskManagementHomePage> {
                                                   Row(
 
                                                     children: [
-                                                      Icon(Icons.attach_file_outlined),
+                                                      Icon(Icons.attach_file_outlined, size: 16,),
                                                       Text("1"),
                                                       Spacer(),
-                                                      Text("Dreamwalker"),
+                                                      Text("Dreamwalker", style: TextStyle(),),
                                                       CircleAvatar(),
                                                     ],
                                                   )
