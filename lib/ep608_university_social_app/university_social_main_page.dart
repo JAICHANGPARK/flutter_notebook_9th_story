@@ -42,6 +42,19 @@ class _UniversitySocialMainPageState extends State<UniversitySocialMainPage> {
                   ],
                 ),
               ),
+            ),
+            Positioned(
+              left: 16,
+              right: 16,
+              bottom: 16,
+              child: Container(
+                height: 64,
+                decoration: BoxDecoration(
+                  color: Colors.red
+                ),
+                child: Row(),
+
+              ),
             )
           ],
         ),
