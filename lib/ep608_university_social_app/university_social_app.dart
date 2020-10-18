@@ -6,7 +6,11 @@ class UniversitySocialApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: UniversitySocialMainPage(),
+      home: Navigator(
+        pages: [
+          
+        ],
+      )
     );
   }
 }
