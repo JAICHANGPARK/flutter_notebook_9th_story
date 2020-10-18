@@ -48,9 +48,10 @@ class _UniversitySocialMainPageState extends State<UniversitySocialMainPage> {
               right: 16,
               bottom: 16,
               child: Container(
-                height: 64,
+                height: 72,
                 decoration: BoxDecoration(
-                  color: Colors.red
+                  color: Colors.red,
+                  borderRadius: BorderRadius.circular(42)
                 ),
                 child: Row(),
 
