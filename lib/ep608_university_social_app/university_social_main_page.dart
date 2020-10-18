@@ -20,6 +20,11 @@ class _UniversitySocialMainPageState extends State<UniversitySocialMainPage> {
                 height: 84,
                 decoration: BoxDecoration(
                   color: Colors.white,
+                  borderRadius: BorderRadius.only(
+                    bottomLeft: Radius.circular(32),
+                    bottomRight: Radius.circular(32),
+
+                  ),
                   boxShadow: [
                     BoxShadow(
                       color: Colors.blueGrey[50],
