@@ -8,8 +8,16 @@ class UniversitySocialApp extends StatelessWidget {
     return MaterialApp(
       home: Navigator(
         pages: [
-          
+          MaterialPage(
+            key: ValueKey("HomePage"),
+            child: UniversitySocialMainPage()
+          )
         ],
+        onPopPage: (route, result){
+          print(route.toString());
+          print(result.toString());
+          return route.didPop(result);
+        },
       )
     );
   }
