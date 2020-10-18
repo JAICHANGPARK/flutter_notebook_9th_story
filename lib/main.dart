@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'ep605_task_management_app/task_management_app.dart';
+import 'ep608_university_social_app/university_social_app.dart';
 
 main() {
-  runApp(TaskManagementApp());
+  runApp(UniversitySocialApp());
 }
