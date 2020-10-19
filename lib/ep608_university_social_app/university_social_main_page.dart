@@ -55,8 +55,10 @@ class _UniversitySocialMainPageState extends State<UniversitySocialMainPage> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
-                    IconButton(
-                      icon: Icon(Icons.home,)
+                    Expanded(
+                      child: IconButton(
+                        icon: Icon(Icons.home,)
+                      ),
                     ),
                     Expanded(
                       child: IconButton(
