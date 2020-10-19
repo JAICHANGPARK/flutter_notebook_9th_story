@@ -52,7 +52,11 @@ class _UniversitySocialMainPageState extends State<UniversitySocialMainPage> {
                     color: Colors.red,
                     borderRadius: BorderRadius.circular(42)
                 ),
-                child: Row(),
+                child: Row(
+                  children: [
+                    
+                  ],
+                ),
 
               ),
             )
