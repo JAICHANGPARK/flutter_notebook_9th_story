@@ -106,7 +106,11 @@ class _UniversitySocialMainPageState extends State<UniversitySocialMainPage> {
 
       floatingActionButton: Padding(
           padding: EdgeInsets.only( bottom: 120),
-          child: FloatingActionButton()),
+          child: FloatingActionButton(
+            backgroundColor: Colors.indigo,
+            onPressed: () {  },
+            child: Icon(Icons.add),
+          )),
     );
   }
 }
