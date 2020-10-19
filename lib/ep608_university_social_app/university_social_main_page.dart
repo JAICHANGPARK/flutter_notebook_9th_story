@@ -100,8 +100,13 @@ class _UniversitySocialMainPageState extends State<UniversitySocialMainPage> {
               ),
             )
           ],
+
         ),
       ),
+
+      floatingActionButton: Padding(
+          padding: EdgeInsets.only( bottom: 120),
+          child: FloatingActionButton()),
     );
   }
 }
