@@ -61,7 +61,7 @@ class _UniversitySocialMainPageState extends State<UniversitySocialMainPage> {
                     Expanded(
                       child: IconButton(
                         icon: Icon(
-                          Icons.home,
+                          Icons.local_fire_department,
                         ),
                         onPressed: () {},
                       ),
@@ -69,7 +69,7 @@ class _UniversitySocialMainPageState extends State<UniversitySocialMainPage> {
                     Expanded(
                       child: IconButton(
                         icon: Icon(
-                          Icons.home,
+                          Icons.favorite_border,
                         ),
                         onPressed: () {},
                       ),
@@ -83,7 +83,8 @@ class _UniversitySocialMainPageState extends State<UniversitySocialMainPage> {
                         child: Center(
                           child: IconButton(
                             icon: Icon(
-                              Icons.home,
+                              Icons.chat_bubble_outline,
+                              color: Colors.white,
                             ),
                             onPressed: () {},
                           ),
