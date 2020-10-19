@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class UniversitySocialMainPage extends StatefulWidget {
@@ -72,7 +73,11 @@ class _UniversitySocialMainPageState extends State<UniversitySocialMainPage> {
                     Expanded(
                       child: Container(
                         decoration: BoxDecoration(
-                          color: Colors.indigo
+                          color: Colors.indigo,
+                          borderRadius: BorderRadius.only(
+                            topRight: Radius.circular(32),
+                              bottomRight: Radius.circular(32)
+                          )
                         ),
                         child: Center(
                           child: IconButton(
