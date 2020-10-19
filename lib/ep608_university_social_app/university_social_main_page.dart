@@ -35,7 +35,11 @@ class _UniversitySocialMainPageState extends State<UniversitySocialMainPage> {
                     Expanded(
                       child: Align(alignment: Alignment.centerLeft, child: Icon(Icons.arrow_back_rounded)),
                     ),
-                    Expanded(child: Center(child: Text("Inbox"))),
+                    Expanded(child: Center(child: Text("Inbox",
+                    style: TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold
+                    ),))),
                     Expanded(
                       child: Align(alignment: Alignment.centerRight, child: Icon(Icons.info_outline)),
                     )
