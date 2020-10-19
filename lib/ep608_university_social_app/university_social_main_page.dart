@@ -53,18 +53,24 @@ class _UniversitySocialMainPageState extends State<UniversitySocialMainPage> {
                     borderRadius: BorderRadius.circular(42)
                 ),
                 child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     IconButton(
-                      icon: Icon()Icons.home,
+                      icon: Icon(Icons.home,)
                     ),
                     IconButton(
-                      icon: Icons.home,
+                        icon: Icon(Icons.home,)
                     ),
                     IconButton(
-                      icon: Icons.home,
+                        icon: Icon(Icons.home,)
                     ),
-                    IconButton(
-                      icon: Icons.home,
+                    Container(
+                      decoration: BoxDecoration(
+                        color: Colors.indigo
+                      ),
+                      child: IconButton(
+                          icon: Icon(Icons.home,)
+                      ),
                     ),
                   ],
                 ),
