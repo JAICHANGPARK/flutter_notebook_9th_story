@@ -19,26 +19,25 @@ class _UniversitySocialMainPageState extends State<UniversitySocialMainPage> {
               child: Container(
                 height: 84,
                 decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.only(
-                    bottomLeft: Radius.circular(32),
-                    bottomRight: Radius.circular(32),
+                    color: Colors.white,
+                    borderRadius: BorderRadius.only(
+                      bottomLeft: Radius.circular(32),
+                      bottomRight: Radius.circular(32),
 
-                  ),
-                  boxShadow: [
-                    BoxShadow(
-                      color: Colors.blueGrey[50],
-                      blurRadius: 2,
-                      spreadRadius: 2,
-                      offset: Offset(
-                        0, 4
+                    ),
+                    boxShadow: [
+                      BoxShadow(
+                          color: Colors.blueGrey[50],
+                          blurRadius: 2,
+                          spreadRadius: 2,
+                          offset: Offset(
+                              0, 4
+                          )
                       )
-                    )
-                  ]
+                    ]
                 ),
                 child: Row(
                   children: [
-
                   ],
                 ),
               ),
@@ -50,8 +49,8 @@ class _UniversitySocialMainPageState extends State<UniversitySocialMainPage> {
               child: Container(
                 height: 72,
                 decoration: BoxDecoration(
-                  color: Colors.red,
-                  borderRadius: BorderRadius.circular(42)
+                    color: Colors.red,
+                    borderRadius: BorderRadius.circular(42)
                 ),
                 child: Row(),
 
