@@ -54,7 +54,18 @@ class _UniversitySocialMainPageState extends State<UniversitySocialMainPage> {
                 ),
                 child: Row(
                   children: [
-                    
+                    IconButton(
+                      icon: Icon()Icons.home,
+                    ),
+                    IconButton(
+                      icon: Icons.home,
+                    ),
+                    IconButton(
+                      icon: Icons.home,
+                    ),
+                    IconButton(
+                      icon: Icons.home,
+                    ),
                   ],
                 ),
 
