@@ -29,7 +29,17 @@ class _UniversitySocialMainPageState extends State<UniversitySocialMainPage> {
                       BoxShadow(color: Colors.blueGrey[50], blurRadius: 2, spreadRadius: 2, offset: Offset(0, 4))
                     ]),
                 child: Row(
-                  children: [],
+                  children: [
+                    Expanded(
+                      child: Icon(Icons.arrow_back_rounded),
+                    ),
+                    Expanded(
+                      child: Center(child: Text("Inbox"))
+                    ),
+                    Expanded(
+                      child: Icon(Icons.info_outline),
+                    )
+                  ],
                 ),
               ),
             ),
