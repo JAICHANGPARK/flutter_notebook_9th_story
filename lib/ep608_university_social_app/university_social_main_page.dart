@@ -58,18 +58,24 @@ class _UniversitySocialMainPageState extends State<UniversitySocialMainPage> {
                     IconButton(
                       icon: Icon(Icons.home,)
                     ),
-                    IconButton(
-                        icon: Icon(Icons.home,)
-                    ),
-                    IconButton(
-                        icon: Icon(Icons.home,)
-                    ),
-                    Container(
-                      decoration: BoxDecoration(
-                        color: Colors.indigo
-                      ),
+                    Expanded(
                       child: IconButton(
                           icon: Icon(Icons.home,)
+                      ),
+                    ),
+                    Expanded(
+                      child: IconButton(
+                          icon: Icon(Icons.home,)
+                      ),
+                    ),
+                    Expanded(
+                      child: Container(
+                        decoration: BoxDecoration(
+                          color: Colors.indigo
+                        ),
+                        child: IconButton(
+                            icon: Icon(Icons.home,)
+                        ),
                       ),
                     ),
                   ],
