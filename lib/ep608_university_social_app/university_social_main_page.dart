@@ -39,7 +39,12 @@ class _UniversitySocialMainPageState extends State<UniversitySocialMainPage> {
               bottom: 16,
               child: Container(
                 height: 72,
-                decoration: BoxDecoration( borderRadius: BorderRadius.circular(42)),
+                decoration: BoxDecoration( color: Colors.white,borderRadius: BorderRadius.circular(42),
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.blueGrey[50]
+                  )
+                ]),
                 child: Row(
                   children: [
                     Expanded(
