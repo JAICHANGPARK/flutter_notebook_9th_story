@@ -74,8 +74,10 @@ class _UniversitySocialMainPageState extends State<UniversitySocialMainPage> {
                         decoration: BoxDecoration(
                           color: Colors.indigo
                         ),
-                        child: IconButton(
-                            icon: Icon(Icons.home,), onPressed: () {  },
+                        child: Center(
+                          child: IconButton(
+                              icon: Icon(Icons.home,), onPressed: () {  },
+                          ),
                         ),
                       ),
                     ),
