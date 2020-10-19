@@ -24,22 +24,12 @@ class _UniversitySocialMainPageState extends State<UniversitySocialMainPage> {
                     borderRadius: BorderRadius.only(
                       bottomLeft: Radius.circular(32),
                       bottomRight: Radius.circular(32),
-
                     ),
                     boxShadow: [
-                      BoxShadow(
-                          color: Colors.blueGrey[50],
-                          blurRadius: 2,
-                          spreadRadius: 2,
-                          offset: Offset(
-                              0, 4
-                          )
-                      )
-                    ]
-                ),
+                      BoxShadow(color: Colors.blueGrey[50], blurRadius: 2, spreadRadius: 2, offset: Offset(0, 4))
+                    ]),
                 child: Row(
-                  children: [
-                  ],
+                  children: [],
                 ),
               ),
             ),
@@ -49,46 +39,51 @@ class _UniversitySocialMainPageState extends State<UniversitySocialMainPage> {
               bottom: 16,
               child: Container(
                 height: 72,
-                decoration: BoxDecoration(
-                    color: Colors.red,
-                    borderRadius: BorderRadius.circular(42)
-                ),
+                decoration: BoxDecoration( borderRadius: BorderRadius.circular(42)),
                 child: Row(
                   children: [
                     Expanded(
                       child: IconButton(
-                        icon: Icon(Icons.home,), onPressed: () {  },
+                        icon: Icon(
+                          Icons.home,
+                        ),
+                        onPressed: () {},
                       ),
                     ),
                     Expanded(
                       child: IconButton(
-                          icon: Icon(Icons.home,), onPressed: () {  },
+                        icon: Icon(
+                          Icons.home,
+                        ),
+                        onPressed: () {},
                       ),
                     ),
                     Expanded(
                       child: IconButton(
-                          icon: Icon(Icons.home,), onPressed: () {  },
+                        icon: Icon(
+                          Icons.home,
+                        ),
+                        onPressed: () {},
                       ),
                     ),
                     Expanded(
                       child: Container(
                         decoration: BoxDecoration(
-                          color: Colors.indigo,
-                          borderRadius: BorderRadius.only(
-                            topRight: Radius.circular(32),
-                              bottomRight: Radius.circular(32)
-                          )
-                        ),
+                            color: Colors.indigo,
+                            borderRadius:
+                                BorderRadius.only(topRight: Radius.circular(32), bottomRight: Radius.circular(32))),
                         child: Center(
                           child: IconButton(
-                              icon: Icon(Icons.home,), onPressed: () {  },
+                            icon: Icon(
+                              Icons.home,
+                            ),
+                            onPressed: () {},
                           ),
                         ),
                       ),
                     ),
                   ],
                 ),
-
               ),
             )
           ],
