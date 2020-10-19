@@ -53,7 +53,6 @@ class _UniversitySocialMainPageState extends State<UniversitySocialMainPage> {
                     borderRadius: BorderRadius.circular(42)
                 ),
                 child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     Expanded(
                       child: IconButton(
@@ -67,7 +66,7 @@ class _UniversitySocialMainPageState extends State<UniversitySocialMainPage> {
                     ),
                     Expanded(
                       child: IconButton(
-                          icon: Icon(Icons.home,)
+                          icon: Icon(Icons.home,), onPressed: () {  },
                       ),
                     ),
                     Expanded(
@@ -76,7 +75,7 @@ class _UniversitySocialMainPageState extends State<UniversitySocialMainPage> {
                           color: Colors.indigo
                         ),
                         child: IconButton(
-                            icon: Icon(Icons.home,)
+                            icon: Icon(Icons.home,), onPressed: () {  },
                         ),
                       ),
                     ),
