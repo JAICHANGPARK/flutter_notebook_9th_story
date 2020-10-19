@@ -31,13 +31,11 @@ class _UniversitySocialMainPageState extends State<UniversitySocialMainPage> {
                 child: Row(
                   children: [
                     Expanded(
-                      child: Icon(Icons.arrow_back_rounded),
+                      child: Align(alignment: Alignment.centerLeft, child: Icon(Icons.arrow_back_rounded)),
                     ),
+                    Expanded(child: Center(child: Text("Inbox"))),
                     Expanded(
-                      child: Center(child: Text("Inbox"))
-                    ),
-                    Expanded(
-                      child: Icon(Icons.info_outline),
+                      child: Align(alignment: Alignment.centerRight, child: Icon(Icons.info_outline)),
                     )
                   ],
                 ),
@@ -49,14 +47,8 @@ class _UniversitySocialMainPageState extends State<UniversitySocialMainPage> {
               bottom: 16,
               child: Container(
                 height: 72,
-                decoration: BoxDecoration( color: Colors.white,borderRadius: BorderRadius.circular(42),
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.blueGrey[50],
-                    blurRadius: 2,
-                    spreadRadius: 2,
-                    offset: Offset(0, 4)
-                  )
+                decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(42), boxShadow: [
+                  BoxShadow(color: Colors.blueGrey[50], blurRadius: 2, spreadRadius: 2, offset: Offset(0, 4))
                 ]),
                 child: Row(
                   children: [
