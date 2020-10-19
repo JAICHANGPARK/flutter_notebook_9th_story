@@ -56,12 +56,12 @@ class _UniversitySocialMainPageState extends State<UniversitySocialMainPage> {
                   children: [
                     Expanded(
                       child: IconButton(
-                        icon: Icon(Icons.home,)
+                        icon: Icon(Icons.home,), onPressed: () {  },
                       ),
                     ),
                     Expanded(
                       child: IconButton(
-                          icon: Icon(Icons.home,)
+                          icon: Icon(Icons.home,), onPressed: () {  },
                       ),
                     ),
                     Expanded(
