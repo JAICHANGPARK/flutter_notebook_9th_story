@@ -42,7 +42,10 @@ class _UniversitySocialMainPageState extends State<UniversitySocialMainPage> {
                 decoration: BoxDecoration( color: Colors.white,borderRadius: BorderRadius.circular(42),
                 boxShadow: [
                   BoxShadow(
-                    color: Colors.blueGrey[50]
+                    color: Colors.blueGrey[50],
+                    blurRadius: 2,
+                    spreadRadius: 2,
+                    offset: Offset(0, 4)
                   )
                 ]),
                 child: Row(
