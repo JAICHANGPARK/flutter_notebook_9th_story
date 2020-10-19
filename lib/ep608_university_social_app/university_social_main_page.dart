@@ -19,12 +19,14 @@ class _UniversitySocialMainPageState extends State<UniversitySocialMainPage> {
               right: 0,
               child: Container(
                 height: 84,
+                padding: EdgeInsets.symmetric(horizontal: 24),
                 decoration: BoxDecoration(
                     color: Colors.white,
                     borderRadius: BorderRadius.only(
                       bottomLeft: Radius.circular(32),
                       bottomRight: Radius.circular(32),
                     ),
+
                     boxShadow: [
                       BoxShadow(color: Colors.blueGrey[50], blurRadius: 2, spreadRadius: 2, offset: Offset(0, 4))
                     ]),
