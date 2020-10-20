@@ -122,7 +122,57 @@ class _UniversitySocialMainPageState extends State<UniversitySocialMainPage> {
 class _BottomAppBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Container(
+      height: 72,
+      decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(42), boxShadow: [
+        BoxShadow(color: Colors.blueGrey[50], blurRadius: 2, spreadRadius: 2, offset: Offset(0, 4))
+      ]),
+      child: Row(
+        children: [
+          Expanded(
+            child: IconButton(
+              icon: Icon(
+                Icons.home,
+              ),
+              onPressed: () {},
+            ),
+          ),
+          Expanded(
+            child: IconButton(
+              icon: Icon(
+                Icons.local_fire_department,
+              ),
+              onPressed: () {},
+            ),
+          ),
+          Expanded(
+            child: IconButton(
+              icon: Icon(
+                Icons.favorite_border,
+              ),
+              onPressed: () {},
+            ),
+          ),
+          Expanded(
+            child: Container(
+              decoration: BoxDecoration(
+                  color: Colors.indigo,
+                  borderRadius:
+                  BorderRadius.only(topRight: Radius.circular(32), bottomRight: Radius.circular(32))),
+              child: Center(
+                child: IconButton(
+                  icon: Icon(
+                    Icons.chat_bubble_outline,
+                    color: Colors.white,
+                  ),
+                  onPressed: () {},
+                ),
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
   }
 }
 
