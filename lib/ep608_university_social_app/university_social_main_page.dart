@@ -58,7 +58,15 @@ class _UniversitySocialMainPageState extends State<UniversitySocialMainPage> {
                     child: Padding(
                       padding: const EdgeInsets.all(16.0),
                       child: Container(
-                        child: TextField(),
+                        decoration: BoxDecoration(
+                          color: Colors.grey[200],
+
+                        ),
+                        child: TextField(
+                          decoration: InputDecoration(
+                            
+                          ),
+                        ),
                       ),
                     ),
                   ),
