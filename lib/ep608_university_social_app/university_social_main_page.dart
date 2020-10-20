@@ -116,7 +116,11 @@ class _UniversitySocialMainPageState extends State<UniversitySocialMainPage> {
                                           )
                                         ],
                                       ),
-                                      Text("I will Attend the Devfest, but now..."),
+
+                                      Padding(
+                                        padding: const EdgeInsets.symmetric(vertical: 4),
+                                        child: Text("I will Attend the Devfest, but now..."),
+                                      ),
                                       Spacer(),
                                       Divider(
                                         color: Colors.grey,
