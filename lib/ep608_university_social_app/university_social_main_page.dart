@@ -89,7 +89,15 @@ class _UniversitySocialMainPageState extends State<UniversitySocialMainPage> {
                             children: [
                                 Expanded(
                                   flex: 3,
-                                  child: Placeholder(),
+                                  child: Container(
+                                    margin: EdgeInsets.only(right: 12, bottom: 8, top: 8),
+                                    decoration: BoxDecoration(
+                                      border: Border.all(
+                                        color: Colors.blueGrey,
+                                      ),
+                                      borderRadius: BorderRadius.circular(14)
+                                    ),
+                                  ),
                                 ),
                               Expanded(
                                 flex: 9,
