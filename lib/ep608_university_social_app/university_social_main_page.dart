@@ -62,6 +62,7 @@ class _UniversitySocialMainPageState extends State<UniversitySocialMainPage> {
                           color: Colors.blueGrey[50],
                           borderRadius: BorderRadius.circular(8)
                         ),
+                        padding: EdgeInsets.symmetric(horizontal: 16),
                         child: TextField(
                           decoration: InputDecoration(
                             border: InputBorder.none,
