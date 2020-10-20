@@ -64,7 +64,9 @@ class _UniversitySocialMainPageState extends State<UniversitySocialMainPage> {
                         ),
                         child: TextField(
                           decoration: InputDecoration(
-                            border: InputBorder.none
+                            border: InputBorder.none,
+                            hintText: "Search",
+                            suffixIcon:  Icon(Icons.search)
                           ),
                         ),
                       ),
