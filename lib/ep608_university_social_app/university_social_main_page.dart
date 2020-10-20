@@ -81,7 +81,6 @@ class _UniversitySocialMainPageState extends State<UniversitySocialMainPage> {
                       children: [
                         Container(
                           height: 84,
-
                           padding: EdgeInsets.symmetric(horizontal: 16),
                           child: Row(
                             children: [
@@ -99,21 +98,29 @@ class _UniversitySocialMainPageState extends State<UniversitySocialMainPage> {
                                 ),
                               Expanded(
                                 flex: 9,
-                                child: Column(
-                                  children: [
-                                    Row(
-                                      children: [
-                                        Text("Club 1"),
-                                        CircleAvatar(radius: 8,)
-                                      ],
-                                    ),
-                                    Text("I will Attend the Devfest, but now..."),
-                                    Spacer(),
-                                    Divider(
-                                      color: Colors.grey,
-                                      thickness: 1.3,
-                                    ),
-                                  ],
+                                child: Padding(
+                                  padding: const EdgeInsets.only(top: 16, ),
+                                  child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: [
+                                      Row(
+                                        children: [
+                                          Text("Club 1", style: TextStyle(
+                                            fontSize: 16
+                                          ),),
+                                          CircleAvatar(radius: 12,
+                                          child: Icon(Icons.check, size: 16,),
+                                          )
+                                        ],
+                                      ),
+                                      Text("I will Attend the Devfest, but now..."),
+                                      Spacer(),
+                                      Divider(
+                                        color: Colors.grey,
+                                        thickness: 1.3,
+                                      ),
+                                    ],
+                                  ),
                                 ),
                               ),
 
