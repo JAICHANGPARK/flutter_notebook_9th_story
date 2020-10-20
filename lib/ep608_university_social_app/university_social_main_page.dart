@@ -47,7 +47,7 @@ class _UniversitySocialMainPageState extends State<UniversitySocialMainPage> {
               ),
             ),
             Positioned(
-              top: 64,
+              top: 84,
               left: 0,
               right : 0,
               bottom:0,
@@ -57,7 +57,7 @@ class _UniversitySocialMainPageState extends State<UniversitySocialMainPage> {
               left: 16,
               right: 16,
               bottom: 16,
-              child:_BottomAppBar(),
+              child: _BottomAppBar(),
             )
           ],
 
