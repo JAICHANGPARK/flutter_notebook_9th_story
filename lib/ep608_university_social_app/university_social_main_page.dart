@@ -46,6 +46,7 @@ class _UniversitySocialMainPageState extends State<UniversitySocialMainPage> {
                 ),
               ),
             ),
+            Positioned(),
             Positioned(
               left: 16,
               right: 16,
