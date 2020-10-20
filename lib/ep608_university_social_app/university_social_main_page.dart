@@ -118,3 +118,42 @@ class _UniversitySocialMainPageState extends State<UniversitySocialMainPage> {
     );
   }
 }
+
+class _BottomAppBar extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container();
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
