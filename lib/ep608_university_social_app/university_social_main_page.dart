@@ -101,7 +101,15 @@ class _UniversitySocialMainPageState extends State<UniversitySocialMainPage> {
                                 ),
                               Expanded(
                                 flex: 9,
-                                child: Placeholder(),
+                                child: Column(
+                                  children: [
+                                    Row(
+                                      children: [],
+                                    ),
+                                    Spacer(),
+                                    Divider(),
+                                  ],
+                                ),
                               ),
 
                             ],
