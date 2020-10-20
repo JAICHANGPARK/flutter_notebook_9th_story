@@ -102,8 +102,12 @@ class _UniversitySocialMainPageState extends State<UniversitySocialMainPage> {
                                 child: Column(
                                   children: [
                                     Row(
-                                      children: [],
+                                      children: [
+                                        Text("Club 1"),
+                                        CircleAvatar(radius: 8,)
+                                      ],
                                     ),
+                                    Text("I will Attend the Devfest, but now..."),
                                     Spacer(),
                                     Divider(
                                       color: Colors.grey,
