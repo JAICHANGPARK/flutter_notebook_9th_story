@@ -108,8 +108,11 @@ class _UniversitySocialMainPageState extends State<UniversitySocialMainPage> {
                                           Text("Club 1", style: TextStyle(
                                             fontSize: 16
                                           ),),
-                                          CircleAvatar(radius: 12,
-                                          child: Icon(Icons.check, size: 16,),
+                                          Padding(
+                                            padding: const EdgeInsets.only(left: 16),
+                                            child: CircleAvatar(radius: 10,
+                                            child: Icon(Icons.check, size: 16,),
+                                            ),
                                           )
                                         ],
                                       ),
