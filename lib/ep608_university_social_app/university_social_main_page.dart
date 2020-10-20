@@ -81,16 +81,14 @@ class _UniversitySocialMainPageState extends State<UniversitySocialMainPage> {
                       children: [
                         Container(
                           height: 84,
-                          decoration: BoxDecoration(
-                            color: Colors.grey,
-                          ),
+
                           padding: EdgeInsets.symmetric(horizontal: 16),
                           child: Row(
                             children: [
                                 Expanded(
                                   flex: 3,
                                   child: Container(
-                                    margin: EdgeInsets.only(right: 12, bottom: 8, top: 8),
+                                    margin: EdgeInsets.only(right: 12, bottom: 16, top: 4),
                                     decoration: BoxDecoration(
                                       border: Border.all(
                                         color: Colors.blueGrey,
