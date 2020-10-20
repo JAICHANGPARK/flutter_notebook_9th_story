@@ -99,7 +99,7 @@ class _UniversitySocialMainPageState extends State<UniversitySocialMainPage> {
                               Expanded(
                                 flex: 9,
                                 child: Padding(
-                                  padding: const EdgeInsets.only(top: 16, ),
+                                  padding: const EdgeInsets.only(top: 10, ),
                                   child: Column(
                                     crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
@@ -118,8 +118,14 @@ class _UniversitySocialMainPageState extends State<UniversitySocialMainPage> {
                                       ),
 
                                       Padding(
-                                        padding: const EdgeInsets.symmetric(vertical: 4),
-                                        child: Text("I will Attend the Devfest, but now..."),
+                                        padding: const EdgeInsets.symmetric(vertical: 8),
+                                        child: Text("I will Attend the Devfest, but now...",
+                                        style: TextStyle(
+                                          fontSize: 12,
+                                          color: Colors.black54,
+                                          fontWeight: FontWeight.normal
+
+                                        ),),
                                       ),
                                       Spacer(),
                                       Divider(
