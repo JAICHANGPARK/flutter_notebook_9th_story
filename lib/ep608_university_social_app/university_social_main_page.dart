@@ -55,7 +55,9 @@ class _UniversitySocialMainPageState extends State<UniversitySocialMainPage> {
                 children: [
                   Expanded(
                     flex: 2,
-                    child: Placeholder(),
+                    child: Container(
+                      child: TextField(),
+                    ),
                   ),
                   Expanded(
                     flex: 15,
