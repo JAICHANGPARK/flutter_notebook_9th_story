@@ -47,7 +47,11 @@ class _UniversitySocialMainPageState extends State<UniversitySocialMainPage> {
               ),
             ),
             Positioned(
-                
+              top: 64,
+              left: 0,
+              right : 0,
+              bottom:0,
+              child: Placeholder(),
             ),
             Positioned(
               left: 16,
