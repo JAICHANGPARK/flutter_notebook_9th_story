@@ -84,14 +84,15 @@ class _UniversitySocialMainPageState extends State<UniversitySocialMainPage> {
                           decoration: BoxDecoration(
                             color: Colors.grey,
                           ),
+                          padding: EdgeInsets.symmetric(horizontal: 16),
                           child: Row(
                             children: [
                                 Expanded(
-                                  flex: 2,
+                                  flex: 3,
                                   child: Placeholder(),
                                 ),
                               Expanded(
-                                flex: 8,
+                                flex: 9,
                                 child: Placeholder(),
                               ),
 
