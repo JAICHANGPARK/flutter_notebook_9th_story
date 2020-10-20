@@ -77,7 +77,29 @@ class _UniversitySocialMainPageState extends State<UniversitySocialMainPage> {
                   ),
                   Expanded(
                     flex: 15,
-                    child: Placeholder(),
+                    child: ListView(
+                      children: [
+                        Container(
+                          height: 84,
+                          decoration: BoxDecoration(
+                            color: Colors.grey,
+                          ),
+                          child: Row(
+                            children: [
+                                Expanded(
+                                  flex: 2,
+                                  child: Placeholder(),
+                                ),
+                              Expanded(
+                                flex: 8,
+                                child: Placeholder(),
+                              ),
+
+                            ],
+                          ),
+                        )
+                      ],
+                    ),
                   )
                 ],
               ),
