@@ -105,7 +105,10 @@ class _UniversitySocialMainPageState extends State<UniversitySocialMainPage> {
                                       children: [],
                                     ),
                                     Spacer(),
-                                    Divider(),
+                                    Divider(
+                                      color: Colors.grey,
+                                      thickness: 1.3,
+                                    ),
                                   ],
                                 ),
                               ),
