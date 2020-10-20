@@ -26,7 +26,6 @@ class _UniversitySocialMainPageState extends State<UniversitySocialMainPage> {
                       bottomLeft: Radius.circular(32),
                       bottomRight: Radius.circular(32),
                     ),
-
                     boxShadow: [
                       BoxShadow(color: Colors.blueGrey[50], blurRadius: 2, spreadRadius: 2, offset: Offset(0, 4))
                     ]),
