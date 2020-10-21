@@ -87,6 +87,7 @@ class _UniversitySocialMainPageState extends State<UniversitySocialMainPage> {
                                           color: Colors.blueGrey,
                                         ),
                                         borderRadius: BorderRadius.circular(14)),
+                                    padding: EdgeInsets.only(left: 8, right: 8, top: 8, bottom: 8),
                                     child: Container(
                                       decoration: BoxDecoration(
                                         color: Colors.blueGrey
