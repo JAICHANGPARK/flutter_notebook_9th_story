@@ -74,14 +74,14 @@ class _UniversitySocialMainPageState extends State<UniversitySocialMainPage> {
                       child: ListView(
                         children: [
                           Container(
-                            height: 100,
+                            height: 94,
                             padding: EdgeInsets.symmetric(horizontal: 16),
                             child: Row(
                               children: [
                                 Expanded(
                                   flex: 3,
                                   child: Container(
-                                    margin: EdgeInsets.only(right: 12, bottom: 16, top: 4),
+                                    margin: EdgeInsets.only(right: 16, bottom: 16, top: 4),
                                     decoration: BoxDecoration(
                                         border: Border.all(
                                           color: Colors.blueGrey,
@@ -140,6 +140,10 @@ class _UniversitySocialMainPageState extends State<UniversitySocialMainPage> {
                                     ),
                                   ),
                                 ),
+                                Expanded(
+                                  flex: 2,
+                                  child: Placeholder(),
+                                )
                               ],
                             ),
                           )
