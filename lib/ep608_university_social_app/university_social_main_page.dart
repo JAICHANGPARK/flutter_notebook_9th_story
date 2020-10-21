@@ -311,6 +311,484 @@ class _UniversitySocialMainPageState extends State<UniversitySocialMainPage> {
 
                               ],
                             ),
+                          ),
+                          Container(
+                            height: 94,
+                            padding: EdgeInsets.symmetric(horizontal: 16),
+                            child: Row(
+                              children: [
+                                Expanded(
+                                  flex: 3,
+                                  child: Container(
+                                    margin: EdgeInsets.only(right: 16, bottom: 16, top: 4),
+                                    decoration: BoxDecoration(
+                                        border: Border.all(
+                                          color: Colors.blueGrey,
+                                        ),
+                                        borderRadius: BorderRadius.circular(14)),
+                                    padding: EdgeInsets.only(left: 8, right: 8, top: 8, bottom: 8),
+                                    child: Container(
+                                      decoration: BoxDecoration(
+                                          color: Colors.blueGrey,
+                                          borderRadius: BorderRadius.circular(4)
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                                Expanded(
+                                  flex: 9,
+                                  child: Padding(
+                                    padding: const EdgeInsets.only(
+                                      top: 10,
+                                    ),
+                                    child: Column(
+                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      children: [
+                                        Row(
+                                          children: [
+                                            Text(
+                                              "Club 1",
+                                              style: TextStyle(fontSize: 16),
+                                            ),
+                                            Padding(
+                                              padding: const EdgeInsets.only(left: 16),
+                                              child: CircleAvatar(
+                                                radius: 10,
+                                                child: Icon(
+                                                  Icons.check,
+                                                  size: 16,
+                                                ),
+                                              ),
+                                            ),
+                                            SizedBox(width: 48,),
+                                            CircleAvatar(radius: 12,),
+                                            CircleAvatar(radius: 12,),
+                                            CircleAvatar(radius: 12,),
+                                          ],
+                                        ),
+                                        Padding(
+                                          padding: const EdgeInsets.symmetric(vertical: 8),
+                                          child: Text(
+                                            "I will Attend the Devfest, but now...",
+                                            style: TextStyle(
+                                                fontSize: 13, color: Colors.black54, fontWeight: FontWeight.normal),
+                                          ),
+                                        ),
+                                        Spacer(),
+                                        Padding(
+                                          padding: const EdgeInsets.only(bottom: 8),
+                                          child: Divider(
+                                            color: Colors.grey,
+                                            thickness: 1.3,
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+
+                              ],
+                            ),
+                          ),
+                          Container(
+                            height: 94,
+                            padding: EdgeInsets.symmetric(horizontal: 16),
+                            child: Row(
+                              children: [
+                                Expanded(
+                                  flex: 3,
+                                  child: Container(
+                                    margin: EdgeInsets.only(right: 16, bottom: 16, top: 4),
+                                    decoration: BoxDecoration(
+                                        border: Border.all(
+                                          color: Colors.pink,
+                                        ),
+                                        borderRadius: BorderRadius.circular(14)),
+                                    padding: EdgeInsets.only(left: 8, right: 8, top: 8, bottom: 8),
+                                    child: Container(
+                                      decoration: BoxDecoration(
+                                          color: Colors.pink,
+                                          borderRadius: BorderRadius.circular(4)
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                                Expanded(
+                                  flex: 9,
+                                  child: Padding(
+                                    padding: const EdgeInsets.only(
+                                      top: 10,
+                                    ),
+                                    child: Column(
+                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      children: [
+                                        Row(
+                                          children: [
+                                            Text(
+                                              "Dream Walker",
+                                              style: TextStyle(fontSize: 16),
+                                            ),
+
+                                          ],
+                                        ),
+                                        Padding(
+                                          padding: const EdgeInsets.symmetric(vertical: 8),
+                                          child: Text(
+                                            "I will Attend the Devfest, but now...",
+                                            style: TextStyle(
+                                                fontSize: 13, color: Colors.black54, fontWeight: FontWeight.normal),
+                                          ),
+                                        ),
+                                        Spacer(),
+                                        Padding(
+                                          padding: const EdgeInsets.only(bottom: 8),
+                                          child: Divider(
+                                            color: Colors.grey,
+                                            thickness: 1.3,
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+
+                              ],
+                            ),
+                          ),
+                          Container(
+                            height: 94,
+                            padding: EdgeInsets.symmetric(horizontal: 16),
+                            child: Row(
+                              children: [
+                                Expanded(
+                                  flex: 3,
+                                  child: Container(
+                                    margin: EdgeInsets.only(right: 16, bottom: 16, top: 4),
+                                    decoration: BoxDecoration(
+                                        border: Border.all(
+                                          color: Colors.teal,
+                                        ),
+                                        borderRadius: BorderRadius.circular(14)),
+                                    padding: EdgeInsets.only(left: 8, right: 8, top: 8, bottom: 8),
+                                    child: Container(
+                                      decoration: BoxDecoration(
+                                          color: Colors.teal,
+                                          borderRadius: BorderRadius.circular(4)
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                                Expanded(
+                                  flex: 9,
+                                  child: Padding(
+                                    padding: const EdgeInsets.only(
+                                      top: 10,
+                                    ),
+                                    child: Column(
+                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      children: [
+                                        Row(
+                                          crossAxisAlignment: CrossAxisAlignment.center,
+                                          children: [
+                                            Expanded(
+                                              flex : 8,
+                                              child: Row(
+                                                children: [
+                                                  Text(
+                                                    "Sub Group",
+                                                    style: TextStyle(fontSize: 16),
+                                                  ),
+                                                  SizedBox(width: 48,),
+                                                  CircleAvatar(radius: 12,),
+                                                  CircleAvatar(radius: 12,),
+                                                  CircleAvatar(radius: 12,),
+                                                ],
+                                              ),
+                                            ),
+                                            Expanded(
+                                              flex: 2,
+                                              child: Center(
+                                                child: Container(
+                                                  height: 24,
+                                                  width: 80,
+                                                  decoration: BoxDecoration(
+                                                    color: Colors.red,
+                                                    borderRadius: BorderRadius.circular(4),
+                                                  ),
+                                                  child: Center(
+                                                    child: Text("NEW", style: TextStyle(
+                                                        color: Colors.white
+                                                    ),),
+                                                  ),
+                                                ),
+                                              ),
+
+                                            )
+
+                                          ],
+                                        ),
+                                        Padding(
+                                          padding: const EdgeInsets.symmetric(vertical: 8),
+                                          child: Text(
+                                            "I will Attend the Devfest, but now...",
+                                            style: TextStyle(
+                                                fontSize: 13, color: Colors.black54, fontWeight: FontWeight.normal),
+                                          ),
+                                        ),
+                                        Spacer(),
+                                        Padding(
+                                          padding: const EdgeInsets.only(bottom: 8),
+                                          child: Divider(
+                                            color: Colors.grey,
+                                            thickness: 1.3,
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+
+                              ],
+                            ),
+                          ),
+                          Container(
+                            height: 94,
+                            padding: EdgeInsets.symmetric(horizontal: 16),
+                            child: Row(
+                              children: [
+                                Expanded(
+                                  flex: 3,
+                                  child: Container(
+                                    margin: EdgeInsets.only(right: 16, bottom: 16, top: 4),
+                                    decoration: BoxDecoration(
+                                        border: Border.all(
+                                          color: Colors.blueGrey,
+                                        ),
+                                        borderRadius: BorderRadius.circular(14)),
+                                    padding: EdgeInsets.only(left: 8, right: 8, top: 8, bottom: 8),
+                                    child: Container(
+                                      decoration: BoxDecoration(
+                                          color: Colors.blueGrey,
+                                          borderRadius: BorderRadius.circular(4)
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                                Expanded(
+                                  flex: 9,
+                                  child: Padding(
+                                    padding: const EdgeInsets.only(
+                                      top: 10,
+                                    ),
+                                    child: Column(
+                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      children: [
+                                        Row(
+                                          children: [
+                                            Text(
+                                              "Club 1",
+                                              style: TextStyle(fontSize: 16),
+                                            ),
+                                            Padding(
+                                              padding: const EdgeInsets.only(left: 16),
+                                              child: CircleAvatar(
+                                                radius: 10,
+                                                child: Icon(
+                                                  Icons.check,
+                                                  size: 16,
+                                                ),
+                                              ),
+                                            ),
+                                            SizedBox(width: 48,),
+                                            CircleAvatar(radius: 12,),
+                                            CircleAvatar(radius: 12,),
+                                            CircleAvatar(radius: 12,),
+                                          ],
+                                        ),
+                                        Padding(
+                                          padding: const EdgeInsets.symmetric(vertical: 8),
+                                          child: Text(
+                                            "I will Attend the Devfest, but now...",
+                                            style: TextStyle(
+                                                fontSize: 13, color: Colors.black54, fontWeight: FontWeight.normal),
+                                          ),
+                                        ),
+                                        Spacer(),
+                                        Padding(
+                                          padding: const EdgeInsets.only(bottom: 8),
+                                          child: Divider(
+                                            color: Colors.grey,
+                                            thickness: 1.3,
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+
+                              ],
+                            ),
+                          ),
+                          Container(
+                            height: 94,
+                            padding: EdgeInsets.symmetric(horizontal: 16),
+                            child: Row(
+                              children: [
+                                Expanded(
+                                  flex: 3,
+                                  child: Container(
+                                    margin: EdgeInsets.only(right: 16, bottom: 16, top: 4),
+                                    decoration: BoxDecoration(
+                                        border: Border.all(
+                                          color: Colors.pink,
+                                        ),
+                                        borderRadius: BorderRadius.circular(14)),
+                                    padding: EdgeInsets.only(left: 8, right: 8, top: 8, bottom: 8),
+                                    child: Container(
+                                      decoration: BoxDecoration(
+                                          color: Colors.pink,
+                                          borderRadius: BorderRadius.circular(4)
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                                Expanded(
+                                  flex: 9,
+                                  child: Padding(
+                                    padding: const EdgeInsets.only(
+                                      top: 10,
+                                    ),
+                                    child: Column(
+                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      children: [
+                                        Row(
+                                          children: [
+                                            Text(
+                                              "Dream Walker",
+                                              style: TextStyle(fontSize: 16),
+                                            ),
+
+                                          ],
+                                        ),
+                                        Padding(
+                                          padding: const EdgeInsets.symmetric(vertical: 8),
+                                          child: Text(
+                                            "I will Attend the Devfest, but now...",
+                                            style: TextStyle(
+                                                fontSize: 13, color: Colors.black54, fontWeight: FontWeight.normal),
+                                          ),
+                                        ),
+                                        Spacer(),
+                                        Padding(
+                                          padding: const EdgeInsets.only(bottom: 8),
+                                          child: Divider(
+                                            color: Colors.grey,
+                                            thickness: 1.3,
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+
+                              ],
+                            ),
+                          ),
+                          Container(
+                            height: 94,
+                            padding: EdgeInsets.symmetric(horizontal: 16),
+                            child: Row(
+                              children: [
+                                Expanded(
+                                  flex: 3,
+                                  child: Container(
+                                    margin: EdgeInsets.only(right: 16, bottom: 16, top: 4),
+                                    decoration: BoxDecoration(
+                                        border: Border.all(
+                                          color: Colors.teal,
+                                        ),
+                                        borderRadius: BorderRadius.circular(14)),
+                                    padding: EdgeInsets.only(left: 8, right: 8, top: 8, bottom: 8),
+                                    child: Container(
+                                      decoration: BoxDecoration(
+                                          color: Colors.teal,
+                                          borderRadius: BorderRadius.circular(4)
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                                Expanded(
+                                  flex: 9,
+                                  child: Padding(
+                                    padding: const EdgeInsets.only(
+                                      top: 10,
+                                    ),
+                                    child: Column(
+                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      children: [
+                                        Row(
+                                          crossAxisAlignment: CrossAxisAlignment.center,
+                                          children: [
+                                            Expanded(
+                                              flex : 8,
+                                              child: Row(
+                                                children: [
+                                                  Text(
+                                                    "Sub Group",
+                                                    style: TextStyle(fontSize: 16),
+                                                  ),
+                                                  SizedBox(width: 48,),
+                                                  CircleAvatar(radius: 12,),
+                                                  CircleAvatar(radius: 12,),
+                                                  CircleAvatar(radius: 12,),
+                                                ],
+                                              ),
+                                            ),
+                                            Expanded(
+                                              flex: 2,
+                                              child: Center(
+                                                child: Container(
+                                                  height: 24,
+                                                  width: 80,
+                                                  decoration: BoxDecoration(
+                                                    color: Colors.red,
+                                                    borderRadius: BorderRadius.circular(4),
+                                                  ),
+                                                  child: Center(
+                                                    child: Text("NEW", style: TextStyle(
+                                                        color: Colors.white
+                                                    ),),
+                                                  ),
+                                                ),
+                                              ),
+
+                                            )
+
+                                          ],
+                                        ),
+                                        Padding(
+                                          padding: const EdgeInsets.symmetric(vertical: 8),
+                                          child: Text(
+                                            "I will Attend the Devfest, but now...",
+                                            style: TextStyle(
+                                                fontSize: 13, color: Colors.black54, fontWeight: FontWeight.normal),
+                                          ),
+                                        ),
+                                        Spacer(),
+                                        Padding(
+                                          padding: const EdgeInsets.only(bottom: 8),
+                                          child: Divider(
+                                            color: Colors.grey,
+                                            thickness: 1.3,
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+
+                              ],
+                            ),
                           )
                         ],
                       ),
