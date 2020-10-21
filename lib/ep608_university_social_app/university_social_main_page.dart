@@ -157,13 +157,7 @@ class _UniversitySocialMainPageState extends State<UniversitySocialMainPage> {
         ),
       ),
 
-      floatingActionButton: Padding(
-          padding: EdgeInsets.only( bottom: 120),
-          child: FloatingActionButton(
-            backgroundColor: Colors.indigo,
-            onPressed: () {  },
-            child: Icon(Icons.add),
-          )),
+      floatingActionButton: _AppFAB()
     );
   }
 }
@@ -171,7 +165,13 @@ class _UniversitySocialMainPageState extends State<UniversitySocialMainPage> {
 class _AppFAB extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Padding(
+        padding: EdgeInsets.only( bottom: 120),
+        child: FloatingActionButton(
+          backgroundColor: Colors.indigo,
+          onPressed: () {  },
+          child: Icon(Icons.add),
+        ));
   }
 }
 
