@@ -147,6 +147,81 @@ class _UniversitySocialMainPageState extends State<UniversitySocialMainPage> {
 
                               ],
                             ),
+                          ),
+                          Container(
+                            height: 94,
+                            padding: EdgeInsets.symmetric(horizontal: 16),
+                            child: Row(
+                              children: [
+                                Expanded(
+                                  flex: 3,
+                                  child: Container(
+                                    margin: EdgeInsets.only(right: 16, bottom: 16, top: 4),
+                                    decoration: BoxDecoration(
+                                        border: Border.all(
+                                          color: Colors.blueGrey,
+                                        ),
+                                        borderRadius: BorderRadius.circular(14)),
+                                    padding: EdgeInsets.only(left: 8, right: 8, top: 8, bottom: 8),
+                                    child: Container(
+                                      decoration: BoxDecoration(
+                                          color: Colors.blueGrey,
+                                          borderRadius: BorderRadius.circular(4)
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                                Expanded(
+                                  flex: 9,
+                                  child: Padding(
+                                    padding: const EdgeInsets.only(
+                                      top: 10,
+                                    ),
+                                    child: Column(
+                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      children: [
+                                        Row(
+                                          children: [
+                                            Text(
+                                              "Club 1",
+                                              style: TextStyle(fontSize: 16),
+                                            ),
+                                            Padding(
+                                              padding: const EdgeInsets.only(left: 16),
+                                              child: CircleAvatar(
+                                                radius: 10,
+                                                child: Icon(
+                                                  Icons.check,
+                                                  size: 16,
+                                                ),
+                                              ),
+                                            ),
+                                            SizedBox(width: 48,),
+                                            CircleAvatar(radius: 12,),
+                                            CircleAvatar(radius: 12,),
+                                            CircleAvatar(radius: 12,),
+                                          ],
+                                        ),
+                                        Padding(
+                                          padding: const EdgeInsets.symmetric(vertical: 8),
+                                          child: Text(
+                                            "I will Attend the Devfest, but now...",
+                                            style: TextStyle(
+                                                fontSize: 13, color: Colors.black54, fontWeight: FontWeight.normal),
+                                          ),
+                                        ),
+                                        Spacer(),
+                                        Divider(
+                                          color: Colors.grey,
+                                          thickness: 1.3,
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+
+                              ],
+                            ),
                           )
                         ],
                       ),
