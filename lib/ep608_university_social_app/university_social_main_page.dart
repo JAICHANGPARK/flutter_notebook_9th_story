@@ -168,6 +168,14 @@ class _UniversitySocialMainPageState extends State<UniversitySocialMainPage> {
   }
 }
 
+class _AppFAB extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container();
+  }
+}
+
+
 class _BottomAppBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
