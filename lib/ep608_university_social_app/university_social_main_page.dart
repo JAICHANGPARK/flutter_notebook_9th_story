@@ -120,7 +120,11 @@ class _UniversitySocialMainPageState extends State<UniversitySocialMainPage> {
                                                   size: 16,
                                                 ),
                                               ),
-                                            )
+                                            ),
+                                            SizedBox(width: 64,),
+                                            CircleAvatar(radius: 12,),
+                                            CircleAvatar(radius: 12,),
+                                            CircleAvatar(radius: 12,),
                                           ],
                                         ),
                                         Padding(
@@ -140,10 +144,7 @@ class _UniversitySocialMainPageState extends State<UniversitySocialMainPage> {
                                     ),
                                   ),
                                 ),
-                                Expanded(
-                                  flex: 2,
-                                  child: Placeholder(),
-                                )
+
                               ],
                             ),
                           )
