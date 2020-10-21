@@ -183,7 +183,7 @@ class _UniversitySocialMainPageState extends State<UniversitySocialMainPage> {
                                         Row(
                                           children: [
                                             Text(
-                                              "Club 1",
+                                              "Dream Walker",
                                               style: TextStyle(fontSize: 16),
                                             ),
                                             Padding(
@@ -196,10 +196,6 @@ class _UniversitySocialMainPageState extends State<UniversitySocialMainPage> {
                                                 ),
                                               ),
                                             ),
-                                            SizedBox(width: 48,),
-                                            CircleAvatar(radius: 12,),
-                                            CircleAvatar(radius: 12,),
-                                            CircleAvatar(radius: 12,),
                                           ],
                                         ),
                                         Padding(
