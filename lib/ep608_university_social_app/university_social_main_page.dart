@@ -249,6 +249,7 @@ class _UniversitySocialMainPageState extends State<UniversitySocialMainPage> {
                                       crossAxisAlignment: CrossAxisAlignment.start,
                                       children: [
                                         Row(
+                                          crossAxisAlignment: CrossAxisAlignment.center,
                                           children: [
                                             Expanded(
                                               flex : 8,
@@ -267,12 +268,14 @@ class _UniversitySocialMainPageState extends State<UniversitySocialMainPage> {
                                             ),
                                             Expanded(
                                               flex: 2,
-                                              child: Container(
-                                                height: 24,
-                                                width: 80,
-                                                decoration: BoxDecoration(
-                                                  color: Colors.red,
-
+                                              child: Center(
+                                                child: Container(
+                                                  height: 24,
+                                                  width: 80,
+                                                  decoration: BoxDecoration(
+                                                    color: Colors.red,
+                                                    borderRadius: BorderRadius.circular(8),
+                                                  ),
                                                 ),
                                               ),
 
