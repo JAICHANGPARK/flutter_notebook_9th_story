@@ -128,7 +128,7 @@ class _UniversitySocialMainPageState extends State<UniversitySocialMainPage> {
                                           child: Text(
                                             "I will Attend the Devfest, but now...",
                                             style: TextStyle(
-                                                fontSize: 12, color: Colors.black54, fontWeight: FontWeight.normal),
+                                                fontSize: 13, color: Colors.black54, fontWeight: FontWeight.normal),
                                           ),
                                         ),
                                         Spacer(),
