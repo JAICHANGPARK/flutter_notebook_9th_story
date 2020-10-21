@@ -215,6 +215,71 @@ class _UniversitySocialMainPageState extends State<UniversitySocialMainPage> {
 
                               ],
                             ),
+                          ),
+                          Container(
+                            height: 94,
+                            padding: EdgeInsets.symmetric(horizontal: 16),
+                            child: Row(
+                              children: [
+                                Expanded(
+                                  flex: 3,
+                                  child: Container(
+                                    margin: EdgeInsets.only(right: 16, bottom: 16, top: 4),
+                                    decoration: BoxDecoration(
+                                        border: Border.all(
+                                          color: Colors.teal,
+                                        ),
+                                        borderRadius: BorderRadius.circular(14)),
+                                    padding: EdgeInsets.only(left: 8, right: 8, top: 8, bottom: 8),
+                                    child: Container(
+                                      decoration: BoxDecoration(
+                                          color: Colors.pink,
+                                          borderRadius: BorderRadius.circular(4)
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                                Expanded(
+                                  flex: 9,
+                                  child: Padding(
+                                    padding: const EdgeInsets.only(
+                                      top: 10,
+                                    ),
+                                    child: Column(
+                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      children: [
+                                        Row(
+                                          children: [
+                                            Text(
+                                              "Sub Group",
+                                              style: TextStyle(fontSize: 16),
+                                            ),
+
+                                          ],
+                                        ),
+                                        Padding(
+                                          padding: const EdgeInsets.symmetric(vertical: 8),
+                                          child: Text(
+                                            "I will Attend the Devfest, but now...",
+                                            style: TextStyle(
+                                                fontSize: 13, color: Colors.black54, fontWeight: FontWeight.normal),
+                                          ),
+                                        ),
+                                        Spacer(),
+                                        Padding(
+                                          padding: const EdgeInsets.only(bottom: 8),
+                                          child: Divider(
+                                            color: Colors.grey,
+                                            thickness: 1.3,
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+
+                              ],
+                            ),
                           )
                         ],
                       ),
