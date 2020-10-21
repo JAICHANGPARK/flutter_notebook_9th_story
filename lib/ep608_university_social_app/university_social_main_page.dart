@@ -159,13 +159,13 @@ class _UniversitySocialMainPageState extends State<UniversitySocialMainPage> {
                                     margin: EdgeInsets.only(right: 16, bottom: 16, top: 4),
                                     decoration: BoxDecoration(
                                         border: Border.all(
-                                          color: Colors.blueGrey,
+                                          color: Colors.pink,
                                         ),
                                         borderRadius: BorderRadius.circular(14)),
                                     padding: EdgeInsets.only(left: 8, right: 8, top: 8, bottom: 8),
                                     child: Container(
                                       decoration: BoxDecoration(
-                                          color: Colors.blueGrey,
+                                          color: Colors.pink,
                                           borderRadius: BorderRadius.circular(4)
                                       ),
                                     ),
@@ -186,16 +186,7 @@ class _UniversitySocialMainPageState extends State<UniversitySocialMainPage> {
                                               "Dream Walker",
                                               style: TextStyle(fontSize: 16),
                                             ),
-                                            Padding(
-                                              padding: const EdgeInsets.only(left: 16),
-                                              child: CircleAvatar(
-                                                radius: 10,
-                                                child: Icon(
-                                                  Icons.check,
-                                                  size: 16,
-                                                ),
-                                              ),
-                                            ),
+
                                           ],
                                         ),
                                         Padding(
@@ -207,9 +198,12 @@ class _UniversitySocialMainPageState extends State<UniversitySocialMainPage> {
                                           ),
                                         ),
                                         Spacer(),
-                                        Divider(
-                                          color: Colors.grey,
-                                          thickness: 1.3,
+                                        Padding(
+                                          padding: const EdgeInsets.only(bottom: 8),
+                                          child: Divider(
+                                            color: Colors.grey,
+                                            thickness: 1.3,
+                                          ),
                                         ),
                                       ],
                                     ),
