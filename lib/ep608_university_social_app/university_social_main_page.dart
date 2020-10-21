@@ -136,9 +136,12 @@ class _UniversitySocialMainPageState extends State<UniversitySocialMainPage> {
                                           ),
                                         ),
                                         Spacer(),
-                                        Divider(
-                                          color: Colors.grey,
-                                          thickness: 1.3,
+                                        Padding(
+                                          padding: const EdgeInsets.only(bottom: 8),
+                                          child: Divider(
+                                            color: Colors.grey,
+                                            thickness: 1.3,
+                                          ),
                                         ),
                                       ],
                                     ),
