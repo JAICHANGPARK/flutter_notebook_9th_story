@@ -274,7 +274,12 @@ class _UniversitySocialMainPageState extends State<UniversitySocialMainPage> {
                                                   width: 80,
                                                   decoration: BoxDecoration(
                                                     color: Colors.red,
-                                                    borderRadius: BorderRadius.circular(8),
+                                                    borderRadius: BorderRadius.circular(4),
+                                                  ),
+                                                  child: Center(
+                                                    child: Text("NEW", style: TextStyle(
+                                                      color: Colors.white
+                                                    ),),
                                                   ),
                                                 ),
                                               ),
