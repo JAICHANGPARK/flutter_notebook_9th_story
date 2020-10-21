@@ -74,7 +74,7 @@ class _UniversitySocialMainPageState extends State<UniversitySocialMainPage> {
                       child: ListView(
                         children: [
                           Container(
-                            height: 84,
+                            height: 100,
                             padding: EdgeInsets.symmetric(horizontal: 16),
                             child: Row(
                               children: [
@@ -90,7 +90,8 @@ class _UniversitySocialMainPageState extends State<UniversitySocialMainPage> {
                                     padding: EdgeInsets.only(left: 8, right: 8, top: 8, bottom: 8),
                                     child: Container(
                                       decoration: BoxDecoration(
-                                        color: Colors.blueGrey
+                                        color: Colors.blueGrey,
+                                        borderRadius: BorderRadius.circular(4)
                                       ),
                                     ),
                                   ),
