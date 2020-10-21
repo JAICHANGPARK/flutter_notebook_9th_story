@@ -250,9 +250,20 @@ class _UniversitySocialMainPageState extends State<UniversitySocialMainPage> {
                                       children: [
                                         Row(
                                           children: [
-                                            Text(
-                                              "Sub Group",
-                                              style: TextStyle(fontSize: 16),
+                                            Expanded(
+                                              flex : 8,
+                                              child: Row(
+                                                children: [
+                                                  Text(
+                                                    "Sub Group",
+                                                    style: TextStyle(fontSize: 16),
+                                                  ),
+                                                  SizedBox(width: 48,),
+                                                  CircleAvatar(radius: 12,),
+                                                  CircleAvatar(radius: 12,),
+                                                  CircleAvatar(radius: 12,),
+                                                ],
+                                              ),
                                             ),
 
                                           ],
