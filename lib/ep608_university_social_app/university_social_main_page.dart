@@ -121,7 +121,7 @@ class _UniversitySocialMainPageState extends State<UniversitySocialMainPage> {
                                                 ),
                                               ),
                                             ),
-                                            SizedBox(width: 64,),
+                                            SizedBox(width: 48,),
                                             CircleAvatar(radius: 12,),
                                             CircleAvatar(radius: 12,),
                                             CircleAvatar(radius: 12,),
