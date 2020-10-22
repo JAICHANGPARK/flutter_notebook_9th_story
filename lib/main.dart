@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'ep608_university_social_app/university_social_app.dart';
+import 'ep612_newonce_app/new_once_app.dart';
 
 main() {
-  runApp(UniversitySocialApp());
+  runApp(NewOnceApp());
 }
