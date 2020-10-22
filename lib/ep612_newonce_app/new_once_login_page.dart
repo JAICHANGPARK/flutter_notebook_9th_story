@@ -26,6 +26,7 @@ class NewOnceLoginPage extends StatelessWidget {
                   ),
                   Expanded(
                     child: Container(
+                      margin: EdgeInsets.only(left: 24),
                       decoration: BoxDecoration(
                         color: Colors.white,
                         boxShadow: [
