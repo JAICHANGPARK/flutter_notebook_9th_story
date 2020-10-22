@@ -26,13 +26,13 @@ class NewOnceLoginPage extends StatelessWidget {
                   ),
                   Expanded(
                     child: Container(
-                      margin: EdgeInsets.only(left: 24),
+                      margin: EdgeInsets.only(left: 48, bottom: 16, top: 16, right: 24),
                       decoration: BoxDecoration(
                         color: Colors.white,
                         boxShadow: [
                           BoxShadow(
                             color: Colors.black,
-                            offset: Offset(2,2)
+                            offset: Offset(3,3)
                           )
                         ]
                       ),
