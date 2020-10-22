@@ -16,7 +16,7 @@ class NewOnceLoginPage extends StatelessWidget {
 
                   ),
                   Expanded(
-                    child: Placeholder(),
+                    child: Text("newonce", style: TextStyle(),),
 
                   ),
                   Expanded(
