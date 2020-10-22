@@ -13,16 +13,16 @@ class NewOnceLoginPage extends StatelessWidget {
               child: Row(
                 children: [
                   Expanded(
-                    child: Placeholder(),
-
+                    child: SizedBox()
                   ),
                   Expanded(
-                    child: Text("newonce", style: GoogleFonts.abrilFatface(
-                      color: Colors.blueAccent,
-                      fontWeight: FontWeight.bold,
-                      fontSize: 24
-                    ))
-
+                    child: Center(
+                      child: Text("newonce", style: GoogleFonts.abrilFatface(
+                        color: Colors.blueAccent,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 24
+                      )),
+                    )
                   ),
                   Expanded(
                     child: Placeholder(),
