@@ -32,7 +32,8 @@ class NewOnceLoginPage extends StatelessWidget {
                         boxShadow: [
                           BoxShadow(
                             color: Colors.black,
-                            offset: Offset(3,3)
+                            spreadRadius: 2,
+                            offset: Offset(2,2)
                           )
                         ]
                       ),
