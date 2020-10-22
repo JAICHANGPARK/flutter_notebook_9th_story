@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class NewOnceLoginPage extends StatelessWidget {
   @override
@@ -16,7 +17,11 @@ class NewOnceLoginPage extends StatelessWidget {
 
                   ),
                   Expanded(
-                    child: Text("newonce", style: TextStyle(),),
+                    child: Text("newonce", style: GoogleFonts.abrilFatface(
+                      color: Colors.blueAccent,
+                      fontWeight: FontWeight.bold,
+                      
+                    ))
 
                   ),
                   Expanded(
