@@ -25,7 +25,11 @@ class NewOnceLoginPage extends StatelessWidget {
                     )
                   ),
                   Expanded(
-                    child: Placeholder(),
+                    child: Container(
+                      child: Center(
+                        child: Icon(Icons.clear),
+                      ),
+                    ),
 
                   )
                 ],
