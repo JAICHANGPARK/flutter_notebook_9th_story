@@ -9,7 +9,11 @@ class NewOnceLoginPage extends StatelessWidget {
           children: [
             Expanded(
               flex: 2,
-              child: Placeholder(),
+              child: Row(
+                children: [
+                  
+                ],
+              ),
             ),
             Expanded(
               flex: 2,
