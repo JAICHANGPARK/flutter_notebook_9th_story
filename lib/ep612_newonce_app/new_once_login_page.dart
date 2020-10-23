@@ -164,7 +164,12 @@ class NewOnceLoginPage extends StatelessWidget {
                   ),
                   Expanded(
                     flex: 2,
-                    child: Placeholder(),
+                    child: Row(
+                      children: [
+                        Text("Masz juz konto?"),
+                        Text("Zalohuj sie!"),
+                      ],
+                    ),
                   )
                 ],
               ),
