@@ -62,7 +62,7 @@ class NewOnceLoginPage extends StatelessWidget {
                         child: Container(
                           decoration: BoxDecoration(
                               color: Colors.white,
-                              border: Border.all(color: Colors.black, width: 2),
+                              // border: Border.all(color: Colors.black, width: 2),
                               boxShadow: [BoxShadow(color: Colors.black, spreadRadius: 1, offset: Offset(1, 2))]),
                           child: Row(
                             children: [
@@ -70,7 +70,8 @@ class NewOnceLoginPage extends StatelessWidget {
                                 child: Container(
                                   decoration: BoxDecoration(
                                     border: Border.all(
-                                      color: Colors.black
+                                      color: Colors.black,
+                                      width: 2
                                     )
                                   ),
                                   child: Center(
