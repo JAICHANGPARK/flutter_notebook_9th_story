@@ -98,7 +98,7 @@ class NewOnceLoginPage extends StatelessWidget {
                                       width: 8,
                                     ),
                                     Text(
-                                      "FB",
+                                      "GOOGLE",
                                       style: TextStyle(fontWeight: FontWeight.bold),
                                     )
                                   ],
@@ -117,7 +117,7 @@ class NewOnceLoginPage extends StatelessWidget {
                                       width: 8,
                                     ),
                                     Text(
-                                      "FB",
+                                      "TWITTER",
                                       style: TextStyle(fontWeight: FontWeight.bold),
                                     )
                                   ],
