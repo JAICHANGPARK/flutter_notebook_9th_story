@@ -18,7 +18,7 @@ class NewOnceLoginPage extends StatelessWidget {
                     child: Text(
                       "newonce",
                       style:
-                          GoogleFonts.abrilFatface(color: Colors.blueAccent, fontWeight: FontWeight.bold, fontSize: 24),
+                          GoogleFonts.abrilFatface(color: Colors.blueAccent, fontWeight: FontWeight.bold, fontSize: 28),
                     ),
                   )),
                   Expanded(
