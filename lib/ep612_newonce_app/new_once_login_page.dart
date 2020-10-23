@@ -154,10 +154,12 @@ class NewOnceLoginPage extends StatelessWidget {
                   Expanded(
                     flex: 4,
                     child: Container(
-                      margin: EdgeInsets.symmetric(horizontal: 16),
-                      decoration: BoxDecoration(
-                        color: Colors.blueAccent
+                      margin: EdgeInsets.symmetric(
+                        horizontal: 16,
+                        vertical: 4,
                       ),
+                      decoration: BoxDecoration(
+                          color: Colors.blueAccent, boxShadow: [BoxShadow(color: Colors.black, offset: Offset(2, 3))]),
                     ),
                   ),
                   Expanded(
