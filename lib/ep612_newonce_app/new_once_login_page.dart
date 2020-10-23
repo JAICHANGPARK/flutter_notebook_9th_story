@@ -40,7 +40,7 @@ class NewOnceLoginPage extends StatelessWidget {
               child: Container(),
             ),
             Expanded(
-                flex: 4,
+                flex: 5,
                 child: Padding(
                   padding: const EdgeInsets.all(16.0),
                   child: Column(
@@ -103,7 +103,7 @@ class NewOnceLoginPage extends StatelessWidget {
                   ),
                 )),
             Expanded(
-              flex: 10,
+              flex: 12,
               child: Placeholder(),
             ),
             Expanded(
