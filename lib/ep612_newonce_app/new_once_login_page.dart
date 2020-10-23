@@ -56,7 +56,7 @@ class NewOnceLoginPage extends StatelessWidget {
                         height: 8,
                       ),
                       Expanded(
-                        flex: 4,
+                        flex: 5,
                         child: Container(
                           decoration: BoxDecoration(
                               color: Colors.white,
@@ -144,11 +144,11 @@ class NewOnceLoginPage extends StatelessWidget {
                   ),
                 )),
             Expanded(
-              flex: 11,
+              flex: 15,
               child: Placeholder(),
             ),
             Expanded(
-              flex: 3,
+              flex: 4,
               child: Column(
                 children: [
                   Expanded(
@@ -168,7 +168,7 @@ class NewOnceLoginPage extends StatelessWidget {
               ),
             ),
             Expanded(
-              flex: 2,
+              flex: 1,
               child: Container(),
             ),
           ],
