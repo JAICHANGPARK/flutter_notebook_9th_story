@@ -52,7 +52,11 @@ class NewOnceLoginPage extends StatelessWidget {
             ),
             Expanded(
               flex: 2,
-              child: Placeholder(),
+              child: Column(
+                children: [
+                  Text("Zaloz konto za pomoca")
+                ],
+              )
             ),
             Expanded(
               flex: 5,
