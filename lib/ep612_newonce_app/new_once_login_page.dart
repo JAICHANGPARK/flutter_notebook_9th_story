@@ -21,7 +21,8 @@ class NewOnceLoginPage extends StatelessWidget {
                             color: Colors.blueAccent,
                             fontWeight: FontWeight.bold,
                             fontSize: 24
-                        )),
+                        ),
+                        ),
                       )
                   ),
                   Expanded(
@@ -51,12 +52,17 @@ class NewOnceLoginPage extends StatelessWidget {
               child: Container(),
             ),
             Expanded(
-              flex: 3,
+              flex: 2,
               child: Column(
                 children: [
                   Expanded(
                     flex: 1,
-                      child: Text("Zaloz konto za pomoca")),
+                      child: Text("Zaloz konto za pomoca",
+                          , style: GoogleFonts.abrilFatface(
+                          color: Colors.blueAccent,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 24
+                      ),)),
                   Expanded(
                     flex: 2,
                     child: Container(
