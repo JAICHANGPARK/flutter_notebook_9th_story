@@ -59,10 +59,12 @@ class NewOnceLoginPage extends StatelessWidget {
                         child: Container(
                           decoration: BoxDecoration(
                             color: Colors.white,
+                            border: Border.all(color: Colors.black,
+                            width: 2),
                             boxShadow: [
                               BoxShadow(
                                 color: Colors.black,
-                                spreadRadius: 2,
+                                spreadRadius: 1,
                                 offset: Offset(
                                   2,4
                                 )
