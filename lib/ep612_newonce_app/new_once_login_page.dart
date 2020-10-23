@@ -52,27 +52,18 @@ class NewOnceLoginPage extends StatelessWidget {
                           flex: 3,
                           child: Text(
                             "Zaloz konto za pomoca",
-                            style: GoogleFonts.abrilFatface(
-                             fontWeight: FontWeight.bold, fontSize: 26),
+                            style: GoogleFonts.abrilFatface(fontWeight: FontWeight.bold, fontSize: 26),
                           )),
-                      SizedBox(height: 8,),
+                      SizedBox(
+                        height: 8,
+                      ),
                       Expanded(
                         flex: 4,
                         child: Container(
                           decoration: BoxDecoration(
-                            color: Colors.white,
-                            border: Border.all(color: Colors.black,
-                            width: 2),
-                            boxShadow: [
-                              BoxShadow(
-                                color: Colors.black,
-                                spreadRadius: 1,
-                                offset: Offset(
-                                  1,2
-                                )
-                              )
-                            ]
-                          ),
+                              color: Colors.white,
+                              border: Border.all(color: Colors.black, width: 2),
+                              boxShadow: [BoxShadow(color: Colors.black, spreadRadius: 1, offset: Offset(1, 2))]),
                           child: Row(
                             children: [
                               Expanded(
@@ -84,10 +75,13 @@ class NewOnceLoginPage extends StatelessWidget {
                                       radius: 12,
                                       backgroundColor: Colors.black,
                                     ),
-                                    SizedBox(width: 8,),
-                                    Text("FB", style: TextStyle(
-                                      fontWeight: FontWeight.bold
-                                    ),)
+                                    SizedBox(
+                                      width: 8,
+                                    ),
+                                    Text(
+                                      "FB",
+                                      style: TextStyle(fontWeight: FontWeight.bold),
+                                    )
                                   ],
                                 ),
                               ),
@@ -100,16 +94,35 @@ class NewOnceLoginPage extends StatelessWidget {
                                       radius: 12,
                                       backgroundColor: Colors.black,
                                     ),
-                                    SizedBox(width: 8,),
-                                    Text("FB", style: TextStyle(
-                                        fontWeight: FontWeight.bold
-                                    ),)
+                                    SizedBox(
+                                      width: 8,
+                                    ),
+                                    Text(
+                                      "FB",
+                                      style: TextStyle(fontWeight: FontWeight.bold),
+                                    )
                                   ],
                                 ),
                               ),
                               Expanded(
-                                child: Placeholder(),
-                              )
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  children: [
+                                    CircleAvatar(
+                                      radius: 12,
+                                      backgroundColor: Colors.black,
+                                    ),
+                                    SizedBox(
+                                      width: 8,
+                                    ),
+                                    Text(
+                                      "FB",
+                                      style: TextStyle(fontWeight: FontWeight.bold),
+                                    )
+                                  ],
+                                ),
+                              ),
                             ],
                           ),
                         ),
