@@ -40,7 +40,7 @@ class NewOnceLoginPage extends StatelessWidget {
               child: Container(),
             ),
             Expanded(
-                flex: 3,
+                flex: 4,
                 child: Padding(
                   padding: const EdgeInsets.all(16.0),
                   child: Column(
@@ -53,7 +53,7 @@ class NewOnceLoginPage extends StatelessWidget {
                             style: GoogleFonts.abrilFatface(
                              fontWeight: FontWeight.bold, fontSize: 26),
                           )),
-                      SizedBox(height: 24,),
+                      SizedBox(height: 8,),
                       Expanded(
                         flex: 2,
                         child: Container(
@@ -77,7 +77,7 @@ class NewOnceLoginPage extends StatelessWidget {
                   ),
                 )),
             Expanded(
-              flex: 7,
+              flex: 10,
               child: Placeholder(),
             ),
             Expanded(
