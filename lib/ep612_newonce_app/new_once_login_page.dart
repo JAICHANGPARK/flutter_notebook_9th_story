@@ -74,7 +74,12 @@ class NewOnceLoginPage extends StatelessWidget {
                           child: Row(
                             children: [
                               Expanded(
-                                child: Placeholder(),
+                                child: Row(
+                                  children: [
+                                    CircleAvatar(),
+                                    Text("FB")
+                                  ],
+                                ),
                               ),
                               Expanded(
                                 child: Placeholder(),
