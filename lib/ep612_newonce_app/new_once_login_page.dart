@@ -57,7 +57,10 @@ class NewOnceLoginPage extends StatelessWidget {
                       Expanded(
                         flex: 2,
                         child: Container(
-
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            box
+                          ),
                           child: Row(
                             children: [
                               Expanded(
