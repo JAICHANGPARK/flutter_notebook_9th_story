@@ -81,7 +81,7 @@ class NewOnceLoginPage extends StatelessWidget {
                                     CircleAvatar(
                                       radius: 12,
                                     ),
-                                    SizedBox(width: 16,),
+                                    SizedBox(width: 8,),
                                     Text("FB")
                                   ],
                                 ),
