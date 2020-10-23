@@ -9,7 +9,7 @@ class NewOnceLoginPage extends StatelessWidget {
         child: Column(
           children: [
             Expanded(
-              flex: 2,
+              flex: 3,
               child: Row(
                 children: [
                   Expanded(child: SizedBox()),
@@ -66,7 +66,7 @@ class NewOnceLoginPage extends StatelessWidget {
                                 color: Colors.black,
                                 spreadRadius: 1,
                                 offset: Offset(
-                                  2,4
+                                  1,2
                                 )
                               )
                             ]
