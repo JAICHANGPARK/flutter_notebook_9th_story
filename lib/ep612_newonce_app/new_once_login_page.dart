@@ -37,9 +37,7 @@ class NewOnceLoginPage extends StatelessWidget {
             ),
             Expanded(
               flex: 1,
-              child: Container(
-                color: Colors.red,
-              ),
+              child: Container(),
             ),
             Expanded(
                 flex: 4,
@@ -68,12 +66,7 @@ class NewOnceLoginPage extends StatelessWidget {
                             children: [
                               Expanded(
                                 child: Container(
-                                  decoration: BoxDecoration(
-                                    border: Border.all(
-                                      color: Colors.black,
-                                      width: 1
-                                    )
-                                  ),
+                                  decoration: BoxDecoration(border: Border.all(color: Colors.black, width: 1)),
                                   child: Center(
                                     child: Row(
                                       mainAxisAlignment: MainAxisAlignment.center,
@@ -97,12 +90,7 @@ class NewOnceLoginPage extends StatelessWidget {
                               ),
                               Expanded(
                                 child: Container(
-                                  decoration: BoxDecoration(
-                                      border: Border.all(
-                                          color: Colors.black,
-                                          width: 1
-                                      )
-                                  ),
+                                  decoration: BoxDecoration(border: Border.all(color: Colors.black, width: 1)),
                                   child: Center(
                                     child: Row(
                                       mainAxisAlignment: MainAxisAlignment.center,
@@ -126,12 +114,7 @@ class NewOnceLoginPage extends StatelessWidget {
                               ),
                               Expanded(
                                 child: Container(
-                                  decoration: BoxDecoration(
-                                      border: Border.all(
-                                          color: Colors.black,
-                                          width: 1
-                                      )
-                                  ),
+                                  decoration: BoxDecoration(border: Border.all(color: Colors.black, width: 1)),
                                   child: Center(
                                     child: Row(
                                       mainAxisAlignment: MainAxisAlignment.center,
