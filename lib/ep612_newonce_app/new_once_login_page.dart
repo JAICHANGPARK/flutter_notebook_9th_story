@@ -41,34 +41,40 @@ class NewOnceLoginPage extends StatelessWidget {
             ),
             Expanded(
                 flex: 3,
-                child: Column(
-                  children: [
-                    Expanded(
-                        flex: 1,
-                        child: Text(
-                          "Zaloz konto za pomoca",
-                          style: GoogleFonts.abrilFatface(
-                           fontWeight: FontWeight.bold, fontSize: 26),
-                        )),
-                    Expanded(
-                      flex: 2,
-                      child: Container(
-                        child: Row(
-                          children: [
-                            Expanded(
-                              child: Placeholder(),
-                            ),
-                            Expanded(
-                              child: Placeholder(),
-                            ),
-                            Expanded(
-                              child: Placeholder(),
-                            )
-                          ],
+                child: Padding(
+                  padding: const EdgeInsets.all(16.0),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Expanded(
+                          flex: 1,
+                          child: Text(
+                            "Zaloz konto za pomoca",
+                            style: GoogleFonts.abrilFatface(
+                             fontWeight: FontWeight.bold, fontSize: 26),
+                          )),
+                      SizedBox(height: 24,),
+                      Expanded(
+                        flex: 2,
+                        child: Container(
+
+                          child: Row(
+                            children: [
+                              Expanded(
+                                child: Placeholder(),
+                              ),
+                              Expanded(
+                                child: Placeholder(),
+                              ),
+                              Expanded(
+                                child: Placeholder(),
+                              )
+                            ],
+                          ),
                         ),
                       ),
-                    ),
-                  ],
+                    ],
+                  ),
                 )),
             Expanded(
               flex: 7,
