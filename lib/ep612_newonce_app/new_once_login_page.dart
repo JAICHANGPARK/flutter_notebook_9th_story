@@ -48,7 +48,7 @@ class NewOnceLoginPage extends StatelessWidget {
             ),
             Expanded(
               flex: 2,
-              child: Placeholder(),
+              child: Container(),
             ),
             Expanded(
               flex: 2,
