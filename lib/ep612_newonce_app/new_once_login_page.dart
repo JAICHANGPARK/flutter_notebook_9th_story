@@ -125,22 +125,26 @@ class NewOnceLoginPage extends StatelessWidget {
                                 ),
                               ),
                               Expanded(
-                                child: Row(
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  crossAxisAlignment: CrossAxisAlignment.center,
-                                  children: [
-                                    CircleAvatar(
-                                      radius: 12,
-                                      backgroundColor: Colors.black,
+                                child: Container(
+                                  child: Center(
+                                    child: Row(
+                                      mainAxisAlignment: MainAxisAlignment.center,
+                                      crossAxisAlignment: CrossAxisAlignment.center,
+                                      children: [
+                                        CircleAvatar(
+                                          radius: 12,
+                                          backgroundColor: Colors.black,
+                                        ),
+                                        SizedBox(
+                                          width: 8,
+                                        ),
+                                        Text(
+                                          "TWITTER",
+                                          style: TextStyle(fontWeight: FontWeight.bold),
+                                        )
+                                      ],
                                     ),
-                                    SizedBox(
-                                      width: 8,
-                                    ),
-                                    Text(
-                                      "TWITTER",
-                                      style: TextStyle(fontWeight: FontWeight.bold),
-                                    )
-                                  ],
+                                  ),
                                 ),
                               ),
                             ],
