@@ -165,6 +165,8 @@ class NewOnceLoginPage extends StatelessWidget {
                   Expanded(
                     flex: 2,
                     child: Row(
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Text("Masz juz konto?"),
                         Text("Zalohuj sie!"),
