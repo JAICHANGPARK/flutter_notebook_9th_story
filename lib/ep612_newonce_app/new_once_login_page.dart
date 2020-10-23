@@ -75,8 +75,13 @@ class NewOnceLoginPage extends StatelessWidget {
                             children: [
                               Expanded(
                                 child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
                                   children: [
-                                    CircleAvatar(),
+                                    CircleAvatar(
+                                      radius: 12,
+                                    ),
+                                    SizedBox(width: 16,),
                                     Text("FB")
                                   ],
                                 ),
