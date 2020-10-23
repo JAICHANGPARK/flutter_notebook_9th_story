@@ -54,11 +54,18 @@ class NewOnceLoginPage extends StatelessWidget {
               flex: 2,
               child: Column(
                 children: [
-                  Expanded(child: Text("Zaloz konto za pomoca")),
+                  Expanded(
+                      child: Text("Zaloz konto za pomoca")),
                   Expanded(
                     child: Container(
                       child: Row(
                         children: [
+                          Expanded(
+                            child: Placeholder(),
+                          ),
+                          Expanded(
+                            child: Placeholder(),
+                          ),
                           Expanded(
                             child: Placeholder(),
                           )
