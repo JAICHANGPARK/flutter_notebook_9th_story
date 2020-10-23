@@ -67,22 +67,31 @@ class NewOnceLoginPage extends StatelessWidget {
                           child: Row(
                             children: [
                               Expanded(
-                                child: Row(
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  crossAxisAlignment: CrossAxisAlignment.center,
-                                  children: [
-                                    CircleAvatar(
-                                      radius: 12,
-                                      backgroundColor: Colors.black,
-                                    ),
-                                    SizedBox(
-                                      width: 8,
-                                    ),
-                                    Text(
-                                      "FB",
-                                      style: TextStyle(fontWeight: FontWeight.bold),
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                    border: Border.all(
+                                      color: Colors.black
                                     )
-                                  ],
+                                  ),
+                                  child: Center(
+                                    child: Row(
+                                      mainAxisAlignment: MainAxisAlignment.center,
+                                      crossAxisAlignment: CrossAxisAlignment.center,
+                                      children: [
+                                        CircleAvatar(
+                                          radius: 12,
+                                          backgroundColor: Colors.black,
+                                        ),
+                                        SizedBox(
+                                          width: 8,
+                                        ),
+                                        Text(
+                                          "FB",
+                                          style: TextStyle(fontWeight: FontWeight.bold),
+                                        )
+                                      ],
+                                    ),
+                                  ),
                                 ),
                               ),
                               Expanded(
