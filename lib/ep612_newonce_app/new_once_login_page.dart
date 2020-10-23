@@ -151,11 +151,12 @@ class NewOnceLoginPage extends StatelessWidget {
               flex: 3,
               child: Column(
                 children: [
-
                   Expanded(
-                    child: Placeholder(),
+                    flex: 4,
+                    child: Container(),
                   ),
                   Expanded(
+                    flex: 2,
                     child: Placeholder(),
                   )
                 ],
@@ -163,7 +164,7 @@ class NewOnceLoginPage extends StatelessWidget {
             ),
             Expanded(
               flex: 2,
-              child: Placeholder(),
+              child: Container(),
             ),
           ],
         ),
