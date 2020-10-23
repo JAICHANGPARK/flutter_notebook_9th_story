@@ -82,7 +82,9 @@ class NewOnceLoginPage extends StatelessWidget {
                                       radius: 12,
                                     ),
                                     SizedBox(width: 8,),
-                                    Text("FB")
+                                    Text("FB", style: TextStyle(
+                                      fontWeight: FontWeight.bold
+                                    ),)
                                   ],
                                 ),
                               ),
