@@ -36,11 +36,11 @@ class NewOnceLoginPage extends StatelessWidget {
               ),
             ),
             Expanded(
-              flex: 2,
+              flex: 1,
               child: Container(),
             ),
             Expanded(
-                flex: 2,
+                flex: 3,
                 child: Column(
                   children: [
                     Expanded(
@@ -48,7 +48,7 @@ class NewOnceLoginPage extends StatelessWidget {
                         child: Text(
                           "Zaloz konto za pomoca",
                           style: GoogleFonts.abrilFatface(
-                              color: Colors.blueAccent, fontWeight: FontWeight.bold, fontSize: 24),
+                           fontWeight: FontWeight.bold, fontSize: 26),
                         )),
                     Expanded(
                       flex: 2,
@@ -71,7 +71,7 @@ class NewOnceLoginPage extends StatelessWidget {
                   ],
                 )),
             Expanded(
-              flex: 5,
+              flex: 7,
               child: Placeholder(),
             ),
             Expanded(
