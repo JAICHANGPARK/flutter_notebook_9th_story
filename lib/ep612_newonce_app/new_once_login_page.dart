@@ -80,6 +80,7 @@ class NewOnceLoginPage extends StatelessWidget {
                                   children: [
                                     CircleAvatar(
                                       radius: 12,
+                                      backgroundColor: Colors.black,
                                     ),
                                     SizedBox(width: 8,),
                                     Text("FB", style: TextStyle(
