@@ -96,22 +96,32 @@ class NewOnceLoginPage extends StatelessWidget {
                                 ),
                               ),
                               Expanded(
-                                child: Row(
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  crossAxisAlignment: CrossAxisAlignment.center,
-                                  children: [
-                                    CircleAvatar(
-                                      radius: 12,
-                                      backgroundColor: Colors.black,
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                      border: Border.all(
+                                          color: Colors.black,
+                                          width: 2
+                                      )
+                                  ),
+                                  child: Center(
+                                    child: Row(
+                                      mainAxisAlignment: MainAxisAlignment.center,
+                                      crossAxisAlignment: CrossAxisAlignment.center,
+                                      children: [
+                                        CircleAvatar(
+                                          radius: 12,
+                                          backgroundColor: Colors.black,
+                                        ),
+                                        SizedBox(
+                                          width: 8,
+                                        ),
+                                        Text(
+                                          "GOOGLE",
+                                          style: TextStyle(fontWeight: FontWeight.bold),
+                                        )
+                                      ],
                                     ),
-                                    SizedBox(
-                                      width: 8,
-                                    ),
-                                    Text(
-                                      "GOOGLE",
-                                      style: TextStyle(fontWeight: FontWeight.bold),
-                                    )
-                                  ],
+                                  ),
                                 ),
                               ),
                               Expanded(
