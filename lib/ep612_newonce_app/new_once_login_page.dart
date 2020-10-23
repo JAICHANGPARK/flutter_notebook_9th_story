@@ -13,29 +13,29 @@ class NewOnceLoginPage extends StatelessWidget {
               child: Row(
                 children: [
                   Expanded(
-                    child: SizedBox()
+                      child: SizedBox()
                   ),
                   Expanded(
-                    child: Center(
-                      child: Text("newonce", style: GoogleFonts.abrilFatface(
-                        color: Colors.blueAccent,
-                        fontWeight: FontWeight.bold,
-                        fontSize: 24
-                      )),
-                    )
+                      child: Center(
+                        child: Text("newonce", style: GoogleFonts.abrilFatface(
+                            color: Colors.blueAccent,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 24
+                        )),
+                      )
                   ),
                   Expanded(
                     child: Container(
                       margin: EdgeInsets.only(left: 48, bottom: 16, top: 16, right: 24),
                       decoration: BoxDecoration(
-                        color: Colors.white,
-                        boxShadow: [
-                          BoxShadow(
-                            color: Colors.black,
-                            spreadRadius: 2,
-                            offset: Offset(2,2)
-                          )
-                        ]
+                          color: Colors.white,
+                          boxShadow: [
+                            BoxShadow(
+                                color: Colors.black,
+                                spreadRadius: 2,
+                                offset: Offset(2, 2)
+                            )
+                          ]
                       ),
                       child: Center(
                         child: Icon(Icons.clear),
