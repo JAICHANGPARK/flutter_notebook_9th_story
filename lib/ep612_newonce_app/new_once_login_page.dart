@@ -158,10 +158,11 @@ class _NewOnceLoginPageState extends State<NewOnceLoginPage> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Expanded(
+                    flex: 2,
                     child: Text("Lub uzupelnij dene by zalozyc konto poprzez email:"),
                   ),
                   Expanded(
-                    flex: 2,
+                    flex: 3,
                     child: Container(
                       margin: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                       decoration: BoxDecoration(border: Border.all(color: Colors.deepPurpleAccent, width: 2)),
@@ -171,7 +172,19 @@ class _NewOnceLoginPageState extends State<NewOnceLoginPage> {
                     ),
                   ),
                   Expanded(
-                    flex: 2,
+                    flex: 3,
+                    child: Container(
+                      margin: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                      decoration: BoxDecoration(border: Border.all(color: Colors.black, width: 2)),
+                      child: TextField(
+                        decoration: InputDecoration(
+                            border: InputBorder.none
+                        ),
+                      ),
+                    ),
+                  ),
+                  Expanded(
+                    flex: 3,
                     child: Container(
                       margin: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                       decoration: BoxDecoration(border: Border.all(color: Colors.black, width: 2)),
@@ -184,17 +197,6 @@ class _NewOnceLoginPageState extends State<NewOnceLoginPage> {
                   ),
                   Expanded(
                     flex: 2,
-                    child: Container(
-                      margin: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-                      decoration: BoxDecoration(border: Border.all(color: Colors.black, width: 2)),
-                      child: TextField(
-                        decoration: InputDecoration(
-                            border: InputBorder.none
-                        ),
-                      ),
-                    ),
-                  ),
-                  Expanded(
                     child: Row(
                       children: [
                         Checkbox(
