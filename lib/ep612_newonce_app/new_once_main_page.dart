@@ -9,6 +9,17 @@ class _NewonceMainPageState extends State<NewonceMainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      body: Column(
+        children: [
+          Expanded(
+            child: Placeholder(),
+          ),
+          Expanded(
+            child: Placeholder(),
+          ),
+
+        ],
+      ),
       bottomNavigationBar: Container(
         color: Colors.black,
         child: BottomAppBar(
