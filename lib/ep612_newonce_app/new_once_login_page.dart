@@ -164,6 +164,15 @@ class _NewOnceLoginPageState extends State<NewOnceLoginPage> {
                       margin: EdgeInsets.all(16),
                       decoration: BoxDecoration(border: Border.all(color: Colors.deepPurpleAccent,
                       width: 2)),
+                      child: TextField(),
+                    ),
+                  ),
+                  Expanded(
+                    flex: 2,
+                    child: Container(
+                      margin: EdgeInsets.all(16),
+                      decoration: BoxDecoration(border: Border.all(color: Colors.black,
+                          width: 2)),child: TextField(),
                     ),
                   ),
                   Expanded(
@@ -172,14 +181,7 @@ class _NewOnceLoginPageState extends State<NewOnceLoginPage> {
                       margin: EdgeInsets.all(16),
                       decoration: BoxDecoration(border: Border.all(color: Colors.black,
                           width: 2)),
-                    ),
-                  ),
-                  Expanded(
-                    flex: 2,
-                    child: Container(
-                      margin: EdgeInsets.all(16),
-                      decoration: BoxDecoration(border: Border.all(color: Colors.black,
-                          width: 2)),
+                      child: TextField(),
                     ),
                   ),
                   Expanded(
