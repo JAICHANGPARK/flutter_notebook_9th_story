@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_9th_story/ep612_newonce_app/new_once_main_page.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class NewOnceLoginPage extends StatefulWidget {
@@ -217,13 +218,20 @@ class _NewOnceLoginPageState extends State<NewOnceLoginPage> {
                 children: [
                   Expanded(
                     flex: 4,
-                    child: Container(
-                      margin: EdgeInsets.symmetric(
-                        horizontal: 16,
-                        vertical: 4,
+                    child: GestureDetector(
+                      onTap: (){
+                        Navigator.push(context, MaterialPageRoute(
+                          builder: (_) => NewonceMainPage(),
+                        ));
+                      },
+                      child: Container(
+                        margin: EdgeInsets.symmetric(
+                          horizontal: 16,
+                          vertical: 4,
+                        ),
+                        decoration: BoxDecoration(
+                            color: Colors.blueAccent, boxShadow: [BoxShadow(color: Colors.black, offset: Offset(2, 3))]),
                       ),
-                      decoration: BoxDecoration(
-                          color: Colors.blueAccent, boxShadow: [BoxShadow(color: Colors.black, offset: Offset(2, 3))]),
                     ),
                   ),
                   Expanded(
