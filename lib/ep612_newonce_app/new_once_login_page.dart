@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class NewOnceLoginPage extends StatelessWidget {
+  bool isCheck = false;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -162,7 +163,15 @@ class NewOnceLoginPage extends StatelessWidget {
                   Expanded(
                     flex: 2,
                     child: Placeholder(),
-                  )
+                  ),
+                  Expanded(
+                    child: Row(
+                      children: [
+                        Checkbox(),
+                        Text("Lub uzupelnij dene by zalozyc konto poprzez email:"),
+                      ],
+                    ),
+                  ),
                 ],
               ),
             ),
