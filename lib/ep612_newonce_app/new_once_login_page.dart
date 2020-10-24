@@ -168,11 +168,19 @@ class _NewOnceLoginPageState extends State<NewOnceLoginPage> {
                   ),
                   Expanded(
                     flex: 2,
-                    child: Placeholder(),
+                    child: Container(
+                      margin: EdgeInsets.all(16),
+                      decoration: BoxDecoration(border: Border.all(color: Colors.deepPurpleAccent,
+                          width: 2)),
+                    ),
                   ),
                   Expanded(
                     flex: 2,
-                    child: Placeholder(),
+                    child: Container(
+                      margin: EdgeInsets.all(16),
+                      decoration: BoxDecoration(border: Border.all(color: Colors.deepPurpleAccent,
+                          width: 2)),
+                    ),
                   ),
                   Expanded(
                     child: Row(
