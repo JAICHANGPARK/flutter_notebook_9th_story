@@ -161,7 +161,10 @@ class _NewOnceLoginPageState extends State<NewOnceLoginPage> {
                     flex: 2,
                     child: Padding(
                       padding: const EdgeInsets.all(16.0),
-                      child: Text("Lub uzupelnij dene by zalozyc konto poprzez email:". ),
+                      child: Text(
+                        "Lub uzupelnij dene by zalozyc konto poprzez email:",
+                        style: GoogleFonts.abrilFatface(fontWeight: FontWeight.bold, fontSize: 18),
+                      ),
                     ),
                   ),
                   Expanded(
@@ -180,9 +183,7 @@ class _NewOnceLoginPageState extends State<NewOnceLoginPage> {
                       margin: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                       decoration: BoxDecoration(border: Border.all(color: Colors.black, width: 2)),
                       child: TextField(
-                        decoration: InputDecoration(
-                            border: InputBorder.none
-                        ),
+                        decoration: InputDecoration(border: InputBorder.none),
                       ),
                     ),
                   ),
@@ -192,9 +193,7 @@ class _NewOnceLoginPageState extends State<NewOnceLoginPage> {
                       margin: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                       decoration: BoxDecoration(border: Border.all(color: Colors.black, width: 2)),
                       child: TextField(
-                        decoration: InputDecoration(
-                            border: InputBorder.none
-                        ),
+                        decoration: InputDecoration(border: InputBorder.none),
                       ),
                     ),
                   ),
@@ -224,10 +223,12 @@ class _NewOnceLoginPageState extends State<NewOnceLoginPage> {
                   Expanded(
                     flex: 4,
                     child: GestureDetector(
-                      onTap: (){
-                        Navigator.push(context, MaterialPageRoute(
-                          builder: (_) => NewonceMainPage(),
-                        ));
+                      onTap: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (_) => NewonceMainPage(),
+                            ));
                       },
                       child: Container(
                         margin: EdgeInsets.symmetric(
@@ -235,7 +236,8 @@ class _NewOnceLoginPageState extends State<NewOnceLoginPage> {
                           vertical: 4,
                         ),
                         decoration: BoxDecoration(
-                            color: Colors.blueAccent, boxShadow: [BoxShadow(color: Colors.black, offset: Offset(2, 3))]),
+                            color: Colors.blueAccent,
+                            boxShadow: [BoxShadow(color: Colors.black, offset: Offset(2, 3))]),
                       ),
                     ),
                   ),
