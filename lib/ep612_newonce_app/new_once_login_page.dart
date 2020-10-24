@@ -161,9 +161,7 @@ class _NewOnceLoginPageState extends State<NewOnceLoginPage> {
                   Expanded(
                     flex: 2,
                     child: Container(
-                      decoration: BoxDecoration(
-                        border: Border.all(color: Colors.deepPurpleAccent)
-                      ),
+                      decoration: BoxDecoration(border: Border.all(color: Colors.deepPurpleAccent)),
                     ),
                   ),
                   Expanded(
@@ -177,9 +175,14 @@ class _NewOnceLoginPageState extends State<NewOnceLoginPage> {
                   Expanded(
                     child: Row(
                       children: [
-                        Checkbox(value: isCheck, onChanged: (bool value) {
-
-                        },),
+                        Checkbox(
+                          value: isCheck,
+                          onChanged: (bool value) {
+                            setState(() {
+                              isCheck = value;
+                            });
+                          },
+                        ),
                         Text("Lub uzupelnij dene by zalozyc konto poprzez email:"),
                       ],
                     ),
