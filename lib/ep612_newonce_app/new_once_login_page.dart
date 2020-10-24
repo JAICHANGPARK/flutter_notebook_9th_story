@@ -159,7 +159,10 @@ class _NewOnceLoginPageState extends State<NewOnceLoginPage> {
                 children: [
                   Expanded(
                     flex: 2,
-                    child: Text("Lub uzupelnij dene by zalozyc konto poprzez email:"),
+                    child: Padding(
+                      padding: const EdgeInsets.all(16.0),
+                      child: Text("Lub uzupelnij dene by zalozyc konto poprzez email:". ),
+                    ),
                   ),
                   Expanded(
                     flex: 3,
