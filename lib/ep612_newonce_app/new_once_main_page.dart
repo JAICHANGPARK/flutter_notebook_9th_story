@@ -11,18 +11,22 @@ class _NewonceMainPageState extends State<NewonceMainPage> {
     return Scaffold(
       bottomNavigationBar: Container(
         color: Colors.black,
-        child: BottomNavigationBar(
+        child: BottomAppBar(
+            color: Colors.black,
+            child: Container(
+              height: 64,
+            )
 
-          showSelectedLabels: false,
-          showUnselectedLabels: false,
-          items: [
-            BottomNavigationBarItem(icon: Icon(Icons.home), label: ""),
-            BottomNavigationBarItem(icon: Icon(Icons.home),label: ""),
-            BottomNavigationBarItem(icon: Icon(Icons.home),label: ""),
-            BottomNavigationBarItem(icon: Icon(Icons.home),label: ""),
-          ],
+            // showSelectedLabels: false,
+            // showUnselectedLabels: false,
+            // items: [
+            //   BottomNavigationBarItem(icon: Icon(Icons.home), label: ""),
+            //   BottomNavigationBarItem(icon: Icon(Icons.home),label: ""),
+            //   BottomNavigationBarItem(icon: Icon(Icons.home),label: ""),
+            //   BottomNavigationBarItem(icon: Icon(Icons.home),label: ""),
+            // ],
 
-        ),
+            ),
       ),
     );
   }
