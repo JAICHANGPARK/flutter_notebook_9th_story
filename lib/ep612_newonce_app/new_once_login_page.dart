@@ -148,9 +148,10 @@ class NewOnceLoginPage extends StatelessWidget {
               child: Column(
                 children: [
                   Expanded(
-                    child: Placeholder(),
+                    child: Text("Lub uzupelnij dene by zalozyc konto poprzez email:"),
                   ),
                   Expanded(
+                    flex: 2,
                     child: Placeholder(),
                   ),
                   Expanded(
