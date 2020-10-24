@@ -165,7 +165,11 @@ class _NewOnceLoginPageState extends State<NewOnceLoginPage> {
                       margin: EdgeInsets.all(16),
                       decoration: BoxDecoration(border: Border.all(color: Colors.deepPurpleAccent,
                       width: 2)),
-                      child: TextField(),
+                      child: TextField(
+                        decoration: InputDecoration(
+                          border: InputBorder.none
+                        ),
+                      ),
                     ),
                   ),
                   Expanded(
