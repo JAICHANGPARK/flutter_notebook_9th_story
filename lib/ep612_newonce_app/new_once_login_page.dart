@@ -167,7 +167,9 @@ class NewOnceLoginPage extends StatelessWidget {
                   Expanded(
                     child: Row(
                       children: [
-                        Checkbox(),
+                        Checkbox(value: isCheck, onChanged: (bool value) {
+
+                        },),
                         Text("Lub uzupelnij dene by zalozyc konto poprzez email:"),
                       ],
                     ),
