@@ -8,6 +8,10 @@ class NewonceMainPage extends StatefulWidget {
 class _NewonceMainPageState extends State<NewonceMainPage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      bottomNavigationBar: BottomNavigationBar(
+
+      ),
+    );
   }
 }
