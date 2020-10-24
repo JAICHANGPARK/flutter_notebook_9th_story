@@ -1,8 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class NewOnceLoginPage extends StatelessWidget {
+class NewOnceLoginPage extends StatefulWidget {
+  @override
+  _NewOnceLoginPageState createState() => _NewOnceLoginPageState();
+}
+
+class _NewOnceLoginPageState extends State<NewOnceLoginPage> {
   bool isCheck = false;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
