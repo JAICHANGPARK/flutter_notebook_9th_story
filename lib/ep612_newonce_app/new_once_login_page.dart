@@ -185,7 +185,7 @@ class _NewOnceLoginPageState extends State<NewOnceLoginPage> {
                   Expanded(
                     flex: 2,
                     child: Container(
-                      margin: EdgeInsets.all(16),
+                      margin: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                       decoration: BoxDecoration(border: Border.all(color: Colors.black, width: 2)),
                       child: TextField(
                         decoration: InputDecoration(
