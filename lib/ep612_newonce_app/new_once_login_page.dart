@@ -163,11 +163,20 @@ class _NewOnceLoginPageState extends State<NewOnceLoginPage> {
                     flex: 2,
                     child: Container(
                       margin: EdgeInsets.all(16),
-                      decoration: BoxDecoration(border: Border.all(color: Colors.deepPurpleAccent,
-                      width: 2)),
+                      decoration: BoxDecoration(border: Border.all(color: Colors.deepPurpleAccent, width: 2)),
+                      child: TextField(
+                        decoration: InputDecoration(border: InputBorder.none),
+                      ),
+                    ),
+                  ),
+                  Expanded(
+                    flex: 2,
+                    child: Container(
+                      margin: EdgeInsets.all(16),
+                      decoration: BoxDecoration(border: Border.all(color: Colors.black, width: 2)),
                       child: TextField(
                         decoration: InputDecoration(
-                          border: InputBorder.none
+                            border: InputBorder.none
                         ),
                       ),
                     ),
@@ -176,17 +185,12 @@ class _NewOnceLoginPageState extends State<NewOnceLoginPage> {
                     flex: 2,
                     child: Container(
                       margin: EdgeInsets.all(16),
-                      decoration: BoxDecoration(border: Border.all(color: Colors.black,
-                          width: 2)),child: TextField(),
-                    ),
-                  ),
-                  Expanded(
-                    flex: 2,
-                    child: Container(
-                      margin: EdgeInsets.all(16),
-                      decoration: BoxDecoration(border: Border.all(color: Colors.black,
-                          width: 2)),
-                      child: TextField(),
+                      decoration: BoxDecoration(border: Border.all(color: Colors.black, width: 2)),
+                      child: TextField(
+                        decoration: InputDecoration(
+                            border: InputBorder.none
+                        ),
+                      ),
                     ),
                   ),
                   Expanded(
