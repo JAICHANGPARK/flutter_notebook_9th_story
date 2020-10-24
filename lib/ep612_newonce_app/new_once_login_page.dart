@@ -146,6 +146,7 @@ class NewOnceLoginPage extends StatelessWidget {
             Expanded(
               flex: 15,
               child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Expanded(
                     child: Text("Lub uzupelnij dene by zalozyc konto poprzez email:"),
