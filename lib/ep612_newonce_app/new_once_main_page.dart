@@ -14,7 +14,22 @@ class _NewonceMainPageState extends State<NewonceMainPage> {
           children: [
             Expanded(
               flex: 2,
-              child: Placeholder(),
+              child: Container(
+                decoration: BoxDecoration(
+                  color: Colors.blueAccent,
+                ),
+                child: Row(
+                  children: [
+                    Container(
+                      height: 64,
+                      width: 64,
+                      decoration: BoxDecoration(
+                        color: Colors.white
+                      ),
+                    )
+                  ],
+                ),
+              ),
             ),
             Expanded(
               flex: 15,
@@ -30,15 +45,6 @@ class _NewonceMainPageState extends State<NewonceMainPage> {
             child: Container(
               height: 64,
             )
-
-            // showSelectedLabels: false,
-            // showUnselectedLabels: false,
-            // items: [
-            //   BottomNavigationBarItem(icon: Icon(Icons.home), label: ""),
-            //   BottomNavigationBarItem(icon: Icon(Icons.home),label: ""),
-            //   BottomNavigationBarItem(icon: Icon(Icons.home),label: ""),
-            //   BottomNavigationBarItem(icon: Icon(Icons.home),label: ""),
-            // ],
 
             ),
       ),
