@@ -33,6 +33,7 @@ class _NewonceMainPageState extends State<NewonceMainPage> {
                         decoration: BoxDecoration(
                             color: Colors.white,
                             boxShadow: [BoxShadow(color: Colors.black, offset: Offset(1, 2), spreadRadius: 2)]),
+                        child: Icon(Icons.keyboard_arrow_down),
                       ),
                     ),
                   ],
