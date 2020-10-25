@@ -28,11 +28,18 @@ class _NewonceMainPageState extends State<NewonceMainPage> {
                         color: Colors.white,
                         boxShadow: [
                           BoxShadow(
-                            color: Colors.black
+                            color: Colors.black,
+                            offset: Offset(1,2),
+                            spreadRadius: 2
                           )
                         ]
                       ),
-                    )
+                    ),
+                    Text("Feed",style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 32
+                    ),)
                   ],
                 ),
               ),
