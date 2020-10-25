@@ -18,11 +18,12 @@ class _NewonceMainPageState extends State<NewonceMainPage> {
                 decoration: BoxDecoration(
                   color: Colors.blueAccent,
                 ),
+                padding: EdgeInsets.symmetric(horizontal: 16),
                 child: Row(
                   children: [
                     Container(
-                      height: 64,
-                      width: 64,
+                      height: 48,
+                      width: 48,
                       decoration: BoxDecoration(
                         color: Colors.white
                       ),
