@@ -36,6 +36,12 @@ class _NewonceMainPageState extends State<NewonceMainPage> {
                         child: Icon(Icons.keyboard_arrow_down),
                       ),
                     ),
+                    IconButton(
+                      icon: Icon(Icons.opacity),
+                    ),
+                    IconButton(
+                      icon: Icon(Icons.search),
+                    )
                   ],
                 ),
               ),
