@@ -185,7 +185,13 @@ class _NewonceMainPageState extends State<NewonceMainPage> {
                       )),
                   Expanded(
                     flex: 10,
-                    child: Placeholder(),
+                    child: SingleChildScrollView(
+                      child: Column(
+                        children: [
+
+                        ],
+                      ),
+                    ),
                   ),
                 ],
               ),
