@@ -69,7 +69,7 @@ class _NewonceMainPageState extends State<NewonceMainPage> {
                             child: Container(
                               margin: EdgeInsets.only(bottom: 4, top: 4),
                               decoration: BoxDecoration(
-                                color: Colors.white,
+                                color: Colors.blueAccent,
                                 boxShadow: [
                                   BoxShadow(
                                     color: Colors.black,
