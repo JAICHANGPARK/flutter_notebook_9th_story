@@ -37,11 +37,14 @@ class _NewonceMainPageState extends State<NewonceMainPage> {
                       ),
                     ),
                     IconButton(
-                      icon: Icon(Icons.opacity),
+                      icon: Icon(Icons.opacity), onPressed: () {  },
                     ),
                     IconButton(
-                      icon: Icon(Icons.search),
-                    )
+                      icon: Icon(Icons.search), onPressed: () {  },
+                    ),
+                    IconButton(
+                      icon: Icon(Icons.menu), onPressed: () {  },
+                    ),
                   ],
                 ),
               ),
