@@ -61,10 +61,32 @@ class _NewonceMainPageState extends State<NewonceMainPage> {
                 children: [
                   Expanded(
                     flex:1,
-                    child: Row(
-                      children: [
-                        
-                      ],
+                    child: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Row(
+                        children: [
+                          Expanded(
+                            child: Container(
+                              decoration: BoxDecoration(
+                                boxShadow: [
+                                  BoxShadow(
+                                    
+                                  ),
+                                ]
+                              ),
+                            ),
+                          ),
+                          Expanded(
+                            child: Placeholder(),
+                          ),
+                          Expanded(
+                            child: Placeholder(),
+                          ),
+                          Expanded(
+                            child: Placeholder(),
+                          )
+                        ],
+                      ),
                     )
                   ),
                   Expanded(
