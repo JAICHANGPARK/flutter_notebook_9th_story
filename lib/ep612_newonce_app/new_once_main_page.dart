@@ -25,7 +25,12 @@ class _NewonceMainPageState extends State<NewonceMainPage> {
                       height: 48,
                       width: 48,
                       decoration: BoxDecoration(
-                        color: Colors.white
+                        color: Colors.white,
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.black
+                          )
+                        ]
                       ),
                     )
                   ],
