@@ -133,14 +133,14 @@ class _NewonceMainPageState extends State<NewonceMainPage> {
                             child: GestureDetector(
                               onTap: (){
                                 setState(() {
-                                  _tabIndex = 0;
+                                  _tabIndex = 2;
                                 });
                               },
                               child: Container(
                                 margin: EdgeInsets.only(bottom: 4, top: 4, right: 4 , left: 4),
                                 decoration: BoxDecoration(
-                                    color: _tabIndex == 0 ? Colors.blueAccent : Colors.white,
-                                    boxShadow: _tabIndex == 0 ? [
+                                    color: _tabIndex == 2 ? Colors.blueAccent : Colors.white,
+                                    boxShadow: _tabIndex == 2 ? [
                                       BoxShadow(
                                           color: Colors.black,
                                           offset: Offset(
@@ -151,9 +151,9 @@ class _NewonceMainPageState extends State<NewonceMainPage> {
                                     ] : []
                                 ),
                                 child: Center(
-                                  child: Text("ARTYKULY", style: TextStyle(
+                                  child: Text("VIDEO", style: TextStyle(
                                       fontWeight: FontWeight.bold,
-                                      color: _tabIndex == 0 ? Colors.white : Colors.black,
+                                      color: _tabIndex == 2 ? Colors.white : Colors.black,
                                       fontSize: 16
 
                                   ),),
@@ -165,14 +165,14 @@ class _NewonceMainPageState extends State<NewonceMainPage> {
                             child: GestureDetector(
                               onTap: (){
                                 setState(() {
-                                  _tabIndex = 0;
+                                  _tabIndex = 3;
                                 });
                               },
                               child: Container(
                                 margin: EdgeInsets.only(bottom: 4, top: 4, right: 4 , left: 4),
                                 decoration: BoxDecoration(
-                                    color: _tabIndex == 0 ? Colors.blueAccent : Colors.white,
-                                    boxShadow: _tabIndex == 0 ? [
+                                    color: _tabIndex == 3 ? Colors.blueAccent : Colors.white,
+                                    boxShadow: _tabIndex == 3 ? [
                                       BoxShadow(
                                           color: Colors.black,
                                           offset: Offset(
@@ -183,9 +183,9 @@ class _NewonceMainPageState extends State<NewonceMainPage> {
                                     ] : []
                                 ),
                                 child: Center(
-                                  child: Text("ARTYKULY", style: TextStyle(
+                                  child: Text("ARTICLE", style: TextStyle(
                                       fontWeight: FontWeight.bold,
-                                      color: _tabIndex == 0 ? Colors.white : Colors.black,
+                                      color: _tabIndex == 3 ? Colors.white : Colors.black,
                                       fontSize: 16
 
                                   ),),
