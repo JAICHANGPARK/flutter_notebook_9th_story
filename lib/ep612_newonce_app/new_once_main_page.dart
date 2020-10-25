@@ -22,15 +22,18 @@ class _NewonceMainPageState extends State<NewonceMainPage> {
                 child: Row(
                   children: [
                     Text(
-                      "Feed",
+                      "Flutter Feed",
                       style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 32),
                     ),
-                    Container(
-                      height: 48,
-                      width: 48,
-                      decoration: BoxDecoration(
-                          color: Colors.white,
-                          boxShadow: [BoxShadow(color: Colors.black, offset: Offset(1, 2), spreadRadius: 2)]),
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Container(
+                        height: 42,
+                        width: 42,
+                        decoration: BoxDecoration(
+                            color: Colors.white,
+                            boxShadow: [BoxShadow(color: Colors.black, offset: Offset(1, 2), spreadRadius: 2)]),
+                      ),
                     ),
                   ],
                 ),
