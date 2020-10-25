@@ -41,15 +41,18 @@ class _NewonceMainPageState extends State<NewonceMainPage> {
                     Spacer(),
                     IconButton(
                       color: Colors.white,
-                      icon: Icon(Icons.opacity), onPressed: () {  },
+                      icon: Icon(Icons.opacity),
+                      onPressed: () {},
                     ),
                     IconButton(
                       color: Colors.white,
-                      icon: Icon(Icons.search), onPressed: () {  },
+                      icon: Icon(Icons.search),
+                      onPressed: () {},
                     ),
                     IconButton(
                       color: Colors.white,
-                      icon: Icon(Icons.menu), onPressed: () {  },
+                      icon: Icon(Icons.menu),
+                      onPressed: () {},
                     ),
                   ],
                 ),
@@ -60,143 +63,126 @@ class _NewonceMainPageState extends State<NewonceMainPage> {
               child: Column(
                 children: [
                   Expanded(
-                    flex:1,
-                    child: Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: Row(
-                        children: [
-                          Expanded(
-                            child: GestureDetector(
-                              onTap: (){
-                                setState(() {
-                                  _tabIndex = 0;
-                                });
-                              },
-                              child: Container(
-                                margin: EdgeInsets.only(bottom: 4, top: 4, right: 4 , left: 4),
-                                decoration: BoxDecoration(
-                                  color: _tabIndex == 0 ? Colors.blueAccent : Colors.white,
-                                  boxShadow: _tabIndex == 0 ? [
-                                    BoxShadow(
-                                      color: Colors.black,
-                                      offset: Offset(
-                                        2, 4
-                                      ),
-                                      spreadRadius: 2
-                                    ) ,
-                                  ] : []
-                                ),
-                                child: Center(
-                                  child: Text("ARTYKULY", style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                      color: _tabIndex == 0 ? Colors.white : Colors.black,
-                                    fontSize: 16
-
-                                  ),),
+                      flex: 1,
+                      child: Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Row(
+                          children: [
+                            Expanded(
+                              child: GestureDetector(
+                                onTap: () {
+                                  setState(() {
+                                    _tabIndex = 0;
+                                  });
+                                },
+                                child: Container(
+                                  margin: EdgeInsets.only(bottom: 4, top: 4, right: 4, left: 4),
+                                  decoration: BoxDecoration(
+                                      color: _tabIndex == 0 ? Colors.blueAccent : Colors.white,
+                                      boxShadow: _tabIndex == 0
+                                          ? [
+                                              BoxShadow(color: Colors.black, offset: Offset(2, 4), spreadRadius: 2),
+                                            ]
+                                          : []),
+                                  child: Center(
+                                    child: Text(
+                                      "ARTYKULY",
+                                      style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                          color: _tabIndex == 0 ? Colors.white : Colors.black,
+                                          fontSize: 16),
+                                    ),
+                                  ),
                                 ),
                               ),
                             ),
-                          ),
-                          Expanded(
-                            child: GestureDetector(
-                              onTap: (){
-                                setState(() {
-                                  _tabIndex = 1;
-                                });
-                              },
-                              child: Container(
-                                margin: EdgeInsets.only(bottom: 4, top: 4, right: 4 , left: 4),
-                                decoration: BoxDecoration(
-                                    color: _tabIndex == 1 ? Colors.blueAccent : Colors.white,
-                                    boxShadow: _tabIndex == 1 ? [
-                                      BoxShadow(
-                                          color: Colors.black,
-                                          offset: Offset(
-                                              2, 4
-                                          ),
-                                          spreadRadius: 2
-                                      ) ,
-                                    ] : []
-                                ),
-                                child: Center(
-                                  child: Text("PODCASTY", style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: _tabIndex == 1 ? Colors.white : Colors.black,
-                                      fontSize: 16
-
-                                  ),),
+                            Expanded(
+                              child: GestureDetector(
+                                onTap: () {
+                                  setState(() {
+                                    _tabIndex = 1;
+                                  });
+                                },
+                                child: Container(
+                                  margin: EdgeInsets.only(bottom: 4, top: 4, right: 4, left: 4),
+                                  decoration: BoxDecoration(
+                                      color: _tabIndex == 1 ? Colors.blueAccent : Colors.white,
+                                      boxShadow: _tabIndex == 1
+                                          ? [
+                                              BoxShadow(color: Colors.black, offset: Offset(2, 4), spreadRadius: 2),
+                                            ]
+                                          : []),
+                                  child: Center(
+                                    child: Text(
+                                      "PODCASTY",
+                                      style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                          color: _tabIndex == 1 ? Colors.white : Colors.black,
+                                          fontSize: 16),
+                                    ),
+                                  ),
                                 ),
                               ),
                             ),
-                          ),
-                          Expanded(
-                            child: GestureDetector(
-                              onTap: (){
-                                setState(() {
-                                  _tabIndex = 2;
-                                });
-                              },
-                              child: Container(
-                                margin: EdgeInsets.only(bottom: 4, top: 4, right: 4 , left: 4),
-                                decoration: BoxDecoration(
-                                    color: _tabIndex == 2 ? Colors.blueAccent : Colors.white,
-                                    boxShadow: _tabIndex == 2 ? [
-                                      BoxShadow(
-                                          color: Colors.black,
-                                          offset: Offset(
-                                              2, 4
-                                          ),
-                                          spreadRadius: 2
-                                      ) ,
-                                    ] : []
-                                ),
-                                child: Center(
-                                  child: Text("VIDEO", style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: _tabIndex == 2 ? Colors.white : Colors.black,
-                                      fontSize: 16
-
-                                  ),),
+                            Expanded(
+                              child: GestureDetector(
+                                onTap: () {
+                                  setState(() {
+                                    _tabIndex = 2;
+                                  });
+                                },
+                                child: Container(
+                                  margin: EdgeInsets.only(bottom: 4, top: 4, right: 4, left: 4),
+                                  decoration: BoxDecoration(
+                                      color: _tabIndex == 2 ? Colors.blueAccent : Colors.white,
+                                      boxShadow: _tabIndex == 2
+                                          ? [
+                                              BoxShadow(color: Colors.black, offset: Offset(2, 4), spreadRadius: 2),
+                                            ]
+                                          : []),
+                                  child: Center(
+                                    child: Text(
+                                      "VIDEO",
+                                      style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                          color: _tabIndex == 2 ? Colors.white : Colors.black,
+                                          fontSize: 16),
+                                    ),
+                                  ),
                                 ),
                               ),
                             ),
-                          ),
-                          Expanded(
-                            child: GestureDetector(
-                              onTap: (){
-                                setState(() {
-                                  _tabIndex = 3;
-                                });
-                              },
-                              child: Container(
-                                margin: EdgeInsets.only(bottom: 4, top: 4, right: 4 , left: 4),
-                                decoration: BoxDecoration(
-                                    color: _tabIndex == 3 ? Colors.blueAccent : Colors.white,
-                                    boxShadow: _tabIndex == 3 ? [
-                                      BoxShadow(
-                                          color: Colors.black,
-                                          offset: Offset(
-                                              2, 4
-                                          ),
-                                          spreadRadius: 2
-                                      ) ,
-                                    ] : []
-                                ),
-                                child: Center(
-                                  child: Text("ARTICLE", style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: _tabIndex == 3 ? Colors.white : Colors.black,
-                                      fontSize: 16
-
-                                  ),),
+                            Expanded(
+                              child: GestureDetector(
+                                onTap: () {
+                                  setState(() {
+                                    _tabIndex = 3;
+                                  });
+                                },
+                                child: Container(
+                                  margin: EdgeInsets.only(bottom: 4, top: 4, right: 4, left: 4),
+                                  decoration: BoxDecoration(
+                                      color: _tabIndex == 3 ? Colors.blueAccent : Colors.white,
+                                      boxShadow: _tabIndex == 3
+                                          ? [
+                                              BoxShadow(color: Colors.black, offset: Offset(2, 4), spreadRadius: 2),
+                                            ]
+                                          : []),
+                                  child: Center(
+                                    child: Text(
+                                      "ARTICLE",
+                                      style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                          color: _tabIndex == 3 ? Colors.white : Colors.black,
+                                          fontSize: 16),
+                                    ),
+                                  ),
                                 ),
                               ),
                             ),
-                          ),
-                        ],
-                      ),
-                    )
-                  ),
+                          ],
+                        ),
+                      )),
                   Expanded(
                     flex: 10,
                     child: Placeholder(),
