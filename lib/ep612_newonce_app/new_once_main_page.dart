@@ -23,7 +23,7 @@ class _NewonceMainPageState extends State<NewonceMainPage> {
                   children: [
                     Text(
                       "Flutter Feed",
-                      style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 32),
+                      style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 28),
                     ),
                     Padding(
                       padding: const EdgeInsets.all(8.0),
@@ -36,6 +36,7 @@ class _NewonceMainPageState extends State<NewonceMainPage> {
                         child: Icon(Icons.keyboard_arrow_down),
                       ),
                     ),
+                    Spacer(),
                     IconButton(
                       icon: Icon(Icons.opacity), onPressed: () {  },
                     ),
