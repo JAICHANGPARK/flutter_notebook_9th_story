@@ -89,7 +89,7 @@ class _NewonceMainPageState extends State<NewonceMainPage> {
                                 child: Center(
                                   child: Text("ARTYKULY", style: TextStyle(
                                     fontWeight: FontWeight.bold,
-                                    color: Colors.white,
+                                      color: _tabIndex == 0 ? Colors.white : Colors.black,
                                     fontSize: 16
 
                                   ),),
