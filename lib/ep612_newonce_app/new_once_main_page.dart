@@ -66,19 +66,34 @@ class _NewonceMainPageState extends State<NewonceMainPage> {
                       child: Row(
                         children: [
                           Expanded(
-                            child: Container(
-                              margin: EdgeInsets.only(bottom: 4, top: 4),
-                              decoration: BoxDecoration(
-                                color: Colors.blueAccent,
-                                boxShadow: [
-                                  BoxShadow(
-                                    color: Colors.black,
-                                    offset: Offset(
-                                      2, 4
+                            child: GestureDetector(
+                              onTap: (){
+                                setState(() {
+                                  _tabIndex = 0;
+                                });
+                              },
+                              child: Container(
+                                margin: EdgeInsets.only(bottom: 4, top: 4),
+                                decoration: BoxDecoration(
+                                  color: Colors.blueAccent,
+                                  boxShadow: [
+                                    BoxShadow(
+                                      color: Colors.black,
+                                      offset: Offset(
+                                        2, 4
+                                      ),
+                                      spreadRadius: 2
                                     ),
-                                    spreadRadius: 2
-                                  ),
-                                ]
+                                  ]
+                                ),
+                                child: Center(
+                                  child: Text("ARTYKULY", style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.white,
+                                    fontSize: 16
+
+                                  ),),
+                                ),
                               ),
                             ),
                           ),
