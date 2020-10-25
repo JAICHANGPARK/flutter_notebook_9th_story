@@ -7,7 +7,7 @@ class NewonceMainPage extends StatefulWidget {
 
 class _NewonceMainPageState extends State<NewonceMainPage> {
   num _tabIndex = 0;
-  
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -57,7 +57,11 @@ class _NewonceMainPageState extends State<NewonceMainPage> {
             ),
             Expanded(
               flex: 15,
-              child: Placeholder(),
+              child: Column(
+                children: [
+                  
+                ],
+              ),
             ),
           ],
         ),
