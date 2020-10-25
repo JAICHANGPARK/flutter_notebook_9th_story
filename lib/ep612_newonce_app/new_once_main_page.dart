@@ -75,16 +75,16 @@ class _NewonceMainPageState extends State<NewonceMainPage> {
                               child: Container(
                                 margin: EdgeInsets.only(bottom: 4, top: 4),
                                 decoration: BoxDecoration(
-                                  color: Colors.blueAccent,
-                                  boxShadow: [
+                                  color: _tabIndex == 0 ? Colors.blueAccent : Colors.white,
+                                  boxShadow: _tabIndex == 0 ? [
                                     BoxShadow(
                                       color: Colors.black,
                                       offset: Offset(
                                         2, 4
                                       ),
                                       spreadRadius: 2
-                                    ),
-                                  ]
+                                    ) ,
+                                  ] : []
                                 ),
                                 child: Center(
                                   child: Text("ARTYKULY", style: TextStyle(
