@@ -68,9 +68,10 @@ class _NewonceMainPageState extends State<NewonceMainPage> {
                           Expanded(
                             child: Container(
                               decoration: BoxDecoration(
+                                color: Colors.white,
                                 boxShadow: [
                                   BoxShadow(
-                                    
+                                    color: Colors.black
                                   ),
                                 ]
                               ),
