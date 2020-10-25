@@ -6,6 +6,8 @@ class NewonceMainPage extends StatefulWidget {
 }
 
 class _NewonceMainPageState extends State<NewonceMainPage> {
+  num _tabIndex = 0;
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -38,12 +40,15 @@ class _NewonceMainPageState extends State<NewonceMainPage> {
                     ),
                     Spacer(),
                     IconButton(
+                      color: Colors.white,
                       icon: Icon(Icons.opacity), onPressed: () {  },
                     ),
                     IconButton(
+                      color: Colors.white,
                       icon: Icon(Icons.search), onPressed: () {  },
                     ),
                     IconButton(
+                      color: Colors.white,
                       icon: Icon(Icons.menu), onPressed: () {  },
                     ),
                   ],
