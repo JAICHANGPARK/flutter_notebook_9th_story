@@ -296,7 +296,7 @@ class _NewonceMainPageState extends State<NewonceMainPage> {
                                 decoration: BoxDecoration(
                                   color: Colors.white,
                                   border: Border.all(color: Colors.black,
-                                  width: 2),
+                                  width: 1),
                                 ),
                                 child: Center(
                                   child: Icon(Icons.bookmark_border),
