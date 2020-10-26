@@ -236,7 +236,19 @@ class _NewonceMainPageState extends State<NewonceMainPage> {
                      left: 8,
                      right: 8,
                      bottom: 8,
-                     top: 16,
+                     top: 8,
+                     child: Container(
+                       decoration: BoxDecoration(
+                           color: Colors.white,
+                           border: Border.all(color: Colors.black, width: 2)
+                       ),
+                     ),
+                   ),
+                   Positioned(
+                     left: 0,
+                     right: 0,
+                     bottom: 16,
+                     top: 0,
                      child: Container(
                        decoration: BoxDecoration(
                            color: Colors.white,
