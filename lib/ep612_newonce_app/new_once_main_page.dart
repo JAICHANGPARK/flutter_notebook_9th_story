@@ -294,7 +294,9 @@ class _NewonceMainPageState extends State<NewonceMainPage> {
                                 height: 48,
                                 width: 48,
                                 decoration: BoxDecoration(
-                                  color: Colors.white
+                                  color: Colors.white,
+                                  border: Border.all(color: Colors.black,
+                                  width: 2)
                                 ),
                               ),
                             )
