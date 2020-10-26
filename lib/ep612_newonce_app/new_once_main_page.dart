@@ -220,7 +220,13 @@ class _NewonceMainPageState extends State<NewonceMainPage> {
                ),
                child: Stack(
                  children: [
-                   
+                  Positioned(
+                    left: 16,
+                    right: 16,
+                    bottom: 0,
+                    top: 0,
+                    child: Container(),
+                  )
                  ],
                ),
              )
