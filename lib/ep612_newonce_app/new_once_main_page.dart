@@ -268,7 +268,11 @@ class _NewonceMainPageState extends State<NewonceMainPage> {
                                           Text('Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua'),
                                           Row(
                                             children: [
-
+                                              Text("Flutter", style: TextStyle(
+                                                fontWeight: FontWeight.bold,
+                                                color: Colors.blueAccent
+                                              ),),
+                                              Text("Dreamwalker")
                                             ],
                                           )
                                         ],
