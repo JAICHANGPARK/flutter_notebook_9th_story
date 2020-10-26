@@ -286,6 +286,17 @@ class _NewonceMainPageState extends State<NewonceMainPage> {
                                   ),
                                 ],
                               ),
+                            ),
+                            Positioned(
+                              right: 0,
+                              top: 0,
+                              child: Container(
+                                height: 48,
+                                width: 48,
+                                decoration: BoxDecoration(
+                                  color: Colors.white
+                                ),
+                              ),
                             )
                           ],
                         ),
