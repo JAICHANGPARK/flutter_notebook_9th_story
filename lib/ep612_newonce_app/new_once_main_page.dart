@@ -260,15 +260,19 @@ class _NewonceMainPageState extends State<NewonceMainPage> {
                                   ),
                                   Expanded(
                                     flex: 3,
-                                    child: Column(
-                                      children: [
-                                        Text('Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua'),
-                                        Row(
-                                          children: [
+                                    child: Padding(
+                                      padding: const EdgeInsets.only(top: 24,
+                                      left: 16, right: 16),
+                                      child: Column(
+                                        children: [
+                                          Text('Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua'),
+                                          Row(
+                                            children: [
 
-                                          ],
-                                        )
-                                      ],
+                                            ],
+                                          )
+                                        ],
+                                      ),
                                     ),
                                   ),
                                 ],
