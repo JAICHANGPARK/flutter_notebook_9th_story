@@ -208,7 +208,13 @@ class _NewonceMainPageState extends State<NewonceMainPage> {
     );
   }
 
-  Widget _buildListViewWidget(){
+  Widget _buildListViewWidget(int _tabIndex){
+
+    switch(_tabIndex){
+      default:
+        return Container();
+        break;
+    }
 
   }
 }
