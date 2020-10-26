@@ -264,6 +264,7 @@ class _NewonceMainPageState extends State<NewonceMainPage> {
                                       padding: const EdgeInsets.only(top: 24,
                                       left: 16, right: 16),
                                       child: Column(
+                                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                         children: [
                                           Text('Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua'),
                                           Row(
@@ -272,7 +273,11 @@ class _NewonceMainPageState extends State<NewonceMainPage> {
                                                 fontWeight: FontWeight.bold,
                                                 color: Colors.blueAccent
                                               ),),
-                                              Text("Dreamwalker")
+
+                                              Padding(
+                                                padding: const EdgeInsets.all(8.0),
+                                                child: Text("Dreamwalker"),
+                                              )
                                             ],
                                           )
                                         ],
