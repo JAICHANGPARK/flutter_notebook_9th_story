@@ -255,11 +255,16 @@ class _NewonceMainPageState extends State<NewonceMainPage> {
                                     child: Image.network(
                                       "https://cdn.pixabay.com/photo/2015/06/19/09/39/lonely-814631_960_720.jpg",
                                       fit: BoxFit.cover,
+                                      width: double.infinity,
                                     ),
                                   ),
                                   Expanded(
                                     flex: 3,
-                                    child: Placeholder(),
+                                    child: Column(
+                                      children: [
+                                        Text('')
+                                      ],
+                                    ),
                                   ),
                                 ],
                               ),
