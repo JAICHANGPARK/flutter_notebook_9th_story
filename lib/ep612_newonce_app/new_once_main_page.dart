@@ -187,9 +187,7 @@ class _NewonceMainPageState extends State<NewonceMainPage> {
                     flex: 10,
                     child: SingleChildScrollView(
                       child: Column(
-                        children: [
-
-                        ],
+                        children: [],
                       ),
                     ),
                   ),
