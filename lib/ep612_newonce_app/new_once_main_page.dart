@@ -209,7 +209,13 @@ class _NewonceMainPageState extends State<NewonceMainPage> {
     switch(_tabIndex){
 
       case 0:
-        return Container();
+        return SingleChildScrollView(
+          child: Column(
+            children: [
+              
+            ],
+          ),
+        );
       case 1:
         return Container();
       case 2:
