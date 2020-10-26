@@ -314,7 +314,9 @@ class _NewonceMainPageState extends State<NewonceMainPage> {
                                 height: 32,
                                 width: 100,
                                 decoration: BoxDecoration(
-                                  color: Colors.indigo
+                                  color: Colors.indigo,
+                                  border: Border.all(color: Colors.black,
+                                      width: 2),
                                 ),
                                 child: Center(
                                   child: Text("Dart", style: TextStyle(
