@@ -185,11 +185,7 @@ class _NewonceMainPageState extends State<NewonceMainPage> {
                       )),
                   Expanded(
                     flex: 10,
-                    child: SingleChildScrollView(
-                      child: Column(
-                        children: [],
-                      ),
-                    ),
+                    child: _buildListViewWidget(_tabIndex)
                   ),
                 ],
               ),
