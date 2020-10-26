@@ -183,10 +183,7 @@ class _NewonceMainPageState extends State<NewonceMainPage> {
                           ],
                         ),
                       )),
-                  Expanded(
-                    flex: 10,
-                    child: _buildListViewWidget(_tabIndex)
-                  ),
+                  Expanded(flex: 10, child: _buildListViewWidget(_tabIndex)),
                 ],
               ),
             ),
@@ -204,84 +201,76 @@ class _NewonceMainPageState extends State<NewonceMainPage> {
     );
   }
 
-  Widget _buildListViewWidget(int _tabIndex){
-
-    switch(_tabIndex){
-
+  Widget _buildListViewWidget(int _tabIndex) {
+    switch (_tabIndex) {
       case 0:
         return SingleChildScrollView(
           child: Column(
             children: [
-             Container(
-               margin: EdgeInsets.all(16),
-               height: MediaQuery.of(context).size.height / 2.2 ,
-               decoration: BoxDecoration(
-                 color: Colors.red
-               ),
-               child: Stack(
-                 children: [
-                  Positioned(
-                    left: 16,
-                    right: 16,
-                    bottom: 0,
-                    top: 16,
-                    child: Container(
-                      decoration: BoxDecoration(
-                        color: Colors.white,
-                        border: Border.all(color: Colors.black, width: 2)
+              Container(
+                margin: EdgeInsets.all(16),
+                height: MediaQuery.of(context).size.height / 2.2,
+                decoration: BoxDecoration(color: Colors.red),
+                child: Stack(
+                  children: [
+                    Positioned(
+                      left: 16,
+                      right: 16,
+                      bottom: 0,
+                      top: 16,
+                      child: Container(
+                        decoration:
+                            BoxDecoration(color: Colors.white, border: Border.all(color: Colors.black, width: 2)),
                       ),
                     ),
-                  ),
-                   Positioned(
-                     left: 8,
-                     right: 8,
-                     bottom: 8,
-                     top: 8,
-                     child: Container(
-                       decoration: BoxDecoration(
-                           color: Colors.white,
-                           border: Border.all(color: Colors.black, width: 2)
-                       ),
-                     ),
-                   ),
-                   Positioned(
-                     left: 0,
-                     right: 0,
-                     bottom: 16,
-                     top: 0,
-                     child: Container(
-                       decoration: BoxDecoration(
-                           color: Colors.white,
-                           border: Border.all(color: Colors.black, width: 2)
-                       ),
-                       child: Stack(
-                         children: [
-                           Positioned(
-                             left: 0,
-                             right: 0,
-                             bottom: 0,
-                             top: 0,
-                             child: Column(
-                               children: [
-                                 Expanded(
-                                   flex: 5,
-                                   child: Placeholder(),
-                                 ),
-                                 Expanded(
-                                   flex: 3,
-                                   child: Placeholder(),
-                                 ),
-                               ],
-                             ),
-                           )
-                         ],
-                       ),
-                     ),
-
-                   )
-                 ],
-               ),
-             )
+                    Positioned(
+                      left: 8,
+                      right: 8,
+                      bottom: 8,
+                      top: 8,
+                      child: Container(
+                        decoration:
+                            BoxDecoration(color: Colors.white, border: Border.all(color: Colors.black, width: 2)),
+                      ),
+                    ),
+                    Positioned(
+                      left: 0,
+                      right: 0,
+                      bottom: 16,
+                      top: 0,
+                      child: Container(
+                        decoration:
+                            BoxDecoration(color: Colors.white, border: Border.all(color: Colors.black, width: 2)),
+                        child: Stack(
+                          children: [
+                            Positioned(
+                              left: 0,
+                              right: 0,
+                              bottom: 0,
+                              top: 0,
+                              child: Column(
+                                children: [
+                                  Expanded(
+                                    flex: 5,
+                                    child: Image.network(
+                                      "https://cdn.pixabay.com/photo/2015/06/19/09/39/lonely-814631_960_720.jpg",
+                                      fit: BoxFit.cover,
+                                    ),
+                                  ),
+                                  Expanded(
+                                    flex: 3,
+                                    child: Placeholder(),
+                                  ),
+                                ],
+                              ),
+                            )
+                          ],
+                        ),
+                      ),
+                    )
+                  ],
+                ),
+              )
             ],
           ),
         );
@@ -296,33 +285,5 @@ class _NewonceMainPageState extends State<NewonceMainPage> {
         return Container();
         break;
     }
-
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
