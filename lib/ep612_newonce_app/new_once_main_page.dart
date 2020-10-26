@@ -214,6 +214,13 @@ class _NewonceMainPageState extends State<NewonceMainPage> {
 
       case 0:
         return Container();
+      case 1:
+        return Container();
+      case 2:
+        return Container();
+      case 3:
+        return Container();
+
       default:
         return Container();
         break;
