@@ -212,7 +212,12 @@ class _NewonceMainPageState extends State<NewonceMainPage> {
         return SingleChildScrollView(
           child: Column(
             children: [
-              
+             Container(
+               height: MediaQuery.of(context).size.height / 2.4 ,
+               decoration: BoxDecoration(
+                 color: Colors.red
+               ),
+             )
             ],
           ),
         );
