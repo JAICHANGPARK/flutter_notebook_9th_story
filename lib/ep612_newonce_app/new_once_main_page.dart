@@ -302,11 +302,23 @@ class _NewonceMainPageState extends State<NewonceMainPage> {
                                   child: Icon(Icons.bookmark_border),
                                 ),
                               ),
+                            ),
+                            Positioned(
+                              left: 0,
+                              bottom: 64,
+                              child: Container(
+                                height: 32,
+                                width: 100,
+                                decoration: BoxDecoration(
+                                  color: Colors.indigo
+                                ),
+                              ),
                             )
                           ],
                         ),
                       ),
-                    )
+                    ),
+
                   ],
                 ),
               )
