@@ -262,7 +262,12 @@ class _NewonceMainPageState extends State<NewonceMainPage> {
                                     flex: 3,
                                     child: Column(
                                       children: [
-                                        Text('')
+                                        Text('Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua'),
+                                        Row(
+                                          children: [
+
+                                          ],
+                                        )
                                       ],
                                     ),
                                   ),
