@@ -207,4 +207,35 @@ class _NewonceMainPageState extends State<NewonceMainPage> {
       ),
     );
   }
+
+  Widget _buildListViewWidget(){
+
+  }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
