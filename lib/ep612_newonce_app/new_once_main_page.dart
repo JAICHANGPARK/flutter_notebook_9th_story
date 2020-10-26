@@ -317,10 +317,13 @@ class _NewonceMainPageState extends State<NewonceMainPage> {
                                 decoration: BoxDecoration(
                                   color: Colors.indigo
                                 ),
-                                child: Text("Dart", style: TextStyle(
-                                  color: Colors.white,
-                                  fontWeight: FontWeight.bold
-                                ),),
+                                child: Center(
+                                  child: Text("Dart", style: TextStyle(
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 18
+                                  ),),
+                                ),
                               ),
                             )
                           ],
