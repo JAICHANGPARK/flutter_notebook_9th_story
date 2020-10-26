@@ -252,9 +252,7 @@ class _NewonceMainPageState extends State<NewonceMainPage> {
                                   Expanded(
                                     flex: 5,
                                     child: Container(
-                                      decoration: BoxDecoration(
-                                        border: Border.all(color: Colors.black)
-                                      ),
+                                      decoration: BoxDecoration(border: Border.all(color: Colors.black)),
                                       child: Image.network(
                                         "https://cdn.pixabay.com/photo/2015/06/19/09/39/lonely-814631_960_720.jpg",
                                         fit: BoxFit.cover,
@@ -265,19 +263,18 @@ class _NewonceMainPageState extends State<NewonceMainPage> {
                                   Expanded(
                                     flex: 3,
                                     child: Padding(
-                                      padding: const EdgeInsets.only(top: 24,
-                                      left: 16, right: 16),
+                                      padding: const EdgeInsets.only(top: 24, left: 16, right: 16),
                                       child: Column(
                                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                         children: [
-                                          Text('Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua'),
+                                          Text(
+                                              'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua'),
                                           Row(
                                             children: [
-                                              Text("Flutter", style: TextStyle(
-                                                fontWeight: FontWeight.bold,
-                                                color: Colors.blueAccent
-                                              ),),
-
+                                              Text(
+                                                "Flutter",
+                                                style: TextStyle(fontWeight: FontWeight.bold, color: Colors.blueAccent),
+                                              ),
                                               Padding(
                                                 padding: const EdgeInsets.all(8.0),
                                                 child: Text("Dreamwalker"),
@@ -299,8 +296,7 @@ class _NewonceMainPageState extends State<NewonceMainPage> {
                                 width: 48,
                                 decoration: BoxDecoration(
                                   color: Colors.white,
-                                  border: Border.all(color: Colors.black,
-                                  width: 1),
+                                  border: Border.all(color: Colors.black, width: 1),
                                 ),
                                 child: Center(
                                   child: Icon(Icons.bookmark_border),
@@ -315,15 +311,13 @@ class _NewonceMainPageState extends State<NewonceMainPage> {
                                 width: 100,
                                 decoration: BoxDecoration(
                                   color: Colors.indigo,
-                                  border: Border.all(color: Colors.black,
-                                      width: 2),
+                                  border: Border.all(color: Colors.black, width: 2),
                                 ),
                                 child: Center(
-                                  child: Text("Dart", style: TextStyle(
-                                    color: Colors.white,
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 18
-                                  ),),
+                                  child: Text(
+                                    "Dart",
+                                    style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 18),
+                                  ),
                                 ),
                               ),
                             )
@@ -331,7 +325,6 @@ class _NewonceMainPageState extends State<NewonceMainPage> {
                         ),
                       ),
                     ),
-
                   ],
                 ),
               )
