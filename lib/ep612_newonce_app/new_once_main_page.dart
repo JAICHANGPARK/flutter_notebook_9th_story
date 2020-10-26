@@ -252,10 +252,15 @@ class _NewonceMainPageState extends State<NewonceMainPage> {
                                 children: [
                                   Expanded(
                                     flex: 5,
-                                    child: Image.network(
-                                      "https://cdn.pixabay.com/photo/2015/06/19/09/39/lonely-814631_960_720.jpg",
-                                      fit: BoxFit.cover,
-                                      width: double.infinity,
+                                    child: Container(
+                                      decoration: BoxDecoration(
+                                        border: Border.all(color: Colors.black)
+                                      ),
+                                      child: Image.network(
+                                        "https://cdn.pixabay.com/photo/2015/06/19/09/39/lonely-814631_960_720.jpg",
+                                        fit: BoxFit.cover,
+                                        width: double.infinity,
+                                      ),
                                     ),
                                   ),
                                   Expanded(
@@ -304,8 +309,8 @@ class _NewonceMainPageState extends State<NewonceMainPage> {
                               ),
                             ),
                             Positioned(
-                              left: 0,
-                              bottom: 64,
+                              left: 16,
+                              bottom: 100,
                               child: Container(
                                 height: 32,
                                 width: 100,
