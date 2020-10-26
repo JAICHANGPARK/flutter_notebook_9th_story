@@ -310,13 +310,17 @@ class _NewonceMainPageState extends State<NewonceMainPage> {
                             ),
                             Positioned(
                               left: 16,
-                              bottom: 100,
+                              bottom: 108,
                               child: Container(
                                 height: 32,
                                 width: 100,
                                 decoration: BoxDecoration(
                                   color: Colors.indigo
                                 ),
+                                child: Text("Dart", style: TextStyle(
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.bold
+                                ),),
                               ),
                             )
                           ],
