@@ -214,7 +214,7 @@ class _NewonceMainPageState extends State<NewonceMainPage> {
             children: [
              Container(
                margin: EdgeInsets.all(16),
-               height: MediaQuery.of(context).size.height / 2.4 ,
+               height: MediaQuery.of(context).size.height / 2.2 ,
                decoration: BoxDecoration(
                  color: Colors.red
                ),
@@ -254,7 +254,30 @@ class _NewonceMainPageState extends State<NewonceMainPage> {
                            color: Colors.white,
                            border: Border.all(color: Colors.black, width: 2)
                        ),
+                       child: Stack(
+                         children: [
+                           Positioned(
+                             left: 0,
+                             right: 0,
+                             bottom: 0,
+                             top: 0,
+                             child: Column(
+                               children: [
+                                 Expanded(
+                                   flex: 5,
+                                   child: Placeholder(),
+                                 ),
+                                 Expanded(
+                                   flex: 3,
+                                   child: Placeholder(),
+                                 ),
+                               ],
+                             ),
+                           )
+                         ],
+                       ),
                      ),
+
                    )
                  ],
                ),
