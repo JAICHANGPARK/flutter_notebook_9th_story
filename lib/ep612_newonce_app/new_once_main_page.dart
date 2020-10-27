@@ -358,6 +358,16 @@ class _NewonceMainPageState extends State<NewonceMainPage> {
                               decoration: BoxDecoration(
                                   border: Border.all(color: Colors.white)
                               ),
+                              child: Column(
+                                children: [
+                                  Text("Kick Off"),
+                                  Text("Dreamwalker Flutter Live Coding", style: TextStyle(
+                                    fontSize: 16,
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.white
+                                  ),)
+                                ],
+                              ),
                             ),
                           ),
 
