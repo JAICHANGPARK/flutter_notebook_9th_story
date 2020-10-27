@@ -327,7 +327,8 @@ class _NewonceMainPageState extends State<NewonceMainPage> {
                     ),
                   ],
                 ),
-              )
+              ),
+              
             ],
           ),
         );
