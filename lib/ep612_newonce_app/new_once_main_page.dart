@@ -359,8 +359,13 @@ class _NewonceMainPageState extends State<NewonceMainPage> {
                                   border: Border.all(color: Colors.white)
                               ),
                               child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                 children: [
-                                  Text("Kick Off"),
+                                  Text("Kick Off", style: TextStyle(
+                                    color: Colors.white.withOpacity(0.7),
+
+                                  ),),
                                   Text("Dreamwalker Flutter Live Coding", style: TextStyle(
                                     fontSize: 16,
                                     fontWeight: FontWeight.bold,
