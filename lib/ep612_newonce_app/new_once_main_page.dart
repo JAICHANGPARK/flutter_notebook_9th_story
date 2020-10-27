@@ -338,11 +338,27 @@ class _NewonceMainPageState extends State<NewonceMainPage> {
                   children: [
                     Expanded(
                       flex:5,
-                      child: Placeholder(),
+                      child: Row(
+                        children: [
+                          Expanded(
+                            flex: 3,
+                            child: Placeholder(),
+                          ),
+                          Expanded(
+                            flex: 8,
+                            child: Placeholder(),
+                          ),
+
+                        ],
+                      ),
                     ),
                     Expanded(
                       flex:3,
-                      child: Placeholder(),
+                      child: Row(
+                        children: [
+                          
+                        ],
+                      ),
                     ),
                   ],
                 ),
