@@ -328,7 +328,13 @@ class _NewonceMainPageState extends State<NewonceMainPage> {
                   ],
                 ),
               ),
-              
+              Container(
+                margin: EdgeInsets.all(16),
+                height: MediaQuery.of(context).size.height / 4,
+                decoration: BoxDecoration(
+                  color: Colors.black
+                ),
+              )
             ],
           ),
         );
@@ -345,3 +351,37 @@ class _NewonceMainPageState extends State<NewonceMainPage> {
     }
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
