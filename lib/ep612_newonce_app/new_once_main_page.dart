@@ -448,6 +448,14 @@ class _NewonceMainPageState extends State<NewonceMainPage> {
                                         ),
                                       ],
                                     ),
+                                  ),
+                                  Expanded(
+                                    child: Container(
+                                      margin: EdgeInsets.symmetric(vertical: 13),
+                                      decoration: BoxDecoration(
+                                        color: Colors.white
+                                      ),
+                                    ),
                                   )
                                 ],
                               ),
