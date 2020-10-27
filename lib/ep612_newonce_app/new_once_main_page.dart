@@ -401,7 +401,16 @@ class _NewonceMainPageState extends State<NewonceMainPage> {
                                 ),
                                 Expanded(
                                   child: Container(
-                                    decoration: BoxDecoration(border: Border.all(color: Colors.white)),
+                                    decoration: BoxDecoration(
+                                      border: Border.all(color: Colors.white),
+                                    ),
+                                    child: Center(
+                                      child: IconButton(
+                                        icon: Icon(
+                                          Icons.bookmark_border,
+                                          color: Colors.white,
+                                        ), onPressed: () {  },),
+                                    ),
                                   ),
                                 ),
                               ],
@@ -411,7 +420,19 @@ class _NewonceMainPageState extends State<NewonceMainPage> {
                             flex: 8,
                             child: Container(
                               decoration: BoxDecoration(border: Border.all(color: Colors.white)),
+                              child: Column(
+                                children: [
+                                  Expanded(
+                                    child: Row(
+                                      children: [
+
+                                      ],
+                                    ),
+                                  )
+                                ],
+                              ),
                             ),
+
                           ),
                         ],
                       ),
