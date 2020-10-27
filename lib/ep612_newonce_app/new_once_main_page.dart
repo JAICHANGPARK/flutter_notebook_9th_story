@@ -424,7 +424,7 @@ class _NewonceMainPageState extends State<NewonceMainPage> {
                             flex: 8,
                             child: Container(
                               decoration: BoxDecoration(border: Border.all(color: Colors.white)),
-                              padding: EdgeInsets.symmetric(horizontal: 8),
+                              padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                               child: Column(
                                 children: [
                                   Expanded(
@@ -451,7 +451,7 @@ class _NewonceMainPageState extends State<NewonceMainPage> {
                                   ),
                                   Expanded(
                                     child: Container(
-                                      margin: EdgeInsets.symmetric(vertical: 13),
+                                      margin: EdgeInsets.symmetric(vertical: 11),
                                       decoration: BoxDecoration(
                                         color: Colors.white
                                       ),
