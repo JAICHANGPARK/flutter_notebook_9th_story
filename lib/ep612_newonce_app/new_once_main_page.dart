@@ -337,51 +337,48 @@ class _NewonceMainPageState extends State<NewonceMainPage> {
                 child: Column(
                   children: [
                     Expanded(
-                      flex:5,
+                      flex: 5,
                       child: Row(
                         children: [
                           Expanded(
                             flex: 3,
                             child: Container(
                               decoration: BoxDecoration(
-                                border: Border.all(color: Colors.white),
-                                image: DecorationImage(
-                                  image: NetworkImage("https://cdn.pixabay.com/photo/2016/02/19/10/56/hip-hop-1209499__340.jpg"),
-                                  fit: BoxFit.cover
-                                )
-                              ),
+                                  border: Border.all(color: Colors.white),
+                                  image: DecorationImage(
+                                      image: NetworkImage(
+                                          "https://cdn.pixabay.com/photo/2016/02/19/10/56/hip-hop-1209499__340.jpg"),
+                                      fit: BoxFit.cover)),
                             ),
                           ),
                           Expanded(
                             flex: 8,
                             child: Container(
-                              decoration: BoxDecoration(
-                                  border: Border.all(color: Colors.white)
-                              ),
+                              decoration: BoxDecoration(border: Border.all(color: Colors.white)),
                               padding: EdgeInsets.all(16),
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                 children: [
-                                  Text("Kick Off", style: TextStyle(
-                                    color: Colors.white.withOpacity(0.7),
-
-                                  ),),
-                                  Text("Dreamwalker Flutter Live Coding", style: TextStyle(
-                                    fontSize: 16,
-                                    fontWeight: FontWeight.bold,
-                                    color: Colors.white
-                                  ),)
+                                  Text(
+                                    "Kick Off",
+                                    style: TextStyle(
+                                      color: Colors.white.withOpacity(0.7),
+                                    ),
+                                  ),
+                                  Text(
+                                    "Dreamwalker Flutter Live Coding",
+                                    style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold, color: Colors.white),
+                                  )
                                 ],
                               ),
                             ),
                           ),
-
                         ],
                       ),
                     ),
                     Expanded(
-                      flex:3,
+                      flex: 3,
                       child: Row(
                         children: [
                           Expanded(
@@ -389,18 +386,22 @@ class _NewonceMainPageState extends State<NewonceMainPage> {
                             child: Row(
                               children: [
                                 Expanded(
-                                  child:  Container(
+                                  child: Container(
                                     decoration: BoxDecoration(
-                                        border: Border.all(color: Colors.white),
+                                      border: Border.all(color: Colors.white),
                                     ),
-                                    child: IconButton(icon: Icon(Icons.play_arrow_outlined, color: Colors.white,)),
+                                    child: Center(
+                                      child: IconButton(
+                                          icon: Icon(
+                                        Icons.play_arrow_outlined,
+                                        color: Colors.white,
+                                      ), onPressed: () {  },),
+                                    ),
                                   ),
                                 ),
                                 Expanded(
-                                  child:  Container(
-                                    decoration: BoxDecoration(
-                                        border: Border.all(color: Colors.white)
-                                    ),
+                                  child: Container(
+                                    decoration: BoxDecoration(border: Border.all(color: Colors.white)),
                                   ),
                                 ),
                               ],
@@ -408,13 +409,10 @@ class _NewonceMainPageState extends State<NewonceMainPage> {
                           ),
                           Expanded(
                             flex: 8,
-                            child:  Container(
-                              decoration: BoxDecoration(
-                                  border: Border.all(color: Colors.white)
-                              ),
+                            child: Container(
+                              decoration: BoxDecoration(border: Border.all(color: Colors.white)),
                             ),
                           ),
-
                         ],
                       ),
                     ),
@@ -437,37 +435,3 @@ class _NewonceMainPageState extends State<NewonceMainPage> {
     }
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
