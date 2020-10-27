@@ -425,7 +425,13 @@ class _NewonceMainPageState extends State<NewonceMainPage> {
                                   Expanded(
                                     child: Row(
                                       children: [
-
+                                        Text("Flutter Radio", style: TextStyle(
+                                          color: Colors.white.withOpacity(0.2)
+                                        ),),
+                                        Text("1:17:01", style: TextStyle(
+                                          color: Colors.white
+                                        ),),
+                                        Icon(Icons.mic_none, color: Colors.white,),
                                       ],
                                     ),
                                   )
