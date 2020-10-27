@@ -344,7 +344,11 @@ class _NewonceMainPageState extends State<NewonceMainPage> {
                             flex: 3,
                             child: Container(
                               decoration: BoxDecoration(
-                                border: Border.all(color: Colors.white)
+                                border: Border.all(color: Colors.white),
+                                image: DecorationImage(
+                                  image: NetworkImage("https://cdn.pixabay.com/photo/2016/02/19/10/56/hip-hop-1209499__340.jpg"),
+                                  fit: BoxFit.cover
+                                )
                               ),
                             ),
                           ),
@@ -371,7 +375,8 @@ class _NewonceMainPageState extends State<NewonceMainPage> {
                                 Expanded(
                                   child:  Container(
                                     decoration: BoxDecoration(
-                                        border: Border.all(color: Colors.white)
+                                        border: Border.all(color: Colors.white),
+
                                     ),
                                   ),
                                 ),
