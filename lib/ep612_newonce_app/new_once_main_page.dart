@@ -342,11 +342,17 @@ class _NewonceMainPageState extends State<NewonceMainPage> {
                         children: [
                           Expanded(
                             flex: 3,
-                            child: Placeholder(),
+                            child: Container(
+                              decoration: BoxDecoration(
+                                border: Border.all(color: Colors.white)
+                              ),
+                            ),
                           ),
                           Expanded(
                             flex: 8,
-                            child: Placeholder(),
+                            child: Container(
+                              
+                            ),
                           ),
 
                         ],
