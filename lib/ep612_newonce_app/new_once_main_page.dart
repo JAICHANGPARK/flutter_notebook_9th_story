@@ -392,10 +392,12 @@ class _NewonceMainPageState extends State<NewonceMainPage> {
                                     ),
                                     child: Center(
                                       child: IconButton(
-                                          icon: Icon(
-                                        Icons.play_arrow_outlined,
-                                        color: Colors.white,
-                                      ), onPressed: () {  },),
+                                        icon: Icon(
+                                          Icons.play_arrow_outlined,
+                                          color: Colors.white,
+                                        ),
+                                        onPressed: () {},
+                                      ),
                                     ),
                                   ),
                                 ),
@@ -409,7 +411,9 @@ class _NewonceMainPageState extends State<NewonceMainPage> {
                                         icon: Icon(
                                           Icons.bookmark_border,
                                           color: Colors.white,
-                                        ), onPressed: () {  },),
+                                        ),
+                                        onPressed: () {},
+                                      ),
                                     ),
                                   ),
                                 ),
@@ -420,25 +424,34 @@ class _NewonceMainPageState extends State<NewonceMainPage> {
                             flex: 8,
                             child: Container(
                               decoration: BoxDecoration(border: Border.all(color: Colors.white)),
+                              padding: EdgeInsets.symmetric(horizontal: 8),
                               child: Column(
                                 children: [
                                   Expanded(
                                     child: Row(
                                       children: [
-                                        Text("Flutter Radio", style: TextStyle(
-                                          color: Colors.white.withOpacity(0.2)
-                                        ),),
-                                        Text("1:17:01", style: TextStyle(
-                                          color: Colors.white
-                                        ),),
-                                        Icon(Icons.mic_none, color: Colors.white,),
+                                        Text(
+                                          "Flutter Radio",
+                                          style: TextStyle(color: Colors.white.withOpacity(0.2),
+                                          fontSize: 12),
+                                        ),
+                                        Spacer(),
+                                        Text(
+                                          "1:17:01",
+                                          style: TextStyle(color: Colors.white,
+                                          fontSize: 12),
+                                        ),
+                                        Icon(
+                                          Icons.mic_none,
+                                          color: Colors.white,
+                                          size: 18,
+                                        ),
                                       ],
                                     ),
                                   )
                                 ],
                               ),
                             ),
-
                           ),
                         ],
                       ),
