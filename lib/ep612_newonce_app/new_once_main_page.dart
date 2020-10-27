@@ -330,9 +330,21 @@ class _NewonceMainPageState extends State<NewonceMainPage> {
               ),
               Container(
                 margin: EdgeInsets.only(left: 16, right: 16, bottom: 8),
-                height: MediaQuery.of(context).size.height / 6,
+                height: MediaQuery.of(context).size.height / 5,
                 decoration: BoxDecoration(
-                  color: Colors.black
+                  color: Colors.black,
+                ),
+                child: Column(
+                  children: [
+                    Expanded(
+                      flex:5,
+                      child: Placeholder(),
+                    ),
+                    Expanded(
+                      flex:3,
+                      child: Placeholder(),
+                    ),
+                  ],
                 ),
               )
             ],
