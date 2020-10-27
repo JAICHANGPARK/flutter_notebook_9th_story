@@ -358,6 +358,7 @@ class _NewonceMainPageState extends State<NewonceMainPage> {
                               decoration: BoxDecoration(
                                   border: Border.all(color: Colors.white)
                               ),
+                              padding: EdgeInsets.all(16),
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -391,8 +392,8 @@ class _NewonceMainPageState extends State<NewonceMainPage> {
                                   child:  Container(
                                     decoration: BoxDecoration(
                                         border: Border.all(color: Colors.white),
-
                                     ),
+                                    child: IconButton(icon: Icon(Icons.play_arrow_outlined, color: Colors.white,)),
                                   ),
                                 ),
                                 Expanded(
