@@ -15,39 +15,49 @@ class EducationSplashPage extends StatelessWidget {
   Widget build(BuildContext context) {
     print(MediaQuery.of(context).size.width);
     return Scaffold(
-      body: Stack(
-        children: [
-          Positioned(
-            top: 0,
-            left: 0,
-            right: 0,
-            child: CustomPaint(
-              size: Size(MediaQuery.of(context).size.width, 500), //You can Replace this with your desired WIDTH and HEIGHT
-              painter: RPSCustomPainter(),
-            ),
-          ),
-
-          Positioned(
-            left: 16,
-            right: 16,
-            bottom: 0,
-            top: 280,
-            child: Container(
-              decoration: BoxDecoration(
-                image: DecorationImage(
-                  image: NetworkImage("https://ouch-cdn.icons8.com/thumb/535/abbc33d2-cb5a-400e-8e5d-a82498747ad8.png",
+      body: SafeArea(
+        child: Stack(
+          children: [
+            Positioned(
+              top: 0,
+              left: 0,
+              right: 0,
+              bottom: 240,
+              child: CustomPaint(
+                size: Size(MediaQuery.of(context).size.width, 500), //You can Replace this with your desired WIDTH and HEIGHT
+                painter: RPSCustomPainter(),
+                child: Center(
+                  child: Column(
+                    children: [
+                      Text("Education",),
+                      Text("In Europe"),
+                    ],
                   ),
-                  fit: BoxFit.fitHeight
-                )
+                ),
               ),
             ),
-          )
-        ],
+
+            Positioned(
+              left: 16,
+              right: 16,
+              bottom: 0,
+              top: 280,
+              child: Container(
+                decoration: BoxDecoration(
+                  image: DecorationImage(
+                    image: NetworkImage("https://ouch-cdn.icons8.com/thumb/535/abbc33d2-cb5a-400e-8e5d-a82498747ad8.png",
+                    ),
+                    fit: BoxFit.fitHeight
+                  )
+                ),
+              ),
+            )
+          ],
+        ),
       ),
     );
   }
 }
-
 class RPSCustomPainter extends CustomPainter{
 
   @override
@@ -60,10 +70,10 @@ class RPSCustomPainter extends CustomPainter{
 
     Path path = Path();
     path.moveTo(0,0);
-    path.lineTo(0,size.height*0.46);
-    path.quadraticBezierTo(size.width*0.45,size.height*0.60,size.width*0.61,size.height*0.58);
-    path.quadraticBezierTo(size.width*0.72,size.height*0.57,size.width,size.height*0.32);
-    path.lineTo(size.width,0);
+    path.quadraticBezierTo(0,size.height*0.27,0,size.height*0.36);
+    path.cubicTo(size.width*0.14,size.height*0.43,size.width*0.49,size.height*0.52,size.width*0.68,size.height*0.50);
+    path.cubicTo(size.width*0.79,size.height*0.50,size.width*0.97,size.height*0.37,size.width,size.height*0.30);
+    path.quadraticBezierTo(size.width,size.height*0.23,size.width,0);
     path.lineTo(size.width*0.03,0);
     path.lineTo(0,0);
     path.close();
@@ -78,4 +88,6 @@ class RPSCustomPainter extends CustomPainter{
   }
 
 }
+
+
 
