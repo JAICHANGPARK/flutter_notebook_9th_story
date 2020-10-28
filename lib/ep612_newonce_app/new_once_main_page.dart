@@ -432,14 +432,12 @@ class _NewonceMainPageState extends State<NewonceMainPage> {
                                       children: [
                                         Text(
                                           "Flutter Radio",
-                                          style: TextStyle(color: Colors.white.withOpacity(0.2),
-                                          fontSize: 12),
+                                          style: TextStyle(color: Colors.white.withOpacity(0.2), fontSize: 12),
                                         ),
                                         Spacer(),
                                         Text(
                                           "1:17:01",
-                                          style: TextStyle(color: Colors.white,
-                                          fontSize: 12),
+                                          style: TextStyle(color: Colors.white, fontSize: 12),
                                         ),
                                         Icon(
                                           Icons.mic_none,
@@ -452,9 +450,7 @@ class _NewonceMainPageState extends State<NewonceMainPage> {
                                   Expanded(
                                     child: Container(
                                       margin: EdgeInsets.symmetric(vertical: 11),
-                                      decoration: BoxDecoration(
-                                        color: Colors.white
-                                      ),
+                                      decoration: BoxDecoration(color: Colors.white),
                                     ),
                                   )
                                 ],
