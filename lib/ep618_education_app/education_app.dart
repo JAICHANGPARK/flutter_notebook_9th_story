@@ -54,19 +54,18 @@ class RPSCustomPainter extends CustomPainter{
   void paint(Canvas canvas, Size size) {
 
     Paint paint = new Paint()
-      ..color = Color.fromARGB(255, 33, 73, 10)
+      ..color = Color.fromARGB(255, 29, 80, 34)
       ..style = PaintingStyle.fill
-      ..strokeWidth = 1;
+      ..strokeWidth = 3.38;
 
     Path path = Path();
-    path.moveTo(size.width*0.07,size.height*0.10);
-    path.lineTo(size.width*0.07,size.height*0.40);
-    path.quadraticBezierTo(size.width*0.26,size.height*0.54,size.width*0.36,size.height*0.58);
-    path.cubicTo(size.width*0.42,size.height*0.60,size.width*0.52,size.height*0.64,size.width*0.57,size.height*0.64);
-    path.cubicTo(size.width*0.63,size.height*0.64,size.width*0.75,size.height*0.59,size.width*0.79,size.height*0.54);
-    path.quadraticBezierTo(size.width*0.82,size.height*0.53,size.width*0.86,size.height*0.40);
-    path.lineTo(size.width*0.86,size.height*0.10);
-    path.lineTo(size.width*0.07,size.height*0.10);
+    path.moveTo(0,0);
+    path.lineTo(0,size.height*0.46);
+    path.quadraticBezierTo(size.width*0.45,size.height*0.60,size.width*0.61,size.height*0.58);
+    path.quadraticBezierTo(size.width*0.72,size.height*0.57,size.width,size.height*0.32);
+    path.lineTo(size.width,0);
+    path.lineTo(size.width*0.03,0);
+    path.lineTo(0,0);
     path.close();
 
 
