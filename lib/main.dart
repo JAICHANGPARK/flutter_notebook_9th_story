@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'ep612_newonce_app/new_once_app.dart';
+import 'ep618_education_app/education_app.dart';
 
 main() {
-  runApp(NewOnceApp());
+  runApp(EducationApp());
 }
