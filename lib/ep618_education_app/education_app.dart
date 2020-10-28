@@ -19,12 +19,14 @@ class EducationSplashPage extends StatelessWidget {
           Positioned(
             left: 16,
             right: 16,
+            bottom: 0,
+            top: 280,
             child: Container(
               decoration: BoxDecoration(
                 image: DecorationImage(
                   image: NetworkImage("https://ouch-cdn.icons8.com/thumb/535/abbc33d2-cb5a-400e-8e5d-a82498747ad8.png",
                   ),
-                  fit: BoxFit.cover
+                  fit: BoxFit.fitHeight
                 )
               ),
             ),
