@@ -16,13 +16,17 @@ class EducationSplashPage extends StatelessWidget {
     return Scaffold(
       body: Stack(
         children: [
-          Container(
-            decoration: BoxDecoration(
-              image: DecorationImage(
-                image: NetworkImage("https://ouch-cdn.icons8.com/thumb/535/abbc33d2-cb5a-400e-8e5d-a82498747ad8.png",
-                ),
-                fit: BoxFit.cover
-              )
+          Positioned(
+            left: 16,
+            right: 16,
+            child: Container(
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: NetworkImage("https://ouch-cdn.icons8.com/thumb/535/abbc33d2-cb5a-400e-8e5d-a82498747ad8.png",
+                  ),
+                  fit: BoxFit.cover
+                )
+              ),
             ),
           )
         ],
