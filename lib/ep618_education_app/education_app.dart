@@ -30,7 +30,7 @@ class EducationSplashPage extends StatelessWidget {
                 child: Center(
                   child: Column(
                     children: [
-                      SizedBox(height: 84,),
+                      SizedBox(height: 48,),
                       Text("Education",style: TextStyle(
                         fontSize: 48,
                         fontWeight: FontWeight.bold,
@@ -41,6 +41,13 @@ class EducationSplashPage extends StatelessWidget {
                         fontWeight: FontWeight.bold,
                         color: Colors.white,
                       ),),
+                      Container(
+                        height: 64,
+                        width: 64,
+                        decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                        ),
+                      )
                     ],
                   ),
                 ),
