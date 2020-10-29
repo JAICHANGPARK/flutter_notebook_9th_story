@@ -41,7 +41,17 @@ class _EducationHomePageState extends State<EducationHomePage> {
             child: Image.network("https://ouch-cdn.icons8.com/preview/515/d0852353-9864-4c75-8e0c-dba0f02755b2.png",
             fit: BoxFit.fitHeight,
             height: 180,),
-          )
+          ),
+          Positioned(
+            left: 0,
+            right: 0,
+            top: 220,
+            bottom: 0,
+            child: Container(
+              color: Colors.red,
+              child: Stack(),
+            ),
+          ),
         ],
 
       ),
