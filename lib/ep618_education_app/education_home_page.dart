@@ -8,6 +8,18 @@ class EducationHomePage extends StatefulWidget {
 class _EducationHomePageState extends State<EducationHomePage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      body: Stack(
+        children: [
+          Positioned(
+            left: 0,
+            right: 0,
+            top: 24,
+            child: Placeholder(),
+          )
+        ],
+
+      ),
+    );
   }
 }
