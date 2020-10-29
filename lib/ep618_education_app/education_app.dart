@@ -28,6 +28,7 @@ class EducationSplashPage extends StatelessWidget {
                 painter: RPSCustomPainter(),
                 child: Center(
                   child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text("Education",),
                       Text("In Europe"),
