@@ -43,16 +43,23 @@ class EducationSplashPage extends StatelessWidget {
                       ),),
                       Padding(
                         padding: const EdgeInsets.symmetric(vertical: 16),
-                        child: Container(
-                          height: 64,
-                          width: 64,
-                          decoration: BoxDecoration(
-                            shape: BoxShape.circle,
-                            color: Colors.white.withOpacity(0.2)
-                          ),
-                          child: Center(
-                            child: Icon(Icons.arrow_forward, color: Colors.white,
-                            size: 32,),
+                        child: GestureDetector(
+                          onTap: (){
+                            Navigator.of(context).push(MaterialPageRoute(
+                              builder: (context) => EducationHomePage()
+                            ));
+                          },
+                          child: Container(
+                            height: 64,
+                            width: 64,
+                            decoration: BoxDecoration(
+                              shape: BoxShape.circle,
+                              color: Colors.white.withOpacity(0.2)
+                            ),
+                            child: Center(
+                              child: Icon(Icons.arrow_forward, color: Colors.white,
+                              size: 32,),
+                            ),
                           ),
                         ),
                       )
