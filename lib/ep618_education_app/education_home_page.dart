@@ -45,10 +45,17 @@ class _EducationHomePageState extends State<EducationHomePage> {
           Positioned(
             left: 0,
             right: 0,
-            top: 220,
+            top: 260,
             bottom: 0,
             child: Container(
-              color: Colors.red,
+
+              decoration: BoxDecoration(
+                  color: Colors.red,
+                borderRadius: BorderRadius.only(
+                  topRight: Radius.circular(24),
+                  topLeft: Radius.circular(24),
+                )
+              ),
               child: Stack(),
             ),
           ),
