@@ -41,11 +41,16 @@ class EducationSplashPage extends StatelessWidget {
                         fontWeight: FontWeight.bold,
                         color: Colors.white,
                       ),),
-                      Container(
-                        height: 64,
-                        width: 64,
-                        decoration: BoxDecoration(
-                          shape: BoxShape.circle,
+                      Padding(
+                        padding: const EdgeInsets.symmetric(vertical: 16),
+                        child: Container(
+                          height: 64,
+                          width: 64,
+
+                          decoration: BoxDecoration(
+                            shape: BoxShape.circle,
+                            color: Colors.white.withOpacity(0.2)
+                          ),
                         ),
                       )
                     ],
