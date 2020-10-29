@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+import 'education_home_page.dart';
+
 
 class EducationApp extends StatelessWidget {
   @override
