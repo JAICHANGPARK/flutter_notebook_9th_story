@@ -32,12 +32,12 @@ class EducationSplashPage extends StatelessWidget {
                     children: [
                       SizedBox(height: 84,),
                       Text("Education",style: TextStyle(
-                        fontSize: 28,
+                        fontSize: 48,
                         fontWeight: FontWeight.bold,
                         color: Colors.white,
                       ),),
                       Text("In Europe",style: TextStyle(
-                        fontSize: 28,
+                        fontSize: 48,
                         fontWeight: FontWeight.bold,
                         color: Colors.white,
                       ),),
