@@ -22,14 +22,13 @@ class _EducationHomePageState extends State<EducationHomePage> {
                   IconButton(
                     icon: Icon(Icons.menu),
                     iconSize: 42,
-                    onPressed: () {  },
+                    onPressed: () {},
                   ),
                   IconButton(
                     icon: Icon(Icons.search),
                     iconSize: 42,
-                    onPressed: () {  },
+                    onPressed: () {},
                   ),
-
                 ],
               ),
             ),
@@ -38,9 +37,11 @@ class _EducationHomePageState extends State<EducationHomePage> {
             left: 0,
             right: 0,
             top: 64,
-            child: Image.network("https://ouch-cdn.icons8.com/preview/515/d0852353-9864-4c75-8e0c-dba0f02755b2.png",
-            fit: BoxFit.fitHeight,
-            height: 180,),
+            child: Image.network(
+              "https://ouch-cdn.icons8.com/preview/515/d0852353-9864-4c75-8e0c-dba0f02755b2.png",
+              fit: BoxFit.fitHeight,
+              height: 180,
+            ),
           ),
           Positioned(
             left: 0,
@@ -48,23 +49,38 @@ class _EducationHomePageState extends State<EducationHomePage> {
             top: 260,
             bottom: 0,
             child: Container(
-
               decoration: BoxDecoration(
                   color: Colors.red,
-                borderRadius: BorderRadius.only(
-                  topRight: Radius.circular(32),
-                  topLeft: Radius.circular(32),
-                )
-              ),
+                  borderRadius: BorderRadius.only(
+                    topRight: Radius.circular(32),
+                    topLeft: Radius.circular(32),
+                  )),
+              child: Stack(),
+            ),
+          ),
+          Positioned(
+            left: 0,
+            right: 0,
+            top: 320,
+            bottom: 0,
+            child: Container(
+              decoration: BoxDecoration(
+                  color: Colors.yellow,
+                  borderRadius: BorderRadius.only(
+                    topRight: Radius.circular(32),
+                    topLeft: Radius.circular(32),
+                  )),
               child: Stack(),
             ),
           ),
         ],
-
       ),
     );
   }
 }
+
+
+
 
 
 
