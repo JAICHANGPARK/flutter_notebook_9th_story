@@ -65,7 +65,22 @@ class _EducationHomePageState extends State<EducationHomePage> {
             bottom: 0,
             child: Container(
               decoration: BoxDecoration(
-                  color: Colors.yellow,
+                  color: Colors.brown[300],
+                  borderRadius: BorderRadius.only(
+                    topRight: Radius.circular(32),
+                    topLeft: Radius.circular(32),
+                  )),
+              child: Stack(),
+            ),
+          ),
+          Positioned(
+            left: 0,
+            right: 0,
+            top: 380,
+            bottom: 0,
+            child: Container(
+              decoration: BoxDecoration(
+                  color: Colors.teal[100],
                   borderRadius: BorderRadius.only(
                     topRight: Radius.circular(32),
                     topLeft: Radius.circular(32),
