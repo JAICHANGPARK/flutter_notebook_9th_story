@@ -12,18 +12,20 @@ class _EducationHomePageState extends State<EducationHomePage> {
       body: Stack(
         children: [
           Positioned(
-            left: 0,
-            right: 0,
-            top: 24,
+            left: 24,
+            right: 24,
+            top: 48,
             child: Container(
               child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   IconButton(
                     icon: Icon(Icons.menu),
+                    iconSize: 48,
                     onPressed: () {  },
                   ),
                   IconButton(
-                    icon: Icon(Icons.menu),
+                    icon: Icon(Icons.search),
                     onPressed: () {  },
                   ),
 
