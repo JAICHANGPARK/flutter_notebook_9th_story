@@ -15,7 +15,21 @@ class _EducationHomePageState extends State<EducationHomePage> {
             left: 0,
             right: 0,
             top: 24,
-            child: Placeholder(),
+            child: Container(
+              child: Row(
+                children: [
+                  IconButton(
+                    icon: Icon(Icons.menu),
+                    onPressed: () {  },
+                  ),
+                  IconButton(
+                    icon: Icon(Icons.menu),
+                    onPressed: () {  },
+                  ),
+
+                ],
+              ),
+            ),
           )
         ],
 
