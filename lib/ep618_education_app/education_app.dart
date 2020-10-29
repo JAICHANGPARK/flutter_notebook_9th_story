@@ -51,7 +51,8 @@ class EducationSplashPage extends StatelessWidget {
                             color: Colors.white.withOpacity(0.2)
                           ),
                           child: Center(
-                            child: Icon(Icons.arrow_forward, color: Colors.white,),
+                            child: Icon(Icons.arrow_forward, color: Colors.white,
+                            size: 32,),
                           ),
                         ),
                       )
