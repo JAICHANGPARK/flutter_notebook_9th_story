@@ -23,20 +23,24 @@ class EducationSplashPage extends StatelessWidget {
               top: 0,
               left: 0,
               right: 0,
-              bottom: 240,
+              bottom: 180,
               child: CustomPaint(
-                size: Size(MediaQuery.of(context).size.width, 500), //You can Replace this with your desired WIDTH and HEIGHT
+                size: Size(MediaQuery.of(context).size.width, 240), //You can Replace this with your desired WIDTH and HEIGHT
                 painter: RPSCustomPainter(),
                 child: Center(
                   child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
                     children: [
+                      SizedBox(height: 84,),
                       Text("Education",style: TextStyle(
                         fontSize: 28,
                         fontWeight: FontWeight.bold,
                         color: Colors.white,
                       ),),
-                      Text("In Europe"),
+                      Text("In Europe",style: TextStyle(
+                        fontSize: 28,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white,
+                      ),),
                     ],
                   ),
                 ),
