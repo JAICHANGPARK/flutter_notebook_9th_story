@@ -55,7 +55,29 @@ class _EducationHomePageState extends State<EducationHomePage> {
                     topRight: Radius.circular(32),
                     topLeft: Radius.circular(32),
                   )),
-              child: Stack(),
+              child: Stack(
+                children: [
+                  Positioned(
+                    left: 48,
+                    top: 0,
+                    child: Container(
+                      width: 294,
+                      height: 64,
+                      child: CustomPaint(
+                        size: Size(294, 64), //You can Replace this with your desired WIDTH and HEIGHT
+                        painter: RPSCustomPainter(),
+                        child: Padding(
+                          padding: const EdgeInsets.only(left: 64, right: 24, top: 10),
+                          child: Text(
+                            "List of universities",
+                            style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white, fontSize: 20),
+                          ),
+                        ),
+                      ),
+                    ),
+                  )
+                ],
+              ),
             ),
           ),
           Positioned(
@@ -70,7 +92,29 @@ class _EducationHomePageState extends State<EducationHomePage> {
                     topRight: Radius.circular(32),
                     topLeft: Radius.circular(32),
                   )),
-              child: Stack(),
+              child: Stack(
+                children: [
+                  Positioned(
+                    left: 48,
+                    top: 0,
+                    child: Container(
+                      width: 294,
+                      height: 64,
+                      child: CustomPaint(
+                        size: Size(294, 64), //You can Replace this with your desired WIDTH and HEIGHT
+                        painter: _RPSCustomPainter(),
+                        child: Padding(
+                          padding: const EdgeInsets.only(left: 64, right: 24, top: 10),
+                          child: Text(
+                            "Get a consultation",
+                            style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white, fontSize: 20),
+                          ),
+                        ),
+                      ),
+                    ),
+                  )
+                ],
+              ),
             ),
           ),
           Positioned(
@@ -95,7 +139,7 @@ class _EducationHomePageState extends State<EducationHomePage> {
                       height: 64,
                       child: CustomPaint(
                         size: Size(294, 64), //You can Replace this with your desired WIDTH and HEIGHT
-                        painter: RPSCustomPainter(),
+                        painter: _RPSCustomPainter(),
                         child: Padding(
                           padding: const EdgeInsets.only(left: 64, right: 24, top: 10),
                           child: Text(
@@ -115,7 +159,10 @@ class _EducationHomePageState extends State<EducationHomePage> {
     );
   }
 }
-class RPSCustomPainter extends CustomPainter{
+class _RPSCustomPainter extends CustomPainter{
+  
+  Colors colors ;
+  _RPSCustomPainter(this.colors);
 
   @override
   void paint(Canvas canvas, Size size) {
