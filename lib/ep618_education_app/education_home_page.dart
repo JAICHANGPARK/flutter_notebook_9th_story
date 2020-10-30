@@ -85,7 +85,16 @@ class _EducationHomePageState extends State<EducationHomePage> {
                     topRight: Radius.circular(32),
                     topLeft: Radius.circular(32),
                   )),
-              child: Stack(),
+              child: Stack(
+                children: [
+                  Positioned(
+                    left: 64,
+                    right: 64,
+                    top: 0,
+                    child: Container(),
+                  )
+                ],
+              ),
             ),
           ),
         ],
