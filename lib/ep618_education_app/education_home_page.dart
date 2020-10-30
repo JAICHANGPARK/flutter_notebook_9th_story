@@ -169,6 +169,24 @@ class _EducationHomePageState extends State<EducationHomePage> {
                                       ))
                                   .toList(),
                               onChanged: (value) {},
+                            ),
+                            DropdownButton(
+                              isExpanded: true,
+                              items: ["Flutter", "Dream", "walker"]
+                                  .map((e) => DropdownMenuItem(
+                                child: Text(e),
+                              ))
+                                  .toList(),
+                              onChanged: (value) {},
+                            ),
+                            DropdownButton(
+                              isExpanded: true,
+                              items: ["Flutter", "Dream", "walker"]
+                                  .map((e) => DropdownMenuItem(
+                                child: Text(e),
+                              ))
+                                  .toList(),
+                              onChanged: (value) {},
                             )
                           ],
                         ),
