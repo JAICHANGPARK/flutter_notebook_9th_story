@@ -88,7 +88,7 @@ class _EducationHomePageState extends State<EducationHomePage> {
               child: Stack(
                 children: [
                   Positioned(
-left: 48,
+                    left: 48,
                     top: 0,
                     child: Container(
                       width: 294,
@@ -97,12 +97,11 @@ left: 48,
                         size: Size(294, 64), //You can Replace this with your desired WIDTH and HEIGHT
                         painter: RPSCustomPainter(),
                         child: Padding(
-                          padding: const EdgeInsets.only(left: 64, right: 24 ,top: 10),
-                          child: Text("Get a consultation", style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            color: Colors.white,
-                            fontSize: 20
-                          ),),
+                          padding: const EdgeInsets.only(left: 64, right: 24, top: 10),
+                          child: Text(
+                            "Get a consultation",
+                            style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white, fontSize: 20),
+                          ),
                         ),
                       ),
                     ),
