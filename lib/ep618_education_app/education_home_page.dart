@@ -91,9 +91,13 @@ class _EducationHomePageState extends State<EducationHomePage> {
 left: 48,
                     top: 0,
                     child: Container(
-                      width: 280,
+                      width: 294,
                       height: 64,
                       color: Colors.red,
+                      child: CustomPaint(
+                        size: Size(294,100), //You can Replace this with your desired WIDTH and HEIGHT
+                        painter: RPSCustomPainter(),
+                      ),
                     ),
                   )
                 ],
@@ -104,4 +108,35 @@ left: 48,
       ),
     );
   }
+}
+class RPSCustomPainter extends CustomPainter{
+
+  @override
+  void paint(Canvas canvas, Size size) {
+
+    Paint paint = new Paint()
+      ..color = Color.fromARGB(255, 33, 150, 243)
+      ..style = PaintingStyle.fill
+      ..strokeWidth = 1;
+
+    Path path = Path();
+    path.moveTo(0,0);
+    path.quadraticBezierTo(size.width*0.09,size.height*0.70,size.width*0.14,size.height*0.90);
+    path.quadraticBezierTo(size.width*0.14,size.height*0.93,size.width*0.17,size.height);
+    path.quadraticBezierTo(size.width*0.17,size.height,size.width*0.17,size.height);
+    path.cubicTo(size.width*0.34,size.height,size.width*0.68,size.height,size.width*0.85,size.height);
+    path.cubicTo(size.width*0.86,size.height*1.00,size.width*0.88,size.height*0.93,size.width*0.88,size.height*0.90);
+    path.quadraticBezierTo(size.width*0.93,size.height*0.70,size.width*0.99,0);
+    path.lineTo(0,0);
+    path.close();
+
+
+    canvas.drawPath(path, paint);
+  }
+
+  @override
+  bool shouldRepaint(covariant CustomPainter oldDelegate) {
+    return true;
+  }
+
 }
