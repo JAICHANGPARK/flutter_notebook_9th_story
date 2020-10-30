@@ -94,8 +94,16 @@ left: 48,
                       width: 294,
                       height: 64,
                       child: CustomPaint(
-                        size: Size(294,100), //You can Replace this with your desired WIDTH and HEIGHT
+                        size: Size(294, 64), //You can Replace this with your desired WIDTH and HEIGHT
                         painter: RPSCustomPainter(),
+                        child: Padding(
+                          padding: const EdgeInsets.only(left: 64, right: 24 ,top: 10),
+                          child: Text("Get a consultation", style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            color: Colors.white,
+                            fontSize: 20
+                          ),),
+                        ),
                       ),
                     ),
                   )
@@ -114,7 +122,7 @@ class RPSCustomPainter extends CustomPainter{
   void paint(Canvas canvas, Size size) {
 
     Paint paint = new Paint()
-      ..color = Color.fromARGB(255, 33, 150, 243)
+      ..color = Color.fromARGB(255, 00, 45, 31)
       ..style = PaintingStyle.fill
       ..strokeWidth = 1;
 
