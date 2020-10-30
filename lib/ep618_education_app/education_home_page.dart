@@ -93,7 +93,6 @@ left: 48,
                     child: Container(
                       width: 294,
                       height: 64,
-                      color: Colors.red,
                       child: CustomPaint(
                         size: Size(294,100), //You can Replace this with your desired WIDTH and HEIGHT
                         painter: RPSCustomPainter(),
@@ -120,14 +119,13 @@ class RPSCustomPainter extends CustomPainter{
       ..strokeWidth = 1;
 
     Path path = Path();
-    path.moveTo(0,0);
-    path.quadraticBezierTo(size.width*0.09,size.height*0.70,size.width*0.14,size.height*0.90);
-    path.quadraticBezierTo(size.width*0.14,size.height*0.93,size.width*0.17,size.height);
-    path.quadraticBezierTo(size.width*0.17,size.height,size.width*0.17,size.height);
-    path.cubicTo(size.width*0.34,size.height,size.width*0.68,size.height,size.width*0.85,size.height);
-    path.cubicTo(size.width*0.86,size.height*1.00,size.width*0.88,size.height*0.93,size.width*0.88,size.height*0.90);
-    path.quadraticBezierTo(size.width*0.93,size.height*0.70,size.width*0.99,0);
-    path.lineTo(0,0);
+    path.moveTo(size.width*0.03,0);
+    path.quadraticBezierTo(size.width*0.10,size.height*0.55,size.width*0.14,size.height*0.70);
+    path.cubicTo(size.width*0.16,size.height*0.80,size.width*0.19,size.height*0.78,size.width*0.20,size.height*0.80);
+    path.quadraticBezierTo(size.width*0.36,size.height*0.80,size.width*0.82,size.height*0.80);
+    path.quadraticBezierTo(size.width*0.87,size.height*0.79,size.width*0.88,size.height*0.70);
+    path.quadraticBezierTo(size.width*0.92,size.height*0.56,size.width*0.99,0);
+    path.lineTo(size.width*0.03,0);
     path.close();
 
 
@@ -140,3 +138,19 @@ class RPSCustomPainter extends CustomPainter{
   }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
