@@ -160,7 +160,16 @@ class _EducationHomePageState extends State<EducationHomePage> {
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(24)
                       ),
-                      child: Column(),
+                      child: Column(
+                        children: [
+                          DropdownButton(
+                            isExpanded: true,
+                            items: ["Flutter", "Dream", "walker"].map((e) =>
+                          DropdownMenuItem(child: Text(e),)).toList(), onChanged: (value) {  },
+
+                          )
+                        ],
+                      ),
                     ),
                   )
                 ],
