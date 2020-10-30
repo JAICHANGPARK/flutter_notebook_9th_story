@@ -156,7 +156,10 @@ class _EducationHomePageState extends State<EducationHomePage> {
                     top: 84,
                     child: Container(
                       height: 240,
-                      color: Colors.white,
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(24)
+                      ),
                       child: Column(),
                     ),
                   )
