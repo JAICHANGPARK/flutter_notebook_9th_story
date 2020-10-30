@@ -102,11 +102,11 @@ class _EducationHomePageState extends State<EducationHomePage> {
                       height: 64,
                       child: CustomPaint(
                         size: Size(294, 64), //You can Replace this with your desired WIDTH and HEIGHT
-                        painter: _RPSCustomPainter(),
+                        painter: _RPSCustomPainter(Colors.white.withOpacity(0.7)),
                         child: Padding(
                           padding: const EdgeInsets.only(left: 64, right: 24, top: 10),
                           child: Text(
-                            "Get a consultation",
+                            "Education system",
                             style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white, fontSize: 20),
                           ),
                         ),
@@ -139,7 +139,7 @@ class _EducationHomePageState extends State<EducationHomePage> {
                       height: 64,
                       child: CustomPaint(
                         size: Size(294, 64), //You can Replace this with your desired WIDTH and HEIGHT
-                        painter: _RPSCustomPainter(),
+                        painter: _RPSCustomPainter(Colors.white.withOpacity(0.7)),
                         child: Padding(
                           padding: const EdgeInsets.only(left: 64, right: 24, top: 10),
                           child: Text(
@@ -161,14 +161,14 @@ class _EducationHomePageState extends State<EducationHomePage> {
 }
 class _RPSCustomPainter extends CustomPainter{
   
-  Colors colors ;
+  final Color colors ;
   _RPSCustomPainter(this.colors);
 
   @override
   void paint(Canvas canvas, Size size) {
 
     Paint paint = new Paint()
-      ..color = Color.fromARGB(255, 00, 45, 31)
+      ..color = colors
       ..style = PaintingStyle.fill
       ..strokeWidth = 1;
 
