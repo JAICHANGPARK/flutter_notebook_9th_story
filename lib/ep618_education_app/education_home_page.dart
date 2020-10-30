@@ -88,10 +88,13 @@ class _EducationHomePageState extends State<EducationHomePage> {
               child: Stack(
                 children: [
                   Positioned(
-                    left: 64,
-                    right: 64,
+left: 48,
                     top: 0,
-                    child: Container(),
+                    child: Container(
+                      width: 280,
+                      height: 64,
+                      color: Colors.red,
+                    ),
                   )
                 ],
               ),
