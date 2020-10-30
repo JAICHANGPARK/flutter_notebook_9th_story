@@ -156,19 +156,19 @@ class _EducationHomePageState extends State<EducationHomePage> {
                     top: 84,
                     child: Container(
                       height: 240,
-                      decoration: BoxDecoration(
-                        color: Colors.white,
-                        borderRadius: BorderRadius.circular(24)
-                      ),
+                      decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(24)),
                       child: Padding(
                         padding: const EdgeInsets.only(left: 16, right: 16, top: 8),
                         child: Column(
                           children: [
                             DropdownButton(
                               isExpanded: true,
-                              items: ["Flutter", "Dream", "walker"].map((e) =>
-                            DropdownMenuItem(child: Text(e),)).toList(), onChanged: (value) {  },
-
+                              items: ["Flutter", "Dream", "walker"]
+                                  .map((e) => DropdownMenuItem(
+                                        child: Text(e),
+                                      ))
+                                  .toList(),
+                              onChanged: (value) {},
                             )
                           ],
                         ),
@@ -184,29 +184,29 @@ class _EducationHomePageState extends State<EducationHomePage> {
     );
   }
 }
-class _RPSCustomPainter extends CustomPainter{
-  
-  final Color colors ;
+
+class _RPSCustomPainter extends CustomPainter {
+  final Color colors;
+
   _RPSCustomPainter(this.colors);
 
   @override
   void paint(Canvas canvas, Size size) {
-
     Paint paint = new Paint()
       ..color = colors
       ..style = PaintingStyle.fill
       ..strokeWidth = 1;
 
     Path path = Path();
-    path.moveTo(size.width*0.03,0);
-    path.quadraticBezierTo(size.width*0.10,size.height*0.55,size.width*0.14,size.height*0.70);
-    path.cubicTo(size.width*0.16,size.height*0.80,size.width*0.19,size.height*0.78,size.width*0.20,size.height*0.80);
-    path.quadraticBezierTo(size.width*0.36,size.height*0.80,size.width*0.82,size.height*0.80);
-    path.quadraticBezierTo(size.width*0.87,size.height*0.79,size.width*0.88,size.height*0.70);
-    path.quadraticBezierTo(size.width*0.92,size.height*0.56,size.width*0.99,0);
-    path.lineTo(size.width*0.03,0);
+    path.moveTo(size.width * 0.03, 0);
+    path.quadraticBezierTo(size.width * 0.10, size.height * 0.55, size.width * 0.14, size.height * 0.70);
+    path.cubicTo(size.width * 0.16, size.height * 0.80, size.width * 0.19, size.height * 0.78, size.width * 0.20,
+        size.height * 0.80);
+    path.quadraticBezierTo(size.width * 0.36, size.height * 0.80, size.width * 0.82, size.height * 0.80);
+    path.quadraticBezierTo(size.width * 0.87, size.height * 0.79, size.width * 0.88, size.height * 0.70);
+    path.quadraticBezierTo(size.width * 0.92, size.height * 0.56, size.width * 0.99, 0);
+    path.lineTo(size.width * 0.03, 0);
     path.close();
-
 
     canvas.drawPath(path, paint);
   }
@@ -215,21 +215,4 @@ class _RPSCustomPainter extends CustomPainter{
   bool shouldRepaint(covariant CustomPainter oldDelegate) {
     return true;
   }
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
