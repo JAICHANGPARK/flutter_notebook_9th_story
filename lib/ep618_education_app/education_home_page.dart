@@ -65,7 +65,7 @@ class _EducationHomePageState extends State<EducationHomePage> {
                       height: 64,
                       child: CustomPaint(
                         size: Size(294, 64), //You can Replace this with your desired WIDTH and HEIGHT
-                        painter: RPSCustomPainter(),
+                        painter: _RPSCustomPainter(Colors.redAccent),
                         child: Padding(
                           padding: const EdgeInsets.only(left: 64, right: 24, top: 10),
                           child: Text(
@@ -102,7 +102,7 @@ class _EducationHomePageState extends State<EducationHomePage> {
                       height: 64,
                       child: CustomPaint(
                         size: Size(294, 64), //You can Replace this with your desired WIDTH and HEIGHT
-                        painter: _RPSCustomPainter(Colors.white.withOpacity(0.7)),
+                        painter: _RPSCustomPainter(Colors.brown),
                         child: Padding(
                           padding: const EdgeInsets.only(left: 64, right: 24, top: 10),
                           child: Text(
