@@ -83,7 +83,7 @@ class _EducationHomePageState extends State<EducationHomePage> {
           Positioned(
             left: 0,
             right: 0,
-            top: 320,
+            top: 330,
             bottom: 0,
             child: Container(
               decoration: BoxDecoration(
@@ -120,7 +120,7 @@ class _EducationHomePageState extends State<EducationHomePage> {
           Positioned(
             left: 0,
             right: 0,
-            top: 380,
+            top: 400,
             bottom: 0,
             child: Container(
               decoration: BoxDecoration(
@@ -139,7 +139,7 @@ class _EducationHomePageState extends State<EducationHomePage> {
                       height: 64,
                       child: CustomPaint(
                         size: Size(294, 64), //You can Replace this with your desired WIDTH and HEIGHT
-                        painter: _RPSCustomPainter(Colors.white.withOpacity(0.7)),
+                        painter: _RPSCustomPainter(Colors.teal),
                         child: Padding(
                           padding: const EdgeInsets.only(left: 64, right: 24, top: 10),
                           child: Text(
