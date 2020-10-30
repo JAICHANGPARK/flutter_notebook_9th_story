@@ -149,6 +149,16 @@ class _EducationHomePageState extends State<EducationHomePage> {
                         ),
                       ),
                     ),
+                  ),
+                  Positioned(
+                    left: 48,
+                    right: 48,
+                    top: 84,
+                    child: Container(
+                      height: 240,
+                      color: Colors.white,
+                      child: Column(),
+                    ),
                   )
                 ],
               ),
