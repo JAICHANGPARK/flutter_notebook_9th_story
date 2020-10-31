@@ -42,13 +42,16 @@ class _HomeMainPageState extends State<HomeMainPage> {
                 flex: 20,
                 child: GridView.builder(
                   itemCount: 50,
-                  gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(maxCrossAxisExtent: 2),
+                  gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(maxCrossAxisExtent: 2,
+                  childAspectRatio: 0.1,crossAxisSpacing: 16, mainAxisSpacing: 16),
+
                   itemBuilder: (BuildContext context, int index) {
                     return Container(
+                      height: 160,
                       decoration: BoxDecoration(
                         image: DecorationImage(
                           image: NetworkImage(
-                            "https://thispersondoesnotexist.com/image"
+                            "https://images.generated.photos/hejrMojxLvZO9HSVLkrYwfDFgrIMLv16mAY0Pnwnkjs/rs:fit:512:512/Z3M6Ly9nZW5lcmF0/ZWQtcGhvdG9zL3Yz/XzAwODY4MDguanBn.jpg"
                           )
                         )
                       ),
