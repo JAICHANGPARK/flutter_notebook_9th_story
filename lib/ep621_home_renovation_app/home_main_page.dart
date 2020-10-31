@@ -12,7 +12,12 @@ class _HomeMainPageState extends State<HomeMainPage> {
     return Scaffold(
       body: Column(
         children: [
-          Expanded(child: Placeholder())
+          Expanded(
+              flex : 3,child: Placeholder()),
+          Expanded(
+              flex: 1,child: Placeholder()),
+          Expanded(
+              flex: 20,child: Placeholder())
         ],
       ),
     );
