@@ -9,6 +9,6 @@ class HomeMainPage extends StatefulWidget {
 class _HomeMainPageState extends State<HomeMainPage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold();
   }
 }
