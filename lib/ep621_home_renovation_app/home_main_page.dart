@@ -43,7 +43,7 @@ class _HomeMainPageState extends State<HomeMainPage> {
                 child: GridView.builder(
                   itemCount: 50,
                   gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2,
-                  childAspectRatio: 0.2,crossAxisSpacing: 16, mainAxisSpacing: 16),
+                  childAspectRatio: 1.2,crossAxisSpacing: 16, mainAxisSpacing: 16),
 
                   itemBuilder: (BuildContext context, int index) {
                     return Container(
