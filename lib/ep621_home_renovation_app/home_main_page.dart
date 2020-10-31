@@ -12,45 +12,47 @@ class _HomeMainPageState extends State<HomeMainPage> {
       resizeToAvoidBottomInset: false,
       resizeToAvoidBottomPadding: false,
       body: SafeArea(
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
             Expanded(
-            flex: 2,
-            child: Container(
-                margin: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-                decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.circular(8),
-                    boxShadow: [
-                BoxShadow(
-                color: Colors.black.withOpacity(0.21),
-                    blurRadius: 10,
-                    spreadRadius: 10
-                )
-                ]
-            ),
-            child: TextField(
-              decoration: InputDecoration(
-                border: InputBorder.none,
-              ),
-            ),
-          )),
-      Expanded(flex: 1, child: Padding(
-        padding: const EdgeInsets.only(left: 8),
-        child: Text("Professionals", style: TextStyle(
-          fontSize: 16,
-          fontWeight: FontWeight.bold
-
-        ),),
-      )),
-      Expanded(flex: 20, child: Placeholder())
-      ],
-    ),)
-    ,
+                flex: 2,
+                child: Container(
+                  margin: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                  decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(8),
+                      boxShadow: [BoxShadow(color: Colors.black.withOpacity(0.21), blurRadius: 10, spreadRadius: 10)]),
+                  child: TextField(
+                    decoration: InputDecoration(
+                      border: InputBorder.none,
+                    ),
+                  ),
+                )),
+            Expanded(
+                flex: 1,
+                child: Padding(
+                  padding: const EdgeInsets.only(left: 8),
+                  child: Text(
+                    "Professionals",
+                    style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                  ),
+                )),
+            Expanded(flex: 20, child: GridView.builder(gridDelegate: ,
+              
+            ))
+          ],
+        ),
+      ),
     );
   }
 }
+
+
+
+
+
+
 
 
 
