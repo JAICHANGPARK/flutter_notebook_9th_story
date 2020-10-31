@@ -48,7 +48,7 @@ class _HomeMainPageState extends State<HomeMainPage> {
                       decoration: BoxDecoration(
                         image: DecorationImage(
                           image: NetworkImage(
-                            "https://thispersondoesnotexist.com/"
+                            "https://thispersondoesnotexist.com/image"
                           )
                         )
                       ),
