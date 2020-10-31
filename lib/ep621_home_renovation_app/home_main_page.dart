@@ -15,7 +15,12 @@ class _HomeMainPageState extends State<HomeMainPage> {
         child: Column(
           children: [
             Expanded(
-                flex : 3,child: Placeholder()),
+                flex : 2,child: Container(
+              margin: EdgeInsets.all(7),
+              child: TextField(
+                
+              ),
+            )),
             Expanded(
                 flex: 1,child: Placeholder()),
             Expanded(
