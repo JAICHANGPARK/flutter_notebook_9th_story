@@ -13,6 +13,7 @@ class _HomeMainPageState extends State<HomeMainPage> {
       resizeToAvoidBottomPadding: false,
       body: SafeArea(
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
             Expanded(
             flex: 2,
@@ -35,7 +36,9 @@ class _HomeMainPageState extends State<HomeMainPage> {
               ),
             ),
           )),
-      Expanded(flex: 1, child: Placeholder()),
+      Expanded(flex: 1, child: Text("Professionals", style: TextStyle(
+        fontSize: 18
+      ),)),
       Expanded(flex: 20, child: Placeholder())
       ],
     ),)
