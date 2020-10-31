@@ -43,7 +43,15 @@ class _HomeMainPageState extends State<HomeMainPage> {
                 child: GridView.builder(
                   gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(maxCrossAxisExtent: 2),
                   itemBuilder: (BuildContext context, int index) {
-                    return Container();
+                    return Container(
+                      decoration: BoxDecoration(
+                        image: DecorationImage(
+                          image: NetworkImage(
+                            ""
+                          )
+                        )
+                      ),
+                    );
                   },
                 ))
           ],
