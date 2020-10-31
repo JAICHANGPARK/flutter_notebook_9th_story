@@ -41,13 +41,14 @@ class _HomeMainPageState extends State<HomeMainPage> {
             Expanded(
                 flex: 20,
                 child: GridView.builder(
+                  itemCount: 50,
                   gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(maxCrossAxisExtent: 2),
                   itemBuilder: (BuildContext context, int index) {
                     return Container(
                       decoration: BoxDecoration(
                         image: DecorationImage(
                           image: NetworkImage(
-                            ""
+                            "https://thispersondoesnotexist.com/"
                           )
                         )
                       ),
