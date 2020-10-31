@@ -10,33 +10,35 @@ class _HomeMainPageState extends State<HomeMainPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        child: Column(
-          children: [
+          child: Column(
+            children: [
             Expanded(
-                flex: 2,
-                child: Container(
-                  margin: EdgeInsets.all(7),
-                  decoration: BoxDecoration(
+            flex: 2,
+            child: Container(
+                margin: EdgeInsets.all(7),
+                decoration: BoxDecoration(
                     color: Colors.white,
+                    borderRadius: BorderRadius.circular(8),
                     boxShadow: [
-                      BoxShadow(
-                        color: Colors.black.withOpacity(0.1),
+                BoxShadow(
+                color: Colors.black.withOpacity(0.21,
+                    blurRadius: 3,
+                    spreadRadius: 2
+                )
+                ]
 
-                      )
-                    ]
-
-                  ),
-                  child: TextField(
-                    decoration: InputDecoration(
-                      border: InputBorder.none,
-                    ),
-                  ),
-                )),
-            Expanded(flex: 1, child: Placeholder()),
-            Expanded(flex: 20, child: Placeholder())
-          ],
-        ),
-      ),
+            ),
+            child: TextField(
+              decoration: InputDecoration(
+                border: InputBorder.none,
+              ),
+            ),
+          )),
+      Expanded(flex: 1, child: Placeholder()),
+      Expanded(flex: 20, child: Placeholder())
+      ],
+    ),)
+    ,
     );
   }
 }
