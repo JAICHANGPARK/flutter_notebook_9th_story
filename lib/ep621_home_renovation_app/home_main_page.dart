@@ -39,7 +39,9 @@ class _HomeMainPageState extends State<HomeMainPage> {
       Expanded(flex: 1, child: Padding(
         padding: const EdgeInsets.only(left: 8),
         child: Text("Professionals", style: TextStyle(
-          fontSize: 18
+          fontSize: 16,
+          fontWeight: FontWeight.bold
+
         ),),
       )),
       Expanded(flex: 20, child: Placeholder())
