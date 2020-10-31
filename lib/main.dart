@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'ep618_education_app/education_app.dart';
+import 'ep621_home_renovation_app/home_renovation_app.dart';
 
 main() {
-  runApp(EducationApp());
+  runApp(HomeRenovationApp());
 }
