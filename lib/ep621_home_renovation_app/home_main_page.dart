@@ -10,15 +10,18 @@ class _HomeMainPageState extends State<HomeMainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: [
-          Expanded(
-              flex : 3,child: Placeholder()),
-          Expanded(
-              flex: 1,child: Placeholder()),
-          Expanded(
-              flex: 20,child: Placeholder())
-        ],
+      body: SafeArea(
+
+        child: Column(
+          children: [
+            Expanded(
+                flex : 3,child: Placeholder()),
+            Expanded(
+                flex: 1,child: Placeholder()),
+            Expanded(
+                flex: 20,child: Placeholder())
+          ],
+        ),
       ),
     );
   }
