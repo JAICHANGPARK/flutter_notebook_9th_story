@@ -18,7 +18,7 @@ class _HomeMainPageState extends State<HomeMainPage> {
             Expanded(
             flex: 2,
             child: Container(
-                margin: EdgeInsets.all(7),
+                margin: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                 decoration: BoxDecoration(
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(8),
@@ -36,9 +36,12 @@ class _HomeMainPageState extends State<HomeMainPage> {
               ),
             ),
           )),
-      Expanded(flex: 1, child: Text("Professionals", style: TextStyle(
-        fontSize: 18
-      ),)),
+      Expanded(flex: 1, child: Padding(
+        padding: const EdgeInsets.only(left: 8),
+        child: Text("Professionals", style: TextStyle(
+          fontSize: 18
+        ),),
+      )),
       Expanded(flex: 20, child: Placeholder())
       ],
     ),)
