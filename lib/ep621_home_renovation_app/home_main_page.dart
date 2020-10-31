@@ -21,12 +21,11 @@ class _HomeMainPageState extends State<HomeMainPage> {
                     borderRadius: BorderRadius.circular(8),
                     boxShadow: [
                 BoxShadow(
-                color: Colors.black.withOpacity(0.21,
-                    blurRadius: 3,
-                    spreadRadius: 2
+                color: Colors.black.withOpacity(0.21),
+                    blurRadius: 10,
+                    spreadRadius: 10
                 )
                 ]
-
             ),
             child: TextField(
               decoration: InputDecoration(
