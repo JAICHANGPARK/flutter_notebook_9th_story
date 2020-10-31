@@ -9,6 +9,8 @@ class _HomeMainPageState extends State<HomeMainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: false,
+      resizeToAvoidBottomPadding: false,
       body: SafeArea(
           child: Column(
             children: [
