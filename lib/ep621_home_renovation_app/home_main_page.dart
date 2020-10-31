@@ -38,7 +38,9 @@ class _HomeMainPageState extends State<HomeMainPage> {
                     style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
                   ),
                 )),
-            Expanded(flex: 20, child: GridView.builder(gridDelegate: ,
+            Expanded(flex: 20, child: GridView.builder(gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(maxCrossAxisExtent: 2
+
+            ), itemBuilder: (BuildContext context, int index) {  },
               
             ))
           ],
