@@ -16,6 +16,16 @@ class _HomeMainPageState extends State<HomeMainPage> {
                 flex: 2,
                 child: Container(
                   margin: EdgeInsets.all(7),
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.black.withOpacity(0.1),
+
+                      )
+                    ]
+
+                  ),
                   child: TextField(
                     decoration: InputDecoration(
                       border: InputBorder.none,
@@ -30,3 +40,17 @@ class _HomeMainPageState extends State<HomeMainPage> {
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
