@@ -23,9 +23,13 @@ class _HomeMainPageState extends State<HomeMainPage> {
                       color: Colors.white,
                       borderRadius: BorderRadius.circular(8),
                       boxShadow: [BoxShadow(color: Colors.black.withOpacity(0.21), blurRadius: 10, spreadRadius: 10)]),
-                  child: TextField(
-                    decoration: InputDecoration(
-                      border: InputBorder.none,
+                  child: Padding(
+                    padding: const EdgeInsets.only(left: 16),
+                    child: TextField(
+                      decoration: InputDecoration(
+                        border: InputBorder.none,
+                        hintText: 'Search',
+                      ),
                     ),
                   ),
                 )),
