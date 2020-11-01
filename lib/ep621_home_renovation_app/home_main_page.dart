@@ -52,8 +52,6 @@ class _HomeMainPageState extends State<HomeMainPage> {
                         crossAxisCount: 2, childAspectRatio: 1.3, crossAxisSpacing: 8, mainAxisSpacing: 8),
                     itemBuilder: (BuildContext context, int index) {
                       return Container(
-                        height: 160,
-                        width: 80,
                         margin: EdgeInsets.all(8),
                         decoration: BoxDecoration(
                             color: Colors.white,
@@ -149,17 +147,24 @@ class _HomeMainPageState extends State<HomeMainPage> {
                               color: Colors.black,
                               fontWeight: FontWeight.bold
                             ),)),
-                            Expanded(flex: 2, child: MaterialButton(
-                              color: Colors.yellow,
-                              onPressed: () {
-                              },
-                              child: Center(
-                                child: Row(
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: [
-                                    Icon(Icons.mail_outline),
-                                    Text("Contact", )
-                                  ],
+                            Expanded(flex: 2, child: Padding(
+                              padding: const EdgeInsets.all(3.0),
+                              child: MaterialButton(
+                                color: Colors.yellow,
+                                onPressed: () {
+                                },
+                                child: Center(
+                                  child: Row(
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: [
+                                      Padding(
+                                        padding: const EdgeInsets.all(4.0),
+                                        child: Icon(Icons.mail_outline, size: 18,),
+                                      ),
+
+                                      Text("Contact", )
+                                    ],
+                                  ),
                                 ),
                               ),
                             )),
