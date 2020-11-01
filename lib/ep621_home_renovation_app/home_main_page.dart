@@ -79,7 +79,11 @@ class _HomeMainPageState extends State<HomeMainPage> {
                                       Expanded(
                                         child: Row(
                                           children: [
-                                            Expanded(child: Placeholder()),
+                                            Expanded(child: Container(
+                                              decoration: BoxDecoration(
+                                                color: Colors.grey,
+                                              ),
+                                            )),
                                             Expanded(child: Placeholder()),
                                             Expanded(child: Placeholder()),
 
