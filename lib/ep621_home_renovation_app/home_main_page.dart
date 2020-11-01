@@ -60,7 +60,7 @@ class _HomeMainPageState extends State<HomeMainPage> {
                         padding: EdgeInsets.all(4),
                         child: Column(
                           children: [
-                            Expanded(flex: 3, child: Row(
+                            Expanded(flex: 4, child: Row(
                               children: [
                                 Expanded(
                                     flex: 2,
