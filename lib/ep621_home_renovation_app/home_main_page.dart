@@ -144,7 +144,10 @@ class _HomeMainPageState extends State<HomeMainPage> {
                                 )
                               ],
                             )),
-                            Expanded(flex: 2, child: Placeholder()),
+                            Expanded(flex: 1, child: Text("Dreamwalker", style: TextStyle(
+                              color: Colors.black,
+                              fontWeight: FontWeight.bold
+                            ),)),
                             Expanded(flex: 2, child: Placeholder()),
                           ],
                         ),
