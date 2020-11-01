@@ -100,8 +100,36 @@ class _HomeMainPageState extends State<HomeMainPage> {
                                                 ),
                                               ),
                                             )),
-                                            Expanded(child: Placeholder()),
-                                            Expanded(child: Placeholder()),
+                                            Expanded(child: Padding(
+                                              padding: const EdgeInsets.all(3.0),
+                                              child: Container(
+                                                decoration: BoxDecoration(
+                                                    color: Colors.grey,
+                                                    borderRadius: BorderRadius.circular(4),
+                                                    image: DecorationImage(
+                                                        image: NetworkImage(
+                                                          "https://cdn.pixabay.com/photo/2019/10/28/21/21/halloween-4585684_960_720.jpg",
+                                                        ),
+                                                        fit: BoxFit.cover
+                                                    )
+                                                ),
+                                              ),
+                                            )),
+                                            Expanded(child: Padding(
+                                              padding: const EdgeInsets.all(3.0),
+                                              child: Container(
+                                                decoration: BoxDecoration(
+                                                    color: Colors.grey,
+                                                    borderRadius: BorderRadius.circular(4),
+                                                    image: DecorationImage(
+                                                        image: NetworkImage(
+                                                          "https://cdn.pixabay.com/photo/2019/10/28/21/21/halloween-4585684_960_720.jpg",
+                                                        ),
+                                                        fit: BoxFit.cover
+                                                    )
+                                                ),
+                                              ),
+                                            )),
 
                                           ],
                                         ),
