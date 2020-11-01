@@ -57,6 +57,7 @@ class _HomeMainPageState extends State<HomeMainPage> {
                             boxShadow: [
                               BoxShadow(color: Colors.grey.withOpacity(0.2), spreadRadius: 2, blurRadius: 4)
                             ]),
+                        padding: EdgeInsets.all(4),
                         child: Column(
                           children: [
                             Expanded(flex: 3, child: Row(
@@ -108,7 +109,7 @@ class _HomeMainPageState extends State<HomeMainPage> {
                                                     borderRadius: BorderRadius.circular(4),
                                                     image: DecorationImage(
                                                         image: NetworkImage(
-                                                          "https://cdn.pixabay.com/photo/2019/10/28/21/21/halloween-4585684_960_720.jpg",
+                                                          "https://cdn.pixabay.com/photo/2020/05/07/19/09/bush-5142820__340.jpg",
                                                         ),
                                                         fit: BoxFit.cover
                                                     )
@@ -123,7 +124,7 @@ class _HomeMainPageState extends State<HomeMainPage> {
                                                     borderRadius: BorderRadius.circular(4),
                                                     image: DecorationImage(
                                                         image: NetworkImage(
-                                                          "https://cdn.pixabay.com/photo/2019/10/28/21/21/halloween-4585684_960_720.jpg",
+                                                          "https://cdn.pixabay.com/photo/2020/10/11/09/04/peak-5645235_960_720.jpg",
                                                         ),
                                                         fit: BoxFit.cover
                                                     )
