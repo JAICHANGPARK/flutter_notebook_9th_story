@@ -59,7 +59,11 @@ class _HomeMainPageState extends State<HomeMainPage> {
                             ]),
                         child: Column(
                           children: [
-                            Expanded(flex: 3, child: Placeholder()),
+                            Expanded(flex: 3, child: Row(
+                              children: [
+                                
+                              ],
+                            )),
                             Expanded(flex: 2, child: Placeholder()),
                             Expanded(flex: 2, child: Placeholder()),
                           ],
