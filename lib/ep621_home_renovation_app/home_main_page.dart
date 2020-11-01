@@ -149,7 +149,20 @@ class _HomeMainPageState extends State<HomeMainPage> {
                               color: Colors.black,
                               fontWeight: FontWeight.bold
                             ),)),
-                            Expanded(flex: 2, child: Placeholder()),
+                            Expanded(flex: 2, child: MaterialButton(
+                              color: Colors.yellow,
+                              onPressed: () {
+                              },
+                              child: Center(
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    Icon(Icons.mail_outline),
+                                    Text("Contact", )
+                                  ],
+                                ),
+                              ),
+                            )),
                           ],
                         ),
                       );
