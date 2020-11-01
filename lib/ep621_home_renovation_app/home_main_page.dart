@@ -63,6 +63,11 @@ class _HomeMainPageState extends State<HomeMainPage> {
                             )
                           ]
                         ),
+                        child: Column(
+                          children: [
+                            
+                          ],
+                        ),
                       );
                     },
                   ),
