@@ -45,15 +45,23 @@ class _HomeMainPageState extends State<HomeMainPage> {
                   child: GridView.builder(
                     itemCount: 50,
                     gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2,
-                    childAspectRatio: 1.3,crossAxisSpacing: 16, mainAxisSpacing: 16),
+                    childAspectRatio: 1.3,crossAxisSpacing: 8, mainAxisSpacing: 8),
 
                     itemBuilder: (BuildContext context, int index) {
                       return Container(
                         height: 160,
                         width: 80,
+                        margin: EdgeInsets.all(8),
                         decoration: BoxDecoration(
                           color: Colors.white,
                           borderRadius: BorderRadius.circular(12),
+                          boxShadow: [
+                            BoxShadow(
+                              color: Colors.grey.withOpacity(0.2),
+                              spreadRadius: 2,
+                              blurRadius: 4
+                            )
+                          ]
                         ),
                       );
                     },
