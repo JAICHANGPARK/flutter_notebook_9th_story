@@ -49,7 +49,7 @@ class _HomeMainPageState extends State<HomeMainPage> {
                   child: GridView.builder(
                     itemCount: 50,
                     gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                        crossAxisCount: 2, childAspectRatio: 1.3, crossAxisSpacing: 8, mainAxisSpacing: 8),
+                        crossAxisCount: 2, childAspectRatio: 1.3, crossAxisSpacing: 4, mainAxisSpacing: 4),
                     itemBuilder: (BuildContext context, int index) {
                       return Container(
                         margin: EdgeInsets.all(8),
@@ -63,111 +63,123 @@ class _HomeMainPageState extends State<HomeMainPage> {
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Expanded(flex: 4, child: Row(
-                              children: [
-                                Expanded(
-                                    flex: 2,
-                                    child: CircleAvatar(
-                                      backgroundImage: NetworkImage(
-                                        "https://cdn.pixabay.com/photo/2014/11/29/19/33/bald-eagle-550804_960_720.jpg",
+                            Expanded(
+                                flex: 3,
+                                child: Row(
+                                  children: [
+                                    Expanded(
+                                        flex: 2,
+                                        child: CircleAvatar(
+                                          backgroundImage: NetworkImage(
+                                            "https://cdn.pixabay.com/photo/2014/11/29/19/33/bald-eagle-550804_960_720.jpg",
+                                          ),
+                                        )),
+                                    Expanded(
+                                      flex: 4,
+                                      child: Column(
+                                        children: [
+                                          Expanded(
+                                            flex: 3,
+                                            child: Row(
+                                              children: [
+                                                Icon(
+                                                  Icons.star,
+                                                  color: Colors.yellow,
+                                                  size: 14,
+                                                ),
+                                                Text("4.2"),
+                                              ],
+                                            ),
+                                          ),
+                                          Expanded(
+                                            flex: 4,
+                                            child: Row(
+                                              children: [
+                                                Expanded(
+                                                    child: Padding(
+                                                  padding: const EdgeInsets.all(3.0),
+                                                  child: Container(
+                                                    decoration: BoxDecoration(
+                                                        color: Colors.grey,
+                                                        borderRadius: BorderRadius.circular(4),
+                                                        image: DecorationImage(
+                                                            image: NetworkImage(
+                                                              "https://cdn.pixabay.com/photo/2019/10/28/21/21/halloween-4585684_960_720.jpg",
+                                                            ),
+                                                            fit: BoxFit.cover)),
+                                                  ),
+                                                )),
+                                                Expanded(
+                                                    child: Padding(
+                                                  padding: const EdgeInsets.all(3.0),
+                                                  child: Container(
+                                                    decoration: BoxDecoration(
+                                                        color: Colors.grey,
+                                                        borderRadius: BorderRadius.circular(4),
+                                                        image: DecorationImage(
+                                                            image: NetworkImage(
+                                                              "https://cdn.pixabay.com/photo/2020/05/07/19/09/bush-5142820__340.jpg",
+                                                            ),
+                                                            fit: BoxFit.cover)),
+                                                  ),
+                                                )),
+                                                Expanded(
+                                                    child: Padding(
+                                                  padding: const EdgeInsets.all(3.0),
+                                                  child: Container(
+                                                    decoration: BoxDecoration(
+                                                        color: Colors.grey,
+                                                        borderRadius: BorderRadius.circular(4),
+                                                        image: DecorationImage(
+                                                            image: NetworkImage(
+                                                              "https://cdn.pixabay.com/photo/2020/10/11/09/04/peak-5645235_960_720.jpg",
+                                                            ),
+                                                            fit: BoxFit.cover)),
+                                                  ),
+                                                )),
+                                              ],
+                                            ),
+                                          )
+                                        ],
                                       ),
-                                    )),
-                                Expanded(
-                                  flex: 4,
-                                  child: Column(
-                                    children: [
-                                      Expanded(
-                                        flex: 3,
-                                        child: Row(
-                                          children: [
-                                            Icon(Icons.star, color: Colors.yellow,size: 14,),
-                                            Text("4.2"),
-                                          ],
-                                        ),
-                                      ),
-                                      Expanded(
-                                        flex: 4,
-                                        child: Row(
-                                          children: [
-                                            Expanded(child: Padding(
-                                              padding: const EdgeInsets.all(3.0),
-                                              child: Container(
-                                                decoration: BoxDecoration(
-                                                  color: Colors.grey,
-                                                  borderRadius: BorderRadius.circular(4),
-                                                  image: DecorationImage(
-                                                    image: NetworkImage(
-                                                      "https://cdn.pixabay.com/photo/2019/10/28/21/21/halloween-4585684_960_720.jpg",
-                                                    ),
-                                                    fit: BoxFit.cover
-                                                  )
-                                                ),
-                                              ),
-                                            )),
-                                            Expanded(child: Padding(
-                                              padding: const EdgeInsets.all(3.0),
-                                              child: Container(
-                                                decoration: BoxDecoration(
-                                                    color: Colors.grey,
-                                                    borderRadius: BorderRadius.circular(4),
-                                                    image: DecorationImage(
-                                                        image: NetworkImage(
-                                                          "https://cdn.pixabay.com/photo/2020/05/07/19/09/bush-5142820__340.jpg",
-                                                        ),
-                                                        fit: BoxFit.cover
-                                                    )
-                                                ),
-                                              ),
-                                            )),
-                                            Expanded(child: Padding(
-                                              padding: const EdgeInsets.all(3.0),
-                                              child: Container(
-                                                decoration: BoxDecoration(
-                                                    color: Colors.grey,
-                                                    borderRadius: BorderRadius.circular(4),
-                                                    image: DecorationImage(
-                                                        image: NetworkImage(
-                                                          "https://cdn.pixabay.com/photo/2020/10/11/09/04/peak-5645235_960_720.jpg",
-                                                        ),
-                                                        fit: BoxFit.cover
-                                                    )
-                                                ),
-                                              ),
-                                            )),
-
-                                          ],
-                                        ),
-                                      )
-                                    ],
+                                    )
+                                  ],
+                                )),
+                            Expanded(
+                                flex: 1,
+                                child: Padding(
+                                  padding: const EdgeInsets.only(left: 16),
+                                  child: Text(
+                                    "Dreamwalker",
+                                    style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
                                   ),
-                                )
-                              ],
-                            )),
-                            Expanded(flex: 1, child: Text("Dreamwalker", style: TextStyle(
-                              color: Colors.black,
-                              fontWeight: FontWeight.bold
-                            ),)),
-                            Expanded(flex: 2, child: Padding(
-                              padding: const EdgeInsets.all(3.0),
-                              child: MaterialButton(
-                                color: Colors.yellow,
-                                onPressed: () {
-                                },
-                                child: Center(
-                                  child: Row(
-                                    mainAxisAlignment: MainAxisAlignment.center,
-                                    children: [
-                                      Padding(
-                                        padding: const EdgeInsets.all(4.0),
-                                        child: Icon(Icons.mail_outline, size: 18,),
+                                )),
+                            Expanded(
+                                flex: 2,
+                                child: Padding(
+                                  padding: const EdgeInsets.all(3.0),
+                                  child: MaterialButton(
+                                    color: Colors.yellow,
+                                    onPressed: () {},
+                                    child: Center(
+                                      child: Row(
+                                        mainAxisAlignment: MainAxisAlignment.center,
+                                        children: [
+                                          Padding(
+                                            padding: const EdgeInsets.all(4.0),
+                                            child: Icon(
+                                              Icons.mail_outline,
+                                              size: 18,
+                                            ),
+                                          ),
+                                          Text(
+                                            "Contact",
+                                          )
+                                        ],
                                       ),
-
-                                      Text("Contact", )
-                                    ],
+                                    ),
                                   ),
-                                ),
-                              ),
-                            )),
+                                )),
                           ],
                         ),
                       );
