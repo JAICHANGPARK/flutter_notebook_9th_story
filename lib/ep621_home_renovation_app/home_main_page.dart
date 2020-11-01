@@ -61,28 +61,32 @@ class _HomeMainPageState extends State<HomeMainPage> {
                           children: [
                             Expanded(flex: 3, child: Row(
                               children: [
-                                CircleAvatar(),
-                                Column(
-                                  children: [
-                                    Expanded(
-                                      child: Row(
-                                        children: [
-                                          Icon(Icons.star, color: Colors.yellow,size: 14,),
-                                          Text("4.2"),
-                                        ],
+                                Expanded(
+                                    flex: 2,
+                                    child: CircleAvatar()),
+                                Expanded(
+                                  child: Column(
+                                    children: [
+                                      Expanded(
+                                        child: Row(
+                                          children: [
+                                            Icon(Icons.star, color: Colors.yellow,size: 14,),
+                                            Text("4.2"),
+                                          ],
+                                        ),
                                       ),
-                                    ),
-                                    Expanded(
-                                      child: Row(
-                                        children: [
-                                          Expanded(child: Placeholder()),
-                                          Expanded(child: Placeholder()),
-                                          Expanded(child: Placeholder()),
+                                      Expanded(
+                                        child: Row(
+                                          children: [
+                                            Expanded(child: Placeholder()),
+                                            Expanded(child: Placeholder()),
+                                            Expanded(child: Placeholder()),
 
-                                        ],
-                                      ),
-                                    )
-                                  ],
+                                          ],
+                                        ),
+                                      )
+                                    ],
+                                  ),
                                 )
                               ],
                             )),
