@@ -63,7 +63,11 @@ class _HomeMainPageState extends State<HomeMainPage> {
                               children: [
                                 Expanded(
                                     flex: 2,
-                                    child: CircleAvatar()),
+                                    child: CircleAvatar(
+                                      backgroundImage: NetworkImage(
+                                        "https://cdn.pixabay.com/photo/2014/11/29/19/33/bald-eagle-550804_960_720.jpg",
+                                      ),
+                                    )),
                                 Expanded(
                                   flex: 4,
                                   child: Column(
@@ -86,6 +90,7 @@ class _HomeMainPageState extends State<HomeMainPage> {
                                               child: Container(
                                                 decoration: BoxDecoration(
                                                   color: Colors.grey,
+                                                  borderRadius: BorderRadius.circular(4),
                                                 ),
                                               ),
                                             )),
