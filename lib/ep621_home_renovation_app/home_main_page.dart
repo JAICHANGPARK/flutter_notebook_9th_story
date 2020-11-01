@@ -64,16 +64,23 @@ class _HomeMainPageState extends State<HomeMainPage> {
                                 CircleAvatar(),
                                 Column(
                                   children: [
-                                    Row(
-                                      children: [
-                                        Icon(Icons.star, color: Colors.yellow,size: 14,),
-                                        Text("4.2"),
-                                      ],
+                                    Expanded(
+                                      child: Row(
+                                        children: [
+                                          Icon(Icons.star, color: Colors.yellow,size: 14,),
+                                          Text("4.2"),
+                                        ],
+                                      ),
                                     ),
-                                    Row(
-                                      children: [
-                                        Expanded(child: Placeholder()),
-                                      ],
+                                    Expanded(
+                                      child: Row(
+                                        children: [
+                                          Expanded(child: Placeholder()),
+                                          Expanded(child: Placeholder()),
+                                          Expanded(child: Placeholder()),
+
+                                        ],
+                                      ),
                                     )
                                   ],
                                 )
