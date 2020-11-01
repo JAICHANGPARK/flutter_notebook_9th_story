@@ -66,6 +66,7 @@ class _HomeMainPageState extends State<HomeMainPage> {
                                   children: [
                                     Row(
                                       children: [
+                                        Icon(Icons.star, color: Colors.yellow,size: 14,),
                                         
                                       ],
                                     )
