@@ -69,6 +69,7 @@ class _HomeMainPageState extends State<HomeMainPage> {
                                   child: Column(
                                     children: [
                                       Expanded(
+                                        flex: 3,
                                         child: Row(
                                           children: [
                                             Icon(Icons.star, color: Colors.yellow,size: 14,),
@@ -77,11 +78,15 @@ class _HomeMainPageState extends State<HomeMainPage> {
                                         ),
                                       ),
                                       Expanded(
+                                        flex: 4,
                                         child: Row(
                                           children: [
-                                            Expanded(child: Container(
-                                              decoration: BoxDecoration(
-                                                color: Colors.grey,
+                                            Expanded(child: Padding(
+                                              padding: const EdgeInsets.all(3.0),
+                                              child: Container(
+                                                decoration: BoxDecoration(
+                                                  color: Colors.grey,
+                                                ),
                                               ),
                                             )),
                                             Expanded(child: Placeholder()),
