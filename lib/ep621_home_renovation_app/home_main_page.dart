@@ -65,6 +65,7 @@ class _HomeMainPageState extends State<HomeMainPage> {
                                     flex: 2,
                                     child: CircleAvatar()),
                                 Expanded(
+                                  flex: 4,
                                   child: Column(
                                     children: [
                                       Expanded(
