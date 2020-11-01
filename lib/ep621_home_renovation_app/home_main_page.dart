@@ -63,6 +63,7 @@ class _HomeMainPageState extends State<HomeMainPage> {
                             ]),
                         padding: EdgeInsets.all(4),
                         child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Expanded(flex: 4, child: Row(
                               children: [
