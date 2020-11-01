@@ -61,7 +61,16 @@ class _HomeMainPageState extends State<HomeMainPage> {
                           children: [
                             Expanded(flex: 3, child: Row(
                               children: [
-                                
+                                CircleAvatar(),
+                                Column(
+                                  children: [
+                                    Row(
+                                      children: [
+                                        
+                                      ],
+                                    )
+                                  ],
+                                )
                               ],
                             )),
                             Expanded(flex: 2, child: Placeholder()),
