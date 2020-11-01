@@ -40,20 +40,23 @@ class _HomeMainPageState extends State<HomeMainPage> {
                 )),
             Expanded(
                 flex: 20,
-                child: GridView.builder(
-                  itemCount: 50,
-                  gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2,
-                  childAspectRatio: 1.2,crossAxisSpacing: 16, mainAxisSpacing: 16),
+                child: Padding(
+                  padding: const EdgeInsets.all(16.0),
+                  child: GridView.builder(
+                    itemCount: 50,
+                    gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2,
+                    childAspectRatio: 1.2,crossAxisSpacing: 16, mainAxisSpacing: 16),
 
-                  itemBuilder: (BuildContext context, int index) {
-                    return Container(
-                      height: 160,
-                      width: 80,
-                      decoration: BoxDecoration(
-                        color: Colors.redAccent
-                      ),
-                    );
-                  },
+                    itemBuilder: (BuildContext context, int index) {
+                      return Container(
+                        height: 160,
+                        width: 80,
+                        decoration: BoxDecoration(
+                          color: Colors.redAccent
+                        ),
+                      );
+                    },
+                  ),
                 ))
           ],
         ),
