@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 class RhythmMainPage extends StatefulWidget {
@@ -13,11 +12,17 @@ class _RhythmMainPageState extends State<RhythmMainPage> {
       backgroundColor: Colors.grey[300],
       body: Stack(
         children: [
-          Positioned(child: Container(),
-          left: 0,
+          Positioned(
+
+            left: 0,
             bottom: 0,
             right: 0,
             top: 0,
+            child: Column(
+              children: [
+                Expanded(child: Placeholder()),
+              ],
+            ),
           ),
           Positioned(
               left: 0,
@@ -25,9 +30,7 @@ class _RhythmMainPageState extends State<RhythmMainPage> {
               bottom: 0,
               child: Container(
                 height: 80,
-                decoration: BoxDecoration(
-                  color: Colors.grey
-                ),
+                decoration: BoxDecoration(color: Colors.grey),
               )),
         ],
       ),
