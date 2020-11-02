@@ -13,7 +13,12 @@ class _RhythmMainPageState extends State<RhythmMainPage> {
       backgroundColor: Colors.grey[300],
       body: Stack(
         children: [
-          Positioned(child: Container()),
+          Positioned(child: Container(),
+          left: 0,
+            bottom: 0,
+            right: 0,
+            top: 0,
+          ),
           Positioned(
               left: 0,
               right: 0,
