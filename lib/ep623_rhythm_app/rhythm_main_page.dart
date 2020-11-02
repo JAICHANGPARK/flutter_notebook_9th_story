@@ -23,7 +23,9 @@ class _RhythmMainPageState extends State<RhythmMainPage> {
                   Expanded(flex: 2,child: Column(
                     children: [
                       Expanded(child: Placeholder()),
-                      Expanded(child: Placeholder()),
+                      Expanded(child: Container(
+                        color: Colors.white,
+                      )),
                       Expanded(child: Placeholder()),
                     ],
                   )),
