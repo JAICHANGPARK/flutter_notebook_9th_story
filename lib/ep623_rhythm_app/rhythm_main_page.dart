@@ -21,9 +21,16 @@ class _RhythmMainPageState extends State<RhythmMainPage> {
               child: Column(
                 children: [
                   Expanded(child: Placeholder()),
-                  Divider(),
-                  Expanded(child: Placeholder()),
-                  Expanded(child: Placeholder()),
+                  Divider(
+                    color: Colors.black,
+                    thickness: 1.5,
+                  ),
+                  Expanded(child: Column(children: [
+
+                    Expanded(child: Placeholder()),
+                    Expanded(child: Placeholder()),
+                  ],))
+
                 ],
               ),
             ),
