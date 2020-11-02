@@ -17,7 +17,11 @@ class _RhythmMainPageState extends State<RhythmMainPage> {
               left: 0,
               right: 0,
               bottom: 0,
-              child: Container()),
+              child: Container(
+                decoration: BoxDecoration(
+                  color: Colors.grey
+                ),
+              )),
         ],
       ),
     );
