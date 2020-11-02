@@ -20,17 +20,19 @@ class _RhythmMainPageState extends State<RhythmMainPage> {
             child: SafeArea(
               child: Column(
                 children: [
-                  Expanded(child: Placeholder()),
+                  Expanded(flex: 2,child: Placeholder()),
                   Divider(
                     color: Colors.black,
                     thickness: 1.5,
                   ),
-                  Expanded(child: Column(children: [
-
-                    Expanded(child: Placeholder()),
-                    Expanded(child: Placeholder()),
-                  ],))
-
+                  Expanded(
+                      flex: 5,
+                      child: Column(
+                        children: [
+                          Expanded(child: Placeholder()),
+                          Expanded(child: Placeholder()),
+                        ],
+                      ))
                 ],
               ),
             ),
