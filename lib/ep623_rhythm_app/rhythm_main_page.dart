@@ -13,15 +13,19 @@ class _RhythmMainPageState extends State<RhythmMainPage> {
       body: Stack(
         children: [
           Positioned(
-
             left: 0,
             bottom: 0,
             right: 0,
             top: 0,
-            child: Column(
-              children: [
-                Expanded(child: Placeholder()),
-              ],
+            child: SafeArea(
+              child: Column(
+                children: [
+                  Expanded(child: Placeholder()),
+                  Divider(),
+                  Expanded(child: Placeholder()),
+                  Expanded(child: Placeholder()),
+                ],
+              ),
             ),
           ),
           Positioned(
