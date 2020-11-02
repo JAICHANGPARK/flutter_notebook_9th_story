@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'ep621_home_renovation_app/home_renovation_app.dart';
+import 'ep623_rhythm_app/rhythm_app.dart';
 
 main() {
-  runApp(HomeRenovationApp());
+  runApp(RhythmApp());
 }
