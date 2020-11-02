@@ -10,7 +10,7 @@ class _RhythmMainPageState extends State<RhythmMainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey[200],
+      backgroundColor: Colors.grey[300],
     );
   }
 }
