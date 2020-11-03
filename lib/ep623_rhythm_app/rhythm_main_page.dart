@@ -25,7 +25,14 @@ class _RhythmMainPageState extends State<RhythmMainPage> {
                       flex: 2,
                       child: Column(
                         children: [
-                          Expanded(child: Placeholder()),
+                          Expanded(child: Row(
+                            children: [
+                              Text("EXPLORE", style: TextStyle(
+                                fontSize: 24,
+                                fontWeight: FontWeight.bold
+                              ),)
+                            ],
+                          )),
                           Expanded(
                               child: Container(
                             color: Colors.white,
