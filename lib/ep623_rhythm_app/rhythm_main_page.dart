@@ -60,6 +60,7 @@ class _RhythmMainPageState extends State<RhythmMainPage> {
                                 color: Colors.white,
                                 borderRadius: BorderRadius.circular(32),
                               ),
+                              padding: EdgeInsets.symmetric(horizontal: 16),
                               child: TextField(
                                 decoration: InputDecoration(
                                     hintText: "Search", suffixIcon: Icon(Icons.search), border: InputBorder.none),
