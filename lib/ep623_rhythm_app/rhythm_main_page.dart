@@ -34,9 +34,12 @@ class _RhythmMainPageState extends State<RhythmMainPage> {
                                   fontSize: 24,
                                   fontWeight: FontWeight.bold
                                 ),),
+                                Spacer(),
                                 Badge(
                                   child: Icon(Icons.notifications),
-                                )
+                                  badgeContent: Text("5"),
+                                ),
+                                CircleAvatar()
                               ],
                             ),
                           )),
