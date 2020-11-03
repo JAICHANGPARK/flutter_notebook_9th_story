@@ -41,7 +41,7 @@ class _RhythmMainPageState extends State<RhythmMainPage> {
                                 ),
                                 SizedBox(width: 16,),
                                 Padding(
-                                  padding: const EdgeInsets.all(8.0),
+                                  padding: const EdgeInsets.all(4.0),
                                   child: CircleAvatar(
                                     radius: 16,
                                   ),
