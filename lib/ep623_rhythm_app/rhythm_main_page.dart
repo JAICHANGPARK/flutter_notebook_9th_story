@@ -12,6 +12,8 @@ class _RhythmMainPageState extends State<RhythmMainPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.grey[300],
+      resizeToAvoidBottomPadding: false,
+      resizeToAvoidBottomInset: false,
       body: Stack(
         children: [
           Positioned(
