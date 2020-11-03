@@ -73,14 +73,15 @@ class _RhythmMainPageState extends State<RhythmMainPage> {
                           ),
                           child: Container(
                             alignment: Alignment.center,
-
+                            padding: EdgeInsets.symmetric(16),
                             child: Row(
                               children: [
                                 Container(
-                                  height: 58,
-                                  width: 58,
+                                  height: 48,
+                                  width: 48,
                                   decoration: BoxDecoration(
-                                    color: Colors.redAccent
+                                    color: Colors.redAccent,
+                                    borderRadius: BorderRadius.circular(8)
                                   ),
                                 )
                               ],
