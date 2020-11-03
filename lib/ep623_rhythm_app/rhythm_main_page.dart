@@ -88,6 +88,7 @@ class _RhythmMainPageState extends State<RhythmMainPage> {
                                   padding: const EdgeInsets.all(16.0),
                                   child: Column(
                                     mainAxisAlignment: MainAxisAlignment.center,
+                                    crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
                                       Text("Flutter Live", style: TextStyle(
                                         fontWeight: FontWeight.bold,
@@ -96,7 +97,8 @@ class _RhythmMainPageState extends State<RhythmMainPage> {
                                       Text("Dream Walker")
                                     ],
                                   ),
-                                )
+                                ),
+                                Spacer(),
                               ],
                             )
                           ),
