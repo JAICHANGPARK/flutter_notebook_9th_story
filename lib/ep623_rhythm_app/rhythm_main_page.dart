@@ -1,3 +1,4 @@
+import 'package:badges/badges.dart';
 import 'package:flutter/material.dart';
 import 'dart:ui' as ui;
 
@@ -32,7 +33,10 @@ class _RhythmMainPageState extends State<RhythmMainPage> {
                                 Text("EXPLORE", style: TextStyle(
                                   fontSize: 24,
                                   fontWeight: FontWeight.bold
-                                ),)
+                                ),),
+                                Badge(
+                                  child: Icon(Icons.notifications),
+                                )
                               ],
                             ),
                           )),
