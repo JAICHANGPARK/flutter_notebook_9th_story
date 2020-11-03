@@ -56,11 +56,14 @@ class _RhythmMainPageState extends State<RhythmMainPage> {
               right: 0,
               bottom: 0,
               child: BackdropFilter(
-                
-                filter: ImageFilter.blur(),
+                filter: ui.ImageFilter.blur(
+                  sigmaX: 10,
+                  sigmaY: 10,
+                ),
                 child: Container(
                   height: 80,
                   decoration: BoxDecoration(color: Colors.grey),
+                  
 
                 ),
               )),
