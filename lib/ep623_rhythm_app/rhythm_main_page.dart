@@ -100,11 +100,11 @@ class _RhythmMainPageState extends State<RhythmMainPage> {
                                 ),
                                 Spacer(),
                                 IconButton(
-                                  icon: Icon(Icons.play_arrow),
+                                  icon: Icon(Icons.play_arrow, size: 32,),
                                   onPressed: () {  },
                                 ),
                                 IconButton(
-                                  icon: Icon(Icons.skip_next),
+                                  icon: Icon(Icons.skip_next,  size: 32,),
                                   onPressed: () {  },
                                 ),
 
@@ -122,3 +122,10 @@ class _RhythmMainPageState extends State<RhythmMainPage> {
     );
   }
 }
+
+
+
+
+
+
+
