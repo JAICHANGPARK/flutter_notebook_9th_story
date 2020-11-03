@@ -74,7 +74,17 @@ class _RhythmMainPageState extends State<RhythmMainPage> {
                           child: Container(
                             alignment: Alignment.center,
 
-                            child: Text('Hello World'),
+                            child: Row(
+                              children: [
+                                Container(
+                                  height: 58,
+                                  width: 58,
+                                  decoration: BoxDecoration(
+                                    color: Colors.redAccent
+                                  ),
+                                )
+                              ],
+                            )
                           ),
                         ),
                       ),
