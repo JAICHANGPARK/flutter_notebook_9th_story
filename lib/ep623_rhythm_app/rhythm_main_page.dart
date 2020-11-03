@@ -55,20 +55,37 @@ class _RhythmMainPageState extends State<RhythmMainPage> {
               left: 0,
               right: 0,
               bottom: 0,
-              child:
-                Container(
-                  height: 80,
-                  decoration: BoxDecoration(color: Colors.grey),
-                  child: BackdropFilter(
-                      filter: ui.ImageFilter.blur(
-                        sigmaX: 10,
-                        sigmaY: 10,
-                      ),
-
+              child:Container(
+                height: 80,
+                child: Stack(
+                  children: [
+                    Container(
+                      color: Colors.grey[300],
+                    ),
+                    BackdropFilter(filter: ui.ImageFilter.blur(
+                      sigmaY: 10,
+                      sigmaX: 10,
+                    ),
+                    )
+                  ],
                 ),
-              )),
+              )
+          ),
         ],
       ),
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
