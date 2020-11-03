@@ -107,7 +107,6 @@ class _RhythmMainPageState extends State<RhythmMainPage> {
                                   icon: Icon(Icons.skip_next,  size: 32,),
                                   onPressed: () {  },
                                 ),
-
                               ],
                             )
                           ),
