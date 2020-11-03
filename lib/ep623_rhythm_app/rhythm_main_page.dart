@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'dart:ui' as ui;
 class RhythmMainPage extends StatefulWidget {
   @override
   _RhythmMainPageState createState() => _RhythmMainPageState();
@@ -57,7 +57,7 @@ class _RhythmMainPageState extends State<RhythmMainPage> {
               bottom: 0,
               child: BackdropFilter(
                 
-                filter: ImageFiltered,
+                filter: ImageFilter.blur(),
                 child: Container(
                   height: 80,
                   decoration: BoxDecoration(color: Colors.grey),
