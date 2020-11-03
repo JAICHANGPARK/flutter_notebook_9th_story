@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'dart:ui' as ui;
+
 class RhythmMainPage extends StatefulWidget {
   @override
   _RhythmMainPageState createState() => _RhythmMainPageState();
@@ -55,37 +56,34 @@ class _RhythmMainPageState extends State<RhythmMainPage> {
               left: 0,
               right: 0,
               bottom: 0,
-              child:Container(
+              child: Container(
                 height: 80,
                 child: Stack(
                   children: [
                     Container(
-                      color: Colors.grey[300],
+                      color: Colors.grey[200],
                     ),
-                    BackdropFilter(filter: ui.ImageFilter.blur(
-                      sigmaY: 10,
-                      sigmaX: 10,
+                    Center(
+                      child: ClipRect(
+                        // <-- clips to the 200x200 [Container] below
+                        child: BackdropFilter(
+                          filter: ui.ImageFilter.blur(
+                            sigmaX: 5.0,
+                            sigmaY: 5.0,
+                          ),
+                          child: Container(
+                            alignment: Alignment.center,
+
+                            child: Text('Hello World'),
+                          ),
+                        ),
+                      ),
                     ),
-                    )
                   ],
                 ),
-              )
-          ),
+              )),
         ],
       ),
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
