@@ -25,13 +25,16 @@ class _RhythmMainPageState extends State<RhythmMainPage> {
                       flex: 2,
                       child: Column(
                         children: [
-                          Expanded(child: Row(
-                            children: [
-                              Text("EXPLORE", style: TextStyle(
-                                fontSize: 24,
-                                fontWeight: FontWeight.bold
-                              ),)
-                            ],
+                          Expanded(child: Padding(
+                            padding: const EdgeInsets.symmetric(horizontal: 16),
+                            child: Row(
+                              children: [
+                                Text("EXPLORE", style: TextStyle(
+                                  fontSize: 24,
+                                  fontWeight: FontWeight.bold
+                                ),)
+                              ],
+                            ),
                           )),
                           Expanded(
                               child: Container(
