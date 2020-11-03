@@ -57,6 +57,7 @@ class _RhythmMainPageState extends State<RhythmMainPage> {
               bottom: 0,
               child: BackdropFilter(
                 
+                filter: ImageFiltered,
                 child: Container(
                   height: 80,
                   decoration: BoxDecoration(color: Colors.grey),
