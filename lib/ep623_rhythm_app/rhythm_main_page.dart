@@ -50,9 +50,16 @@ class _RhythmMainPageState extends State<RhythmMainPage> {
                             ),
                           )),
                           Expanded(
-                              child: Container(
-                            color: Colors.white,
-                          )),
+                              child: Padding(
+                                padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
+                                child: Container(
+                            decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(32)
+                            ),
+
+                          ),
+                              )),
                           Expanded(child: Placeholder()),
                         ],
                       )),
