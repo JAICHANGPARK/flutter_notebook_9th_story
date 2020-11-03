@@ -39,7 +39,13 @@ class _RhythmMainPageState extends State<RhythmMainPage> {
                                   child: Icon(Icons.notifications),
                                   badgeContent: Text("5"),
                                 ),
-                                CircleAvatar()
+                                SizedBox(width: 16,),
+                                Padding(
+                                  padding: const EdgeInsets.all(8.0),
+                                  child: CircleAvatar(
+                                    radius: 16,
+                                  ),
+                                )
                               ],
                             ),
                           )),
