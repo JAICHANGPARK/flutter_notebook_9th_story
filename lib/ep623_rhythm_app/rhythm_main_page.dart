@@ -40,7 +40,10 @@ class _RhythmMainPageState extends State<RhythmMainPage> {
                                 Spacer(),
                                 Badge(
                                   child: Icon(Icons.notifications),
-                                  badgeContent: Text("5"),
+                                  badgeContent: Text("5", style: TextStyle(
+                                    color: Colors.white
+                                  ),),
+
                                 ),
                                 SizedBox(
                                   width: 16,
