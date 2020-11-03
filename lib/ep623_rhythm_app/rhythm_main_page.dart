@@ -73,7 +73,7 @@ class _RhythmMainPageState extends State<RhythmMainPage> {
                           ),
                           child: Container(
                             alignment: Alignment.center,
-                            padding: EdgeInsets.symmetric(16),
+                            padding: EdgeInsets.symmetric(horizontal: 16),
                             child: Row(
                               children: [
                                 Container(
@@ -82,6 +82,19 @@ class _RhythmMainPageState extends State<RhythmMainPage> {
                                   decoration: BoxDecoration(
                                     color: Colors.redAccent,
                                     borderRadius: BorderRadius.circular(8)
+                                  ),
+                                ),
+                                Padding(
+                                  padding: const EdgeInsets.all(16.0),
+                                  child: Column(
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: [
+                                      Text("Flutter Live", style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 20
+                                      ),),
+                                      Text("Dream Walker")
+                                    ],
                                   ),
                                 )
                               ],
