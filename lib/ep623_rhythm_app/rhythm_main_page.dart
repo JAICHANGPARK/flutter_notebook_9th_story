@@ -82,7 +82,7 @@ class _RhythmMainPageState extends State<RhythmMainPage> with TickerProviderStat
                             ),
                           )),
                           Expanded(child: TabBar(
-
+                          controller: _tabController,
                             tabs: [
                             Tab(
                               text: "Overview",
@@ -104,16 +104,22 @@ class _RhythmMainPageState extends State<RhythmMainPage> with TickerProviderStat
                   Divider(
                     color: Colors.black,
                     thickness: 1.5,
+                    height: 0,
                   ),
                   Expanded(
                       flex: 6,
-                      child: Column(
+                      child: TabBarView(
+                        controller: _tabController,
                         children: [
-                          Expanded(child: Placeholder()),
-                          Expanded(
-                              child: Container(
-                            color: Colors.white,
-                          )),
+                          Column(
+                            children: [
+                              Expanded(child: Placeholder()),
+                              Expanded(
+                                  child: Container(
+                                    color: Colors.white,
+                                  )),
+                            ],
+                          ),
                         ],
                       ))
                 ],
