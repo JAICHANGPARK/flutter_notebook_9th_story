@@ -9,7 +9,13 @@ class RhythmMainPage extends StatefulWidget {
 
 class _RhythmMainPageState extends State<RhythmMainPage> {
   int _tabIndex = 0;
+  TabController _tabController = TabController(vsync: );
 
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -74,7 +80,9 @@ class _RhythmMainPageState extends State<RhythmMainPage> {
                               ),
                             ),
                           )),
-                          Expanded(child: TabBar(tabs: [
+                          Expanded(child: TabBar(
+
+                            tabs: [
                             Tab(
                               text: "Overview",
                             ),
