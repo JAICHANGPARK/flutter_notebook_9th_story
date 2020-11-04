@@ -88,6 +88,7 @@ class _RhythmMainPageState extends State<RhythmMainPage> with TickerProviderStat
                             indicatorColor: Colors.black,
                             isScrollable: true,
                             labelColor: Colors.black,
+                            unselectedLabelColor: Colors.grey,
                             tabs: [
                               Tab(
                                 text: "Overview",
