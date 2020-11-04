@@ -7,14 +7,15 @@ class RhythmMainPage extends StatefulWidget {
   _RhythmMainPageState createState() => _RhythmMainPageState();
 }
 
-class _RhythmMainPageState extends State<RhythmMainPage> {
+class _RhythmMainPageState extends State<RhythmMainPage> with TickerProviderStateMixin{
   int _tabIndex = 0;
-  TabController _tabController = TabController(vsync: );
+  TabController _tabController ;
 
   @override
   void initState() {
     // TODO: implement initState
     super.initState();
+    _tabController= TabController(vsync: this, length: 4);
   }
   @override
   Widget build(BuildContext context) {
