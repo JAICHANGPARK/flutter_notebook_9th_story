@@ -7,16 +7,17 @@ class RhythmMainPage extends StatefulWidget {
   _RhythmMainPageState createState() => _RhythmMainPageState();
 }
 
-class _RhythmMainPageState extends State<RhythmMainPage> with TickerProviderStateMixin{
+class _RhythmMainPageState extends State<RhythmMainPage> with TickerProviderStateMixin {
   int _tabIndex = 0;
-  TabController _tabController ;
+  TabController _tabController;
 
   @override
   void initState() {
     // TODO: implement initState
     super.initState();
-    _tabController= TabController(vsync: this, length: 4);
+    _tabController = TabController(vsync: this, length: 4);
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -81,23 +82,23 @@ class _RhythmMainPageState extends State<RhythmMainPage> with TickerProviderStat
                               ),
                             ),
                           )),
-                          Expanded(child: TabBar(
-                          controller: _tabController,
+                          Expanded(
+                              child: TabBar(
+                            controller: _tabController,
                             tabs: [
-                            Tab(
-                              text: "Overview",
-                            ),
-                            Tab(
-                              text: "Genres",
-                            ),
-                            Tab(
-                              text: "Podcast",
-                            ),
-                            Tab(
-                              text: "Recommend",
-                            )
-                          ],
-
+                              Tab(
+                                text: "Overview",
+                              ),
+                              Tab(
+                                text: "Genres",
+                              ),
+                              Tab(
+                                text: "Podcast",
+                              ),
+                              Tab(
+                                text: "Recommend",
+                              )
+                            ],
                           )),
                         ],
                       )),
@@ -116,8 +117,8 @@ class _RhythmMainPageState extends State<RhythmMainPage> with TickerProviderStat
                               Expanded(child: Placeholder()),
                               Expanded(
                                   child: Container(
-                                    color: Colors.white,
-                                  )),
+                                color: Colors.white,
+                              )),
                             ],
                           ),
                         ],
