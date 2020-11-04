@@ -8,6 +8,7 @@ class RhythmMainPage extends StatefulWidget {
 }
 
 class _RhythmMainPageState extends State<RhythmMainPage> {
+  int _tabIndex = 0 ;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
