@@ -74,7 +74,22 @@ class _RhythmMainPageState extends State<RhythmMainPage> {
                               ),
                             ),
                           )),
-                          Expanded(child: Placeholder()),
+                          Expanded(child: TabBar(tabs: [
+                            Tab(
+                              text: "Overview",
+                            ),
+                            Tab(
+                              text: "Genres",
+                            ),
+                            Tab(
+                              text: "Podcast",
+                            ),
+                            Tab(
+                              text: "Recommend",
+                            )
+                          ],
+
+                          )),
                         ],
                       )),
                   Divider(
