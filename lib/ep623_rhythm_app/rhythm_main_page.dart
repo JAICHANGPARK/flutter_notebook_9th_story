@@ -8,7 +8,8 @@ class RhythmMainPage extends StatefulWidget {
 }
 
 class _RhythmMainPageState extends State<RhythmMainPage> {
-  int _tabIndex = 0 ;
+  int _tabIndex = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -41,10 +42,10 @@ class _RhythmMainPageState extends State<RhythmMainPage> {
                                 Spacer(),
                                 Badge(
                                   child: Icon(Icons.notifications),
-                                  badgeContent: Text("5", style: TextStyle(
-                                    color: Colors.white
-                                  ),),
-
+                                  badgeContent: Text(
+                                    "5",
+                                    style: TextStyle(color: Colors.white),
+                                  ),
                                 ),
                                 SizedBox(
                                   width: 16,
