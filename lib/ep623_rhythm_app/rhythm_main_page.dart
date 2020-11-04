@@ -123,6 +123,8 @@ class _RhythmMainPageState extends State<RhythmMainPage> with TickerProviderStat
                                 children: [
                                   Expanded(child: Text("Recently played")),
                                   Expanded(child: ListView.builder(
+                                    scrollDirection: Axis.horizontal,
+                                    itemCount: 10,
                                     itemBuilder: (BuildContext context, int index) {
                                       return Column(
                                         children: [
