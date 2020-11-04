@@ -85,6 +85,9 @@ class _RhythmMainPageState extends State<RhythmMainPage> with TickerProviderStat
                           Expanded(
                               child: TabBar(
                             controller: _tabController,
+                            indicatorColor: Colors.black,
+                            isScrollable: true,
+                            labelColor: Colors.black,
                             tabs: [
                               Tab(
                                 text: "Overview",
