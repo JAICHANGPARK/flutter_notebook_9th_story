@@ -121,23 +121,27 @@ class _RhythmMainPageState extends State<RhythmMainPage> with TickerProviderStat
                               Expanded(
                                   child: Column(
                                 children: [
-                                  Expanded(child: Text("Recently played")),
-                                  Expanded(child: ListView.builder(
-                                    scrollDirection: Axis.horizontal,
-                                    itemCount: 10,
-                                    itemBuilder: (BuildContext context, int index) {
-                                      return Column(
-                                        children: [
-                                          Expanded(
-                                            child: Placeholder(),
-                                          ),
-                                          Expanded(
-                                            child: Placeholder(),
-                                          ),
-                                        ],
-                                      );
-                                    },
-                                  ))
+                                  Expanded(flex: 2, child: Text("Recently played")),
+                                  Expanded(
+                                      flex: 8,
+                                      child: ListView.builder(
+                                        scrollDirection: Axis.horizontal,
+                                        itemCount: 10,
+                                        itemBuilder: (BuildContext context, int index) {
+                                          return Column(
+                                            children: [
+                                              Expanded(
+                                                flex: 8,
+                                                child: Placeholder(),
+                                              ),
+                                              Expanded(
+                                                flex: 2,
+                                                child: Placeholder(),
+                                              ),
+                                            ],
+                                          );
+                                        },
+                                      ))
                                 ],
                               )),
                               Expanded(
