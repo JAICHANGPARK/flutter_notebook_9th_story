@@ -122,26 +122,34 @@ class _RhythmMainPageState extends State<RhythmMainPage> with TickerProviderStat
                                   child: Column(
                                     crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  Expanded(flex: 1, child: Text("Recently played")),
+                                  Expanded(flex: 1, child: Padding(
+                                    padding: const EdgeInsets.all(8.0),
+                                    child: Text("Recently played", style: TextStyle(
+                                      fontSize: 20
+                                    ),),
+                                  )),
                                   Expanded(
                                       flex: 8,
                                       child: ListView.builder(
                                         scrollDirection: Axis.horizontal,
                                         itemCount: 10,
                                         itemBuilder: (BuildContext context, int index) {
-                                          return Column(
-                                            children: [
-                                              Expanded(
-                                                flex: 8,
-                                                child:CircleAvatar(
-                                                  radius: 82,
+                                          return Padding(
+                                            padding: const EdgeInsets.all(8.0),
+                                            child: Column(
+                                              children: [
+                                                Expanded(
+                                                  flex: 8,
+                                                  child:CircleAvatar(
+                                                    radius: 82,
+                                                  ),
                                                 ),
-                                              ),
-                                              Expanded(
-                                                flex: 2,
-                                                child: Text("Dream"),
-                                              ),
-                                            ],
+                                                Expanded(
+                                                  flex: 2,
+                                                  child: Text("Dream"),
+                                                ),
+                                              ],
+                                            ),
                                           );
                                         },
                                       ))
