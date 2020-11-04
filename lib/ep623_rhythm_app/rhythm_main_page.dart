@@ -118,7 +118,12 @@ class _RhythmMainPageState extends State<RhythmMainPage> with TickerProviderStat
                         children: [
                           Column(
                             children: [
-                              Expanded(child: Placeholder()),
+                              Expanded(child: Column(
+                                children: [
+                                  Expanded(child: Text("Recently played")),
+                                  ListView.builder()
+                                ],
+                              )),
                               Expanded(
                                   child: Container(
                                 color: Colors.white,
