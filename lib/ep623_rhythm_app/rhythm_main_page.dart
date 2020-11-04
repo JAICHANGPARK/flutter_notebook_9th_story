@@ -146,6 +146,7 @@ class _RhythmMainPageState extends State<RhythmMainPage> with TickerProviderStat
                                                       radius: 82,
                                                     ),
                                                   ),
+                                                  SizedBox(height: 8,),
                                                   Expanded(
                                                     flex: 2,
                                                     child: Text("Dream"),
@@ -161,6 +162,19 @@ class _RhythmMainPageState extends State<RhythmMainPage> with TickerProviderStat
                               Expanded(
                                   child: Container(
                                 color: Colors.white,
+                                    child:
+                                    ListView.builder(
+                                      itemCount: 10,
+                                      scrollDirection: Axis.horizontal,
+                                      itemBuilder: (BuildContext context, int index) {
+                                      return Column(
+                                        children: [
+
+                                        ],
+                                      );
+                                    },
+
+                                    ),
                               )),
                             ],
                           ),
