@@ -121,6 +121,21 @@ class _RhythmMainPageState extends State<RhythmMainPage> with TickerProviderStat
                               )),
                             ],
                           ),
+                          Container(
+                            child: Center(
+                              child: Text("Genres"),
+                            ),
+                          ),
+                          Container(
+                            child: Center(
+                              child: Text("Genres"),
+                            ),
+                          ),
+                          Container(
+                            child: Center(
+                              child: Text("Genres"),
+                            ),
+                          )
                         ],
                       ))
                 ],
