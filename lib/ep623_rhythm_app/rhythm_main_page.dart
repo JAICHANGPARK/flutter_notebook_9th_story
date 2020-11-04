@@ -120,8 +120,9 @@ class _RhythmMainPageState extends State<RhythmMainPage> with TickerProviderStat
                             children: [
                               Expanded(
                                   child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  Expanded(flex: 2, child: Text("Recently played")),
+                                  Expanded(flex: 1, child: Text("Recently played")),
                                   Expanded(
                                       flex: 8,
                                       child: ListView.builder(
@@ -132,11 +133,13 @@ class _RhythmMainPageState extends State<RhythmMainPage> with TickerProviderStat
                                             children: [
                                               Expanded(
                                                 flex: 8,
-                                                child: Placeholder(),
+                                                child:CircleAvatar(
+                                                  radius: 82,
+                                                ),
                                               ),
                                               Expanded(
                                                 flex: 2,
-                                                child: Placeholder(),
+                                                child: Text("Dream"),
                                               ),
                                             ],
                                           );
