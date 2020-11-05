@@ -181,7 +181,7 @@ class _RhythmMainPageState extends State<RhythmMainPage> with TickerProviderStat
                                       ),
                                     ),
                                     Expanded(
-                                      flex: 8,
+                                      flex: 12,
                                       child: ListView.builder(
                                         itemCount: 10,
                                         scrollDirection: Axis.horizontal,
@@ -199,7 +199,7 @@ class _RhythmMainPageState extends State<RhythmMainPage> with TickerProviderStat
                                                     ),
                                                   )),
                                               Expanded(
-                                                  flex: 10,
+                                                  flex: 12,
                                                   child: Container(
                                                     margin:EdgeInsets.only(bottom: 8, left: 8, right: 8),
                                                     height: 120,
