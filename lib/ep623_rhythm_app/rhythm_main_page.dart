@@ -168,6 +168,7 @@ class _RhythmMainPageState extends State<RhythmMainPage> with TickerProviderStat
                                   child: Container(
                                 color: Colors.white,
                                 child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Expanded(
                                       flex: 2,
@@ -183,6 +184,7 @@ class _RhythmMainPageState extends State<RhythmMainPage> with TickerProviderStat
                                         scrollDirection: Axis.horizontal,
                                         itemBuilder: (BuildContext context, int index) {
                                           return Column(
+                                            crossAxisAlignment: CrossAxisAlignment.start,
                                             children: [
                                               Expanded(
                                                   flex: 2,
@@ -193,6 +195,8 @@ class _RhythmMainPageState extends State<RhythmMainPage> with TickerProviderStat
                                               Expanded(
                                                   flex: 8,
                                                   child: Container(
+                                                    height: 120,
+                                                    width: 160,
                                                     decoration: BoxDecoration(
                                                       color: Colors.red,
                                                     ),
