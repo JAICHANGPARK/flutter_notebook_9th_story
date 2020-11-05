@@ -48,11 +48,15 @@ class _RhythmMainPageState extends State<RhythmMainPage> with TickerProviderStat
                                   style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
                                 ),
                                 Spacer(),
-                                Badge(
-                                  child: Icon(Icons.notifications),
-                                  badgeContent: Text(
-                                    "5",
-                                    style: TextStyle(color: Colors.white),
+                                InkWell(
+                                  onTap: (){},
+                                  child: Badge(
+
+                                    child: Icon(Icons.notifications),
+                                    badgeContent: Text(
+                                      "5",
+                                      style: TextStyle(color: Colors.white),
+                                    ),
                                   ),
                                 ),
                                 SizedBox(
