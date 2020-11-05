@@ -175,7 +175,9 @@ class _RhythmMainPageState extends State<RhythmMainPage> with TickerProviderStat
                                       children: [
                                         Expanded(child: Text("Top Picks", style: TextStyle(fontSize: 13),)),
                                         Expanded(child: Container(
-                                          
+                                          decoration: BoxDecoration(
+                                            color: Colors.red
+                                          ),
                                         )),
                                       ],
                                     );
