@@ -120,16 +120,19 @@ class _RhythmMainPageState extends State<RhythmMainPage> with TickerProviderStat
                             children: [
                               Expanded(
                                   child: Padding(
-                                    padding: const EdgeInsets.all(8.0),
-                                    child: Column(
-                                      crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                    Expanded(flex: 1, child: Padding(
-                                      padding: const EdgeInsets.only(left: 16),
-                                      child: Text("Recently played", style: TextStyle(
-                                        fontSize: 20
-                                      ),),
-                                    )),
+                                padding: const EdgeInsets.all(8.0),
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Expanded(
+                                        flex: 1,
+                                        child: Padding(
+                                          padding: const EdgeInsets.only(left: 16),
+                                          child: Text(
+                                            "Recently played",
+                                            style: TextStyle(fontSize: 20),
+                                          ),
+                                        )),
                                     Expanded(
                                         flex: 8,
                                         child: ListView.builder(
@@ -142,11 +145,13 @@ class _RhythmMainPageState extends State<RhythmMainPage> with TickerProviderStat
                                                 children: [
                                                   Expanded(
                                                     flex: 8,
-                                                    child:CircleAvatar(
+                                                    child: CircleAvatar(
                                                       radius: 82,
                                                     ),
                                                   ),
-                                                  SizedBox(height: 8,),
+                                                  SizedBox(
+                                                    height: 8,
+                                                  ),
                                                   Expanded(
                                                     flex: 2,
                                                     child: Text("Dream"),
@@ -156,25 +161,23 @@ class _RhythmMainPageState extends State<RhythmMainPage> with TickerProviderStat
                                             );
                                           },
                                         ))
-                                ],
-                              ),
-                                  )),
+                                  ],
+                                ),
+                              )),
                               Expanded(
                                   child: Container(
                                 color: Colors.white,
-                                    child:
-                                    ListView.builder(
-                                      itemCount: 10,
-                                      scrollDirection: Axis.horizontal,
-                                      itemBuilder: (BuildContext context, int index) {
-                                      return Column(
-                                        children: [
-
-                                        ],
-                                      );
-                                    },
-
-                                    ),
+                                child: ListView.builder(
+                                  itemCount: 10,
+                                  scrollDirection: Axis.horizontal,
+                                  itemBuilder: (BuildContext context, int index) {
+                                    return Column(
+                                      children: [
+                                        Text("Top Picks", style: TextStyle(fontSize: 13),)
+                                      ],
+                                    );
+                                  },
+                                ),
                               )),
                             ],
                           ),
