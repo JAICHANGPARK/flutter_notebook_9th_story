@@ -167,21 +167,30 @@ class _RhythmMainPageState extends State<RhythmMainPage> with TickerProviderStat
                               Expanded(
                                   child: Container(
                                 color: Colors.white,
-                                child: ListView.builder(
-                                  itemCount: 10,
-                                  scrollDirection: Axis.horizontal,
-                                  itemBuilder: (BuildContext context, int index) {
-                                    return Column(
-                                      children: [
-                                        Expanded(child: Text("Top Picks", style: TextStyle(fontSize: 13),)),
-                                        Expanded(child: Container(
-                                          decoration: BoxDecoration(
-                                            color: Colors.red
-                                          ),
-                                        )),
-                                      ],
-                                    );
-                                  },
+                                child: Column(
+                                  children: [
+                                    ListView.builder(
+                                      itemCount: 10,
+                                      scrollDirection: Axis.horizontal,
+                                      itemBuilder: (BuildContext context, int index) {
+                                        return Column(
+                                          children: [
+                                            Expanded(
+                                              flex: 2,
+                                                child: Text("Top Picks", style: TextStyle(fontSize: 13),)),
+                                            Expanded(
+                                                flex: 8,
+                                                child: Container(
+                                              decoration: BoxDecoration(
+                                                color: Colors.red,
+
+                                              ),
+                                            )),
+                                          ],
+                                        );
+                                      },
+                                    ),
+                                  ],
                                 ),
                               )),
                             ],
