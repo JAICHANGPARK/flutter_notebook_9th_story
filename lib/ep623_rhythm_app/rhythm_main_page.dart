@@ -221,7 +221,11 @@ class _RhythmMainPageState extends State<RhythmMainPage> with TickerProviderStat
                                                     width: 160,
                                                     decoration: BoxDecoration(
                                                       color: Colors.red,
-                                                      borderRadius: BorderRadius.circular(8)
+                                                      borderRadius: BorderRadius.circular(8),
+                                                      image: DecorationImage(
+                                                        image: NetworkImage("https://cdn.pixabay.com/photo/2020/09/19/12/49/woman-5584373__340.jpg"),
+                                                        fit: BoxFit.cover
+                                                      )
                                                     ),
                                                   )),
                                             ],
