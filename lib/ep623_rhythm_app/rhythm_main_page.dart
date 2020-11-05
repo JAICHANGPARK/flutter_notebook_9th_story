@@ -159,6 +159,9 @@ class _RhythmMainPageState extends State<RhythmMainPage> with TickerProviderStat
                                                     flex: 8,
                                                     child: CircleAvatar(
                                                       radius: 82,
+                                                      backgroundImage: NetworkImage(
+                                                        "https://cdn.pixabay.com/photo/2020/10/23/16/50/woman-5679284__340.jpg"
+                                                      ),
                                                     ),
                                                   ),
                                                   SizedBox(
