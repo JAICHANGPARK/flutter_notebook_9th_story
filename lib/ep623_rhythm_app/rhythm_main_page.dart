@@ -2,6 +2,8 @@ import 'package:badges/badges.dart';
 import 'package:flutter/material.dart';
 import 'dart:ui' as ui;
 
+import 'package:flutter_notebook_9th_story/ep623_rhythm_app/feed_page.dart';
+
 class RhythmMainPage extends StatefulWidget {
   @override
   _RhythmMainPageState createState() => _RhythmMainPageState();
@@ -49,7 +51,13 @@ class _RhythmMainPageState extends State<RhythmMainPage> with TickerProviderStat
                                 ),
                                 Spacer(),
                                 InkWell(
-                                  onTap: (){},
+                                  onTap: (){
+                                    Navigator.of(context).push(
+                                      MaterialPageRoute(
+                                        builder: (context) => FeedPage(),
+                                      )
+                                    );
+                                  },
                                   child: Badge(
 
                                     child: Icon(Icons.notifications),
