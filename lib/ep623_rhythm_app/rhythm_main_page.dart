@@ -168,27 +168,31 @@ class _RhythmMainPageState extends State<RhythmMainPage> with TickerProviderStat
                                   child: Container(
                                 color: Colors.white,
                                 child: Column(
-                                  children: [
-                                    ListView.builder(
-                                      itemCount: 10,
-                                      scrollDirection: Axis.horizontal,
-                                      itemBuilder: (BuildContext context, int index) {
-                                        return Column(
-                                          children: [
-                                            Expanded(
-                                              flex: 2,
-                                                child: Text("Top Picks", style: TextStyle(fontSize: 13),)),
-                                            Expanded(
-                                                flex: 8,
-                                                child: Container(
-                                              decoration: BoxDecoration(
-                                                color: Colors.red,
 
-                                              ),
-                                            )),
-                                          ],
-                                        );
-                                      },
+                                  children: [
+                                    Expanded(),
+                                    Expanded(
+                                      child: ListView.builder(
+                                        itemCount: 10,
+                                        scrollDirection: Axis.horizontal,
+                                        itemBuilder: (BuildContext context, int index) {
+                                          return Column(
+                                            children: [
+                                              Expanded(
+                                                flex: 2,
+                                                  child: Text("Top Picks", style: TextStyle(fontSize: 13),)),
+                                              Expanded(
+                                                  flex: 8,
+                                                  child: Container(
+                                                decoration: BoxDecoration(
+                                                  color: Colors.red,
+
+                                                ),
+                                              )),
+                                            ],
+                                          );
+                                        },
+                                      ),
                                     ),
                                   ],
                                 ),
