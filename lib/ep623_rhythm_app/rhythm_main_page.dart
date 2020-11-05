@@ -172,9 +172,12 @@ class _RhythmMainPageState extends State<RhythmMainPage> with TickerProviderStat
                                   children: [
                                     Expanded(
                                       flex: 2,
-                                      child: Text(
-                                        "Top Picks",
-                                        style: TextStyle(fontSize: 20),
+                                      child: Padding(
+                                        padding: const EdgeInsets.all(8.0),
+                                        child: Text(
+                                          "Top Picks",
+                                          style: TextStyle(fontSize: 20),
+                                        ),
                                       ),
                                     ),
                                     Expanded(
