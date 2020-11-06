@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'dart:ui' as ui;
 
-
 class FeedPage extends StatefulWidget {
   @override
   _FeedPageState createState() => _FeedPageState();
@@ -21,20 +20,17 @@ class _FeedPageState extends State<FeedPage> {
               IconButton(
                 color: Colors.white,
                 icon: Icon(Icons.apps),
-                onPressed: () {  },
-
+                onPressed: () {},
               ),
               IconButton(
                 color: Colors.white,
                 icon: Icon(Icons.assistant_navigation),
-                onPressed: () {  },
-
+                onPressed: () {},
               ),
               IconButton(
                 color: Colors.white,
                 icon: Icon(Icons.library_music),
-                onPressed: () {  },
-
+                onPressed: () {},
               )
             ],
           ),
@@ -53,13 +49,13 @@ class _FeedPageState extends State<FeedPage> {
                   Expanded(
                     flex: 2,
                     child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Text("FEED", style: TextStyle(
-                          color: Colors.black,
-                          fontSize: 28,
-                          fontWeight: FontWeight.bold,
-                          letterSpacing: 2
-                        ),),
+                        Text(
+                          "FEED",
+                          style: TextStyle(
+                              color: Colors.black, fontSize: 28, fontWeight: FontWeight.bold, letterSpacing: 2),
+                        ),
                         CircleAvatar(
                           backgroundColor: Colors.blue,
                         ),
@@ -68,7 +64,9 @@ class _FeedPageState extends State<FeedPage> {
                   ),
                   Expanded(
                     flex: 20,
-                    child: Placeholder(),
+                    child: ListView.builder(
+                      itemBuilder: (context, index) {},
+                    ),
                   ),
                 ],
               ),
@@ -100,8 +98,8 @@ class _FeedPageState extends State<FeedPage> {
                                     Container(
                                       height: 48,
                                       width: 48,
-                                      decoration:
-                                      BoxDecoration(color: Colors.redAccent, borderRadius: BorderRadius.circular(8)),
+                                      decoration: BoxDecoration(
+                                          color: Colors.redAccent, borderRadius: BorderRadius.circular(8)),
                                     ),
                                     Padding(
                                       padding: const EdgeInsets.all(16.0),
@@ -146,20 +144,3 @@ class _FeedPageState extends State<FeedPage> {
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
