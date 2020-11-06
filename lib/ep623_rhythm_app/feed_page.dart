@@ -56,10 +56,13 @@ class _FeedPageState extends State<FeedPage> {
                       children: [
                         Text("FEED", style: TextStyle(
                           color: Colors.black,
-                          fontSize: 24,
+                          fontSize: 28,
                           fontWeight: FontWeight.bold,
-                          
-                        ),)
+                          letterSpacing: 2
+                        ),),
+                        CircleAvatar(
+                          backgroundColor: Colors.blue,
+                        ),
                       ],
                     ),
                   ),
