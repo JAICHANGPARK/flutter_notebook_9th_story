@@ -38,7 +38,7 @@ class _FeedPageState extends State<FeedPage> {
           ),
         ),
       ),
-      body: Column(
+      body: Stack(
         children: [
 
         ],
