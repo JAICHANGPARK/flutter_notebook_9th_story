@@ -65,7 +65,16 @@ class _FeedPageState extends State<FeedPage> {
                   Expanded(
                     flex: 20,
                     child: ListView.builder(
-                      itemBuilder: (context, index) {},
+                      itemCount: 10,
+                      itemBuilder: (context, index) {
+                        return SizedBox(
+                          height: 210,
+                          child: Card(
+                            elevation: 4,
+                            child: Column(),
+                          ),
+                        );
+                      },
                     ),
                   ),
                 ],
