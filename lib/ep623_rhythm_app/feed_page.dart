@@ -43,6 +43,17 @@ class _FeedPageState extends State<FeedPage> {
       body: Stack(
         children: [
           Positioned(
+            top: 16,
+            left: 8,
+            right: 8,
+            bottom: 0,
+            child: Column(
+              children: [
+
+              ],
+            ),
+          ),
+          Positioned(
               left: 0,
               right: 0,
               bottom: 0,
