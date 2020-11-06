@@ -11,6 +11,7 @@ class _FeedPageState extends State<FeedPage> {
     return Scaffold(
       bottomNavigationBar: BottomAppBar(
         child: Container(
+          color: Colors.black26,
           child: Row(
             children: [],
           ),
