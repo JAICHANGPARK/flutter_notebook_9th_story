@@ -54,7 +54,12 @@ class _FeedPageState extends State<FeedPage> {
                     flex: 2,
                     child: Row(
                       children: [
-                        
+                        Text("FEED", style: TextStyle(
+                          color: Colors.black,
+                          fontSize: 24,
+                          fontWeight: FontWeight.bold,
+                          
+                        ),)
                       ],
                     ),
                   ),
