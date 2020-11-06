@@ -11,9 +11,30 @@ class _FeedPageState extends State<FeedPage> {
     return Scaffold(
       bottomNavigationBar: BottomAppBar(
         child: Container(
-          color: Colors.black26,
+          height: 72,
+          color: Colors.black87,
           child: Row(
-            children: [],
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: [
+              IconButton(
+                color: Colors.white,
+                icon: Icon(Icons.apps),
+                onPressed: () {  },
+
+              ),
+              IconButton(
+                color: Colors.white,
+                icon: Icon(Icons.assistant_navigation),
+                onPressed: () {  },
+
+              ),
+              IconButton(
+                color: Colors.white,
+                icon: Icon(Icons.library_music),
+                onPressed: () {  },
+
+              )
+            ],
           ),
         ),
       ),
