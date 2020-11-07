@@ -96,6 +96,23 @@ class _FeedPageState extends State<FeedPage> {
                                       ),
                                       child: Stack(
                                         children: [
+                                          Positioned(
+                                            left: 8,
+                                            right: 8,
+                                            child: Column(
+                                              children: [
+                                                Text("Dreamwalker", style: TextStyle(
+                                                  fontSize: 18,
+
+                                                ),),
+                                                Row(
+                                                  children: [
+
+                                                  ],
+                                                ),
+                                              ],
+                                            ),
+                                          )
 
                                         ],
 
