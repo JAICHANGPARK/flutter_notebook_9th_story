@@ -110,9 +110,11 @@ class _FeedPageState extends State<FeedPage> {
                                                     Text("Dreamwalker", style: TextStyle(
                                                       color: Colors.white,
                                                     ),),
+                                                    SizedBox(width: 8,),
                                                     Text("Youtube", style: TextStyle(
                                                       color: Colors.white,
                                                     ),),
+                                                    SizedBox(width: 8,),
                                                     RotatedBox(quarterTurns: 1, child: Icon(Icons.arrow_circle_up,
                                                     color: Colors.white,))
                                                   ],
