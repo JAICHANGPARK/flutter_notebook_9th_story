@@ -113,7 +113,8 @@ class _FeedPageState extends State<FeedPage> {
                                                     Text("Youtube", style: TextStyle(
                                                       color: Colors.white,
                                                     ),),
-                                                    RotatedBox(quarterTurns: 1, child: Icon(Icons.arrow_circle_up))
+                                                    RotatedBox(quarterTurns: 1, child: Icon(Icons.arrow_circle_up,
+                                                    color: Colors.white,))
                                                   ],
                                                 ),
                                               ],
