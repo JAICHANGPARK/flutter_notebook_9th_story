@@ -145,12 +145,14 @@ class _FeedPageState extends State<FeedPage> {
                                           CircleAvatar(
                                             radius: 14,
                                           ),
+                                          SizedBox(width: 8,),
                                           Text("Dreamwalker",style: TextStyle(
                                             fontSize: 13
                                           ),),
                                           Spacer(),
                                           Icon(Icons.favorite, size: 20,),
                                           Text("199"),
+                                          SizedBox(width: 8,),
                                           Icon(Icons.chat_bubble, size: 20,),
                                           Text("88"),
 
