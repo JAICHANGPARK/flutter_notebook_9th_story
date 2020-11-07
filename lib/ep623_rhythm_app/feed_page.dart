@@ -83,39 +83,43 @@ class _FeedPageState extends State<FeedPage> {
                                     flex: 8,
                                     child: Container(
                                       decoration: BoxDecoration(
-                                        borderRadius: BorderRadius.only(
-                                          topLeft: Radius.circular(16),
-                                          topRight: Radius.circular(16),
-                                        ),
-                                        image: DecorationImage(
-                                          image: NetworkImage(
-                                            "https://cdn.pixabay.com/photo/2020/09/02/18/03/girl-5539094_960_720.jpg"
+                                          borderRadius: BorderRadius.only(
+                                            topLeft: Radius.circular(16),
+                                            topRight: Radius.circular(16),
                                           ),
-                                          fit: BoxFit.cover
-                                        )
-                                      ),
+                                          image: DecorationImage(
+                                              image: NetworkImage(
+                                                  "https://cdn.pixabay.com/photo/2020/09/02/18/03/girl-5539094_960_720.jpg"),
+                                              fit: BoxFit.cover)),
                                       child: Stack(
                                         children: [
                                           Positioned(
                                             left: 8,
                                             right: 8,
+                                            bottom: 0,
                                             child: Column(
                                               children: [
-                                                Text("Dreamwalker", style: TextStyle(
-                                                  fontSize: 18,
-
-                                                ),),
+                                                Text(
+                                                  "Flutter Live Coding",
+                                                  style: TextStyle(
+                                                    fontSize: 18,
+                                                    fontWeight: FontWeight.bold,
+                                                    color: Colors.white
+                                                  ),
+                                                ),
                                                 Row(
                                                   children: [
-
+                                                    Text(""),
+                                                    Text(""),
+                                                    RotatedBox(
+                                                        quarterTurns: 1,
+                                                        child: Icon(Icons.arrow_circle_up))
                                                   ],
                                                 ),
                                               ],
                                             ),
                                           )
-
                                         ],
-
                                       ),
                                     ),
                                   ),
@@ -123,7 +127,6 @@ class _FeedPageState extends State<FeedPage> {
                                     flex: 2,
                                     child: Placeholder(),
                                   ),
-
                                 ],
                               ),
                             ),
