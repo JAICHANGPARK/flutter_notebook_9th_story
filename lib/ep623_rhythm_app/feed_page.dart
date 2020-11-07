@@ -96,7 +96,7 @@ class _FeedPageState extends State<FeedPage> {
                                           Positioned(
                                             left: 8,
                                             right: 8,
-                                            bottom: 0,
+                                            bottom: 8,
                                             child: Column(
                                               crossAxisAlignment: CrossAxisAlignment.start,
                                               children: [
