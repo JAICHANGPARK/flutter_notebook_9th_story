@@ -81,11 +81,13 @@ class _FeedPageState extends State<FeedPage> {
                                 children: [
                                   Expanded(
                                     flex: 8,
-                                    child: Stack(
-                                      children: [
-                                        
-                                      ],
+                                    child: Container(
+                                      child: Stack(
+                                        children: [
+                                          
+                                        ],
 
+                                      ),
                                     ),
                                   ),
                                   Expanded(
