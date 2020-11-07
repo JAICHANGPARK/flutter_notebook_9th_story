@@ -10,6 +10,7 @@ class _FeedPageState extends State<FeedPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.grey[300],
       bottomNavigationBar: BottomAppBar(
         child: Container(
           height: 72,
