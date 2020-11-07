@@ -67,11 +67,14 @@ class _FeedPageState extends State<FeedPage> {
                     child: ListView.builder(
                       itemCount: 10,
                       itemBuilder: (context, index) {
-                        return SizedBox(
-                          height: 210,
-                          child: Card(
-                            elevation: 4,
-                            child: Column(),
+                        return Padding(
+                          padding: const EdgeInsets.only(bottom: 8),
+                          child: SizedBox(
+                            height: 210,
+                            child: Card(
+                              elevation: 4,
+                              child: Column(),
+                            ),
                           ),
                         );
                       },
