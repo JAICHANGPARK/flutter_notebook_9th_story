@@ -116,7 +116,16 @@ class _FeedPageState extends State<FeedPage> {
                                                     ),),
                                                     SizedBox(width: 8,),
                                                     RotatedBox(quarterTurns: 1, child: Icon(Icons.arrow_circle_up,
-                                                    color: Colors.white,))
+                                                    color: Colors.white,),
+                                                    ),
+                                                    IconButton(
+                                                      icon: Icon(Icons.add,),
+                                                      color: Colors.white, onPressed: () {  },
+                                                    ),
+                                                    IconButton(
+                                                      icon: Icon(Icons.play_arrow,),
+                                                      color: Colors.white, onPressed: () {  },
+                                                    )
                                                   ],
                                                 ),
                                               ],
