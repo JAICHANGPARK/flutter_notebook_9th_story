@@ -138,7 +138,19 @@ class _FeedPageState extends State<FeedPage> {
                                   ),
                                   Expanded(
                                     flex: 2,
-                                    child: Placeholder(),
+                                    child: Row(
+                                      children: [
+                                        CircleAvatar(
+                                          radius: 14,
+                                        ),
+                                        Text("Dreamwalker"),
+                                        Icon(Icons.favorite),
+                                        Text("199"),
+                                        Icon(Icons.chat_bubble),
+                                        Text("88"),
+
+                                      ],
+                                    ),
                                   ),
                                 ],
                               ),
