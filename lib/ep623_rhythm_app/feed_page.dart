@@ -82,9 +82,14 @@ class _FeedPageState extends State<FeedPage> {
                                   Expanded(
                                     flex: 8,
                                     child: Container(
+                                      decoration: BoxDecoration(
+                                        image: DecorationImage(
+                                          image: NetworkImage("")
+                                        )
+                                      ),
                                       child: Stack(
                                         children: [
-                                          
+
                                         ],
 
                                       ),
