@@ -74,7 +74,20 @@ class _FeedPageState extends State<FeedPage> {
                             height: 210,
                             child: Card(
                               elevation: 4,
-                              child: Column(),
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(16),
+                              ),
+                              child: Column(
+                                children: [
+                                  Expanded(
+                                    child: Placeholder(),
+                                  ),
+                                  Expanded(
+                                    child: Placeholder(),
+                                  ),
+
+                                ],
+                              ),
                             ),
                           ),
                         );
