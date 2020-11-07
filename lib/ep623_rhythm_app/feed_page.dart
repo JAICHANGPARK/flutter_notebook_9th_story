@@ -118,6 +118,7 @@ class _FeedPageState extends State<FeedPage> {
                                                     RotatedBox(quarterTurns: 1, child: Icon(Icons.arrow_circle_up,
                                                     color: Colors.white,),
                                                     ),
+                                                    Spacer(),
                                                     IconButton(
                                                       icon: Icon(Icons.add,),
                                                       color: Colors.white, onPressed: () {  },
