@@ -102,18 +102,13 @@ class _FeedPageState extends State<FeedPage> {
                                                 Text(
                                                   "Flutter Live Coding",
                                                   style: TextStyle(
-                                                    fontSize: 18,
-                                                    fontWeight: FontWeight.bold,
-                                                    color: Colors.white
-                                                  ),
+                                                      fontSize: 18, fontWeight: FontWeight.bold, color: Colors.white),
                                                 ),
                                                 Row(
                                                   children: [
-                                                    Text(""),
-                                                    Text(""),
-                                                    RotatedBox(
-                                                        quarterTurns: 1,
-                                                        child: Icon(Icons.arrow_circle_up))
+                                                    Text("Dreamwalker"),
+                                                    Text("Youtube"),
+                                                    RotatedBox(quarterTurns: 1, child: Icon(Icons.arrow_circle_up))
                                                   ],
                                                 ),
                                               ],
