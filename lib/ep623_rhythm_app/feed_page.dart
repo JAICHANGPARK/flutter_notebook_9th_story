@@ -80,9 +80,16 @@ class _FeedPageState extends State<FeedPage> {
                               child: Column(
                                 children: [
                                   Expanded(
-                                    child: Placeholder(),
+                                    flex: 8,
+                                    child: Stack(
+                                      children: [
+                                        
+                                      ],
+
+                                    ),
                                   ),
                                   Expanded(
+                                    flex: 2,
                                     child: Placeholder(),
                                   ),
 
