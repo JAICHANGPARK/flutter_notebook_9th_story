@@ -98,6 +98,7 @@ class _FeedPageState extends State<FeedPage> {
                                             right: 8,
                                             bottom: 0,
                                             child: Column(
+                                              crossAxisAlignment: CrossAxisAlignment.start,
                                               children: [
                                                 Text(
                                                   "Flutter Live Coding",
@@ -106,8 +107,12 @@ class _FeedPageState extends State<FeedPage> {
                                                 ),
                                                 Row(
                                                   children: [
-                                                    Text("Dreamwalker"),
-                                                    Text("Youtube"),
+                                                    Text("Dreamwalker", style: TextStyle(
+                                                      color: Colors.white,
+                                                    ),),
+                                                    Text("Youtube", style: TextStyle(
+                                                      color: Colors.white,
+                                                    ),),
                                                     RotatedBox(quarterTurns: 1, child: Icon(Icons.arrow_circle_up))
                                                   ],
                                                 ),
