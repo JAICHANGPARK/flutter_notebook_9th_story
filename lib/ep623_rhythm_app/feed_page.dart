@@ -84,7 +84,10 @@ class _FeedPageState extends State<FeedPage> {
                                     child: Container(
                                       decoration: BoxDecoration(
                                         image: DecorationImage(
-                                          image: NetworkImage("")
+                                          image: NetworkImage(
+                                            "https://cdn.pixabay.com/photo/2020/09/02/18/03/girl-5539094_960_720.jpg"
+                                          ),
+                                          fit: BoxFit.cover
                                         )
                                       ),
                                       child: Stack(
