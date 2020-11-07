@@ -83,6 +83,10 @@ class _FeedPageState extends State<FeedPage> {
                                     flex: 8,
                                     child: Container(
                                       decoration: BoxDecoration(
+                                        borderRadius: BorderRadius.only(
+                                          topLeft: Radius.circular(16),
+                                          topRight: Radius.circular(16),
+                                        ),
                                         image: DecorationImage(
                                           image: NetworkImage(
                                             "https://cdn.pixabay.com/photo/2020/09/02/18/03/girl-5539094_960_720.jpg"
