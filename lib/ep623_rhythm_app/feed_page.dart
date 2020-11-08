@@ -245,7 +245,24 @@ class _FeedPageState extends State<FeedPage> {
                                         ),
                                         Expanded(
                                           flex: 8,
-                                          child: Placeholder(),
+                                          child: ListView.builder(
+                                            itemCount: 20,
+                                            itemBuilder: (context, index){
+                                              return Row(
+                                                children: [
+                                                  CircleAvatar(
+                                                    radius: 16,
+                                                  ),
+                                                  SizedBox(width: 8,),
+                                                  Text("Dreamwalker", style: TextStyle(
+                                                    fontWeight: FontWeight.bold,
+                                                  ),),
+                                                  Text("Hello Flutter live coding")
+                                                ],
+                                              );
+
+                                            },
+                                          ),
                                         ),
                                         Expanded(
                                           flex: 2,
