@@ -8,7 +8,7 @@ class FeedPage extends StatefulWidget {
 
 class _FeedPageState extends State<FeedPage> {
   PageController _pageController;
-  int _pageIndex= 0;
+  int _pageIndex = 0;
 
   @override
   void initState() {
@@ -197,7 +197,7 @@ class _FeedPageState extends State<FeedPage> {
                                                 width: 8,
                                               ),
                                               InkWell(
-                                                onTap: (){
+                                                onTap: () {
                                                   setState(() {
                                                     _pageController.jumpToPage(1);
                                                   });
@@ -222,7 +222,9 @@ class _FeedPageState extends State<FeedPage> {
                                           flex: 2,
                                           child: Row(
                                             children: [
-                                              CircleAvatar(radius: 14,),
+                                              CircleAvatar(
+                                                radius: 14,
+                                              ),
                                               Padding(
                                                 padding: const EdgeInsets.only(left: 16),
                                                 child: Column(
@@ -230,9 +232,10 @@ class _FeedPageState extends State<FeedPage> {
                                                   children: [
                                                     Row(
                                                       children: [
-                                                        Text("Dreamwalker",style: TextStyle(
-                                                          fontWeight: FontWeight.bold
-                                                        ),),
+                                                        Text(
+                                                          "Dreamwalker",
+                                                          style: TextStyle(fontWeight: FontWeight.bold),
+                                                        ),
                                                         Text("I Just wanna build success"),
                                                       ],
                                                     ),
@@ -247,7 +250,7 @@ class _FeedPageState extends State<FeedPage> {
                                           flex: 8,
                                           child: ListView.builder(
                                             itemCount: 20,
-                                            itemBuilder: (context, index){
+                                            itemBuilder: (context, index) {
                                               return Padding(
                                                 padding: const EdgeInsets.only(bottom: 8),
                                                 child: Row(
@@ -255,15 +258,19 @@ class _FeedPageState extends State<FeedPage> {
                                                     CircleAvatar(
                                                       radius: 14,
                                                     ),
-                                                    SizedBox(width: 16,),
-                                                    Text("Dreamwalker", style: TextStyle(
-                                                      fontWeight: FontWeight.bold,
-                                                    ),),
+                                                    SizedBox(
+                                                      width: 16,
+                                                    ),
+                                                    Text(
+                                                      "Dreamwalker",
+                                                      style: TextStyle(
+                                                        fontWeight: FontWeight.bold,
+                                                      ),
+                                                    ),
                                                     Text("Hello Flutter live coding")
                                                   ],
                                                 ),
                                               );
-
                                             },
                                           ),
                                         ),
@@ -273,18 +280,18 @@ class _FeedPageState extends State<FeedPage> {
                                             children: [
                                               Expanded(
                                                   flex: 2,
-                                                  child: CircleAvatar(radius: 14,)),
-                                              Expanded(child: Container(
-                                                decoration: BoxDecoration(
-                                                  
+                                                  child: CircleAvatar(
+                                                    radius: 14,
+                                                  )),
+                                              Expanded(
+                                                child: Container(
+                                                  decoration: BoxDecoration(color: Colors.grey),
                                                 ),
+                                                flex: 12,
                                               ),
-                                              flex: 10,),
-
                                             ],
                                           ),
                                         ),
-
                                       ],
                                     ),
                                   )
