@@ -208,9 +208,9 @@ class _FeedPageState extends State<FeedPage> {
                                   ),
                                   Column(
                                     children: [
-                                          Expanded(
-                                            child: Placeholder(),
-                                          ),
+                                      Expanded(
+                                        child: Placeholder(),
+                                      ),
                                       Expanded(
                                         child: Placeholder(),
                                       ),
