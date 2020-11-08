@@ -198,7 +198,9 @@ class _FeedPageState extends State<FeedPage> {
                                               ),
                                               InkWell(
                                                 onTap: (){
-                                                  
+                                                  setState(() {
+                                                    _pageController.jumpToPage(1);
+                                                  });
                                                 },
                                                 child: Icon(
                                                   Icons.chat_bubble,
