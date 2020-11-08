@@ -225,7 +225,8 @@ class _FeedPageState extends State<FeedPage> {
                                               children: [
                                                 Row(
                                                   children: [
-                                                    
+                                                    Text("Dreamwalker"),
+                                                    Text("I Just wanna build success"),
                                                   ],
                                                 )
                                               ],
