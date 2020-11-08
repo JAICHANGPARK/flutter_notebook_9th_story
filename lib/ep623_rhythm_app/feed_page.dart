@@ -8,6 +8,7 @@ class FeedPage extends StatefulWidget {
 
 class _FeedPageState extends State<FeedPage> {
   PageController _pageController;
+  int _pageIndex= 0;
 
   @override
   void initState() {
@@ -195,9 +196,14 @@ class _FeedPageState extends State<FeedPage> {
                                               SizedBox(
                                                 width: 8,
                                               ),
-                                              Icon(
-                                                Icons.chat_bubble,
-                                                size: 20,
+                                              InkWell(
+                                                onTap: (){
+                                                  
+                                                },
+                                                child: Icon(
+                                                  Icons.chat_bubble,
+                                                  size: 20,
+                                                ),
                                               ),
                                               Text("88"),
                                             ],
