@@ -217,12 +217,15 @@ class _FeedPageState extends State<FeedPage> {
                                   Column(
                                     children: [
                                       Expanded(
+                                        flex: 2,
                                         child: Placeholder(),
                                       ),
                                       Expanded(
+                                        flex: 8,
                                         child: Placeholder(),
                                       ),
                                       Expanded(
+                                        flex: 2,
                                         child: Placeholder(),
                                       ),
                                     ],
