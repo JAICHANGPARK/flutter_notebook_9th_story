@@ -8,12 +8,14 @@ class FeedPage extends StatefulWidget {
 
 class _FeedPageState extends State<FeedPage> {
   PageController _pageController;
+
   @override
   void initState() {
     // TODO: implement initState
     super.initState();
     _pageController = PageController();
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -85,7 +87,7 @@ class _FeedPageState extends State<FeedPage> {
                                 borderRadius: BorderRadius.circular(16),
                               ),
                               child: PageView(
-
+                                controller: _pageController,
                                 children: [
                                   Column(
                                     children: [
@@ -113,29 +115,51 @@ class _FeedPageState extends State<FeedPage> {
                                                     Text(
                                                       "Flutter Live Coding",
                                                       style: TextStyle(
-                                                          fontSize: 18, fontWeight: FontWeight.bold, color: Colors.white),
+                                                          fontSize: 18,
+                                                          fontWeight: FontWeight.bold,
+                                                          color: Colors.white),
                                                     ),
                                                     Row(
                                                       children: [
-                                                        Text("Dreamwalker", style: TextStyle(
-                                                          color: Colors.white,
-                                                        ),),
-                                                        SizedBox(width: 8,),
-                                                        Text("Youtube", style: TextStyle(
-                                                          color: Colors.white,
-                                                        ),),
-                                                        SizedBox(width: 8,),
-                                                        RotatedBox(quarterTurns: 1, child: Icon(Icons.arrow_circle_up,
-                                                          color: Colors.white,),
+                                                        Text(
+                                                          "Dreamwalker",
+                                                          style: TextStyle(
+                                                            color: Colors.white,
+                                                          ),
+                                                        ),
+                                                        SizedBox(
+                                                          width: 8,
+                                                        ),
+                                                        Text(
+                                                          "Youtube",
+                                                          style: TextStyle(
+                                                            color: Colors.white,
+                                                          ),
+                                                        ),
+                                                        SizedBox(
+                                                          width: 8,
+                                                        ),
+                                                        RotatedBox(
+                                                          quarterTurns: 1,
+                                                          child: Icon(
+                                                            Icons.arrow_circle_up,
+                                                            color: Colors.white,
+                                                          ),
                                                         ),
                                                         Spacer(),
                                                         IconButton(
-                                                          icon: Icon(Icons.add,),
-                                                          color: Colors.white, onPressed: () {  },
+                                                          icon: Icon(
+                                                            Icons.add,
+                                                          ),
+                                                          color: Colors.white,
+                                                          onPressed: () {},
                                                         ),
                                                         IconButton(
-                                                          icon: Icon(Icons.play_arrow,),
-                                                          color: Colors.white, onPressed: () {  },
+                                                          icon: Icon(
+                                                            Icons.play_arrow,
+                                                          ),
+                                                          color: Colors.white,
+                                                          onPressed: () {},
                                                         )
                                                       ],
                                                     ),
@@ -155,26 +179,34 @@ class _FeedPageState extends State<FeedPage> {
                                               CircleAvatar(
                                                 radius: 14,
                                               ),
-                                              SizedBox(width: 8,),
-                                              Text("Dreamwalker",style: TextStyle(
-                                                  fontSize: 13
-                                              ),),
+                                              SizedBox(
+                                                width: 8,
+                                              ),
+                                              Text(
+                                                "Dreamwalker",
+                                                style: TextStyle(fontSize: 13),
+                                              ),
                                               Spacer(),
-                                              Icon(Icons.favorite, size: 20,),
+                                              Icon(
+                                                Icons.favorite,
+                                                size: 20,
+                                              ),
                                               Text("199"),
-                                              SizedBox(width: 8,),
-                                              Icon(Icons.chat_bubble, size: 20,),
+                                              SizedBox(
+                                                width: 8,
+                                              ),
+                                              Icon(
+                                                Icons.chat_bubble,
+                                                size: 20,
+                                              ),
                                               Text("88"),
-
                                             ],
                                           ),
                                         ),
                                       ),
                                     ],
                                   ),
-
                                 ],
-
                               ),
                             ),
                           ),
