@@ -80,7 +80,7 @@ class _FeedPageState extends State<FeedPage> {
                         return Padding(
                           padding: const EdgeInsets.only(bottom: 8),
                           child: SizedBox(
-                            height: 210,
+                            height: 230,
                             child: Card(
                               elevation: 4,
                               shape: RoundedRectangleBorder(
