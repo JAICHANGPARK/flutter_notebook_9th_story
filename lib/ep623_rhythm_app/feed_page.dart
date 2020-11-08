@@ -77,90 +77,93 @@ class _FeedPageState extends State<FeedPage> {
                               shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(16),
                               ),
-                              child: Column(
-                                children: [
-                                  Expanded(
-                                    flex: 8,
-                                    child: Container(
-                                      decoration: BoxDecoration(
-                                          borderRadius: BorderRadius.only(
-                                            topLeft: Radius.circular(16),
-                                            topRight: Radius.circular(16),
-                                          ),
-                                          image: DecorationImage(
-                                              image: NetworkImage(
-                                                  "https://cdn.pixabay.com/photo/2020/09/02/18/03/girl-5539094_960_720.jpg"),
-                                              fit: BoxFit.cover)),
-                                      child: Stack(
-                                        children: [
-                                          Positioned(
-                                            left: 8,
-                                            right: 8,
-                                            bottom: 8,
-                                            child: Column(
-                                              crossAxisAlignment: CrossAxisAlignment.start,
-                                              children: [
-                                                Text(
-                                                  "Flutter Live Coding",
-                                                  style: TextStyle(
-                                                      fontSize: 18, fontWeight: FontWeight.bold, color: Colors.white),
-                                                ),
-                                                Row(
-                                                  children: [
-                                                    Text("Dreamwalker", style: TextStyle(
-                                                      color: Colors.white,
-                                                    ),),
-                                                    SizedBox(width: 8,),
-                                                    Text("Youtube", style: TextStyle(
-                                                      color: Colors.white,
-                                                    ),),
-                                                    SizedBox(width: 8,),
-                                                    RotatedBox(quarterTurns: 1, child: Icon(Icons.arrow_circle_up,
-                                                    color: Colors.white,),
-                                                    ),
-                                                    Spacer(),
-                                                    IconButton(
-                                                      icon: Icon(Icons.add,),
-                                                      color: Colors.white, onPressed: () {  },
-                                                    ),
-                                                    IconButton(
-                                                      icon: Icon(Icons.play_arrow,),
-                                                      color: Colors.white, onPressed: () {  },
-                                                    )
-                                                  ],
-                                                ),
-                                              ],
+                              child: PageView(
+                                
+                                child: Column(
+                                  children: [
+                                    Expanded(
+                                      flex: 8,
+                                      child: Container(
+                                        decoration: BoxDecoration(
+                                            borderRadius: BorderRadius.only(
+                                              topLeft: Radius.circular(16),
+                                              topRight: Radius.circular(16),
                                             ),
-                                          )
-                                        ],
+                                            image: DecorationImage(
+                                                image: NetworkImage(
+                                                    "https://cdn.pixabay.com/photo/2020/09/02/18/03/girl-5539094_960_720.jpg"),
+                                                fit: BoxFit.cover)),
+                                        child: Stack(
+                                          children: [
+                                            Positioned(
+                                              left: 8,
+                                              right: 8,
+                                              bottom: 8,
+                                              child: Column(
+                                                crossAxisAlignment: CrossAxisAlignment.start,
+                                                children: [
+                                                  Text(
+                                                    "Flutter Live Coding",
+                                                    style: TextStyle(
+                                                        fontSize: 18, fontWeight: FontWeight.bold, color: Colors.white),
+                                                  ),
+                                                  Row(
+                                                    children: [
+                                                      Text("Dreamwalker", style: TextStyle(
+                                                        color: Colors.white,
+                                                      ),),
+                                                      SizedBox(width: 8,),
+                                                      Text("Youtube", style: TextStyle(
+                                                        color: Colors.white,
+                                                      ),),
+                                                      SizedBox(width: 8,),
+                                                      RotatedBox(quarterTurns: 1, child: Icon(Icons.arrow_circle_up,
+                                                      color: Colors.white,),
+                                                      ),
+                                                      Spacer(),
+                                                      IconButton(
+                                                        icon: Icon(Icons.add,),
+                                                        color: Colors.white, onPressed: () {  },
+                                                      ),
+                                                      IconButton(
+                                                        icon: Icon(Icons.play_arrow,),
+                                                        color: Colors.white, onPressed: () {  },
+                                                      )
+                                                    ],
+                                                  ),
+                                                ],
+                                              ),
+                                            )
+                                          ],
+                                        ),
                                       ),
                                     ),
-                                  ),
-                                  Expanded(
-                                    flex: 2,
-                                    child: Padding(
-                                      padding: const EdgeInsets.all(8.0),
-                                      child: Row(
-                                        children: [
-                                          CircleAvatar(
-                                            radius: 14,
-                                          ),
-                                          SizedBox(width: 8,),
-                                          Text("Dreamwalker",style: TextStyle(
-                                            fontSize: 13
-                                          ),),
-                                          Spacer(),
-                                          Icon(Icons.favorite, size: 20,),
-                                          Text("199"),
-                                          SizedBox(width: 8,),
-                                          Icon(Icons.chat_bubble, size: 20,),
-                                          Text("88"),
+                                    Expanded(
+                                      flex: 2,
+                                      child: Padding(
+                                        padding: const EdgeInsets.all(8.0),
+                                        child: Row(
+                                          children: [
+                                            CircleAvatar(
+                                              radius: 14,
+                                            ),
+                                            SizedBox(width: 8,),
+                                            Text("Dreamwalker",style: TextStyle(
+                                              fontSize: 13
+                                            ),),
+                                            Spacer(),
+                                            Icon(Icons.favorite, size: 20,),
+                                            Text("199"),
+                                            SizedBox(width: 8,),
+                                            Icon(Icons.chat_bubble, size: 20,),
+                                            Text("88"),
 
-                                        ],
+                                          ],
+                                        ),
                                       ),
                                     ),
-                                  ),
-                                ],
+                                  ],
+                                ),
                               ),
                             ),
                           ),
