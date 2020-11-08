@@ -290,7 +290,8 @@ class _FeedPageState extends State<FeedPage> {
                                                   borderRadius: BorderRadius.circular(16)),
                                                   child: TextField(
                                                     decoration: InputDecoration(
-                                                      border: InputBorder.none
+                                                      border: InputBorder.none,
+                                                      hintText: "Add a comment"
                                                     ),
                                                   ),
                                                 ),
