@@ -248,17 +248,20 @@ class _FeedPageState extends State<FeedPage> {
                                           child: ListView.builder(
                                             itemCount: 20,
                                             itemBuilder: (context, index){
-                                              return Row(
-                                                children: [
-                                                  CircleAvatar(
-                                                    radius: 14,
-                                                  ),
-                                                  SizedBox(width: 16,),
-                                                  Text("Dreamwalker", style: TextStyle(
-                                                    fontWeight: FontWeight.bold,
-                                                  ),),
-                                                  Text("Hello Flutter live coding")
-                                                ],
+                                              return Padding(
+                                                padding: const EdgeInsets.only(bottom: 8),
+                                                child: Row(
+                                                  children: [
+                                                    CircleAvatar(
+                                                      radius: 14,
+                                                    ),
+                                                    SizedBox(width: 16,),
+                                                    Text("Dreamwalker", style: TextStyle(
+                                                      fontWeight: FontWeight.bold,
+                                                    ),),
+                                                    Text("Hello Flutter live coding")
+                                                  ],
+                                                ),
                                               );
 
                                             },
