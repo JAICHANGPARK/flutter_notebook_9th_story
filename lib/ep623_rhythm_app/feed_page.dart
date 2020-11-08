@@ -288,7 +288,11 @@ class _FeedPageState extends State<FeedPage> {
                                                   margin: EdgeInsets.symmetric(vertical: 3),
                                                   decoration: BoxDecoration(color: Colors.grey[300],
                                                   borderRadius: BorderRadius.circular(16)),
-                                                  child: TextField(),
+                                                  child: TextField(
+                                                    decoration: InputDecoration(
+                                                      border: InputBorder.none
+                                                    ),
+                                                  ),
                                                 ),
                                                 flex: 16,
                                               ),
