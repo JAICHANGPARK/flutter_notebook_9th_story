@@ -269,8 +269,22 @@ class _FeedPageState extends State<FeedPage> {
                                         ),
                                         Expanded(
                                           flex: 2,
-                                          child: Placeholder(),
+                                          child: Row(
+                                            children: [
+                                              Expanded(
+                                                  flex: 2,
+                                                  child: CircleAvatar(radius: 14,)),
+                                              Expanded(child: Container(
+                                                decoration: BoxDecoration(
+                                                  
+                                                ),
+                                              ),
+                                              flex: 10,),
+
+                                            ],
+                                          ),
                                         ),
+
                                       ],
                                     ),
                                   )
