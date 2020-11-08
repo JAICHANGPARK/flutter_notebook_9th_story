@@ -225,10 +225,13 @@ class _FeedPageState extends State<FeedPage> {
                                               children: [
                                                 Row(
                                                   children: [
-                                                    Text("Dreamwalker"),
+                                                    Text("Dreamwalker",style: TextStyle(
+                                                      fontWeight: FontWeight.bold
+                                                    ),),
                                                     Text("I Just wanna build success"),
                                                   ],
-                                                )
+                                                ),
+                                                Text("#Flutter #Google")
                                               ],
                                             )
                                           ],
