@@ -7,6 +7,13 @@ class FeedPage extends StatefulWidget {
 }
 
 class _FeedPageState extends State<FeedPage> {
+  PageController _pageController;
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    _pageController = PageController();
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -78,6 +85,7 @@ class _FeedPageState extends State<FeedPage> {
                                 borderRadius: BorderRadius.circular(16),
                               ),
                               child: PageView(
+
                                 children: [
                                   Column(
                                     children: [
@@ -164,6 +172,7 @@ class _FeedPageState extends State<FeedPage> {
                                       ),
                                     ],
                                   ),
+
                                 ],
 
                               ),
