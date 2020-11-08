@@ -206,6 +206,11 @@ class _FeedPageState extends State<FeedPage> {
                                       ),
                                     ],
                                   ),
+                                  Column(
+                                    children: [
+                                      
+                                    ],
+                                  )
                                 ],
                               ),
                             ),
