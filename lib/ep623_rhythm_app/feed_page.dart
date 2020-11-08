@@ -214,38 +214,45 @@ class _FeedPageState extends State<FeedPage> {
                                       ),
                                     ],
                                   ),
-                                  Column(
-                                    children: [
-                                      Expanded(
-                                        flex: 2,
-                                        child: Row(
-                                          children: [
-                                            CircleAvatar(radius: 12,),
-                                            Column(
-                                              children: [
-                                                Row(
+                                  Padding(
+                                    padding: const EdgeInsets.all(8.0),
+                                    child: Column(
+                                      children: [
+                                        Expanded(
+                                          flex: 2,
+                                          child: Row(
+                                            children: [
+                                              CircleAvatar(radius: 14,),
+                                              Padding(
+                                                padding: const EdgeInsets.only(left: 16),
+                                                child: Column(
+                                                  crossAxisAlignment: CrossAxisAlignment.start,
                                                   children: [
-                                                    Text("Dreamwalker",style: TextStyle(
-                                                      fontWeight: FontWeight.bold
-                                                    ),),
-                                                    Text("I Just wanna build success"),
+                                                    Row(
+                                                      children: [
+                                                        Text("Dreamwalker",style: TextStyle(
+                                                          fontWeight: FontWeight.bold
+                                                        ),),
+                                                        Text("I Just wanna build success"),
+                                                      ],
+                                                    ),
+                                                    Text("#Flutter #Google")
                                                   ],
                                                 ),
-                                                Text("#Flutter #Google")
-                                              ],
-                                            )
-                                          ],
+                                              )
+                                            ],
+                                          ),
                                         ),
-                                      ),
-                                      Expanded(
-                                        flex: 8,
-                                        child: Placeholder(),
-                                      ),
-                                      Expanded(
-                                        flex: 2,
-                                        child: Placeholder(),
-                                      ),
-                                    ],
+                                        Expanded(
+                                          flex: 8,
+                                          child: Placeholder(),
+                                        ),
+                                        Expanded(
+                                          flex: 2,
+                                          child: Placeholder(),
+                                        ),
+                                      ],
+                                    ),
                                   )
                                 ],
                               ),
