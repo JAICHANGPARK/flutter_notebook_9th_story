@@ -251,9 +251,9 @@ class _FeedPageState extends State<FeedPage> {
                                               return Row(
                                                 children: [
                                                   CircleAvatar(
-                                                    radius: 16,
+                                                    radius: 14,
                                                   ),
-                                                  SizedBox(width: 8,),
+                                                  SizedBox(width: 16,),
                                                   Text("Dreamwalker", style: TextStyle(
                                                     fontWeight: FontWeight.bold,
                                                   ),),
