@@ -15,7 +15,15 @@ class _DateProfilePageState extends State<DateProfilePage> {
             flex: 5,
             child: Stack(
               children: [
-                
+                Positioned(
+                  left: 16,
+                  top: 24,
+                  child: Container(
+                    child: Center(
+                      child: Icon(Icons.clear),
+                    ),
+                  ),
+                )
               ],
             ),
           ),
