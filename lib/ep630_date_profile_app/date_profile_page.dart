@@ -19,13 +19,14 @@ class _DateProfilePageState extends State<DateProfilePage> {
                   left: 16,
                   top: 24,
                   child: Container(
-                    height: 32,
-                    width: 32,
+                    height: 48,
+                    width: 48,
                     decoration: BoxDecoration(
                       color: Colors.black
                     ),
                     child: Center(
-                      child: Icon(Icons.clear),
+                      child: Icon(Icons.clear, color: Colors.white
+                        ,),
                     ),
                   ),
                 )
