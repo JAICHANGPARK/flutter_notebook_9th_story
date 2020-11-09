@@ -11,6 +11,19 @@ class _DateProfilePageState extends State<DateProfilePage> {
     return Scaffold(
       body: Column(
         children: [
+          Expanded(
+
+            child: Placeholder(),
+          ),
+          Expanded(
+            child: Placeholder(),
+          ),
+          Expanded(
+            child: Placeholder(),
+          ),
+          Expanded(
+            child: Placeholder(),
+          )
 
         ],
       ),
