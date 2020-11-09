@@ -8,6 +8,12 @@ class DateProfilePage extends StatefulWidget {
 class _DateProfilePageState extends State<DateProfilePage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: Column(
+        children: [
+
+        ],
+      ),
+    );
   }
 }
