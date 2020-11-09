@@ -12,16 +12,19 @@ class _DateProfilePageState extends State<DateProfilePage> {
       body: Column(
         children: [
           Expanded(
-
+            flex: 5,
             child: Placeholder(),
           ),
           Expanded(
+            flex: 2,
             child: Placeholder(),
           ),
           Expanded(
+            flex: 5,
             child: Placeholder(),
           ),
           Expanded(
+            flex: 1,
             child: Placeholder(),
           )
 
