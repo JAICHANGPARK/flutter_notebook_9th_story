@@ -35,7 +35,11 @@ class _DateProfilePageState extends State<DateProfilePage> {
           ),
           Expanded(
             flex: 2,
-            child: Placeholder(),
+            child: Row(
+              children: [
+                
+              ],
+            ),
           ),
           Expanded(
             flex: 5,
