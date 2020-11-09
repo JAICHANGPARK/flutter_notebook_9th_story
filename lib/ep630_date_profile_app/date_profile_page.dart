@@ -21,12 +21,12 @@ class _DateProfilePageState extends State<DateProfilePage> {
                   child: Container(
                     height: 48,
                     width: 48,
-                    decoration: BoxDecoration(
-                      color: Colors.black
-                    ),
+                    decoration: BoxDecoration(color: Colors.black),
                     child: Center(
-                      child: Icon(Icons.clear, color: Colors.white
-                        ,),
+                      child: Icon(
+                        Icons.clear,
+                        color: Colors.white,
+                      ),
                     ),
                   ),
                 )
@@ -47,7 +47,7 @@ class _DateProfilePageState extends State<DateProfilePage> {
                     children: [
                       Text("Dream, ??"),
                       MaterialButton(
-                        onPressed: () {  },
+                        onPressed: () {},
                         child: Text("5`10``"),
                       )
                     ],
@@ -70,7 +70,6 @@ class _DateProfilePageState extends State<DateProfilePage> {
             flex: 1,
             child: Container(),
           )
-
         ],
       ),
     );
