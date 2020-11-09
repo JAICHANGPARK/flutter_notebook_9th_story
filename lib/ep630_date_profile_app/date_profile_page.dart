@@ -47,7 +47,9 @@ class _DateProfilePageState extends State<DateProfilePage> {
                 ),
                 Expanded(
                   flex: 2,
-                  child: Placeholder(),
+                  child: CircleAvatar(
+                    radius: 42,
+                  ),
                 ),
               ],
             ),
