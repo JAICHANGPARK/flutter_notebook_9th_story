@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'ep623_rhythm_app/rhythm_app.dart';
+import 'ep630_date_profile_app/date_app.dart';
 
 main() {
-  runApp(RhythmApp());
+  runApp(DateProfileApp());
 }
