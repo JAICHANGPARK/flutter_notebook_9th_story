@@ -43,7 +43,15 @@ class _DateProfilePageState extends State<DateProfilePage> {
                 ),
                 Expanded(
                   flex: 3,
-                  child: Placeholder(),
+                  child: Column(
+                    children: [
+                      Text("Dream, ??"),
+                      MaterialButton(
+                        onPressed: () {  },
+                        child: Text("5`10``"),
+                      )
+                    ],
+                  ),
                 ),
                 Expanded(
                   flex: 2,
