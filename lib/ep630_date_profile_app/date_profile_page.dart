@@ -35,7 +35,11 @@ class _DateProfilePageState extends State<DateProfilePage> {
                   top: 0,
                   bottom: 0,
                   right: 0,
-                  child: Container(),
+                  child: Container(
+                    decoration: BoxDecoration(
+                      color: Colors.pink
+                    ),
+                  ),
                 )
               ],
             ),
