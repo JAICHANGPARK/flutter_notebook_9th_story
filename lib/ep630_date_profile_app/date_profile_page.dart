@@ -29,7 +29,11 @@ class _DateProfilePageState extends State<DateProfilePage> {
                     child: PageView(
                       children: [
                         Container(
-                          
+                          decoration: BoxDecoration(
+                            image: DecorationImage(
+                              image: NetworkImage("")
+                            )
+                          ),
                         )
                       ],
                     ),
