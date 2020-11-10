@@ -31,7 +31,8 @@ class _DateProfilePageState extends State<DateProfilePage> {
                         Container(
                           decoration: BoxDecoration(
                             image: DecorationImage(
-                              image: NetworkImage("")
+                              image: NetworkImage("https://cdn.pixabay.com/photo/2019/03/04/04/52/asian-4033333_960_720.jpg"),
+                              fit: BoxFit.cover
                             )
                           ),
                         )
