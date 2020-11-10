@@ -118,14 +118,20 @@ class _DateProfilePageState extends State<DateProfilePage> {
                   Expanded(
                     flex: 3,
                     child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Text("Dream, ??", style: TextStyle(
                           color: Colors.white,
-                          fontSize: 24
+                          fontSize: 22
                         ),),
-                        MaterialButton(
-                          onPressed: () {},
-                          child: Text("5`10``"),
+                        Padding(
+                          padding: const EdgeInsets.only(top: 8),
+                          child: MaterialButton(
+                            onPressed: () {},
+                            color: Colors.white,
+                            child: Text("5`10``"),
+
+                          ),
                         )
                       ],
                     ),
