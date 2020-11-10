@@ -117,6 +117,9 @@ class _DateProfilePageState extends State<DateProfilePage> {
                     child: CircularPercentIndicator(radius: 84,
                       percent: 0.7,
                       progressColor: Colors.pink[200],
+                      center: Text("75.0%", style: TextStyle(
+                        color: Colors.white
+                      ),),
 
                       
                     ),
