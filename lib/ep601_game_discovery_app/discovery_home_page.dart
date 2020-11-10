@@ -121,7 +121,7 @@ class _DiscoveryHomePageState extends State<DiscoveryHomePage> {
                             "12",
                             style: TextStyle(fontSize: 10, color: Colors.white),
                           ),
-                          borderRadius: 3,
+                          borderRadius: BorderRadius.circular(3),
                         ),
                       ),
                     )
