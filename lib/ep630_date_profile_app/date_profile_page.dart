@@ -107,31 +107,37 @@ class _DateProfilePageState extends State<DateProfilePage> {
           ),
           Expanded(
             flex: 2,
-            child: Row(
-              children: [
-                Expanded(
-                  flex: 2,
-                  child: Placeholder(),
-                ),
-                Expanded(
-                  flex: 3,
-                  child: Column(
-                    children: [
-                      Text("Dream, ??"),
-                      MaterialButton(
-                        onPressed: () {},
-                        child: Text("5`10``"),
-                      )
-                    ],
+            child: Container(
+              color: Colors.black,
+              child: Row(
+                children: [
+                  Expanded(
+                    flex: 2,
+                    child: Placeholder(),
                   ),
-                ),
-                Expanded(
-                  flex: 2,
-                  child: CircleAvatar(
-                    radius: 42,
+                  Expanded(
+                    flex: 3,
+                    child: Column(
+                      children: [
+                        Text("Dream, ??", style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 24
+                        ),),
+                        MaterialButton(
+                          onPressed: () {},
+                          child: Text("5`10``"),
+                        )
+                      ],
+                    ),
                   ),
-                ),
-              ],
+                  Expanded(
+                    flex: 2,
+                    child: CircleAvatar(
+                      radius: 42,
+                    ),
+                  ),
+                ],
+              ),
             ),
           ),
           Expanded(
