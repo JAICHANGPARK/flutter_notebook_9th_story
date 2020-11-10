@@ -74,8 +74,17 @@ class _DateProfilePageState extends State<DateProfilePage> {
                         Positioned(
                           left: 0,
                           right: 0,
-                          bottom: 0,
-                          child: SmoothPageIndicator(count: 4, controller: _pageController,
+                          bottom: 16,
+                          child: Center(
+                            child: SmoothPageIndicator(count: 4, controller: _pageController,
+                              effect: ExpandingDotsEffect(
+                                activeDotColor: Colors.pink[200],
+                                dotColor: Colors.white,
+                                dotHeight: 6,
+                                dotWidth: 16
+
+                              ),
+                            ),
                           ),
                         )
                       ],
