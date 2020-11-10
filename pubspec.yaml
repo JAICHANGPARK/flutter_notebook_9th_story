@@ -31,6 +31,7 @@ dependencies:
   badges: any
   google_fonts: any
   smooth_page_indicator: ^0.2.0
+  percent_indicator: any
 
 dev_dependencies:
   flutter_test:
