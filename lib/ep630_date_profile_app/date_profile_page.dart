@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:percent_indicator/circular_percent_indicator.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 class DateProfilePage extends StatefulWidget {
@@ -113,7 +114,12 @@ class _DateProfilePageState extends State<DateProfilePage> {
                 children: [
                   Expanded(
                     flex: 2,
-                    child: Placeholder(),
+                    child: CircularPercentIndicator(radius: 84,
+                      percent: 0.7,
+                      progressColor: Colors.pink[200],
+
+                      
+                    ),
                   ),
                   Expanded(
                     flex: 3,
