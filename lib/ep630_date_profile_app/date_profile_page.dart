@@ -9,6 +9,8 @@ class _DateProfilePageState extends State<DateProfilePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: false,
+      resizeToAvoidBottomPadding: false,
       body: Column(
         children: [
           Expanded(
