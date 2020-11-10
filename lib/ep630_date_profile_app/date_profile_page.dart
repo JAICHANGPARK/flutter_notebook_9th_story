@@ -140,6 +140,8 @@ class _DateProfilePageState extends State<DateProfilePage> {
                     flex: 2,
                     child: CircleAvatar(
                       radius: 42,
+                      backgroundColor: Colors.pink[200],
+                      child: Icon(Icons.favorite_border),
                     ),
                   ),
                 ],
