@@ -30,6 +30,7 @@ dependencies:
   cupertino_icons: ^1.0.1
   badges: any
   google_fonts: any
+  smooth_page_indicator: ^0.2.0
 
 dev_dependencies:
   flutter_test:
