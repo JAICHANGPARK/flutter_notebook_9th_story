@@ -16,6 +16,17 @@ class _DateProfilePageState extends State<DateProfilePage> {
             child: Stack(
               children: [
                 Positioned(
+                  left: 0,
+                  top: 0,
+                  bottom: 0,
+                  right: 0,
+                  child: Container(
+                    decoration: BoxDecoration(
+                        color: Colors.pink
+                    ),
+                  ),
+                ),
+                Positioned(
                   left: 16,
                   top: 24,
                   child: Container(
@@ -30,17 +41,7 @@ class _DateProfilePageState extends State<DateProfilePage> {
                     ),
                   ),
                 ),
-                Positioned(
-                  left: 0,
-                  top: 0,
-                  bottom: 0,
-                  right: 0,
-                  child: Container(
-                    decoration: BoxDecoration(
-                      color: Colors.pink
-                    ),
-                  ),
-                )
+
               ],
             ),
           ),
