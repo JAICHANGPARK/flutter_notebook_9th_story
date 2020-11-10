@@ -8,12 +8,14 @@ class DateProfilePage extends StatefulWidget {
 
 class _DateProfilePageState extends State<DateProfilePage> {
   PageController _pageController;
+
   @override
   void initState() {
     // TODO: implement initState
     super.initState();
     _pageController = PageController();
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -32,63 +34,56 @@ class _DateProfilePageState extends State<DateProfilePage> {
                   right: 0,
                   child: Container(
                     decoration: BoxDecoration(
-                        color: Colors.pink,
+                      color: Colors.pink,
                     ),
                     child: Stack(
                       children: [
-                         Positioned(
-                           left: 0,
-                           right: 0,
-                           top: 0,
-                           bottom: 0,
-                           child: PageView(
+                        Positioned(
+                          left: 0,
+                          right: 0,
+                          top: 0,
+                          bottom: 0,
+                          child: PageView(
                             controller: _pageController,
                             children: [
                               Container(
                                 decoration: BoxDecoration(
                                     image: DecorationImage(
-                                        image: NetworkImage("https://cdn.pixabay.com/photo/2019/03/04/04/52/asian-4033333_960_720.jpg"),
-                                        fit: BoxFit.cover
-                                    )
-                                ),
+                                        image: NetworkImage(
+                                            "https://cdn.pixabay.com/photo/2019/03/04/04/52/asian-4033333_960_720.jpg"),
+                                        fit: BoxFit.cover)),
                               ),
                               Container(
                                 decoration: BoxDecoration(
                                     image: DecorationImage(
-                                        image: NetworkImage("https://cdn.pixabay.com/photo/2019/03/04/04/52/asian-4033333_960_720.jpg"),
-                                        fit: BoxFit.cover
-                                    )
-                                ),
+                                        image: NetworkImage(
+                                            "https://cdn.pixabay.com/photo/2019/03/04/04/52/asian-4033333_960_720.jpg"),
+                                        fit: BoxFit.cover)),
                               ),
                               Container(
                                 decoration: BoxDecoration(
                                     image: DecorationImage(
-                                        image: NetworkImage("https://cdn.pixabay.com/photo/2019/03/04/04/52/asian-4033333_960_720.jpg"),
-                                        fit: BoxFit.cover
-                                    )
-                                ),
+                                        image: NetworkImage(
+                                            "https://cdn.pixabay.com/photo/2019/03/04/04/52/asian-4033333_960_720.jpg"),
+                                        fit: BoxFit.cover)),
                               ),
                             ],
+                          ),
                         ),
-                         ),
                         Positioned(
                           left: 0,
                           right: 0,
                           bottom: 16,
                           child: Center(
-                            child: SmoothPageIndicator(count: 4, controller: _pageController,
+                            child: SmoothPageIndicator(
+                              count: 4,
+                              controller: _pageController,
                               effect: ExpandingDotsEffect(
-                                activeDotColor: Colors.pink[200],
-                                dotColor: Colors.white,
-                                dotHeight: 6,
-                                dotWidth: 16
-
-                              ),
+                                  activeDotColor: Colors.pink[200], dotColor: Colors.white, dotHeight: 6, dotWidth: 16),
                             ),
                           ),
                         )
                       ],
-
                     ),
                   ),
                 ),
@@ -107,7 +102,6 @@ class _DateProfilePageState extends State<DateProfilePage> {
                     ),
                   ),
                 ),
-
               ],
             ),
           ),
