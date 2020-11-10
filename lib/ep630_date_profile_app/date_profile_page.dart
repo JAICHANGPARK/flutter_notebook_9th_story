@@ -24,7 +24,14 @@ class _DateProfilePageState extends State<DateProfilePage> {
                   right: 0,
                   child: Container(
                     decoration: BoxDecoration(
-                        color: Colors.pink
+                        color: Colors.pink,
+                    ),
+                    child: PageView(
+                      children: [
+                        Container(
+                          
+                        )
+                      ],
                     ),
                   ),
                 ),
