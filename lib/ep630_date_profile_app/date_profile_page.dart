@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 class DateProfilePage extends StatefulWidget {
   @override
@@ -40,7 +41,6 @@ class _DateProfilePageState extends State<DateProfilePage> {
                            right: 0,
                            top: 0,
                            bottom: 0,
-
                            child: PageView(
                             controller: _pageController,
                             children: [
@@ -51,10 +51,33 @@ class _DateProfilePageState extends State<DateProfilePage> {
                                         fit: BoxFit.cover
                                     )
                                 ),
-                              )
+                              ),
+                              Container(
+                                decoration: BoxDecoration(
+                                    image: DecorationImage(
+                                        image: NetworkImage("https://cdn.pixabay.com/photo/2019/03/04/04/52/asian-4033333_960_720.jpg"),
+                                        fit: BoxFit.cover
+                                    )
+                                ),
+                              ),
+                              Container(
+                                decoration: BoxDecoration(
+                                    image: DecorationImage(
+                                        image: NetworkImage("https://cdn.pixabay.com/photo/2019/03/04/04/52/asian-4033333_960_720.jpg"),
+                                        fit: BoxFit.cover
+                                    )
+                                ),
+                              ),
                             ],
                         ),
                          ),
+                        Positioned(
+                          left: 0,
+                          right: 0,
+                          bottom: 0,
+                          child: SmoothPageIndicator(count: 4, controller: _pageController,
+                          ),
+                        )
                       ],
 
                     ),
