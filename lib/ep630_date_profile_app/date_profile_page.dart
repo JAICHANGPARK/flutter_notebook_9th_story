@@ -25,7 +25,7 @@ class _DateProfilePageState extends State<DateProfilePage> {
       body: Column(
         children: [
           Expanded(
-            flex: 5,
+            flex: 6,
             child: Stack(
               children: [
                 Positioned(
