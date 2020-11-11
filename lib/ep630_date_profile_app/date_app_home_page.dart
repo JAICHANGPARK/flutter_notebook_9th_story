@@ -74,6 +74,22 @@ class _DateAppHomePageState extends State<DateAppHomePage> {
                                           "https://cdn.pixabay.com/photo/2019/03/04/04/52/asian-4033333_960_720.jpg"),
                                       fit: BoxFit.cover)),
                             ),
+                            Positioned(
+                              top: 32,
+                              left: 8,
+                              child:  Padding(
+                                padding: EdgeInsets.symmetric(horizontal: 8),
+                                child: Container(
+                                  padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                                  color: Colors.black,
+                                  child: Center(
+                                    child: Text("friendly", style: TextStyle(
+                                        color: Colors.white
+                                    ),),
+                                  ),
+                                ),
+                              ),
+                            )
                           ],
                         ),
                       ),
@@ -140,22 +156,26 @@ class _DateAppHomePageState extends State<DateAppHomePage> {
       bottomNavigationBar: BottomAppBar(
         child: Container(
           height: 84,
-          child: Row(
-            children: [
-              IconButton(
-                icon: Icon(Icons.apps),
-                onPressed: () {},
-              ),
-              IconButton(
-                icon: Icon(Icons.apps),
-                onPressed: () {},
-              ),
-              IconButton(
-                icon: Icon(Icons.apps),
-                onPressed: () {},
-              ),
-              CircleAvatar()
-            ],
+          child: Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                IconButton(
+                  icon: Icon(Icons.apps),
+                  onPressed: () {},
+                ),
+                IconButton(
+                  icon: Icon(Icons.public),
+                  onPressed: () {},
+                ),
+                IconButton(
+                  icon: Icon(Icons.handyman),
+                  onPressed: () {},
+                ),
+                CircleAvatar()
+              ],
+            ),
           ),
         ),
       ),
