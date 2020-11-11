@@ -201,7 +201,7 @@ class _DateProfilePageState extends State<DateProfilePage> {
                             padding: EdgeInsets.symmetric(horizontal: 16),
                             color: Colors.black,
                             child: Center(
-                              child: Text("friendly", style: TextStyle(
+                              child: Text("reliable", style: TextStyle(
                                   color: Colors.white
                               ),),
                             ),
@@ -213,7 +213,7 @@ class _DateProfilePageState extends State<DateProfilePage> {
                             padding: EdgeInsets.symmetric(horizontal: 16),
                             color: Colors.black,
                             child: Center(
-                              child: Text("friendly", style: TextStyle(
+                              child: Text("funny", style: TextStyle(
                                   color: Colors.white
                               ),),
                             ),
