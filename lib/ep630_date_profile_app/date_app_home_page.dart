@@ -15,37 +15,40 @@ class _DateAppHomePageState extends State<DateAppHomePage> {
           children: [
             Expanded(
               flex: 3,
-              child: Row(
-                children: [
-                  Container(
-                    height: 48,
-                    width: 48,
-                    decoration: BoxDecoration(
-                      color: Colors.black,
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Row(
+                  children: [
+                    Container(
+                      height: 48,
+                      width: 48,
+                      decoration: BoxDecoration(
+                        color: Colors.black,
+                      ),
+                      child: Center(
+                        child: Icon(Icons.notifications_none, color: Colors.white,),
+                      ),
                     ),
-                    child: Center(
-                      child: Icon(Icons.notifications_none, color: Colors.white,),
+                    SizedBox(
+                      width: 16,
                     ),
-                  ),
-                  SizedBox(
-                    width: 16,
-                  ),
-                  Text("Meet", style: TextStyle(
-                    fontSize: 28,
-                    fontWeight: FontWeight.bold,
-                  ),),
-                  Spacer(),
-                  Container(
-                    height: 48,
-                    width: 48,
-                    decoration: BoxDecoration(
-                      border: Border.all(color: Colors.black)
+                    Text("Meet", style: TextStyle(
+                      fontSize: 28,
+                      fontWeight: FontWeight.bold,
+                    ),),
+                    Spacer(),
+                    Container(
+                      height: 48,
+                      width: 48,
+                      decoration: BoxDecoration(
+                        border: Border.all(color: Colors.black)
+                      ),
+                      child: Center(
+                        child: Icon(Icons.filter_list_rounded, ),
+                      ),
                     ),
-                    child: Center(
-                      child: Icon(Icons.filter_list_rounded, ),
-                    ),
-                  ),
-                ],
+                  ],
+                ),
               ),
             ),
             Expanded(
