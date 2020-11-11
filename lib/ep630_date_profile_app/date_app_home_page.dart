@@ -26,25 +26,31 @@ class _DateAppHomePageState extends State<DateAppHomePage> {
                         color: Colors.black,
                       ),
                       child: Center(
-                        child: Icon(Icons.notifications_none, color: Colors.white,),
+                        child: Icon(
+                          Icons.notifications_none,
+                          color: Colors.white,
+                        ),
                       ),
                     ),
                     SizedBox(
                       width: 16,
                     ),
-                    Text("Meet", style: TextStyle(
-                      fontSize: 28,
-                      fontWeight: FontWeight.bold,
-                    ),),
+                    Text(
+                      "Meet",
+                      style: TextStyle(
+                        fontSize: 28,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
                     Spacer(),
                     Container(
                       height: 48,
                       width: 48,
-                      decoration: BoxDecoration(
-                        border: Border.all(color: Colors.black)
-                      ),
+                      decoration: BoxDecoration(border: Border.all(color: Colors.black)),
                       child: Center(
-                        child: Icon(Icons.filter_list_rounded, ),
+                        child: Icon(
+                          Icons.filter_list_rounded,
+                        ),
                       ),
                     ),
                   ],
@@ -52,86 +58,82 @@ class _DateAppHomePageState extends State<DateAppHomePage> {
               ),
             ),
             Expanded(
-              flex: 20,
-              child: Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Column(
-                  children: [
-                    Expanded(
-                      flex: 8,
-                      child:  Stack(
-                        children: [
-                           Container(
-                            decoration: BoxDecoration(
-                                image: DecorationImage(
-                                    image: NetworkImage(
-                                        "https://cdn.pixabay.com/photo/2019/03/04/04/52/asian-4033333_960_720.jpg"),
-                                    fit: BoxFit.cover)),
-                          ),
-                        ],
-
-                      ),
-                    ),
-                    Expanded(
-                      flex: 2,
-                      child:Container(
-                        color: Colors.black,
-                        child: Row(
+                flex: 20,
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Column(
+                    children: [
+                      Expanded(
+                        flex: 8,
+                        child: Stack(
                           children: [
-                            Expanded(
-                              flex: 2,
-                              child: CircularPercentIndicator(
-                                radius: 84,
-                                percent: 0.7,
-                                progressColor: Colors.pink[100],
-                                center: Text(
-                                  "75.0%",
-                                  style: TextStyle(color: Colors.pink[100]),
-                                ),
-                              ),
-                            ),
-                            Expanded(
-                              flex: 3,
-                              child: Column(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                children: [
-                                  Text(
-                                    "Dream, ??",
-                                    style: TextStyle(color: Colors.white, fontSize: 22),
-                                  ),
-                                  Padding(
-                                    padding: const EdgeInsets.only(top: 8),
-                                    child: MaterialButton(
-                                      onPressed: () {},
-                                      color: Colors.white,
-                                      child: Text("5`10``"),
-                                    ),
-                                  )
-                                ],
-                              ),
-                            ),
-                            Expanded(
-                              flex: 2,
-                              child: CircleAvatar(
-                                radius: 42,
-                                backgroundColor: Colors.pink[100],
-                                foregroundColor: Colors.black,
-                                child: Icon(
-                                  Icons.favorite_border,
-                                  size: 42,
-                                ),
-                              ),
+                            Container(
+                              decoration: BoxDecoration(
+                                  image: DecorationImage(
+                                      image: NetworkImage(
+                                          "https://cdn.pixabay.com/photo/2019/03/04/04/52/asian-4033333_960_720.jpg"),
+                                      fit: BoxFit.cover)),
                             ),
                           ],
                         ),
                       ),
-                    )
-                  ],
-                ),
-              )
-
-            ),
-
+                      Expanded(
+                        flex: 2,
+                        child: Container(
+                          color: Colors.black,
+                          child: Row(
+                            children: [
+                              Expanded(
+                                flex: 2,
+                                child: CircularPercentIndicator(
+                                  radius: 84,
+                                  percent: 0.7,
+                                  progressColor: Colors.pink[100],
+                                  center: Text(
+                                    "75.0%",
+                                    style: TextStyle(color: Colors.pink[100]),
+                                  ),
+                                ),
+                              ),
+                              Expanded(
+                                flex: 3,
+                                child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    Text(
+                                      "Dream, ??",
+                                      style: TextStyle(color: Colors.white, fontSize: 22),
+                                    ),
+                                    Padding(
+                                      padding: const EdgeInsets.only(top: 8),
+                                      child: MaterialButton(
+                                        onPressed: () {},
+                                        color: Colors.white,
+                                        child: Text("5`10``"),
+                                      ),
+                                    )
+                                  ],
+                                ),
+                              ),
+                              Expanded(
+                                flex: 2,
+                                child: CircleAvatar(
+                                  radius: 42,
+                                  backgroundColor: Colors.pink[100],
+                                  foregroundColor: Colors.black,
+                                  child: Icon(
+                                    Icons.favorite_border,
+                                    size: 42,
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      )
+                    ],
+                  ),
+                )),
           ],
         ),
       ),
@@ -139,29 +141,24 @@ class _DateAppHomePageState extends State<DateAppHomePage> {
         child: Container(
           height: 84,
           child: Row(
-            children: [],
+            children: [
+              IconButton(
+                icon: Icon(Icons.apps),
+                onPressed: () {},
+              ),
+              IconButton(
+                icon: Icon(Icons.apps),
+                onPressed: () {},
+              ),
+              IconButton(
+                icon: Icon(Icons.apps),
+                onPressed: () {},
+              ),
+              CircleAvatar()
+            ],
           ),
         ),
       ),
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
