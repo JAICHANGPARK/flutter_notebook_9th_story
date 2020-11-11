@@ -15,7 +15,20 @@ class _DateAppHomePageState extends State<DateAppHomePage> {
           children: [
             Expanded(
               flex: 3,
-              child: Placeholder(),
+              child: Row(
+                children: [
+                  Container(
+                    height: 38,
+                    width: 38,
+                    decoration: BoxDecoration(
+                      color: Colors.black,
+                    ),
+                    child: Center(
+                      child: Icon(Icons.notifications_none, color: Colors.white,),
+                    ),
+                  )
+                ],
+              ),
             ),
             Expanded(
               flex: 20,
