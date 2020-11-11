@@ -204,13 +204,16 @@ class _DateProfilePageState extends State<DateProfilePage> {
                             ),
                           ),
                         ),
-                        Container(
-                          padding: EdgeInsets.symmetric(horizontal: 16),
-                          color: Colors.black,
-                          child: Center(
-                            child: Text("friendly", style: TextStyle(
-                                color: Colors.white
-                            ),),
+                        Padding(
+                          padding: EdgeInsets.symmetric(horizontal: 8),
+                          child: Container(
+                            padding: EdgeInsets.symmetric(horizontal: 16),
+                            color: Colors.black,
+                            child: Center(
+                              child: Text("friendly", style: TextStyle(
+                                  color: Colors.white
+                              ),),
+                            ),
                           ),
                         ),
                       ],
