@@ -29,7 +29,7 @@ class _DateAppHomePageState extends State<DateAppHomePage> {
                   ),
                   SizedBox(
                     width: 16,
-                  )
+                  ),
                   Text("Meet", style: TextStyle(
                     fontSize: 28,
                     fontWeight: FontWeight.bold,
