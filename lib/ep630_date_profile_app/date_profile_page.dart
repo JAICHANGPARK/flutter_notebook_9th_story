@@ -178,7 +178,13 @@ class _DateProfilePageState extends State<DateProfilePage> {
                           "laboris nisi ut aliquip ex ea commodo consequat.",
                   style: TextStyle(
                     fontSize: 16
-                  ),)
+                  ),),
+                  ListView(
+                    scrollDirection: Axis.horizontal,
+                    children: [
+
+                    ],
+                  )
                 ],
               ),
             ),
