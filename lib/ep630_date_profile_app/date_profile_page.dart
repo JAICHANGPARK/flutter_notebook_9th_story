@@ -193,7 +193,7 @@ class _DateProfilePageState extends State<DateProfilePage> {
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsets.symmetric(horizontal: 16),
+                          padding: EdgeInsets.symmetric(horizontal: 8),
                           child: Container(
                             padding: EdgeInsets.symmetric(horizontal: 16),
                             color: Colors.black,
