@@ -95,10 +95,15 @@ class _DateProfilePageState extends State<DateProfilePage> {
                     height: 48,
                     width: 48,
                     decoration: BoxDecoration(color: Colors.black),
-                    child: Center(
-                      child: Icon(
-                        Icons.clear,
-                        color: Colors.white,
+                    child: InkWell(
+                      onTap: (){
+                        Navigator.of(context).pop();
+                      },
+                      child: Center(
+                        child: Icon(
+                          Icons.clear,
+                          color: Colors.white,
+                        ),
                       ),
                     ),
                   ),
