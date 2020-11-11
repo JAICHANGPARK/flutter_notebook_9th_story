@@ -173,16 +173,18 @@ class _DateProfilePageState extends State<DateProfilePage> {
                     style: TextStyle(fontSize: 16),
                   ),
                   Text(
-                      "Ut enim ad minim veniam,"
-                          " quis nostrud exercitation ullamco "
-                          "laboris nisi ut aliquip ex ea commodo consequat.",
-                  style: TextStyle(
-                    fontSize: 16
-                  ),),
+                    "Ut enim ad minim veniam,"
+                    " quis nostrud exercitation ullamco "
+                    "laboris nisi ut aliquip ex ea commodo consequat.",
+                    style: TextStyle(fontSize: 16),
+                  ),
                   ListView(
                     scrollDirection: Axis.horizontal,
                     children: [
-
+                      Container(
+                        color: Colors.black,
+                        child: Text("friendly"),
+                      )
                     ],
                   )
                 ],
