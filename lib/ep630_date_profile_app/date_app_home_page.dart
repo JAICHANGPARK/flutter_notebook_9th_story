@@ -18,15 +18,22 @@ class _DateAppHomePageState extends State<DateAppHomePage> {
               child: Row(
                 children: [
                   Container(
-                    height: 38,
-                    width: 38,
+                    height: 48,
+                    width: 48,
                     decoration: BoxDecoration(
                       color: Colors.black,
                     ),
                     child: Center(
                       child: Icon(Icons.notifications_none, color: Colors.white,),
                     ),
+                  ),
+                  SizedBox(
+                    width: 16,
                   )
+                  Text("Meet", style: TextStyle(
+                    fontSize: 28,
+                    fontWeight: FontWeight.bold,
+                  ),)
                 ],
               ),
             ),
