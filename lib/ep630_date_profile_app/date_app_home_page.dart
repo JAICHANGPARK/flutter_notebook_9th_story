@@ -9,28 +9,32 @@ class _DateAppHomePageState extends State<DateAppHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: [
-          Expanded(
-            flex: 2,
-            child: Placeholder(),
-          ),
-          Expanded(
-            flex: 20,
-            child: Column(
-              children: [
-                Expanded(
-                  child: Placeholder(),
-                ),
-                Expanded(
-                  child: Placeholder(),
-                )
-              ],
-            )
+      body: SafeArea(
+        child: Column(
+          children: [
+            Expanded(
+              flex: 3,
+              child: Placeholder(),
+            ),
+            Expanded(
+              flex: 20,
+              child: Column(
+                children: [
+                  Expanded(
+                    flex: 8,
+                    child: Placeholder(),
+                  ),
+                  Expanded(
+                    flex: 2,
+                    child: Placeholder(),
+                  )
+                ],
+              )
 
-          ),
+            ),
 
-        ],
+          ],
+        ),
       ),
       bottomNavigationBar: BottomAppBar(
         child: Container(
