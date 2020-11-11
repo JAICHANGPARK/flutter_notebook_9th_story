@@ -186,7 +186,9 @@ class _DateProfilePageState extends State<DateProfilePage> {
                         Container(
                           padding: EdgeInsets.symmetric(horizontal: 8),
                           color: Colors.black,
-                          child: Text("friendly", style: TextStyle(),),
+                          child: Text("friendly", style: TextStyle(
+                            color: Colors.white
+                          ),),
                         )
                       ],
                     ),
