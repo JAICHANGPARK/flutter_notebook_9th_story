@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:percent_indicator/circular_percent_indicator.dart';
 
 class DateAppHomePage extends StatefulWidget {
   @override
@@ -39,7 +40,57 @@ class _DateAppHomePageState extends State<DateAppHomePage> {
                     ),
                     Expanded(
                       flex: 2,
-                      child: Placeholder(),
+                      child:Container(
+                        color: Colors.black,
+                        child: Row(
+                          children: [
+                            Expanded(
+                              flex: 2,
+                              child: CircularPercentIndicator(
+                                radius: 84,
+                                percent: 0.7,
+                                progressColor: Colors.pink[100],
+                                center: Text(
+                                  "75.0%",
+                                  style: TextStyle(color: Colors.pink[100]),
+                                ),
+                              ),
+                            ),
+                            Expanded(
+                              flex: 3,
+                              child: Column(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  Text(
+                                    "Dream, ??",
+                                    style: TextStyle(color: Colors.white, fontSize: 22),
+                                  ),
+                                  Padding(
+                                    padding: const EdgeInsets.only(top: 8),
+                                    child: MaterialButton(
+                                      onPressed: () {},
+                                      color: Colors.white,
+                                      child: Text("5`10``"),
+                                    ),
+                                  )
+                                ],
+                              ),
+                            ),
+                            Expanded(
+                              flex: 2,
+                              child: CircleAvatar(
+                                radius: 42,
+                                backgroundColor: Colors.pink[100],
+                                foregroundColor: Colors.black,
+                                child: Icon(
+                                  Icons.favorite_border,
+                                  size: 42,
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
                     )
                   ],
                 ),
