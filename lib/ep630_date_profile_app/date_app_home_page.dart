@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_9th_story/ep630_date_profile_app/date_app.dart';
+import 'package:flutter_notebook_9th_story/ep630_date_profile_app/date_profile_page.dart';
 import 'package:percent_indicator/circular_percent_indicator.dart';
 
 class DateAppHomePage extends StatefulWidget {
@@ -67,12 +69,19 @@ class _DateAppHomePageState extends State<DateAppHomePage> {
                         flex: 8,
                         child: Stack(
                           children: [
-                            Container(
-                              decoration: BoxDecoration(
-                                  image: DecorationImage(
-                                      image: NetworkImage(
-                                          "https://cdn.pixabay.com/photo/2019/03/04/04/52/asian-4033333_960_720.jpg"),
-                                      fit: BoxFit.cover)),
+                            GestureDetector(
+                              onTap: (){
+                                Navigator.of(context).push(MaterialPageRoute(
+                                  builder: (context) => DateProfilePage()
+                                ));
+                              },
+                              child: Container(
+                                decoration: BoxDecoration(
+                                    image: DecorationImage(
+                                        image: NetworkImage(
+                                            "https://cdn.pixabay.com/photo/2019/03/04/04/52/asian-4033333_960_720.jpg"),
+                                        fit: BoxFit.cover)),
+                              ),
                             ),
                             Positioned(
                               top: 32,
