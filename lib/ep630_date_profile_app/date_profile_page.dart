@@ -179,14 +179,14 @@ class _DateProfilePageState extends State<DateProfilePage> {
                     style: TextStyle(fontSize: 16),
                   ),
                   Container(
-                    height: 48,
+                    height: 32,
                     child: ListView(
                       scrollDirection: Axis.horizontal,
                       children: [
                         Container(
                           padding: EdgeInsets.symmetric(horizontal: 8),
                           color: Colors.black,
-                          child: Text("friendly"),
+                          child: Text("friendly", style: TextStyle(),),
                         )
                       ],
                     ),
