@@ -184,14 +184,35 @@ class _DateProfilePageState extends State<DateProfilePage> {
                       scrollDirection: Axis.horizontal,
                       children: [
                         Container(
-                          padding: EdgeInsets.symmetric(horizontal: 8),
+                          padding: EdgeInsets.symmetric(horizontal: 16),
                           color: Colors.black,
                           child: Center(
                             child: Text("friendly", style: TextStyle(
                               color: Colors.white
                             ),),
                           ),
-                        )
+                        ),
+                        Padding(
+                          padding: EdgeInsets.symmetric(horizontal: 16),
+                          child: Container(
+                            padding: EdgeInsets.symmetric(horizontal: 16),
+                            color: Colors.black,
+                            child: Center(
+                              child: Text("friendly", style: TextStyle(
+                                  color: Colors.white
+                              ),),
+                            ),
+                          ),
+                        ),
+                        Container(
+                          padding: EdgeInsets.symmetric(horizontal: 16),
+                          color: Colors.black,
+                          child: Center(
+                            child: Text("friendly", style: TextStyle(
+                                color: Colors.white
+                            ),),
+                          ),
+                        ),
                       ],
                     ),
                   )
