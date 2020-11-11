@@ -8,6 +8,6 @@ class DateAppHomePage extends StatefulWidget {
 class _DateAppHomePageState extends State<DateAppHomePage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold();
   }
 }
