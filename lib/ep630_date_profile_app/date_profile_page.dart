@@ -163,6 +163,7 @@ class _DateProfilePageState extends State<DateProfilePage> {
           Expanded(
             flex: 5,
             child: Column(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 Text("Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore "
                     "et dolore magna aliqua."),
