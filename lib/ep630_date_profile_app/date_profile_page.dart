@@ -165,7 +165,7 @@ class _DateProfilePageState extends State<DateProfilePage> {
             child: Padding(
               padding: const EdgeInsets.all(16.0),
               child: Column(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
                   Text(
                     "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore "
@@ -183,13 +183,52 @@ class _DateProfilePageState extends State<DateProfilePage> {
                     child: ListView(
                       scrollDirection: Axis.horizontal,
                       children: [
-                        Container(
-                          padding: EdgeInsets.symmetric(horizontal: 16),
-                          color: Colors.black,
-                          child: Center(
-                            child: Text("friendly", style: TextStyle(
-                              color: Colors.white
-                            ),),
+                        Padding(
+                          padding: EdgeInsets.symmetric(horizontal: 8),
+                          child: Container(
+                            padding: EdgeInsets.symmetric(horizontal: 16),
+                            color: Colors.black,
+                            child: Center(
+                              child: Text("friendly", style: TextStyle(
+                                  color: Colors.white
+                              ),),
+                            ),
+                          ),
+                        ),
+                        Padding(
+                          padding: EdgeInsets.symmetric(horizontal: 8),
+                          child: Container(
+                            padding: EdgeInsets.symmetric(horizontal: 16),
+                            color: Colors.black,
+                            child: Center(
+                              child: Text("friendly", style: TextStyle(
+                                  color: Colors.white
+                              ),),
+                            ),
+                          ),
+                        ),
+                        Padding(
+                          padding: EdgeInsets.symmetric(horizontal: 8),
+                          child: Container(
+                            padding: EdgeInsets.symmetric(horizontal: 16),
+                            color: Colors.black,
+                            child: Center(
+                              child: Text("friendly", style: TextStyle(
+                                  color: Colors.white
+                              ),),
+                            ),
+                          ),
+                        ),
+                        Padding(
+                          padding: EdgeInsets.symmetric(horizontal: 8),
+                          child: Container(
+                            padding: EdgeInsets.symmetric(horizontal: 16),
+                            color: Colors.black,
+                            child: Center(
+                              child: Text("friendly", style: TextStyle(
+                                  color: Colors.white
+                              ),),
+                            ),
                           ),
                         ),
                         Padding(
