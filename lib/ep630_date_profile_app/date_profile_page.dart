@@ -178,14 +178,18 @@ class _DateProfilePageState extends State<DateProfilePage> {
                     "laboris nisi ut aliquip ex ea commodo consequat.",
                     style: TextStyle(fontSize: 16),
                   ),
-                  ListView(
-                    scrollDirection: Axis.horizontal,
-                    children: [
-                      Container(
-                        color: Colors.black,
-                        child: Text("friendly"),
-                      )
-                    ],
+                  Container(
+                    height: 48,
+                    child: ListView(
+                      scrollDirection: Axis.horizontal,
+                      children: [
+                        Container(
+                          padding: EdgeInsets.symmetric(horizontal: 8),
+                          color: Colors.black,
+                          child: Text("friendly"),
+                        )
+                      ],
+                    ),
                   )
                 ],
               ),
