@@ -167,12 +167,18 @@ class _DateProfilePageState extends State<DateProfilePage> {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  Text("Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore "
-                      "et dolore magna aliqua.", style: TextStyle(
+                  Text(
+                    "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore "
+                    "et dolore magna aliqua.",
+                    style: TextStyle(fontSize: 16),
+                  ),
+                  Text(
+                      "Ut enim ad minim veniam,"
+                          " quis nostrud exercitation ullamco "
+                          "laboris nisi ut aliquip ex ea commodo consequat.",
+                  style: TextStyle(
                     fontSize: 16
-                  ),),
-
-                  Text( "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.")
+                  ),)
                 ],
               ),
             ),
