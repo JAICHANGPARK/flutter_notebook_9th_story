@@ -21,6 +21,14 @@ class _DateAppHomePageState extends State<DateAppHomePage> {
 
         ],
       ),
+      bottomNavigationBar: BottomAppBar(
+        child: Container(
+          height: 84,
+          child: Row(
+            children: [],
+          ),
+        ),
+      ),
     );
   }
 }
