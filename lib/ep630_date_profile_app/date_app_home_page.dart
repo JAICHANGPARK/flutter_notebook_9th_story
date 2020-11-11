@@ -33,7 +33,18 @@ class _DateAppHomePageState extends State<DateAppHomePage> {
                   Text("Meet", style: TextStyle(
                     fontSize: 28,
                     fontWeight: FontWeight.bold,
-                  ),)
+                  ),),
+                  Spacer(),
+                  Container(
+                    height: 48,
+                    width: 48,
+                    decoration: BoxDecoration(
+                      border: Border.all(color: Colors.black)
+                    ),
+                    child: Center(
+                      child: Icon(Icons.filter_list_rounded, ),
+                    ),
+                  ),
                 ],
               ),
             ),
