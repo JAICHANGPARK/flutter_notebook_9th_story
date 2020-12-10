@@ -22,15 +22,38 @@ class _EventsMainPageState extends State<EventsMainPage> {
             Expanded(
               child: Column(
                 children: [
-                  
+
                 ],
               ),
               flex: 3,
-
             ),
           ],
         ),
       ),
+
+
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
