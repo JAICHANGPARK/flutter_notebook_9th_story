@@ -12,17 +12,22 @@ class _EventsMainPageState extends State<EventsMainPage> {
       body: SafeArea(
         child: Column(
           children: [
-            Expanded(child: Container(
-              margin: EdgeInsets.all(4),
-              decoration: BoxDecoration(
-                color: Colors.orange[100],
-                borderRadius: BorderRadius.circular(16)
+            Expanded(
+              child: Container(
+                margin: EdgeInsets.all(4),
+                decoration: BoxDecoration(color: Colors.orange[100], borderRadius: BorderRadius.circular(16)),
               ),
-            )
-            ,
-            flex: 2,),
-            Expanded(child: Placeholder(),
-            flex: 3,),
+              flex: 2,
+            ),
+            Expanded(
+              child: Column(
+                children: [
+                  
+                ],
+              ),
+              flex: 3,
+
+            ),
           ],
         ),
       ),
