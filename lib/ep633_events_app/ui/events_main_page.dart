@@ -31,8 +31,41 @@ class _EventsMainPageState extends State<EventsMainPage> {
       bottomNavigationBar:
       BottomAppBar(
         child: Container(
-          height: 64,
+          height: 72,
+          padding: EdgeInsets.only(left: 16, bottom: 8),
+          child: Row(
+            children: [
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  IconButton(
+                    icon: Icon(Icons.home), onPressed: () {  },
+                  ),
+                  Text("Home"),
+                ],
+              ),
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  IconButton(
+                    icon: Icon(Icons.home), onPressed: () {  },
+                  ),
+                  Text("Map"),
+                ],
+              ),
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  IconButton(
+                    icon: Icon(Icons.home), onPressed: () {  },
+                  ),
+                  Text("Home"),
+                ],
+              ),
+            ],
+          ),
         ),
+
         shape: CircularNotchedRectangle(),
       ),
 
