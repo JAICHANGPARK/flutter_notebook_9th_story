@@ -28,28 +28,36 @@ class _EventsMainPageState extends State<EventsMainPage> {
           ],
         ),
       ),
-      bottomNavigationBar: BottomNavigationBar(
-        onTap: (idx) {},
-        type: BottomNavigationBarType.fixed,
-        items: [
-          BottomNavigationBarItem(
-            icon: Icon(Icons.home),
-            label: "Home",
-
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.map),
-              label: "Map"
-
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.chat_bubble),
-              label: "Chat"
-          ),
-
-        ],
-
+      bottomNavigationBar:
+      BottomAppBar(
+        child: Container(
+          height: 64,
+        ),
+        shape: CircularNotchedRectangle(),
       ),
+
+      // BottomNavigationBar(
+      //   onTap: (idx) {},
+      //   type: BottomNavigationBarType.fixed,
+      //   items: [
+      //     BottomNavigationBarItem(
+      //       icon: Icon(Icons.home),
+      //       label: "Home",
+      //
+      //     ),
+      //     BottomNavigationBarItem(
+      //       icon: Icon(Icons.map),
+      //         label: "Map"
+      //
+      //     ),
+      //     BottomNavigationBarItem(
+      //       icon: Icon(Icons.chat_bubble),
+      //         label: "Chat"
+      //     ),
+      //
+      //   ],
+      //
+      // ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {  },
         child: Icon(Icons.add),
