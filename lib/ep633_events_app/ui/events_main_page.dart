@@ -12,7 +12,8 @@ class _EventsMainPageState extends State<EventsMainPage> {
       body: SafeArea(
         child: Column(
           children: [
-            
+            Expanded(child: Placeholder()),
+            Expanded(child: Placeholder()),
           ],
         ),
       ),
