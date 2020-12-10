@@ -34,7 +34,7 @@ class _EventsMainPageState extends State<EventsMainPage> {
         items: [
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
-            title:
+            label: "Home"
 
           ),
           BottomNavigationBarItem(
