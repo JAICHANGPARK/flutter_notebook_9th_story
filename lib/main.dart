@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'ep630_date_profile_app/date_app.dart';
+import 'package:flutter_notebook_9th_story/ep633_events_app/events_app.dart';
 
 main() {
-  runApp(DateProfileApp());
+  runApp(EventsApp());
 }
