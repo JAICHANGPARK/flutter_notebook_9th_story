@@ -9,7 +9,13 @@ class _EventsMainPageState extends State<EventsMainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      
+      body: SafeArea(
+        child: Column(
+          children: [
+            
+          ],
+        ),
+      ),
     );
   }
 }
