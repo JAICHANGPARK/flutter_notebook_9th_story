@@ -34,14 +34,17 @@ class _EventsMainPageState extends State<EventsMainPage> {
         items: [
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
-            label: "Home"
+            label: "Home",
 
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.home),
+            icon: Icon(Icons.map),
+              label: "Map"
+
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.home),
+            icon: Icon(Icons.chat_bubble),
+              label: "Chat"
           ),
         ],
       ),
