@@ -46,7 +46,13 @@ class _EventsMainPageState extends State<EventsMainPage> {
             icon: Icon(Icons.chat_bubble),
               label: "Chat"
           ),
+
         ],
+
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {  },
+        child: Icon(Icons.add),
       ),
     );
   }
