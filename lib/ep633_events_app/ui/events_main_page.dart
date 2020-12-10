@@ -30,7 +30,16 @@ class _EventsMainPageState extends State<EventsMainPage> {
       ),
       bottomNavigationBar: BottomNavigationBar(
         onTap: (idx) {},
+        type: BottomNavigationBarType.fixed,
         items: [
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home),
+            title:
+
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home),
+          ),
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
           ),
@@ -39,3 +48,20 @@ class _EventsMainPageState extends State<EventsMainPage> {
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
