@@ -21,9 +21,7 @@ class _EventsMainPageState extends State<EventsMainPage> {
             ),
             Expanded(
               child: Column(
-                children: [
-
-                ],
+                children: [],
               ),
               flex: 3,
             ),
@@ -31,35 +29,13 @@ class _EventsMainPageState extends State<EventsMainPage> {
         ),
       ),
       bottomNavigationBar: BottomNavigationBar(
-        onTap: (idx){
-
-        },
+        onTap: (idx) {},
         items: [
-          BottomNavigationBarItem()
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home),
+          ),
         ],
       ),
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
