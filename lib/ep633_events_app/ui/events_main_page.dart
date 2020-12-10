@@ -53,7 +53,9 @@ class _EventsMainPageState extends State<EventsMainPage> {
       floatingActionButton: FloatingActionButton(
         onPressed: () {  },
         child: Icon(Icons.add),
+
       ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.endDocked,
     );
   }
 }
