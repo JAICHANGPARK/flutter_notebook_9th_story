@@ -32,8 +32,9 @@ class _EventsMainPageState extends State<EventsMainPage> {
       BottomAppBar(
         child: Container(
           height: 72,
-          padding: EdgeInsets.only(left: 16, bottom: 8),
+          padding: EdgeInsets.only(left: 16, bottom: 8, right: 64),
           child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
               Column(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -48,7 +49,7 @@ class _EventsMainPageState extends State<EventsMainPage> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   IconButton(
-                    icon: Icon(Icons.home), onPressed: () {  },
+                    icon: Icon(Icons.map), onPressed: () {  },
                   ),
                   Text("Map"),
                 ],
@@ -57,9 +58,9 @@ class _EventsMainPageState extends State<EventsMainPage> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   IconButton(
-                    icon: Icon(Icons.home), onPressed: () {  },
+                    icon: Icon(Icons.chat), onPressed: () {  },
                   ),
-                  Text("Home"),
+                  Text("Chat"),
                 ],
               ),
             ],
