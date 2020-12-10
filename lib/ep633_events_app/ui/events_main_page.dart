@@ -8,6 +8,8 @@ class EventsMainPage extends StatefulWidget {
 class _EventsMainPageState extends State<EventsMainPage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      
+    );
   }
 }
