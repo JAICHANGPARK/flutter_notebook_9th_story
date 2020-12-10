@@ -30,8 +30,14 @@ class _EventsMainPageState extends State<EventsMainPage> {
           ],
         ),
       ),
+      bottomNavigationBar: BottomNavigationBar(
+        onTap: (idx){
 
-
+        },
+        items: [
+          BottomNavigationBarItem()
+        ],
+      ),
     );
   }
 }
