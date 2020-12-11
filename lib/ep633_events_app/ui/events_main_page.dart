@@ -53,11 +53,15 @@ class _EventsMainPageState extends State<EventsMainPage> {
                         fontWeight: FontWeight.bold
                       ),),
                     ),
-                    Container(
-                      height: 64,
-                      decoration: BoxDecoration(
-                        color: Colors.white,
-                        borderRadius: BorderRadius.circular(12)
+                    Spacer(),
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Container(
+                        height: 64,
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(12)
+                        ),
                       ),
                     )
                   ],
