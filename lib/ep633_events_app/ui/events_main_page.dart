@@ -41,12 +41,15 @@ class _EventsMainPageState extends State<EventsMainPage> {
                     ),
                     Padding(
                       padding: const EdgeInsets.all(8.0),
-                      child: Text('Hey Dreamwalker👋'),
+                      child: Text('Hey Dreamwalker👋', style: TextStyle(
+                        color: Colors.grey,
+                        fontSize: 18
+                      ),),
                     ),
                     Padding(
                       padding: const EdgeInsets.all(8.0),
-                      child: Text("Find the amazing events near you", style: TextStyle(
-                        fontSize: 20,
+                      child: Text("Find the amazing events\nnear you", style: TextStyle(
+                        fontSize: 24,
                         fontWeight: FontWeight.bold
                       ),),
                     )
