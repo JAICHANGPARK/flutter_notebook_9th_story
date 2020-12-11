@@ -45,7 +45,10 @@ class _EventsMainPageState extends State<EventsMainPage> {
                     ),
                     Padding(
                       padding: const EdgeInsets.all(8.0),
-                      child: Text("Find the amazing events near you"),
+                      child: Text("Find the amazing events near you", style: TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold
+                      ),),
                     )
                   ],
                 ),
