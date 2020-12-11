@@ -16,7 +16,18 @@ class _EventsMainPageState extends State<EventsMainPage> {
               child: Container(
                 margin: EdgeInsets.all(8),
                 decoration: BoxDecoration(color: Colors.orange[100], borderRadius: BorderRadius.circular(16)),
-                
+                child: Column(
+                  children: [
+                    Row(
+                      children: [
+                        IconButton(
+                          icon: Icon(Icons.apps), onPressed: () {  },
+
+                        )
+                      ],
+                    )
+                  ],
+                ),
               ),
               flex: 3,
             ),
