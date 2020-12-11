@@ -11,12 +11,14 @@ class _EventsMainPageState extends State<EventsMainPage> {
     return Scaffold(
       body: SafeArea(
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Expanded(
               child: Container(
                 margin: EdgeInsets.all(8),
                 decoration: BoxDecoration(color: Colors.orange[100], borderRadius: BorderRadius.circular(16)),
                 child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
