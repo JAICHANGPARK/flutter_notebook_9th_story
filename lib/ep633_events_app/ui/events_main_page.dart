@@ -35,6 +35,11 @@ class _EventsMainPageState extends State<EventsMainPage> {
                         ),
 
                       ],
+                    ),
+                    Row(
+                      children: [
+                        Text('Hey Dreamwalker👋'),
+                      ],
                     )
                   ],
                 ),
