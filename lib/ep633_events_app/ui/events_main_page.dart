@@ -16,6 +16,7 @@ class _EventsMainPageState extends State<EventsMainPage> {
             Expanded(
               child: Container(
                 margin: EdgeInsets.all(8),
+                padding: EdgeInsets.all(8),
                 decoration: BoxDecoration(color: Colors.orange[100], borderRadius: BorderRadius.circular(16)),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -38,8 +39,14 @@ class _EventsMainPageState extends State<EventsMainPage> {
 
                       ],
                     ),
-                    Text('Hey Dreamwalker👋'),
-                    Text("Find the amazing events near you")
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Text('Hey Dreamwalker👋'),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Text("Find the amazing events near you"),
+                    )
                   ],
                 ),
               ),
