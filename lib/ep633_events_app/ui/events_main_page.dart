@@ -26,7 +26,8 @@ class _EventsMainPageState extends State<EventsMainPage> {
                         )
 ,
                       Text("event", style: TextStyle(
-                        fontWeight: FontWeight.bold
+                        fontWeight: FontWeight.bold,
+                        fontSize: 18
                       ),)],
                     )
                   ],
