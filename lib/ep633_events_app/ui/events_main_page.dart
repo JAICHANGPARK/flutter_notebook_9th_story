@@ -64,7 +64,12 @@ class _EventsMainPageState extends State<EventsMainPage> {
                         ),
                         child: Row(
                           children: [
-                            Expanded(child: Placeholder()),
+                            Expanded(child: TextField(
+                              decoration: InputDecoration(
+                                border: InputBorder.none,
+
+                              ),
+                            )),
                             Expanded(child: Container()),
                           ],
                         )
