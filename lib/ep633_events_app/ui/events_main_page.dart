@@ -70,8 +70,17 @@ class _EventsMainPageState extends State<EventsMainPage> {
                                 border: InputBorder.none,
 
                               ),
+                            ),
+                            flex: 10,
+                            ),
+                            Expanded(
+                                flex: 2,
+                                child: Container(
+                              decoration: BoxDecoration(
+                                color: Colors.grey,
+                                borderRadius: BorderRadius.circular(16)
+                              ),
                             )),
-                            Expanded(child: Container()),
                           ],
                         )
                       ),
