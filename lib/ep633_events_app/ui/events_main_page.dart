@@ -22,7 +22,13 @@ class _EventsMainPageState extends State<EventsMainPage> {
             Expanded(
               child: Column(
                 children: [
-                  Expanded(child: Placeholder(), flex: 2,),
+                  Expanded(child: Row(
+                    children: [
+                      Text("NEAREST EVENTS"),
+                      Text("MORE"),
+
+                    ],
+                  ), flex: 2,),
                   Expanded(child: Placeholder(), flex: 10,),
                 ],
               ),
