@@ -24,7 +24,10 @@ class _EventsMainPageState extends State<EventsMainPage> {
                           icon: Icon(Icons.apps), onPressed: () {  },
 
                         )
-                      ],
+,
+                      Text("event", style: TextStyle(
+                        fontWeight: FontWeight.bold
+                      ),)],
                     )
                   ],
                 ),
