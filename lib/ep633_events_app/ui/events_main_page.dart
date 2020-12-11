@@ -21,17 +21,17 @@ class _EventsMainPageState extends State<EventsMainPage> {
                     Row(
                       children: [
                         IconButton(
-                          icon: Icon(Icons.apps), onPressed: () {  },
-
-                        )
-,
-                      Text("event", style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        fontSize: 18
-                      ),),
-                      IconButton(
-                        icon: Icon(Icons.person_outline), onPressed: () {  },
-                      ),
+                          icon: Icon(Icons.apps),
+                          onPressed: () {},
+                        ),
+                        Text(
+                          "event",
+                          style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                        ),
+                        IconButton(
+                          icon: Icon(Icons.person_outline),
+                          onPressed: () {},
+                        ),
                       ],
                     )
                   ],
@@ -48,10 +48,10 @@ class _EventsMainPageState extends State<EventsMainPage> {
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          Text("NEAREST EVENTS", style: TextStyle(
-                            color: Colors.grey,
-                            fontWeight: FontWeight.bold
-                          ),),
+                          Text(
+                            "NEAREST EVENTS",
+                            style: TextStyle(color: Colors.grey, fontWeight: FontWeight.bold),
+                          ),
                           Text(
                             "MORE",
                             style: TextStyle(
