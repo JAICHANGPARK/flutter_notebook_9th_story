@@ -29,7 +29,9 @@ class _EventsMainPageState extends State<EventsMainPage> {
                         fontWeight: FontWeight.bold,
                         fontSize: 18
                       ),),
-                      IconButton(),
+                      IconButton(
+                        icon: Icon(Icons.person_outline), onPressed: () {  },
+                      ),
                       ],
                     )
                   ],
