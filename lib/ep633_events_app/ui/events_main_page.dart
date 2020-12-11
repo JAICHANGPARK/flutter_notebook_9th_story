@@ -62,6 +62,12 @@ class _EventsMainPageState extends State<EventsMainPage> {
                           color: Colors.white,
                           borderRadius: BorderRadius.circular(12)
                         ),
+                        child: Row(
+                          children: [
+                            Expanded(child: Placeholder()),
+                            Expanded(child: Container()),
+                          ],
+                        )
                       ),
                     )
                   ],
