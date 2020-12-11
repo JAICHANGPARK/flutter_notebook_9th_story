@@ -52,6 +52,12 @@ class _EventsMainPageState extends State<EventsMainPage> {
                         fontSize: 24,
                         fontWeight: FontWeight.bold
                       ),),
+                    ),
+                    Container(
+                      height: 64,
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                      ),
                     )
                   ],
                 ),
