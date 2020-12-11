@@ -62,9 +62,13 @@ class _EventsMainPageState extends State<EventsMainPage> {
                           child: Row(
                             children: [
                               Expanded(
-                                child: TextField(
-                                  decoration: InputDecoration(
-                                    border: InputBorder.none,
+                                child: Padding(
+                                  padding: const EdgeInsets.all(8.0),
+                                  child: TextField(
+                                    decoration: InputDecoration(
+                                      border: InputBorder.none,
+                                      hintText: "Search locarion"
+                                    ),
                                   ),
                                 ),
                                 flex: 12,
