@@ -23,17 +23,23 @@ class _EventsMainPageState extends State<EventsMainPage> {
               child: Column(
                 children: [
                   Expanded(
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Text("NEAREST EVENTS"),
-                        Text(
-                          "MORE",
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
+                    child: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Text("NEAREST EVENTS", style: TextStyle(
+                            color: Colors.grey,
+                            fontWeight: FontWeight.bold
+                          ),),
+                          Text(
+                            "MORE",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                            ),
                           ),
-                        ),
-                      ],
+                        ],
+                      ),
                     ),
                     flex: 2,
                   ),
