@@ -19,6 +19,7 @@ class _EventsMainPageState extends State<EventsMainPage> {
                 child: Column(
                   children: [
                     Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         IconButton(
                           icon: Icon(Icons.apps),
@@ -32,6 +33,7 @@ class _EventsMainPageState extends State<EventsMainPage> {
                           icon: Icon(Icons.person_outline),
                           onPressed: () {},
                         ),
+
                       ],
                     )
                   ],
