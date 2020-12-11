@@ -17,13 +17,13 @@ class _EventsMainPageState extends State<EventsMainPage> {
                 margin: EdgeInsets.all(4),
                 decoration: BoxDecoration(color: Colors.orange[100], borderRadius: BorderRadius.circular(16)),
               ),
-              flex: 2,
+              flex: 3,
             ),
             Expanded(
               child: Column(
                 children: [],
               ),
-              flex: 3,
+              flex: 4,
             ),
           ],
         ),
