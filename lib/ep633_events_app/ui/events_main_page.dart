@@ -21,15 +21,17 @@ class _EventsMainPageState extends State<EventsMainPage> {
             ),
             Expanded(
               child: Column(
-                children: [],
+                children: [
+                  Expanded(child: Placeholder(), flex: 2,),
+                  Expanded(child: Placeholder(), flex: 10,),
+                ],
               ),
               flex: 4,
             ),
           ],
         ),
       ),
-      bottomNavigationBar:
-      BottomAppBar(
+      bottomNavigationBar: BottomAppBar(
         child: Container(
           height: 72,
           padding: EdgeInsets.only(left: 16, bottom: 8, right: 64),
@@ -40,7 +42,8 @@ class _EventsMainPageState extends State<EventsMainPage> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   IconButton(
-                    icon: Icon(Icons.home), onPressed: () {  },
+                    icon: Icon(Icons.home),
+                    onPressed: () {},
                   ),
                   Text("Home"),
                 ],
@@ -49,7 +52,8 @@ class _EventsMainPageState extends State<EventsMainPage> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   IconButton(
-                    icon: Icon(Icons.map), onPressed: () {  },
+                    icon: Icon(Icons.map),
+                    onPressed: () {},
                   ),
                   Text("Map"),
                 ],
@@ -58,7 +62,8 @@ class _EventsMainPageState extends State<EventsMainPage> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   IconButton(
-                    icon: Icon(Icons.chat), onPressed: () {  },
+                    icon: Icon(Icons.chat),
+                    onPressed: () {},
                   ),
                   Text("Chat"),
                 ],
@@ -66,7 +71,6 @@ class _EventsMainPageState extends State<EventsMainPage> {
             ],
           ),
         ),
-
         shape: CircularNotchedRectangle(),
       ),
 
@@ -93,28 +97,10 @@ class _EventsMainPageState extends State<EventsMainPage> {
       //
       // ),
       floatingActionButton: FloatingActionButton(
-        onPressed: () {  },
+        onPressed: () {},
         child: Icon(Icons.add),
-
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.endDocked,
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
