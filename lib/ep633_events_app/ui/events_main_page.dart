@@ -57,6 +57,7 @@ class _EventsMainPageState extends State<EventsMainPage> {
                       height: 64,
                       decoration: BoxDecoration(
                         color: Colors.white,
+                        borderRadius: BorderRadius.circular(12)
                       ),
                     )
                   ],
