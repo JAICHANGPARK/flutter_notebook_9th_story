@@ -37,53 +37,49 @@ class _EventsMainPageState extends State<EventsMainPage> {
                           icon: Icon(Icons.person_outline),
                           onPressed: () {},
                         ),
-
                       ],
                     ),
                     Padding(
                       padding: const EdgeInsets.all(8.0),
-                      child: Text('Hey Dreamwalker👋', style: TextStyle(
-                        color: Colors.grey,
-                        fontSize: 18
-                      ),),
+                      child: Text(
+                        'Hey Dreamwalker👋',
+                        style: TextStyle(color: Colors.grey, fontSize: 18),
+                      ),
                     ),
                     Padding(
                       padding: const EdgeInsets.all(8.0),
-                      child: Text("Find the amazing events\nnear you", style: TextStyle(
-                        fontSize: 24,
-                        fontWeight: FontWeight.bold
-                      ),),
+                      child: Text(
+                        "Find the amazing events\nnear you",
+                        style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+                      ),
                     ),
                     Spacer(),
                     Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: Container(
-                        height: 64,
-                        decoration: BoxDecoration(
-                          color: Colors.white,
-                          borderRadius: BorderRadius.circular(12)
-                        ),
-                        child: Row(
-                          children: [
-                            Expanded(child: TextField(
-                              decoration: InputDecoration(
-                                border: InputBorder.none,
-
+                          height: 64,
+                          decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(12)),
+                          child: Row(
+                            children: [
+                              Expanded(
+                                child: TextField(
+                                  decoration: InputDecoration(
+                                    border: InputBorder.none,
+                                  ),
+                                ),
+                                flex: 12,
                               ),
-                            ),
-                            flex: 10,
-                            ),
-                            Expanded(
-                                flex: 2,
-                                child: Container(
-                              decoration: BoxDecoration(
-                                color: Colors.grey,
-                                borderRadius: BorderRadius.circular(16)
-                              ),
-                            )),
-                          ],
-                        )
-                      ),
+                              Expanded(
+                                  flex: 3,
+                                  child: Padding(
+                                    padding: const EdgeInsets.all(8.0),
+                                    child: Container(
+                                      decoration:
+                                          BoxDecoration(color: Colors.grey, borderRadius: BorderRadius.circular(16)),
+                                    ),
+                                  )),
+                            ],
+                          )),
                     )
                   ],
                 ),
