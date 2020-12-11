@@ -75,7 +75,11 @@ class _EventsMainPageState extends State<EventsMainPage> {
                                     padding: const EdgeInsets.all(8.0),
                                     child: Container(
                                       decoration:
-                                          BoxDecoration(color: Colors.grey, borderRadius: BorderRadius.circular(16)),
+                                          BoxDecoration(color: Colors.grey[200],
+                                              borderRadius: BorderRadius.circular(16)),
+                                      child: Center(
+                                        child: Icon(Icons.search),
+                                      ),
                                     ),
                                   )),
                             ],
