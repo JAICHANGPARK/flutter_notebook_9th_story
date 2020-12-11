@@ -18,7 +18,7 @@ class _EventsMainPageState extends State<EventsMainPage> {
               child: Container(
                 margin: EdgeInsets.all(8),
                 padding: EdgeInsets.all(8),
-                decoration: BoxDecoration(color: Colors.orange[100], borderRadius: BorderRadius.circular(16)),
+                decoration: BoxDecoration(color: Colors.orange[50], borderRadius: BorderRadius.circular(16)),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -65,10 +65,7 @@ class _EventsMainPageState extends State<EventsMainPage> {
                                 child: Padding(
                                   padding: const EdgeInsets.all(8.0),
                                   child: TextField(
-                                    decoration: InputDecoration(
-                                      border: InputBorder.none,
-                                      hintText: "Search locarion"
-                                    ),
+                                    decoration: InputDecoration(border: InputBorder.none, hintText: "Search locarion"),
                                   ),
                                 ),
                                 flex: 12,
@@ -78,9 +75,8 @@ class _EventsMainPageState extends State<EventsMainPage> {
                                   child: Padding(
                                     padding: const EdgeInsets.all(8.0),
                                     child: Container(
-                                      decoration:
-                                          BoxDecoration(color: Colors.grey[200],
-                                              borderRadius: BorderRadius.circular(16)),
+                                      decoration: BoxDecoration(
+                                          color: Colors.grey[200], borderRadius: BorderRadius.circular(16)),
                                       child: Center(
                                         child: Icon(Icons.search),
                                       ),
