@@ -183,11 +183,12 @@ class _EventsMainPageState extends State<EventsMainPage> {
                                     Text("By Dreamwalker", style: TextStyle(
                                         fontSize: 12
                                     ),),
-
+                                    Spacer(),
                                     Text("10.6 km away", style: TextStyle(
                                         fontSize: 14,
                                       fontWeight: FontWeight.bold
                                     ),),
+                                    Spacer(),
                                     MaterialButton(onPressed: () {  },
                                     child: Text("Tickets \$30", style: TextStyle(
                                       color: Colors.white
