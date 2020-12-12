@@ -125,7 +125,13 @@ class _EventsMainPageState extends State<EventsMainPage> {
                           padding: EdgeInsets.all(8),
                           child: Row(
                             children: [
-                              Expanded(child: Placeholder()),
+                              Expanded(child: Container(
+                                child: Stack(
+                                  children: [
+                                    
+                                  ],
+                                ),
+                              )),
                               Expanded(child: Placeholder()),
                             ],
                           ),
