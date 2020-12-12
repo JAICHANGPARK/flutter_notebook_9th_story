@@ -127,7 +127,7 @@ class _EventsMainPageState extends State<EventsMainPage> {
                             children: [
                               Expanded(child: Container(
                                 decoration: BoxDecoration(
-                                  color: Colors.white
+                                  color: Colors.green
                                 ),
                                 child: Stack(
                                   children: [
