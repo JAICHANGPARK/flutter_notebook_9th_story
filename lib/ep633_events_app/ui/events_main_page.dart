@@ -126,10 +126,20 @@ class _EventsMainPageState extends State<EventsMainPage> {
                           child: Row(
                             children: [
                               Expanded(child: Container(
+                                decoration: BoxDecoration(
+                                  color: Colors.white
+                                ),
                                 child: Stack(
                                   children: [
-                                    Positioned(child: Container(
-
+                                    Positioned(
+                                        left: 8,
+                                        top: 8,
+                                        child: Container(
+                                            height: 64,
+                                          width: 48,
+                                          decoration: BoxDecoration(
+                                            color: Colors.white
+                                          ),
                                     )),
                                   ],
                                 ),
