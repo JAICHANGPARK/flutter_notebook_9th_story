@@ -167,22 +167,26 @@ class _EventsMainPageState extends State<EventsMainPage> {
                                 child: Column
                                   (
                                   crossAxisAlignment: CrossAxisAlignment.start,
+
                                   children: [
                                     Text("Black Laughs", style: TextStyle(
-                                        color: Colors.white
+                                        fontSize: 20
                                     ),),
                                     Text("Matter Virtual", style: TextStyle(
-                                        color: Colors.white
+                                        fontSize: 20
                                     ),),
                                     Text("Comedy Show live", style: TextStyle(
-                                        color: Colors.white
+                                        fontSize: 20
                                     ),),
+                                    Spacer(),
 
                                     Text("By Dreamwalker", style: TextStyle(
-                                        color: Colors.white
+                                        fontSize: 12
                                     ),),
+
                                     Text("10.6 km away", style: TextStyle(
-                                        color: Colors.white
+                                        fontSize: 14,
+                                      fontWeight: FontWeight.bold
                                     ),),
                                     MaterialButton(onPressed: () {  },
                                     child: Text("Tickets \$30", style: TextStyle(
