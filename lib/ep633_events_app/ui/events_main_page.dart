@@ -168,12 +168,22 @@ class _EventsMainPageState extends State<EventsMainPage> {
                                   (
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
-                                    Text("Black Laughs"),
-                                    Text("Matter Virtual"),
-                                    Text("Comedy Show live"),
+                                    Text("Black Laughs", style: TextStyle(
+                                        color: Colors.white
+                                    ),),
+                                    Text("Matter Virtual", style: TextStyle(
+                                        color: Colors.white
+                                    ),),
+                                    Text("Comedy Show live", style: TextStyle(
+                                        color: Colors.white
+                                    ),),
 
-                                    Text("By Dreamwalker"),
-                                    Text("10.6 km away"),
+                                    Text("By Dreamwalker", style: TextStyle(
+                                        color: Colors.white
+                                    ),),
+                                    Text("10.6 km away", style: TextStyle(
+                                        color: Colors.white
+                                    ),),
                                     MaterialButton(onPressed: () {  },
                                     child: Text("Tickets \$30", style: TextStyle(
                                       color: Colors.white
