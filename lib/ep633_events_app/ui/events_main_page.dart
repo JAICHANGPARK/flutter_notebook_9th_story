@@ -125,29 +125,29 @@ class _EventsMainPageState extends State<EventsMainPage> {
                           padding: EdgeInsets.all(8),
                           child: Row(
                             children: [
-                              Expanded(child: Container(
+                              Expanded(
+                                  child: Container(
                                 decoration: BoxDecoration(
-                                  color: Colors.green,borderRadius: BorderRadius.circular(9)
-
-                                ),
+                                    color: Colors.green,
+                                    borderRadius: BorderRadius.circular(9),
+                                    image: DecorationImage(
+                                        image: NetworkImage(
+                                            "https://cdn.pixabay.com/photo/2015/09/22/12/21/rudolph-951494_960_720.jpg"),
+                                        fit: BoxFit.cover)),
                                 child: Stack(
                                   children: [
                                     Positioned(
                                         left: 8,
                                         top: 8,
                                         child: Container(
-                                            height: 64,
+                                          height: 64,
                                           width: 58,
                                           decoration: BoxDecoration(
-                                            color: Colors.white,
-                                            borderRadius: BorderRadius.circular(9)
-                                          ),
+                                              color: Colors.white, borderRadius: BorderRadius.circular(9)),
                                           child: Column(
-                                            children: [
-                                              
-                                            ],
+                                            children: [],
                                           ),
-                                    )),
+                                        )),
                                   ],
                                 ),
                               )),
