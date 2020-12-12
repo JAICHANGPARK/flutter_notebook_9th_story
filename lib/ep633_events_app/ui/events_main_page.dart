@@ -124,7 +124,8 @@ class _EventsMainPageState extends State<EventsMainPage> {
                           ),
                           child: Row(
                             children: [
-                                
+                              Expanded(child: Placeholder()),
+                              Expanded(child: Placeholder()),
                             ],
                           ),
                         )
