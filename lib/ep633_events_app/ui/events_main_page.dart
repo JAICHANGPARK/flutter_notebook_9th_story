@@ -128,7 +128,9 @@ class _EventsMainPageState extends State<EventsMainPage> {
                               Expanded(child: Container(
                                 child: Stack(
                                   children: [
-                                    
+                                    Positioned(child: Container(
+
+                                    )),
                                   ],
                                 ),
                               )),
