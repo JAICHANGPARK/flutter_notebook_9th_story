@@ -145,7 +145,14 @@ class _EventsMainPageState extends State<EventsMainPage> {
                                           decoration: BoxDecoration(
                                               color: Colors.white, borderRadius: BorderRadius.circular(9)),
                                           child: Column(
-                                            children: [],
+                                            children: [
+                                              Text("DEX", style: TextStyle(
+                                                fontWeight: FontWeight.bold,
+                                              ),),
+                                              Text("28", style: TextStyle(
+                                                fontWeight: FontWeight.bold,
+                                              ),)
+                                            ],
                                           ),
                                         )),
                                   ],
