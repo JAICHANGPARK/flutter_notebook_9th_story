@@ -119,14 +119,15 @@ class _EventsMainPageState extends State<EventsMainPage> {
                       children: [
                         Container(
                           height: 240,
-                          decoration: BoxDecoration(
-                            color: Colors.grey,
-                          ),
+                          // decoration: BoxDecoration(
+                          //   color: Colors.grey,
+                          // ),
                           padding: EdgeInsets.all(8),
                           child: Row(
                             children: [
                               Expanded(
                                   child: Container(
+                                    margin: EdgeInsets.only(right: 4),
                                 decoration: BoxDecoration(
                                     color: Colors.green,
                                     borderRadius: BorderRadius.circular(9),
@@ -145,12 +146,15 @@ class _EventsMainPageState extends State<EventsMainPage> {
                                           decoration: BoxDecoration(
                                               color: Colors.white, borderRadius: BorderRadius.circular(9)),
                                           child: Column(
+                                            mainAxisAlignment: MainAxisAlignment.center,
                                             children: [
-                                              Text("DEX", style: TextStyle(
+                                              Text("DEC", style: TextStyle(
                                                 fontWeight: FontWeight.bold,
+                                                fontSize: 18
                                               ),),
                                               Text("28", style: TextStyle(
                                                 fontWeight: FontWeight.bold,
+                                                fontSize: 18
                                               ),)
                                             ],
                                           ),
@@ -158,7 +162,16 @@ class _EventsMainPageState extends State<EventsMainPage> {
                                   ],
                                 ),
                               )),
-                              Expanded(child: Placeholder()),
+                              Expanded(child: Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Column(
+                                  children: [
+                                    Text("Black Laughs"),
+                                    Text("Matter Virtual"),
+                                    Text("Comedy Show live"),
+                                  ],
+                                ),
+                              )),
                             ],
                           ),
                         )
