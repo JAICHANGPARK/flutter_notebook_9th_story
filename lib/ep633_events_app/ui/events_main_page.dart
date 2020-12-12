@@ -164,11 +164,23 @@ class _EventsMainPageState extends State<EventsMainPage> {
                               )),
                               Expanded(child: Padding(
                                 padding: const EdgeInsets.all(8.0),
-                                child: Column(
+                                child: Column
+                                  (
+                                  crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Text("Black Laughs"),
                                     Text("Matter Virtual"),
                                     Text("Comedy Show live"),
+
+                                    Text("By Dreamwalker"),
+                                    Text("10.6 km away"),
+                                    MaterialButton(onPressed: () {  },
+                                    child: Text("Tickets \$30", style: TextStyle(
+                                      color: Colors.white
+                                    ),),
+
+                                    color: Colors.deepOrange,
+                                    padding: EdgeInsets.symmetric(horizontal: 24, vertical: 8),)
                                   ],
                                 ),
                               )),
