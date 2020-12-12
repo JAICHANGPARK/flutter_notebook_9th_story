@@ -118,10 +118,11 @@ class _EventsMainPageState extends State<EventsMainPage> {
                     child: ListView(
                       children: [
                         Container(
-                          height: 200,
+                          height: 240,
                           decoration: BoxDecoration(
                             color: Colors.grey,
                           ),
+                          padding: EdgeInsets.all(8),
                           child: Row(
                             children: [
                               Expanded(child: Placeholder()),
