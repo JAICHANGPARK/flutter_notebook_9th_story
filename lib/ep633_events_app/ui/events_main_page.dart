@@ -117,7 +117,13 @@ class _EventsMainPageState extends State<EventsMainPage> {
                   Expanded(
                     child: ListView(
                       children: [
-                        
+                        Container(
+                          child: Row(
+                            children: [
+
+                            ],
+                          ),
+                        )
                       ],
                     ),
                     flex: 10,
