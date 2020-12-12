@@ -118,9 +118,7 @@ class _EventsMainPageState extends State<EventsMainPage> {
                   ),
                   Expanded(
                     child: ListView(
-                      children: [
-                          EventCardItem()
-                      ],
+                      children: [EventCardItem(), EventCardItem()],
                     ),
                     flex: 10,
                   ),
