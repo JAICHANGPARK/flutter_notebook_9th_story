@@ -136,9 +136,14 @@ class _EventsMainPageState extends State<EventsMainPage> {
                                         top: 8,
                                         child: Container(
                                             height: 64,
-                                          width: 48,
+                                          width: 58,
                                           decoration: BoxDecoration(
-                                            color: Colors.white
+                                            color: Colors.white,
+                                          ),
+                                          child: Column(
+                                            children: [
+                                              
+                                            ],
                                           ),
                                     )),
                                   ],
