@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_notebook_9th_story/ep633_events_app/events_app.dart';
+import 'ep636_online_course_app/online_course_app.dart';
 
 main() {
-  runApp(EventsApp());
+  runApp(OnlineCourseApp());
 }
