@@ -8,6 +8,16 @@ class OnlineCourseMainPage extends StatefulWidget {
 class _OnlineCourseMainPageState extends State<OnlineCourseMainPage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      backgroundColor: Colors.black,
+      bottomNavigationBar: BottomNavigationBar(items: [
+        BottomNavigationBarItem(
+          icon: Icon(Icons.home_outlined),
+          label: "Home"
+        )
+      ],
+
+      ),
+    );
   }
 }
