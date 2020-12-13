@@ -21,6 +21,27 @@ class _OnlineCourseMainPageState extends State<OnlineCourseMainPage> {
                 color: Colors.white
               ),),
             ),
+          ),
+          Container(
+            child: Center(
+              child: Text("page 2",style: TextStyle(
+                  color: Colors.white
+              ),),
+            ),
+          ),
+          Container(
+            child: Center(
+              child: Text("page 3",style: TextStyle(
+                  color: Colors.white
+              ),),
+            ),
+          ),
+          Container(
+            child: Center(
+              child: Text("page 4",style: TextStyle(
+                  color: Colors.white
+              ),),
+            ),
           )
         ],
       ),
