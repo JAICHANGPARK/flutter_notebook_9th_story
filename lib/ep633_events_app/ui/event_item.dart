@@ -71,7 +71,7 @@ class _EventCardItemState extends State<EventCardItem> {
                 ),
                 Spacer(),
                 Text(
-                  "By Dreamwalker",
+                  "By Dream walker",
                   style: TextStyle(fontSize: 12),
                 ),
                 Spacer(),
