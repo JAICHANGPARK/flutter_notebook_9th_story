@@ -13,6 +13,8 @@ class _OnlineCourseMainPageState extends State<OnlineCourseMainPage> {
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
         backgroundColor: Colors.black,
+        selectedItemColor: Colors.white,
+        unselectedItemColor: Colors.grey,
         items: [
         BottomNavigationBarItem(
           icon: Icon(Icons.home_outlined),
