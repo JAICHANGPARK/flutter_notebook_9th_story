@@ -6,6 +6,8 @@ class OnlineCourseMainPage extends StatefulWidget {
 }
 
 class _OnlineCourseMainPageState extends State<OnlineCourseMainPage> {
+  num _pageIdx = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
