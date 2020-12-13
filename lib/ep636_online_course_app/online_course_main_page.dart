@@ -1,3 +1,5 @@
+import 'package:flutter/material.dart';
+
 class OnlineCourseMainPage extends StatefulWidget {
   @override
   _OnlineCourseMainPageState createState() => _OnlineCourseMainPageState();
