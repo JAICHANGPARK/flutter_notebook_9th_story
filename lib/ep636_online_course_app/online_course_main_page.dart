@@ -10,10 +10,24 @@ class _OnlineCourseMainPageState extends State<OnlineCourseMainPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.black,
-      bottomNavigationBar: BottomNavigationBar(items: [
+      bottomNavigationBar: BottomNavigationBar(
+        type: BottomNavigationBarType.fixed,
+        backgroundColor: Colors.black,
+        items: [
         BottomNavigationBarItem(
           icon: Icon(Icons.home_outlined),
           label: "Home"
+        ),
+        BottomNavigationBarItem(
+            icon: Icon(Icons.home_outlined),
+            label: "Home"
+        ),
+        BottomNavigationBarItem(
+            icon: Icon(Icons.home_outlined),
+            label: "Home"
+        ),BottomNavigationBarItem(
+            icon: Icon(Icons.home_outlined),
+            label: "Home"
         )
       ],
 
