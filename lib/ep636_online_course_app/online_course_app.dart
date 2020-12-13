@@ -6,9 +6,10 @@ class OnlineCourseApp extends StatelessWidget {
     return MaterialApp(
       routes: {
         "/" : (context) {
-          return OnlineCourseMainPage()
+          return OnlineCourseMainPage();
         }
       },
+      initialRoute: '/',
     );
   }
 }
