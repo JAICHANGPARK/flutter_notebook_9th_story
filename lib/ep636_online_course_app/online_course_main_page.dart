@@ -21,15 +21,15 @@ class _OnlineCourseMainPageState extends State<OnlineCourseMainPage> {
           label: "Home"
         ),
         BottomNavigationBarItem(
-            icon: Icon(Icons.home_outlined),
-            label: "Home"
+            icon: Icon(Icons.library_books_sharp),
+            label: "Library"
         ),
         BottomNavigationBarItem(
-            icon: Icon(Icons.home_outlined),
-            label: "Home"
+            icon: Icon(Icons.search),
+            label: "Search"
         ),BottomNavigationBarItem(
-            icon: Icon(Icons.home_outlined),
-            label: "Home"
+            icon: Icon(Icons.account_box_outlined),
+            label: "Account"
         )
       ],
 
