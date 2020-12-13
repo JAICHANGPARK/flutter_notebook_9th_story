@@ -13,6 +13,12 @@ class _OnlineCourseMainPageState extends State<OnlineCourseMainPage> {
     return Scaffold(
       backgroundColor: Colors.black,
       bottomNavigationBar: BottomNavigationBar(
+        currentIndex: _pageIdx,
+        onTap: (newIndex){
+          setState(() {
+            _pageIdx = newIndex;
+          });
+        },
         type: BottomNavigationBarType.fixed,
         backgroundColor: Colors.black,
         selectedItemColor: Colors.white,
