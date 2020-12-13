@@ -6,11 +6,24 @@ class OnlineCourseMainPage extends StatefulWidget {
 }
 
 class _OnlineCourseMainPageState extends State<OnlineCourseMainPage> {
+
   num _pageIdx = 0;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      body: IndexedStack(
+        index: _pageIdx,
+        children: [
+          Container(
+            child: Center(
+              child: Text("page 1",style: TextStyle(
+                color: Colors.white
+              ),),
+            ),
+          )
+        ],
+      ),
       backgroundColor: Colors.black,
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _pageIdx,
