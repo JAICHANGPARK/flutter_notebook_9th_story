@@ -12,10 +12,25 @@ class _CourseHomePageState extends State<CourseHomePage> {
     return ListView(
       children: [
         Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text("Class Previews", style: TextStyle(
               color: Colors.white
-            ),)
+            ),),
+            ListView(
+              scrollDirection: Axis.horizontal,
+              children: [
+                Column(
+                  children: [
+                    Container(
+                      height: 160,
+                      width: 240,
+                      decoration: BoxDecoration(),
+                    )
+                  ],
+                )
+              ],
+            )
           ],
         )
       ],
