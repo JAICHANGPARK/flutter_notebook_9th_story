@@ -9,6 +9,14 @@ class CourseHomePage extends StatefulWidget {
 class _CourseHomePageState extends State<CourseHomePage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return ListView(
+      children: [
+        Column(
+          children: [
+            Text("")
+          ],
+        )
+      ],
+    );
   }
 }
