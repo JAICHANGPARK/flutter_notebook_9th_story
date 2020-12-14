@@ -24,7 +24,7 @@ class _CourseHomePageState extends State<CourseHomePage> {
                 padding: const EdgeInsets.symmetric(vertical: 16),
                 child: Container(
                   height: 220,
-                  
+
                   child: ListView(
                     scrollDirection: Axis.horizontal,
                     children: [
@@ -42,7 +42,13 @@ class _CourseHomePageState extends State<CourseHomePage> {
                           Text("Dream Walker", style: TextStyle(
                             color: Colors.white
                           ),),
-                          Divider(),
+                          Container(
+                            height: 3,
+                            width: 80,
+                            decoration: BoxDecoration(
+                              color: Colors.grey
+                            )
+                          ),
                           Text("Flutter Live Coding", style: TextStyle(
                             color: Colors.grey
                           ),)
