@@ -14,14 +14,7 @@ class _OnlineCourseMainPageState extends State<OnlineCourseMainPage> {
       body: IndexedStack(
         index: _pageIdx,
         children: [
-          Container(
-            child: Center(
-              child: Text(
-                "page 1",
-                style: TextStyle(color: Colors.white),
-              ),
-            ),
-          ),
+          CourseHomePage(),
           Container(
             child: Center(
               child: Text(
