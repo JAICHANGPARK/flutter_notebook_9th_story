@@ -25,8 +25,15 @@ class _CourseHomePageState extends State<CourseHomePage> {
                     Container(
                       height: 160,
                       width: 240,
-                      decoration: BoxDecoration(),
-                    )
+                      decoration: BoxDecoration(
+                        color: Colors.redAccent,
+                      ),
+                    ),
+                    Text("Dream Walker"),
+                    Divider(),
+                    Text("Flutter Live Coding", style: TextStyle(
+                      color: Colors.grey
+                    ),)
                   ],
                 )
               ],
