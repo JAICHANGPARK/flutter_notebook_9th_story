@@ -7,7 +7,7 @@ class OnlineCourseApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       routes: {
-        "/" : (context) {
+        "/": (context) {
           return OnlineCourseMainPage();
         }
       },
