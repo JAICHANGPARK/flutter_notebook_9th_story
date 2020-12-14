@@ -24,7 +24,7 @@ class _CourseHomePageState extends State<CourseHomePage> {
                 padding: const EdgeInsets.symmetric(vertical: 16),
                 child: Container(
                   height: 220,
-                  color: Colors.blueAccent,
+                  
                   child: ListView(
                     scrollDirection: Axis.horizontal,
                     children: [
