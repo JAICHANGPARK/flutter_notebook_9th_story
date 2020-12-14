@@ -21,6 +21,8 @@ class _CourseHomePageState extends State<CourseHomePage> {
               scrollDirection: Axis.horizontal,
               children: [
                 Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisSize: MainAxisSize.min,
                   children: [
                     Container(
                       height: 160,
@@ -29,7 +31,9 @@ class _CourseHomePageState extends State<CourseHomePage> {
                         color: Colors.redAccent,
                       ),
                     ),
-                    Text("Dream Walker"),
+                    Text("Dream Walker", style: TextStyle(
+                      color: Colors.white
+                    ),),
                     Divider(),
                     Text("Flutter Live Coding", style: TextStyle(
                       color: Colors.grey
