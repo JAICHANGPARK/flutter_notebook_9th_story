@@ -6,7 +6,6 @@ class OnlineCourseMainPage extends StatefulWidget {
 }
 
 class _OnlineCourseMainPageState extends State<OnlineCourseMainPage> {
-
   num _pageIdx = 0;
 
   @override
@@ -17,30 +16,34 @@ class _OnlineCourseMainPageState extends State<OnlineCourseMainPage> {
         children: [
           Container(
             child: Center(
-              child: Text("page 1",style: TextStyle(
-                color: Colors.white
-              ),),
+              child: Text(
+                "page 1",
+                style: TextStyle(color: Colors.white),
+              ),
             ),
           ),
           Container(
             child: Center(
-              child: Text("page 2",style: TextStyle(
-                  color: Colors.white
-              ),),
+              child: Text(
+                "page 2",
+                style: TextStyle(color: Colors.white),
+              ),
             ),
           ),
           Container(
             child: Center(
-              child: Text("page 3",style: TextStyle(
-                  color: Colors.white
-              ),),
+              child: Text(
+                "page 3",
+                style: TextStyle(color: Colors.white),
+              ),
             ),
           ),
           Container(
             child: Center(
-              child: Text("page 4",style: TextStyle(
-                  color: Colors.white
-              ),),
+              child: Text(
+                "page 4",
+                style: TextStyle(color: Colors.white),
+              ),
             ),
           )
         ],
@@ -48,7 +51,7 @@ class _OnlineCourseMainPageState extends State<OnlineCourseMainPage> {
       backgroundColor: Colors.black,
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _pageIdx,
-        onTap: (newIndex){
+        onTap: (newIndex) {
           setState(() {
             _pageIdx = newIndex;
           });
@@ -58,23 +61,11 @@ class _OnlineCourseMainPageState extends State<OnlineCourseMainPage> {
         selectedItemColor: Colors.white,
         unselectedItemColor: Colors.grey,
         items: [
-        BottomNavigationBarItem(
-          icon: Icon(Icons.home_outlined),
-          label: "Home"
-        ),
-        BottomNavigationBarItem(
-            icon: Icon(Icons.library_books_sharp),
-            label: "Library"
-        ),
-        BottomNavigationBarItem(
-            icon: Icon(Icons.search),
-            label: "Search"
-        ),BottomNavigationBarItem(
-            icon: Icon(Icons.account_box_outlined),
-            label: "Account"
-        )
-      ],
-
+          BottomNavigationBarItem(icon: Icon(Icons.home_outlined), label: "Home"),
+          BottomNavigationBarItem(icon: Icon(Icons.library_books_sharp), label: "Library"),
+          BottomNavigationBarItem(icon: Icon(Icons.search), label: "Search"),
+          BottomNavigationBarItem(icon: Icon(Icons.account_box_outlined), label: "Account")
+        ],
       ),
     );
   }
