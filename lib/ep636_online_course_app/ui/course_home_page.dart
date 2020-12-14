@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 class CourseHomePage extends StatefulWidget {
@@ -16,15 +15,14 @@ class _CourseHomePageState extends State<CourseHomePage> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text("Class Previews", style: TextStyle(
-                color: Colors.white
-              ),),
-
+              Text(
+                "Class Previews",
+                style: TextStyle(color: Colors.white),
+              ),
               Padding(
                 padding: const EdgeInsets.symmetric(vertical: 16),
                 child: Container(
-                  height: 220,
-
+                  height: 230,
                   child: ListView(
                     scrollDirection: Axis.horizontal,
                     children: [
@@ -39,23 +37,21 @@ class _CourseHomePageState extends State<CourseHomePage> {
                               color: Colors.redAccent,
                             ),
                           ),
-                          SizedBox(height: 8,),
-                          Text("Dream Walker", style: TextStyle(
-                            color: Colors.white
-                          ),),
+                          SizedBox(
+                            height: 16,
+                          ),
+                          Text(
+                            "Dream Walker",
+                            style: TextStyle(color: Colors.white),
+                          ),
                           Padding(
                             padding: const EdgeInsets.symmetric(vertical: 8),
-                            child: Container(
-                              height: 1,
-                              width: 100,
-                              decoration: BoxDecoration(
-                                color: Colors.grey
-                              )
-                            ),
+                            child: Container(height: 1, width: 100, decoration: BoxDecoration(color: Colors.grey)),
                           ),
-                          Text("Flutter Live Coding", style: TextStyle(
-                            color: Colors.grey
-                          ),)
+                          Text(
+                            "Flutter Live Coding",
+                            style: TextStyle(color: Colors.grey),
+                          )
                         ],
                       )
                     ],
