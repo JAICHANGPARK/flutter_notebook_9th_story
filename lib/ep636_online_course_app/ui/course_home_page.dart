@@ -13,7 +13,9 @@ class _CourseHomePageState extends State<CourseHomePage> {
       children: [
         Column(
           children: [
-            Text("")
+            Text("Class Previews", style: TextStyle(
+              color: Colors.white
+            ),)
           ],
         )
       ],
