@@ -39,15 +39,19 @@ class _CourseHomePageState extends State<CourseHomePage> {
                               color: Colors.redAccent,
                             ),
                           ),
+                          SizedBox(height: 8,),
                           Text("Dream Walker", style: TextStyle(
                             color: Colors.white
                           ),),
-                          Container(
-                            height: 3,
-                            width: 80,
-                            decoration: BoxDecoration(
-                              color: Colors.grey
-                            )
+                          Padding(
+                            padding: const EdgeInsets.symmetric(vertical: 8),
+                            child: Container(
+                              height: 1,
+                              width: 100,
+                              decoration: BoxDecoration(
+                                color: Colors.grey
+                              )
+                            ),
                           ),
                           Text("Flutter Live Coding", style: TextStyle(
                             color: Colors.grey
