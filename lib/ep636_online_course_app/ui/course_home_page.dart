@@ -37,7 +37,14 @@ class _CourseHomePageState extends State<CourseHomePage> {
                             width: 240,
                             decoration: BoxDecoration(
                               color: Colors.redAccent,
-                              borderRadius: BorderRadius.circular(8)
+                              borderRadius: BorderRadius.circular(8),
+                              image: DecorationImage(
+                                image: NetworkImage(
+                                  "https://cdn.pixabay.com/photo/2015/01/08/18/24/children-593313_960_720.jpg",
+
+                                ),
+                                fit: BoxFit.cover
+                              )
                             ),
                           ),
                           SizedBox(
