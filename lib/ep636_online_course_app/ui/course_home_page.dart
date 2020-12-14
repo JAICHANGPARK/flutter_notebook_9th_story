@@ -17,7 +17,9 @@ class _CourseHomePageState extends State<CourseHomePage> {
             children: [
               Text(
                 "Class Previews",
-                style: TextStyle(color: Colors.white),
+                style: TextStyle(color: Colors.white,
+                fontSize: 18,
+                fontWeight: FontWeight.bold),
               ),
               Padding(
                 padding: const EdgeInsets.symmetric(vertical: 16),
