@@ -113,7 +113,7 @@ class _CourseHomePageState extends State<CourseHomePage> {
                         padding: const EdgeInsets.only(right: 24),
                         child: Container(
                           height: 120,
-                          color: Colors.white,
+                          
                           child: Row(
                             children: [
                               Expanded(
