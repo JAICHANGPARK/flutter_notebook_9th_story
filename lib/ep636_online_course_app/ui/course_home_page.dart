@@ -121,11 +121,25 @@ class _CourseHomePageState extends State<CourseHomePage> {
                                   child: Padding(
                                     padding: const EdgeInsets.all(8.0),
                                     child: Container(
-                                      decoration:
-                                          BoxDecoration(color: Colors.grey, borderRadius: BorderRadius.circular(8)),
+                                      decoration: BoxDecoration(
+                                        color: Colors.grey,
+                                        borderRadius: BorderRadius.circular(8),
+                                        image: DecorationImage(
+                                            image: NetworkImage(
+                                              "https://cdn.pixabay.com/photo/2015/01/08/18/24/children-593313_960_720.jpg",
+                                            ),
+                                            fit: BoxFit.cover),
+                                      ),
                                     ),
                                   )),
-                              Expanded(flex: 7, child: Placeholder()),
+                              Expanded(flex: 7, child: Column(
+                                children: [
+                                  Text("Dreamwalker", style: TextStyle(
+                                    color: Colors.white
+                                  ),),
+                                  Text("Flutter Live Coding in YouTube")
+                                ],
+                              )),
                             ],
                           ),
                         ),
