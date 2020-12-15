@@ -104,7 +104,7 @@ class _CourseHomePageState extends State<CourseHomePage> {
                 style: TextStyle(color: Colors.white, fontSize: 20),
               ),
               Padding(
-                padding: const EdgeInsets.all(8.0),
+                padding: const EdgeInsets.only(top: 16),
                 child: ListView.separated(
                     shrinkWrap: true,
                     itemBuilder: (context, index) {
@@ -113,6 +113,12 @@ class _CourseHomePageState extends State<CourseHomePage> {
                         child: Container(
                           height: 120,
                           color: Colors.white,
+                          child: Row(
+                            children: [
+                              Expanded(child: Placeholder()),
+                              Expanded(child: Placeholder()),
+                            ],
+                          ),
                         ),
                       );
                     },
