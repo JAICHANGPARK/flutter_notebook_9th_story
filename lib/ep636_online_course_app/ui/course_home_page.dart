@@ -105,12 +105,24 @@ class _CourseHomePageState extends State<CourseHomePage> {
               ),
               ListView.separated(
                   shrinkWrap: true,
-                  itemBuilder: (context, index){
-                return Container(height: 120,
-                color: Colors.white,);
-              }, separatorBuilder: (context, index){
-                return Divider(color: Colors.grey,);
-              }, itemCount: 10)
+                  itemBuilder: (context, index) {
+                    return Padding(
+                      padding: const EdgeInsets.only(right: 24),
+                      child: Container(
+                        height: 120,
+                        color: Colors.white,
+                      ),
+                    );
+                  },
+                  separatorBuilder: (context, index) {
+                    return Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Divider(
+                        color: Colors.grey,
+                      ),
+                    );
+                  },
+                  itemCount: 10)
             ],
           ),
         )
