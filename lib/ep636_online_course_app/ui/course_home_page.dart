@@ -116,7 +116,11 @@ class _CourseHomePageState extends State<CourseHomePage> {
                           child: Row(
                             children: [
                               Expanded(
-                                  flex: 5,child: Placeholder()),
+                                  flex: 5,child: Container(
+                                decoration: BoxDecoration(
+                                  color: Colors.grey
+                                ),
+                              )),
                               Expanded(
                                   flex: 7,child: Placeholder()),
                             ],
