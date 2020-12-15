@@ -137,7 +137,14 @@ class _CourseHomePageState extends State<CourseHomePage> {
                                   Text("Dreamwalker", style: TextStyle(
                                     color: Colors.white
                                   ),),
-                                  Text("Flutter Live Coding in YouTube")
+
+                                  Padding(
+                                    padding: const EdgeInsets.symmetric(vertical: 24),
+                                    child: Text("Flutter Live Coding in YouTube",
+                                    style: TextStyle(
+                                      color: Colors.grey
+                                    ),),
+                                  )
                                 ],
                               )),
                             ],
