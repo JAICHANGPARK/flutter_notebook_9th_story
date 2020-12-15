@@ -148,7 +148,8 @@ class _CourseHomePageState extends State<CourseHomePage> {
                                       padding: const EdgeInsets.symmetric(vertical: 24),
                                       child: Text("Flutter Live Coding in YouTube",
                                       style: TextStyle(
-                                        color: Colors.grey
+                                        color: Colors.grey,
+                                        fontSize: 12
                                       ),),
                                     )
                                   ],
