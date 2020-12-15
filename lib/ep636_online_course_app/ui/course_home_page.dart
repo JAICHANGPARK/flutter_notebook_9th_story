@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class CourseHomePage extends StatefulWidget {
@@ -113,7 +114,7 @@ class _CourseHomePageState extends State<CourseHomePage> {
                         padding: const EdgeInsets.only(right: 24),
                         child: Container(
                           height: 120,
-                          
+
                           child: Row(
                             children: [
                               Expanded(
@@ -133,6 +134,8 @@ class _CourseHomePageState extends State<CourseHomePage> {
                                     ),
                                   )),
                               Expanded(flex: 7, child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   Text("Dreamwalker", style: TextStyle(
                                     color: Colors.white
