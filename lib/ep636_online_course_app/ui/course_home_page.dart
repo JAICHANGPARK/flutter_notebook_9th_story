@@ -103,7 +103,9 @@ class _CourseHomePageState extends State<CourseHomePage> {
                 "Popular Classes",
                 style: TextStyle(color: Colors.white, fontSize: 20),
               ),
-              ListView.separated(itemBuilder: (context, index){}, separatorBuilder: (context, index), itemCount: 10)
+              ListView.separated(itemBuilder: (context, index){}, separatorBuilder: (context, index){
+                return Divider(color: Colors.grey,);
+              }, itemCount: 10)
             ],
           ),
         )
