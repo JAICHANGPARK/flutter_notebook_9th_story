@@ -69,13 +69,14 @@ class _CourseHomePageState extends State<CourseHomePage> {
                               height: 160,
                               width: 240,
                               decoration: BoxDecoration(
-                                  color: Colors.redAccent,
-                                  borderRadius: BorderRadius.circular(8),
-                                  image: DecorationImage(
-                                      image: NetworkImage(
-                                        "https://cdn.pixabay.com/photo/2015/01/08/18/24/children-593313_960_720.jpg",
-                                      ),
-                                      fit: BoxFit.cover)),
+                                color: Colors.redAccent,
+                                borderRadius: BorderRadius.circular(8),
+                                image: DecorationImage(
+                                    image: NetworkImage(
+                                      "https://cdn.pixabay.com/photo/2015/01/08/18/24/children-593313_960_720.jpg",
+                                    ),
+                                    fit: BoxFit.cover),
+                              ),
                             ),
                             SizedBox(
                               height: 16,
@@ -116,13 +117,15 @@ class _CourseHomePageState extends State<CourseHomePage> {
                           child: Row(
                             children: [
                               Expanded(
-                                  flex: 5,child: Container(
-                                decoration: BoxDecoration(
-                                  color: Colors.grey
-                                ),
-                              )),
-                              Expanded(
-                                  flex: 7,child: Placeholder()),
+                                  flex: 5,
+                                  child: Padding(
+                                    padding: const EdgeInsets.all(8.0),
+                                    child: Container(
+                                      decoration:
+                                          BoxDecoration(color: Colors.grey, borderRadius: BorderRadius.circular(8)),
+                                    ),
+                                  )),
+                              Expanded(flex: 7, child: Placeholder()),
                             ],
                           ),
                         ),
