@@ -103,26 +103,29 @@ class _CourseHomePageState extends State<CourseHomePage> {
                 "Popular Classes",
                 style: TextStyle(color: Colors.white, fontSize: 20),
               ),
-              ListView.separated(
-                  shrinkWrap: true,
-                  itemBuilder: (context, index) {
-                    return Padding(
-                      padding: const EdgeInsets.only(right: 24),
-                      child: Container(
-                        height: 120,
-                        color: Colors.white,
-                      ),
-                    );
-                  },
-                  separatorBuilder: (context, index) {
-                    return Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: Divider(
-                        color: Colors.grey,
-                      ),
-                    );
-                  },
-                  itemCount: 10)
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: ListView.separated(
+                    shrinkWrap: true,
+                    itemBuilder: (context, index) {
+                      return Padding(
+                        padding: const EdgeInsets.only(right: 24),
+                        child: Container(
+                          height: 120,
+                          color: Colors.white,
+                        ),
+                      );
+                    },
+                    separatorBuilder: (context, index) {
+                      return Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 16),
+                        child: Divider(
+                          color: Colors.grey,
+                        ),
+                      );
+                    },
+                    itemCount: 10),
+              )
             ],
           ),
         )
