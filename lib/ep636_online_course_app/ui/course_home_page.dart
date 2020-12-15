@@ -133,22 +133,26 @@ class _CourseHomePageState extends State<CourseHomePage> {
                                       ),
                                     ),
                                   )),
-                              Expanded(flex: 7, child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                children: [
-                                  Text("Dreamwalker", style: TextStyle(
-                                    color: Colors.white
-                                  ),),
-
-                                  Padding(
-                                    padding: const EdgeInsets.symmetric(vertical: 24),
-                                    child: Text("Flutter Live Coding in YouTube",
-                                    style: TextStyle(
-                                      color: Colors.grey
+                              Expanded(flex: 7, child: Padding(
+                                padding: const EdgeInsets.all(12.0),
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    Text("Dreamwalker", style: TextStyle(
+                                      color: Colors.white,
+                                      fontWeight: FontWeight.bold
                                     ),),
-                                  )
-                                ],
+
+                                    Padding(
+                                      padding: const EdgeInsets.symmetric(vertical: 24),
+                                      child: Text("Flutter Live Coding in YouTube",
+                                      style: TextStyle(
+                                        color: Colors.grey
+                                      ),),
+                                    )
+                                  ],
+                                ),
                               )),
                             ],
                           ),
