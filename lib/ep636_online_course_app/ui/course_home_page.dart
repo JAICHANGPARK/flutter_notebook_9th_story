@@ -98,7 +98,8 @@ class _CourseHomePageState extends State<CourseHomePage> {
                     ],
                   ),
                 ),
-              )
+              ),
+              Text("Popular Classes")
             ],
           ),
         )
