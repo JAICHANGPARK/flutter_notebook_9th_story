@@ -99,9 +99,10 @@ class _CourseHomePageState extends State<CourseHomePage> {
                   ),
                 ),
               ),
-              Text("Popular Classes", style: TextStyle(
-                color: Colors.white
-              ),)
+              Text(
+                "Popular Classes",
+                style: TextStyle(color: Colors.white, fontSize: 20),
+              )
             ],
           ),
         )
