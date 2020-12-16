@@ -6,9 +6,13 @@ class FashionStartPage extends StatefulWidget {
 }
 
 class _FashionStartPageState extends State<FashionStartPage> {
+
+  GlobalKey<ScaffoldState> _drawerKey = GlobalKey();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      key: _drawerKey,
       appBar: AppBar(
         backgroundColor: Colors.white,
         elevation: 0,
@@ -28,11 +32,16 @@ class _FashionStartPageState extends State<FashionStartPage> {
           IconButton(icon: Icon(Icons.search ), onPressed: (){}),
           IconButton(icon: Icon(Icons.account_circle_outlined ), onPressed: (){}),
           IconButton(icon: Icon(Icons.menu ), onPressed: (){
-            Scaffold.of(context).openDrawer();
+            _drawerKey.currentState.openDrawer();
           }),
         ],
       ),
       drawer: Drawer(),
+      body: Stack(
+        children: [
+          Positioned(child: Placeholder()),
+        ],
+      ),
     );
   }
 }
