@@ -11,13 +11,20 @@ class _FashionStartPageState extends State<FashionStartPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        
+        backgroundColor: Colors.white,
+        elevation: 0,
+        iconTheme: IconThemeData(
+            color: Colors.black
+        ),
         leading: Row(
           children: [
             Icon(Icons.keyboard_arrow_down_rounded),
-            Text("ENG")
+            Text("ENG", style: TextStyle(
+              color: Colors.black,
+            ),)
           ],
-      )
+      ),
+
       ),
     );
   }
