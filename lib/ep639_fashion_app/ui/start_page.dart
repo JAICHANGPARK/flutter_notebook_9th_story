@@ -11,7 +11,13 @@ class _FashionStartPageState extends State<FashionStartPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-
+        
+        leading: Row(
+          children: [
+            Icon(Icons.keyboard_arrow_down_rounded),
+            Text("ENG")
+          ],
+      )
       ),
     );
   }
