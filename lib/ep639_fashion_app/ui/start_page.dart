@@ -9,6 +9,10 @@ class FashionStartPage extends StatefulWidget {
 class _FashionStartPageState extends State<FashionStartPage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      appBar: AppBar(
+
+      ),
+    );
   }
 }
