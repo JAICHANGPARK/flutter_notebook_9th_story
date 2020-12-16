@@ -114,7 +114,6 @@ class _CourseHomePageState extends State<CourseHomePage> {
                         padding: const EdgeInsets.only(right: 24),
                         child: Container(
                           height: 120,
-
                           child: Row(
                             children: [
                               Expanded(
@@ -133,28 +132,28 @@ class _CourseHomePageState extends State<CourseHomePage> {
                                       ),
                                     ),
                                   )),
-                              Expanded(flex: 7, child: Padding(
-                                padding: const EdgeInsets.all(12.0),
-                                child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: [
-                                    Text("Dreamwalker", style: TextStyle(
-                                      color: Colors.white,
-                                      fontWeight: FontWeight.bold
-                                    ),),
-
-                                    Padding(
-                                      padding: const EdgeInsets.symmetric(vertical: 24),
-                                      child: Text("Flutter Live Coding in YouTube",
-                                      style: TextStyle(
-                                        color: Colors.grey,
-                                        fontSize: 12
-                                      ),),
-                                    )
-                                  ],
-                                ),
-                              )),
+                              Expanded(
+                                  flex: 7,
+                                  child: Padding(
+                                    padding: const EdgeInsets.all(12.0),
+                                    child: Column(
+                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      mainAxisAlignment: MainAxisAlignment.center,
+                                      children: [
+                                        Text(
+                                          "Dreamwalker",
+                                          style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+                                        ),
+                                        Padding(
+                                          padding: const EdgeInsets.symmetric(vertical: 24),
+                                          child: Text(
+                                            "Flutter Live Coding in YouTube",
+                                            style: TextStyle(color: Colors.grey, fontSize: 12),
+                                          ),
+                                        )
+                                      ],
+                                    ),
+                                  )),
                             ],
                           ),
                         ),
