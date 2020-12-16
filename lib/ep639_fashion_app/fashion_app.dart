@@ -4,6 +4,8 @@ import 'package:flutter/material.dart';
 class FashionApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return MaterialApp(
+      home: FashionStartPage(),
+    );
   }
 }
