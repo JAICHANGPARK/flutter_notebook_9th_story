@@ -24,7 +24,32 @@ class _FashionStartPageState extends State<FashionStartPage> {
             )
           ],
         ),
+        actions: [
+          IconButton(icon: Icon(Icons.search ), onPressed: (){}),
+          IconButton(icon: Icon(Icons.account_circle_outlined ), onPressed: (){}),
+          IconButton(icon: Icon(Icons.menu ), onPressed: (){
+            Scaffold.of(context).openDrawer();
+          }),
+        ],
       ),
+      drawer: Drawer(),
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
