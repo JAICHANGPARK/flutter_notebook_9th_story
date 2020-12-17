@@ -62,19 +62,16 @@ class _FashionStartPageState extends State<FashionStartPage> {
                   padding: const EdgeInsets.symmetric(vertical: 16),
                   child: Text(
                     "NEW COLORS FOR DREAM PRODUCTS",
-                    style: TextStyle(color: Colors.white,
-                    fontSize: 16),
+                    style: TextStyle(color: Colors.white, fontSize: 16),
                   ),
                 ),
                 Text(
                   "SS21",
-                  style: TextStyle(color: Colors.white, fontSize: 32,
-                  fontWeight: FontWeight.bold),
+                  style: TextStyle(color: Colors.white, fontSize: 32, fontWeight: FontWeight.bold),
                 ),
                 Text(
                   "COLLECTION",
-                  style: TextStyle(color: Colors.white, fontSize: 32,
-                      fontWeight: FontWeight.bold),
+                  style: TextStyle(color: Colors.white, fontSize: 32, fontWeight: FontWeight.bold),
                 ),
                 Padding(
                   padding: const EdgeInsets.symmetric(vertical: 16),
@@ -88,22 +85,30 @@ class _FashionStartPageState extends State<FashionStartPage> {
                           color: Colors.blueAccent,
                         ),
                         child: Center(
-                          child: Icon(Icons.arrow_forward, color: Colors.white,),
+                          child: Icon(
+                            Icons.arrow_forward,
+                            color: Colors.white,
+                          ),
                         ),
                       ),
-                      SizedBox(width: 24,),
-                      Text("shop now", style: TextStyle(
-                        fontSize: 14,
-                        fontWeight: FontWeight.bold,
-                        color: Colors.white
-                      ),)
+                      SizedBox(
+                        width: 24,
+                      ),
+                      Text(
+                        "shop now",
+                        style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold, color: Colors.white),
+                      )
                     ],
                   ),
                 ),
                 Spacer(),
                 Row(
                   children: [
-                    Icon(Icons.sanitizer_outlined, size: 48,color: Colors.white,),
+                    Icon(
+                      Icons.sanitizer_outlined,
+                      size: 48,
+                      color: Colors.white,
+                    ),
                     Container(
                       height: 64,
                       child: VerticalDivider(
@@ -111,9 +116,7 @@ class _FashionStartPageState extends State<FashionStartPage> {
                       ),
                     ),
                     Column(
-                      children: [
-
-                      ],
+                      children: [],
                     )
                   ],
                 )
