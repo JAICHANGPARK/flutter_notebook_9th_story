@@ -99,12 +99,30 @@ class _FashionStartPageState extends State<FashionStartPage> {
                       ),)
                     ],
                   ),
+                ),
+                Spacer(),
+                Row(
+                  children: [
+                    Icon(Icons.sanitizer_outlined, size: 48,color: Colors.white,),
+                    Container(
+                      height: 64,
+                      child: VerticalDivider(
+                        color: Colors.white,
+                      ),
+                    ),
+                    Column(
+                      children: [
+
+                      ],
+                    )
+                  ],
                 )
               ],
             ),
             top: 160,
             left: 16,
             right: 16,
+            bottom: 48,
           )
         ],
       ),
