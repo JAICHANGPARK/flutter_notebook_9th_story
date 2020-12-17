@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class FashionStartPage extends StatefulWidget {
@@ -80,7 +81,11 @@ class _FashionStartPageState extends State<FashionStartPage> {
                       height: 48,
                       width: 48,
                       decoration: BoxDecoration(
-                        
+                        shape: BoxShape.circle,
+                        color: Colors.blueAccent,
+                      ),
+                      child: Center(
+                        child: Icon(Icons.arrow_forward, color: Colors.white,),
                       ),
                     )
                   ],
