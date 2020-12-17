@@ -44,7 +44,8 @@ class _FashionStartPageState extends State<FashionStartPage> {
             decoration: BoxDecoration(
               image: DecorationImage(
                 image: NetworkImage("https://cdn.pixabay.com/photo/2016/04/16/19/51/girl-1333640_960_720.jpg"),
-                fit: BoxFit.cover
+                fit: BoxFit.cover,
+                colorFilter: ColorFilter.mode(Colors.black.withOpacity(0.2), BlendMode.darken)
               ),
             ),
           )),
