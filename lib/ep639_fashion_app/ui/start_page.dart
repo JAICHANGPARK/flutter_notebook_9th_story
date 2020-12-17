@@ -40,41 +40,40 @@ class _FashionStartPageState extends State<FashionStartPage> {
       drawer: Drawer(),
       body: Stack(
         children: [
-          Positioned(left: 0, right: 0, bottom: 0, top: 0, child: Container(
-            decoration: BoxDecoration(
-              image: DecorationImage(
-                image: NetworkImage("https://cdn.pixabay.com/photo/2016/04/16/19/51/girl-1333640_960_720.jpg"),
-                fit: BoxFit.cover,
-                colorFilter: ColorFilter.mode(Colors.black.withOpacity(0.2), BlendMode.darken)
-              ),
+          Positioned(
+              left: 0,
+              right: 0,
+              bottom: 0,
+              top: 0,
+              child: Container(
+                decoration: BoxDecoration(
+                  image: DecorationImage(
+                      image: NetworkImage("https://cdn.pixabay.com/photo/2016/04/16/19/51/girl-1333640_960_720.jpg"),
+                      fit: BoxFit.cover,
+                      colorFilter: ColorFilter.mode(Colors.black.withOpacity(0.2), BlendMode.darken)),
+                ),
+              )),
+          Positioned(
+            child: Column(
+              children: [
+                Text(
+                  "NEW COLORS FOR DREAM PRODUCTS",
+                  style: TextStyle(color: Colors.white),
+                ),
+                Text(
+                  "SS21",
+                  style: TextStyle(color: Colors.white, fontSize: 28,
+                  fontWeight: FontWeight.bold),
+                ),
+
+              ],
             ),
-          )),
-          Positioned(child: Column(
-            children: [
-              Text("NEW COLORS FOR DREAM PRODUCTS", style: TextStyle(
-                color: Colors.white
-              ),)
-            ],
-          ),
-          top: 160,
-          left: 16,
-          right: 16,
+            top: 160,
+            left: 16,
+            right: 16,
           )
         ],
       ),
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
