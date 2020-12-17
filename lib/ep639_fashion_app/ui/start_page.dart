@@ -48,6 +48,11 @@ class _FashionStartPageState extends State<FashionStartPage> {
               ),
             ),
           )),
+          Positioned(child: Column(),
+          top: 160,
+          left: 16,
+          right: 16,
+          )
         ],
       ),
     );
