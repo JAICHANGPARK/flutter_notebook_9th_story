@@ -55,15 +55,19 @@ class _FashionStartPageState extends State<FashionStartPage> {
               )),
           Positioned(
             child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
                   "NEW COLORS FOR DREAM PRODUCTS",
                   style: TextStyle(color: Colors.white),
                 ),
-                Text(
-                  "SS21",
-                  style: TextStyle(color: Colors.white, fontSize: 28,
-                  fontWeight: FontWeight.bold),
+                Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 16),
+                  child: Text(
+                    "SS21",
+                    style: TextStyle(color: Colors.white, fontSize: 32,
+                    fontWeight: FontWeight.bold),
+                  ),
                 ),
 
               ],
