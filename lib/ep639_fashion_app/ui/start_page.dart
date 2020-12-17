@@ -69,7 +69,22 @@ class _FashionStartPageState extends State<FashionStartPage> {
                   style: TextStyle(color: Colors.white, fontSize: 32,
                   fontWeight: FontWeight.bold),
                 ),
-
+                Text(
+                  "COLLECTION",
+                  style: TextStyle(color: Colors.white, fontSize: 32,
+                      fontWeight: FontWeight.bold),
+                ),
+                Row(
+                  children: [
+                    Container(
+                      height: 48,
+                      width: 48,
+                      decoration: BoxDecoration(
+                        
+                      ),
+                    )
+                  ],
+                )
               ],
             ),
             top: 160,
