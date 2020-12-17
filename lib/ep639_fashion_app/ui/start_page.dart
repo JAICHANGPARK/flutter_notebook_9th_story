@@ -116,6 +116,7 @@ class _FashionStartPageState extends State<FashionStartPage> {
                       ),
                     ),
                     Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
                           "DREAMWALKER",
