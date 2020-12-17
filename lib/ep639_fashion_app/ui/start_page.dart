@@ -75,20 +75,23 @@ class _FashionStartPageState extends State<FashionStartPage> {
                   style: TextStyle(color: Colors.white, fontSize: 32,
                       fontWeight: FontWeight.bold),
                 ),
-                Row(
-                  children: [
-                    Container(
-                      height: 48,
-                      width: 48,
-                      decoration: BoxDecoration(
-                        shape: BoxShape.circle,
-                        color: Colors.blueAccent,
-                      ),
-                      child: Center(
-                        child: Icon(Icons.arrow_forward, color: Colors.white,),
-                      ),
-                    )
-                  ],
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Row(
+                    children: [
+                      Container(
+                        height: 48,
+                        width: 48,
+                        decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                          color: Colors.blueAccent,
+                        ),
+                        child: Center(
+                          child: Icon(Icons.arrow_forward, color: Colors.white,),
+                        ),
+                      )
+                    ],
+                  ),
                 )
               ],
             ),
