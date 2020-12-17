@@ -57,17 +57,17 @@ class _FashionStartPageState extends State<FashionStartPage> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text(
-                  "NEW COLORS FOR DREAM PRODUCTS",
-                  style: TextStyle(color: Colors.white),
-                ),
                 Padding(
                   padding: const EdgeInsets.symmetric(vertical: 16),
                   child: Text(
-                    "SS21",
-                    style: TextStyle(color: Colors.white, fontSize: 32,
-                    fontWeight: FontWeight.bold),
+                    "NEW COLORS FOR DREAM PRODUCTS",
+                    style: TextStyle(color: Colors.white),
                   ),
+                ),
+                Text(
+                  "SS21",
+                  style: TextStyle(color: Colors.white, fontSize: 32,
+                  fontWeight: FontWeight.bold),
                 ),
 
               ],
