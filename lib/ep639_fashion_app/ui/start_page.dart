@@ -40,9 +40,28 @@ class _FashionStartPageState extends State<FashionStartPage> {
       drawer: Drawer(),
       body: Stack(
         children: [
-          Positioned(left: 0, right: 0, bottom: 0, top: 0, child: Container()),
+          Positioned(left: 0, right: 0, bottom: 0, top: 0, child: Container(
+            decoration: BoxDecoration(
+              image: DecorationImage(
+                image: NetworkImage("")
+              )
+            ),
+          )),
         ],
       ),
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
