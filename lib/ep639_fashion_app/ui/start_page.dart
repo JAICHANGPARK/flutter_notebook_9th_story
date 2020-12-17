@@ -48,7 +48,13 @@ class _FashionStartPageState extends State<FashionStartPage> {
               ),
             ),
           )),
-          Positioned(child: Column(),
+          Positioned(child: Column(
+            children: [
+              Text("NEW COLORS FOR DREAM PRODUCTS", style: TextStyle(
+                color: Colors.white
+              ),)
+            ],
+          ),
           top: 160,
           left: 16,
           right: 16,
