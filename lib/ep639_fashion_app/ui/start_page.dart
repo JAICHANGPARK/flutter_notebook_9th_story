@@ -62,7 +62,8 @@ class _FashionStartPageState extends State<FashionStartPage> {
                   padding: const EdgeInsets.symmetric(vertical: 16),
                   child: Text(
                     "NEW COLORS FOR DREAM PRODUCTS",
-                    style: TextStyle(color: Colors.white),
+                    style: TextStyle(color: Colors.white,
+                    fontSize: 16),
                   ),
                 ),
                 Text(
@@ -76,7 +77,7 @@ class _FashionStartPageState extends State<FashionStartPage> {
                       fontWeight: FontWeight.bold),
                 ),
                 Padding(
-                  padding: const EdgeInsets.all(8.0),
+                  padding: const EdgeInsets.symmetric(vertical: 16),
                   child: Row(
                     children: [
                       Container(
@@ -89,7 +90,13 @@ class _FashionStartPageState extends State<FashionStartPage> {
                         child: Center(
                           child: Icon(Icons.arrow_forward, color: Colors.white,),
                         ),
-                      )
+                      ),
+                      SizedBox(width: 24,),
+                      Text("shop now", style: TextStyle(
+                        fontSize: 14,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white
+                      ),)
                     ],
                   ),
                 )
