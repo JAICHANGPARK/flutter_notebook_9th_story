@@ -116,7 +116,17 @@ class _FashionStartPageState extends State<FashionStartPage> {
                       ),
                     ),
                     Column(
-                      children: [],
+                      children: [
+                        Text(
+                          "DREAMWALKER",
+                          style: TextStyle(color: Colors.white, fontSize: 24, fontWeight: FontWeight.bold),
+                        ),
+                        Text(
+                          "FLUTTER",
+                          style: TextStyle(color: Colors.white, fontSize: 24, fontWeight: FontWeight.bold),
+                        ),
+
+                      ],
                     )
                   ],
                 )
