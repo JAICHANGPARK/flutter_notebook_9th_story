@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'ep639_fashion_app/fashion_app.dart';
+import 'ep641_style_app/style_theory_app.dart';
 
 main() {
-  runApp(FashionApp());
+  runApp(StyleTheoryApp());
 }
