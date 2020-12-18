@@ -11,12 +11,13 @@ class _StyleMainPageState extends State<StyleMainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: [
-          Expanded(flex : 3,child: Placeholder()),
-          Expanded(flex : 8,child: Placeholder()),
-
-        ],
+      body: SafeArea(
+        child: Column(
+          children: [
+            Expanded(flex: 3, child: Placeholder()),
+            Expanded(flex: 8, child: Placeholder()),
+          ],
+        ),
       ),
       bottomNavigationBar: BottomNavigationBar(
         selectedItemColor: Colors.black,
