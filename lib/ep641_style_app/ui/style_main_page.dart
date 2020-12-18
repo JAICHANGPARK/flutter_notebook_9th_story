@@ -10,6 +10,11 @@ class StyleMainPage extends StatefulWidget {
 class _StyleMainPageState extends State<StyleMainPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      bottomNavigationBar: BottomNavigationBar(
+        items: [BottomNavigationBarItem(icon: Icon(Icons.home),
+        label: "Home")],
+      ),
+    );
   }
 }
