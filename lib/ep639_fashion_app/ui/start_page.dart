@@ -126,7 +126,6 @@ class _FashionStartPageState extends State<FashionStartPage> {
                           "FLUTTER",
                           style: TextStyle(color: Colors.white, fontSize: 24, fontWeight: FontWeight.bold),
                         ),
-
                       ],
                     )
                   ],
