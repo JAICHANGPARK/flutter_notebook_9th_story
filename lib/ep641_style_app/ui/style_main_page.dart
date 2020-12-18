@@ -17,6 +17,7 @@ class _StyleMainPageState extends State<StyleMainPage> {
             Expanded(flex: 3, child: Container(
               child: Column(
                 children: [
+                  Expanded(child: Placeholder()),
                   Expanded(child: Placeholder())
                 ],
               ),
