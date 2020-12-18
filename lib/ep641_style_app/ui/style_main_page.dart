@@ -14,7 +14,13 @@ class _StyleMainPageState extends State<StyleMainPage> {
       body: SafeArea(
         child: Column(
           children: [
-            Expanded(flex: 3, child: Placeholder()),
+            Expanded(flex: 3, child: Container(
+              decoration: BoxDecoration(
+                boxShadow: [
+                  
+                ]
+              ),
+            )),
             Expanded(flex: 12, child: Placeholder()),
           ],
         ),
