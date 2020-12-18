@@ -7,14 +7,22 @@ class StyleMainPage extends StatefulWidget {
 
 class _StyleMainPageState extends State<StyleMainPage> {
   num _pageIdx = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      body: Column(
+        children: [
+          Expanded(flex : 3,child: Placeholder()),
+          Expanded(flex : 8,child: Placeholder()),
+
+        ],
+      ),
       bottomNavigationBar: BottomNavigationBar(
         selectedItemColor: Colors.black,
         unselectedItemColor: Colors.grey,
         currentIndex: _pageIdx,
-        onTap: (newPageIndex){
+        onTap: (newPageIndex) {
           setState(() {
             _pageIdx = newPageIndex;
           });
@@ -26,7 +34,6 @@ class _StyleMainPageState extends State<StyleMainPage> {
           BottomNavigationBarItem(icon: Icon(Icons.favorite_border), label: "WISHLIST"),
           BottomNavigationBarItem(icon: Icon(Icons.move_to_inbox), label: "MY BOX"),
           BottomNavigationBarItem(icon: Icon(Icons.account_circle_outlined), label: "PEOPLE"),
-
         ],
       ),
     );
