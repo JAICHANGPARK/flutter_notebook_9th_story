@@ -15,7 +15,7 @@ class _StyleMainPageState extends State<StyleMainPage> {
         child: Column(
           children: [
             Expanded(flex: 3, child: Placeholder()),
-            Expanded(flex: 10, child: Placeholder()),
+            Expanded(flex: 12, child: Placeholder()),
           ],
         ),
       ),
