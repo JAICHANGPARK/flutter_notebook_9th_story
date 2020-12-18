@@ -13,10 +13,10 @@ class _StyleMainPageState extends State<StyleMainPage> {
         type: BottomNavigationBarType.fixed,
         items: [
           BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
-          BottomNavigationBarItem(icon: Icon(Icons.home), label: "BROWSE"),
-          BottomNavigationBarItem(icon: Icon(Icons.home), label: "WISHLIST"),
-          BottomNavigationBarItem(icon: Icon(Icons.home), label: "MY BOX"),
-          BottomNavigationBarItem(icon: Icon(Icons.home), label: "PEOPLE"),
+          BottomNavigationBarItem(icon: Icon(Icons.open_in_browser), label: "BROWSE"),
+          BottomNavigationBarItem(icon: Icon(Icons.favorite_border), label: "WISHLIST"),
+          BottomNavigationBarItem(icon: Icon(Icons.move_to_inbox), label: "MY BOX"),
+          BottomNavigationBarItem(icon: Icon(Icons.account_circle_outlined), label: "PEOPLE"),
 
         ],
       ),
