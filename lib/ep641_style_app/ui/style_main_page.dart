@@ -15,6 +15,11 @@ class _StyleMainPageState extends State<StyleMainPage> {
         child: Column(
           children: [
             Expanded(flex: 3, child: Container(
+              child: Column(
+                children: [
+                  Expanded(child: Placeholder())
+                ],
+              ),
               decoration: BoxDecoration(
                 color: Colors.white,
                 boxShadow: [
