@@ -11,6 +11,8 @@ class _StyleMainPageState extends State<StyleMainPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       bottomNavigationBar: BottomNavigationBar(
+        selectedItemColor: Colors.black,
+        unselectedItemColor: Colors.grey,
         currentIndex: _pageIdx,
         onTap: (newPageIndex){
           setState(() {
