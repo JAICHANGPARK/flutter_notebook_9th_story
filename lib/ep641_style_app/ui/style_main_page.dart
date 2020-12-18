@@ -16,12 +16,19 @@ class _StyleMainPageState extends State<StyleMainPage> {
           children: [
             Expanded(flex: 3, child: Container(
               decoration: BoxDecoration(
+                color: Colors.white,
                 boxShadow: [
-                  
+                    BoxShadow(
+                      color: Colors.grey,
+                      offset: Offset(0, 2)
+                    )
                 ]
               ),
             )),
-            Expanded(flex: 12, child: Placeholder()),
+            Expanded(flex: 12, child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Placeholder(),
+            )),
           ],
         ),
       ),
