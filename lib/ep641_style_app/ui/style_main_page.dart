@@ -6,10 +6,17 @@ class StyleMainPage extends StatefulWidget {
 }
 
 class _StyleMainPageState extends State<StyleMainPage> {
+  num _pageIdx = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       bottomNavigationBar: BottomNavigationBar(
+        currentIndex: _pageIdx,
+        onTap: (newPageIndex){
+          setState(() {
+            _pageIdx = newPageIndex;
+          });
+        },
         type: BottomNavigationBarType.fixed,
         items: [
           BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
