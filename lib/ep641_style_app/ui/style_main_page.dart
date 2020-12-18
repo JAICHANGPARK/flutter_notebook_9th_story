@@ -19,7 +19,7 @@ class _StyleMainPageState extends State<StyleMainPage> {
                 color: Colors.white,
                 boxShadow: [
                     BoxShadow(
-                      color: Colors.grey,
+                      color: Colors.grey[500],
                       offset: Offset(0, 2)
                     )
                 ]
