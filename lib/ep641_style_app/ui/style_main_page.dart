@@ -50,7 +50,11 @@ class _StyleMainPageState extends State<StyleMainPage> {
                         ],
                       ),
                     )),
-                      Expanded(child: Placeholder())],
+                      Expanded(child: ListView(
+                        children: [
+                          
+                        ],
+                      ))],
                   ),
                   decoration: BoxDecoration(
                       color: Colors.white, boxShadow: [BoxShadow(color: Colors.grey[500], offset: Offset(0, 2))]),
