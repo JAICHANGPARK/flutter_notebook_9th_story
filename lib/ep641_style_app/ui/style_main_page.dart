@@ -70,7 +70,7 @@ class _StyleMainPageState extends State<StyleMainPage> {
                       color: Colors.white, boxShadow: [BoxShadow(color: Colors.grey[500], offset: Offset(0, 2))]),
                 )),
             Expanded(
-                flex: 12,
+                flex: 15,
                 child: Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: Placeholder(),
