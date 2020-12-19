@@ -58,7 +58,7 @@ class _StyleMainPageState extends State<StyleMainPage> {
                               scrollDirection: Axis.horizontal,
                               itemBuilder: (BuildContext context, int index) {
                                 return Padding(
-                                  padding: const EdgeInsets.all(8.0),
+                                  padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 8),
                                   child: InkWell(
                                     onTap: (){
                                       print(_tabIdx);
