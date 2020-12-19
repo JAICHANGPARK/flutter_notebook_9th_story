@@ -53,9 +53,9 @@ class _StyleMainPageState extends State<StyleMainPage> {
                     )),
                       Expanded(child: ListView.builder(
                           itemCount: tabTitle.length,
-                          
+                          scrollDirection: Axis.horizontal,
                           itemBuilder: (BuildContext context, int index){
-                            return Text(tabTitle[index]);
+                            return Container(child: Text(tabTitle[index]));
                           }
 
                       ))
