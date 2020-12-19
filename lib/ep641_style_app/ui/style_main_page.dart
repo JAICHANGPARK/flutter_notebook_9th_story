@@ -7,7 +7,7 @@ class StyleMainPage extends StatefulWidget {
 
 class _StyleMainPageState extends State<StyleMainPage> {
   num _pageIdx = 0;
-
+  List<String> = [];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -52,7 +52,9 @@ class _StyleMainPageState extends State<StyleMainPage> {
                     )),
                       Expanded(child: ListView(
                         children: [
-                          
+                          Container(
+                            child:  Text(""),
+                          )
                         ],
                       ))],
                   ),
