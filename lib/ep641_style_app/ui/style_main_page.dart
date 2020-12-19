@@ -7,6 +7,7 @@ class StyleMainPage extends StatefulWidget {
 
 class _StyleMainPageState extends State<StyleMainPage> {
   num _pageIdx = 0;
+  num _tabIdx= 0;
   List<String> tabTitle = ["Weekend", "Comfy", "Travel", "Meetings"];
 
   @override
@@ -58,10 +59,19 @@ class _StyleMainPageState extends State<StyleMainPage> {
                               itemBuilder: (BuildContext context, int index) {
                                 return Padding(
                                   padding: const EdgeInsets.all(8.0),
-                                  child: Container(
-                                    padding: EdgeInsets.symmetric(horizontal: 8),
-                                      decoration: BoxDecoration(border: Border.all(color: Colors.grey)),
-                                      child: Center(child: Text(tabTitle[index]))),
+                                  child: InkWell(
+                                    onTap: (){
+                                      print(_tabIdx);
+                                      setState(() {
+                                        _tabIdx = index;
+                                      });
+                                    },
+                                    child: Container(
+                                        padding: EdgeInsets.symmetric(horizontal: 8),
+                                        decoration: BoxDecoration(border: Border.all(color: Colors.grey),
+                                        ),
+                                        child: Center(child: Text(tabTitle[index]))),
+                                  ),
                                 );
                               }))
                     ],
