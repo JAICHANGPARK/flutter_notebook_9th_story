@@ -28,7 +28,8 @@ class _StyleMainPageState extends State<StyleMainPage> {
                             Text("FLUTTER"),
                             Container(
                               decoration: BoxDecoration(
-                                
+                                color: Colors.grey,
+                                borderRadius: BorderRadius.circular(8)
                               ),
                                 padding: EdgeInsets.only(left: 4, right: 4),
                               child:
