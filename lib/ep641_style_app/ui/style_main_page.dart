@@ -25,8 +25,12 @@ class _StyleMainPageState extends State<StyleMainPage> {
                           mainAxisAlignment: MainAxisAlignment.center,
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
-                            Text("FLUTTER"),
+                            Text("FLUTTER", style: TextStyle(
+                              fontSize: 13,
+                              fontWeight: FontWeight.bold
+                            ),),
                             Container(
+                              margin: EdgeInsets.symmetric(vertical: 4),
                               decoration: BoxDecoration(
                                 color: Colors.grey[300],
                                 borderRadius: BorderRadius.circular(16)
