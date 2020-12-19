@@ -69,8 +69,12 @@ class _StyleMainPageState extends State<StyleMainPage> {
                                     child: Container(
                                         padding: EdgeInsets.symmetric(horizontal: 8),
                                         decoration: BoxDecoration(border: Border.all(color: Colors.grey),
+                                          borderRadius: BorderRadius.circular(8),
+                                          color: _tabIdx == index ? Colors.black : Colors.white,
                                         ),
-                                        child: Center(child: Text(tabTitle[index]))),
+                                        child: Center(child: Text(tabTitle[index], style: TextStyle(
+                                          color: _tabIdx == index ? Colors.white : Colors.black,
+                                        ),))),
                                   ),
                                 );
                               }))
