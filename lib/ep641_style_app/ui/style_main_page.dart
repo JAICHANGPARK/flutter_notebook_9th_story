@@ -50,12 +50,10 @@ class _StyleMainPageState extends State<StyleMainPage> {
                         ],
                       ),
                     )),
-                      Expanded(child: ListView(
-                        children: [
-                          Container(
-                            child:  Text(""),
-                          )
-                        ],
+                      Expanded(child: ListView.builder(
+                        itemCount: tabTitle,
+                        itemBuilder: (BuildContext context, int index) {  },
+
                       ))],
                   ),
                   decoration: BoxDecoration(
