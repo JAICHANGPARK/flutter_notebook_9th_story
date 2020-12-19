@@ -18,7 +18,22 @@ class _StyleMainPageState extends State<StyleMainPage> {
                 flex: 3,
                 child: Container(
                   child: Column(
-                    children: [Expanded(child: Placeholder()), Expanded(child: Placeholder())],
+                    children: [Expanded(child: Row(
+                      children: [
+                        Icon(Icons.arrow_back_ios),
+                        Column(
+                          children: [
+                            Text("FLUTTER"),
+                            Container(
+                              
+                              child:
+                              Text("SHOW ABAILABLE"),
+                            )
+                          ],
+                        )
+                      ],
+                    )),
+                      Expanded(child: Placeholder())],
                   ),
                   decoration: BoxDecoration(
                       color: Colors.white, boxShadow: [BoxShadow(color: Colors.grey[500], offset: Offset(0, 2))]),
