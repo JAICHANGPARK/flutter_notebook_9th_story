@@ -42,7 +42,8 @@ class _StyleMainPageState extends State<StyleMainPage> {
                               ),),
                             )
                           ],
-                        )
+                        ),
+                        Icon(Icons.tune)
                       ],
                     )),
                       Expanded(child: Placeholder())],
