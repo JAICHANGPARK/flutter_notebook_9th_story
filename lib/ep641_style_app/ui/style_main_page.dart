@@ -19,46 +19,47 @@ class _StyleMainPageState extends State<StyleMainPage> {
                 flex: 3,
                 child: Container(
                   child: Column(
-                    children: [Expanded(child: Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 16),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Icon(Icons.arrow_back_ios),
-                          Column(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            crossAxisAlignment: CrossAxisAlignment.center,
-                            children: [
-                              Text("FLUTTER", style: TextStyle(
-                                  fontSize: 13,
-                                  fontWeight: FontWeight.bold
-                              ),),
-                              Container(
-                                margin: EdgeInsets.symmetric(vertical: 4),
-                                decoration: BoxDecoration(
-                                    color: Colors.grey[300],
-                                    borderRadius: BorderRadius.circular(16)
+                    children: [
+                      Expanded(
+                          child: Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 16),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Icon(Icons.arrow_back_ios),
+                            Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              crossAxisAlignment: CrossAxisAlignment.center,
+                              children: [
+                                Text(
+                                  "FLUTTER",
+                                  style: TextStyle(fontSize: 13, fontWeight: FontWeight.bold),
                                 ),
-                                padding: EdgeInsets.only(left: 8, right: 8, top: 4, bottom: 4),
-                                child:
-                                Text("SHOW ABAILABLE", style: TextStyle(
-                                    fontSize: 10
-                                ),),
-                              )
-                            ],
-                          ),
-                          Icon(Icons.tune)
-                        ],
-                      ),
-                    )),
-                      Expanded(child: ListView.builder(
-                          itemCount: tabTitle.length,
-                          scrollDirection: Axis.horizontal,
-                          itemBuilder: (BuildContext context, int index){
-                            return Container(child: Text(tabTitle[index]));
-                          }
-
-                      ))
+                                Container(
+                                  margin: EdgeInsets.symmetric(vertical: 4),
+                                  decoration:
+                                      BoxDecoration(color: Colors.grey[300], borderRadius: BorderRadius.circular(16)),
+                                  padding: EdgeInsets.only(left: 8, right: 8, top: 4, bottom: 4),
+                                  child: Text(
+                                    "SHOW ABAILABLE",
+                                    style: TextStyle(fontSize: 10),
+                                  ),
+                                )
+                              ],
+                            ),
+                            Icon(Icons.tune)
+                          ],
+                        ),
+                      )),
+                      Expanded(
+                          child: ListView.builder(
+                              itemCount: tabTitle.length,
+                              scrollDirection: Axis.horizontal,
+                              itemBuilder: (BuildContext context, int index) {
+                                return Container(
+                                    decoration: BoxDecoration(border: Border.all(color: Colors.grey)),
+                                    child: Center(child: Text(tabTitle[index])));
+                              }))
                     ],
                   ),
                   decoration: BoxDecoration(
