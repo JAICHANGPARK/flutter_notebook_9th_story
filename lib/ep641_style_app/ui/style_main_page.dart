@@ -22,10 +22,15 @@ class _StyleMainPageState extends State<StyleMainPage> {
                       children: [
                         Icon(Icons.arrow_back_ios),
                         Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
                             Text("FLUTTER"),
                             Container(
-                              
+                              decoration: BoxDecoration(
+                                
+                              ),
+                                padding: EdgeInsets.only(left: 4, right: 4),
                               child:
                               Text("SHOW ABAILABLE"),
                             )
