@@ -8,6 +8,7 @@ class StyleMainPage extends StatefulWidget {
 class _StyleMainPageState extends State<StyleMainPage> {
   num _pageIdx = 0;
   List<String> tabTitle = ["Weekend", "Comfy", "Travel", "Meetings"];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -29,19 +30,19 @@ class _StyleMainPageState extends State<StyleMainPage> {
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: [
                               Text("FLUTTER", style: TextStyle(
-                                fontSize: 13,
-                                fontWeight: FontWeight.bold
+                                  fontSize: 13,
+                                  fontWeight: FontWeight.bold
                               ),),
                               Container(
                                 margin: EdgeInsets.symmetric(vertical: 4),
                                 decoration: BoxDecoration(
-                                  color: Colors.grey[300],
-                                  borderRadius: BorderRadius.circular(16)
+                                    color: Colors.grey[300],
+                                    borderRadius: BorderRadius.circular(16)
                                 ),
-                                  padding: EdgeInsets.only(left: 8, right: 8, top: 4, bottom: 4),
+                                padding: EdgeInsets.only(left: 8, right: 8, top: 4, bottom: 4),
                                 child:
-                                Text("SHOW ABAILABLE",style: TextStyle(
-                                  fontSize: 10
+                                Text("SHOW ABAILABLE", style: TextStyle(
+                                    fontSize: 10
                                 ),),
                               )
                             ],
@@ -51,10 +52,14 @@ class _StyleMainPageState extends State<StyleMainPage> {
                       ),
                     )),
                       Expanded(child: ListView.builder(
-                        itemCount: tabTitle,
-                        itemBuilder: (BuildContext context, int index) {  },
+                          itemCount: tabTitle.length,
+                          
+                          itemBuilder: (BuildContext context, int index){
+                            return Text(tabTitle[index]);
+                          }
 
-                      ))],
+                      ))
+                    ],
                   ),
                   decoration: BoxDecoration(
                       color: Colors.white, boxShadow: [BoxShadow(color: Colors.grey[500], offset: Offset(0, 2))]),
