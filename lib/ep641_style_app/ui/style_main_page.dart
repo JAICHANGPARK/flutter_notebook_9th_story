@@ -56,9 +56,13 @@ class _StyleMainPageState extends State<StyleMainPage> {
                               itemCount: tabTitle.length,
                               scrollDirection: Axis.horizontal,
                               itemBuilder: (BuildContext context, int index) {
-                                return Container(
-                                    decoration: BoxDecoration(border: Border.all(color: Colors.grey)),
-                                    child: Center(child: Text(tabTitle[index])));
+                                return Padding(
+                                  padding: const EdgeInsets.all(8.0),
+                                  child: Container(
+                                    padding: EdgeInsets.symmetric(horizontal: 8),
+                                      decoration: BoxDecoration(border: Border.all(color: Colors.grey)),
+                                      child: Center(child: Text(tabTitle[index]))),
+                                );
                               }))
                     ],
                   ),
