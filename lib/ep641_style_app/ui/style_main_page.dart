@@ -7,7 +7,7 @@ class StyleMainPage extends StatefulWidget {
 
 class _StyleMainPageState extends State<StyleMainPage> {
   num _pageIdx = 0;
-  List<String> tabTitle = [];
+  List<String> tabTitle = ["Weekend", "Comfy", "Travel", "Meetings"];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
