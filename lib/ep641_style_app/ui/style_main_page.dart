@@ -28,12 +28,14 @@ class _StyleMainPageState extends State<StyleMainPage> {
                             Text("FLUTTER"),
                             Container(
                               decoration: BoxDecoration(
-                                color: Colors.grey,
-                                borderRadius: BorderRadius.circular(8)
+                                color: Colors.grey[300],
+                                borderRadius: BorderRadius.circular(16)
                               ),
-                                padding: EdgeInsets.only(left: 4, right: 4),
+                                padding: EdgeInsets.only(left: 8, right: 8, top: 4, bottom: 4),
                               child:
-                              Text("SHOW ABAILABLE"),
+                              Text("SHOW ABAILABLE",style: TextStyle(
+                                fontSize: 10
+                              ),),
                             )
                           ],
                         )
