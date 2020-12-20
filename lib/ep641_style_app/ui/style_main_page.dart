@@ -126,18 +126,21 @@ class _StyleMainPageState extends State<StyleMainPage> {
                                 flex: 8,
                               ),
                               Expanded(
-                                child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    Text("WINTER COAT",style: TextStyle(
-                                      color: Colors.grey,
-                                    ),),
-                                    Text("S M XL",
-                                    style: TextStyle(
-                                      color: Colors.black,
-                                      fontSize: 12
-                                    ),)
-                                  ],
+                                child: Padding(
+                                  padding: const EdgeInsets.only(top: 8),
+                                  child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: [
+                                      Text("WINTER COAT",style: TextStyle(
+                                        color: Colors.grey,
+                                      ),),
+                                      Text("S M XL",
+                                      style: TextStyle(
+                                        color: Colors.black,
+                                        fontSize: 12
+                                      ),)
+                                    ],
+                                  ),
                                 ),
                                 flex: 2,
                               ),
