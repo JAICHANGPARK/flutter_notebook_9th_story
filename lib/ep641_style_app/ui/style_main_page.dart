@@ -99,6 +99,11 @@ class _StyleMainPageState extends State<StyleMainPage> {
                       itemBuilder: (context, index) {
                         return Container(
                           decoration: BoxDecoration(color: Colors.redAccent),
+                          child: Column(
+                            children: [
+                              
+                            ],
+                          ),
                         );
                       }),
                 )),
