@@ -103,7 +103,13 @@ class _StyleMainPageState extends State<StyleMainPage> {
                             children: [
                               Expanded(child: Container(
                                 decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(8)
+                                  borderRadius: BorderRadius.circular(8),
+                                  image: DecorationImage(
+                                    image: NetworkImage(
+                                      "https://cdn.pixabay.com/photo/2020/01/11/14/36/winter-4757707__340.jpg"
+                                    ),
+                                    fit: BoxFit.cover
+                                  )
                                 ),
                               ),
                               flex: 8,),Expanded(child: Placeholder(),
