@@ -99,8 +99,14 @@ class _StyleMainPageState extends State<StyleMainPage> {
                         childAspectRatio: 1.2,
                         maxCrossAxisExtent: 2
 
-                      ), itemBuilder: (context, index) {
-                        return Container();
+                      ),
+                      itemCount: 10,
+                      itemBuilder: (context, index) {
+                        return Container(
+                          decoration: BoxDecoration(
+                            color: Colors.redAccent
+                          ),
+                        );
                   }),
                 )),
           ],
