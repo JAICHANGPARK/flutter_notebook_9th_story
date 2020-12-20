@@ -98,7 +98,7 @@ class _StyleMainPageState extends State<StyleMainPage> {
                       itemCount: 10,
                       itemBuilder: (context, index) {
                         return Container(
-                          decoration: BoxDecoration(color: Colors.redAccent),
+                          
                           child: Column(
                             children: [
                               Expanded(
@@ -115,9 +115,9 @@ class _StyleMainPageState extends State<StyleMainPage> {
                                           right: 0,
                                           top: 0,
                                           child: IconButton(
-                                            icon: Icon(Icons.favorite_border),
+                                            icon: Icon(Icons.favorite),
                                             onPressed: () {},
-                                            color: Colors.white,
+                                            color: Colors.grey,
                                           )),
                                     ],
                                   ),
