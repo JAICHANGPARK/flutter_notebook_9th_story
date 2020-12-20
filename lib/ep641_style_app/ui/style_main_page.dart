@@ -98,7 +98,6 @@ class _StyleMainPageState extends State<StyleMainPage> {
                       itemCount: 10,
                       itemBuilder: (context, index) {
                         return Container(
-
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
@@ -131,14 +130,16 @@ class _StyleMainPageState extends State<StyleMainPage> {
                                   child: Column(
                                     crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
-                                      Text("WINTER COAT",style: TextStyle(
-                                        color: Colors.grey,
-                                      ),),
-                                      Text("S M XL",
-                                      style: TextStyle(
-                                        color: Colors.black,
-                                        fontSize: 12
-                                      ),)
+                                      Text(
+                                        "WINTER COAT",
+                                        style: TextStyle(
+                                          color: Colors.grey,
+                                        ),
+                                      ),
+                                      Text(
+                                        "S M XL",
+                                        style: TextStyle(color: Colors.black, fontSize: 12),
+                                      )
                                     ],
                                   ),
                                 ),
