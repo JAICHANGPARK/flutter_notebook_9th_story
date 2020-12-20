@@ -93,7 +93,15 @@ class _StyleMainPageState extends State<StyleMainPage> {
                 child: Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: GridView.builder(
-                      gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(), itemBuilder: (context, index) {}),
+                      gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
+                        mainAxisSpacing: 8,
+                        crossAxisSpacing: 8,
+                        childAspectRatio: 1.2,
+                        maxCrossAxisExtent: 2
+
+                      ), itemBuilder: (context, index) {
+                        return Container();
+                  }),
                 )),
           ],
         ),
