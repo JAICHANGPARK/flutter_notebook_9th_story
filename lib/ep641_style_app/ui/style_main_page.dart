@@ -126,9 +126,16 @@ class _StyleMainPageState extends State<StyleMainPage> {
                               ),
                               Expanded(
                                 child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
-                                    Text("WINTER COAT"),
-                                    Text("S M XL",)
+                                    Text("WINTER COAT",style: TextStyle(
+                                      color: Colors.grey,
+                                    ),),
+                                    Text("S M XL",
+                                    style: TextStyle(
+                                      color: Colors.black,
+                                      fontSize: 12
+                                    ),)
                                   ],
                                 ),
                                 flex: 2,
