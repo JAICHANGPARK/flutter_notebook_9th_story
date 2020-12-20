@@ -96,15 +96,13 @@ class _StyleMainPageState extends State<StyleMainPage> {
                       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                         mainAxisSpacing: 8,
                         crossAxisSpacing: 8,
-                        childAspectRatio: 0.1,
+                        childAspectRatio: 0.5,
                         crossAxisCount: 2
 
                       ),
                       itemCount: 10,
                       itemBuilder: (context, index) {
                         return Container(
-                          height: 120,
-                          width: 64,
                           decoration: BoxDecoration(
                             color: Colors.redAccent
                           ),
