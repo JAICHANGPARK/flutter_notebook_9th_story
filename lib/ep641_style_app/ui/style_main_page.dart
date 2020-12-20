@@ -94,20 +94,13 @@ class _StyleMainPageState extends State<StyleMainPage> {
                   padding: const EdgeInsets.all(8.0),
                   child: GridView.builder(
                       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                        mainAxisSpacing: 8,
-                        crossAxisSpacing: 8,
-                        childAspectRatio: 0.7,
-                        crossAxisCount: 2
-
-                      ),
+                          mainAxisSpacing: 8, crossAxisSpacing: 8, childAspectRatio: 0.7, crossAxisCount: 2),
                       itemCount: 10,
                       itemBuilder: (context, index) {
                         return Container(
-                          decoration: BoxDecoration(
-                            color: Colors.redAccent
-                          ),
+                          decoration: BoxDecoration(color: Colors.redAccent),
                         );
-                  }),
+                      }),
                 )),
           ],
         ),
