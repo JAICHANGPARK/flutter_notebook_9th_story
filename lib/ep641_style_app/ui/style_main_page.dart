@@ -98,7 +98,7 @@ class _StyleMainPageState extends State<StyleMainPage> {
                       itemCount: 10,
                       itemBuilder: (context, index) {
                         return Container(
-                          
+
                           child: Column(
                             children: [
                               Expanded(
@@ -125,7 +125,12 @@ class _StyleMainPageState extends State<StyleMainPage> {
                                 flex: 8,
                               ),
                               Expanded(
-                                child: Placeholder(),
+                                child: Column(
+                                  children: [
+                                    Text("WINTER COAT"),
+                                    Text("S M XL",)
+                                  ],
+                                ),
                                 flex: 2,
                               ),
                             ],
