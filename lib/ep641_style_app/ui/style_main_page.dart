@@ -100,6 +100,7 @@ class _StyleMainPageState extends State<StyleMainPage> {
                         return Container(
 
                           child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Expanded(
                                 child: Container(
