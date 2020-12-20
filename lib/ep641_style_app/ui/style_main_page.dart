@@ -7,7 +7,7 @@ class StyleMainPage extends StatefulWidget {
 
 class _StyleMainPageState extends State<StyleMainPage> {
   num _pageIdx = 0;
-  num _tabIdx= 0;
+  num _tabIdx = 0;
   List<String> tabTitle = ["Weekend", "Comfy", "Travel", "Meetings", "All"];
 
   @override
@@ -60,7 +60,7 @@ class _StyleMainPageState extends State<StyleMainPage> {
                                 return Padding(
                                   padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 8),
                                   child: InkWell(
-                                    onTap: (){
+                                    onTap: () {
                                       print(_tabIdx);
                                       setState(() {
                                         _tabIdx = index;
@@ -68,13 +68,18 @@ class _StyleMainPageState extends State<StyleMainPage> {
                                     },
                                     child: Container(
                                         padding: EdgeInsets.symmetric(horizontal: 8),
-                                        decoration: BoxDecoration(border: Border.all(color: Colors.grey),
+                                        decoration: BoxDecoration(
+                                          border: Border.all(color: Colors.grey),
                                           borderRadius: BorderRadius.circular(8),
                                           color: _tabIdx == index ? Colors.black : Colors.white,
                                         ),
-                                        child: Center(child: Text(tabTitle[index], style: TextStyle(
-                                          color: _tabIdx == index ? Colors.white : Colors.black,
-                                        ),))),
+                                        child: Center(
+                                            child: Text(
+                                          tabTitle[index],
+                                          style: TextStyle(
+                                            color: _tabIdx == index ? Colors.white : Colors.black,
+                                          ),
+                                        ))),
                                   ),
                                 );
                               }))
