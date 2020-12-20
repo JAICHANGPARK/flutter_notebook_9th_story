@@ -101,7 +101,11 @@ class _StyleMainPageState extends State<StyleMainPage> {
                           decoration: BoxDecoration(color: Colors.redAccent),
                           child: Column(
                             children: [
-                              Expanded(child: Placeholder(),
+                              Expanded(child: Container(
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(8)
+                                ),
+                              ),
                               flex: 8,),Expanded(child: Placeholder(),
                               flex: 2,),
 
