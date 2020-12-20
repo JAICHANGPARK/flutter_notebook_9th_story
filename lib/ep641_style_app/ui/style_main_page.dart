@@ -111,6 +111,18 @@ class _StyleMainPageState extends State<StyleMainPage> {
                                     fit: BoxFit.cover
                                   )
                                 ),
+                                child: Stack(
+                                  children: [
+                                    Positioned(
+                                        right: 8,
+                                        top: 8,
+                                        child: IconButton(icon: Icon(Icons.favorite_border), onPressed: () {  },
+
+                                      
+                                      
+                                    )),
+                                  ],
+                                ),
                               ),
                               flex: 8,),Expanded(child: Placeholder(),
                               flex: 2,),
