@@ -101,32 +101,33 @@ class _StyleMainPageState extends State<StyleMainPage> {
                           decoration: BoxDecoration(color: Colors.redAccent),
                           child: Column(
                             children: [
-                              Expanded(child: Container(
-                                decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(8),
-                                  image: DecorationImage(
-                                    image: NetworkImage(
-                                      "https://cdn.pixabay.com/photo/2020/01/11/14/36/winter-4757707__340.jpg"
-                                    ),
-                                    fit: BoxFit.cover
-                                  )
+                              Expanded(
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(8),
+                                      image: DecorationImage(
+                                          image: NetworkImage(
+                                              "https://cdn.pixabay.com/photo/2020/01/11/14/36/winter-4757707__340.jpg"),
+                                          fit: BoxFit.cover)),
+                                  child: Stack(
+                                    children: [
+                                      Positioned(
+                                          right: 0,
+                                          top: 0,
+                                          child: IconButton(
+                                            icon: Icon(Icons.favorite_border),
+                                            onPressed: () {},
+                                            color: Colors.white,
+                                          )),
+                                    ],
+                                  ),
                                 ),
-                                child: Stack(
-                                  children: [
-                                    Positioned(
-                                        right: 8,
-                                        top: 8,
-                                        child: IconButton(icon: Icon(Icons.favorite_border), onPressed: () {  },
-
-                                      
-                                      
-                                    )),
-                                  ],
-                                ),
+                                flex: 8,
                               ),
-                              flex: 8,),Expanded(child: Placeholder(),
-                              flex: 2,),
-
+                              Expanded(
+                                child: Placeholder(),
+                                flex: 2,
+                              ),
                             ],
                           ),
                         );
