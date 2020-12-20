@@ -96,7 +96,7 @@ class _StyleMainPageState extends State<StyleMainPage> {
                       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                         mainAxisSpacing: 8,
                         crossAxisSpacing: 8,
-                        childAspectRatio: 0.5,
+                        childAspectRatio: 0.7,
                         crossAxisCount: 2
 
                       ),
