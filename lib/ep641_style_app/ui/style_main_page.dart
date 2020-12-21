@@ -122,10 +122,10 @@ class _StyleMainPageState extends State<StyleMainPage> {
                                             ),
                                             Container(
                                                 height: 200,
-                                                child: ListView(
+                                                child: ListView.builder(
                                                   scrollDirection: Axis.horizontal,
-                                                  children: [
-                                                    Column(
+                                                  itemBuilder: (context, index){
+                                                    return Column(
                                                       children: [
                                                         Expanded(
                                                           flex: 8,
@@ -134,16 +134,16 @@ class _StyleMainPageState extends State<StyleMainPage> {
                                                             child: Container(
                                                               width: 120,
                                                               decoration: BoxDecoration(
-                                                                border: Border.all(color: Colors.black),
-                                                                borderRadius: BorderRadius.circular(16)
+                                                                  border: Border.all(color: Colors.black),
+                                                                  borderRadius: BorderRadius.circular(16)
                                                               ),
                                                             ),
                                                           ),
                                                         ),
                                                         Expanded(child: Text("ALL WISHLIST"))
                                                       ],
-                                                    )
-                                                  ],
+                                                    );
+                                                  },
                                                 )),
                                             Padding(
                                               padding: const EdgeInsets.all(8.0),
