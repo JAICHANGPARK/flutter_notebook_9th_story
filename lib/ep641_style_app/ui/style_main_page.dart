@@ -97,55 +97,58 @@ class _StyleMainPageState extends State<StyleMainPage> {
                           mainAxisSpacing: 8, crossAxisSpacing: 8, childAspectRatio: 0.65, crossAxisCount: 2),
                       itemCount: 10,
                       itemBuilder: (context, index) {
-                        return Container(
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Expanded(
-                                child: Container(
-                                  decoration: BoxDecoration(
-                                      borderRadius: BorderRadius.circular(8),
-                                      image: DecorationImage(
-                                          image: NetworkImage(
-                                              "https://cdn.pixabay.com/photo/2020/01/11/14/36/winter-4757707__340.jpg"),
-                                          fit: BoxFit.cover)),
-                                  child: Stack(
-                                    children: [
-                                      Positioned(
-                                          right: 0,
-                                          top: 0,
-                                          child: IconButton(
-                                            icon: Icon(Icons.favorite),
-                                            onPressed: () {},
+                        return GestureDetector(
+                          
+                          child: Container(
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Expanded(
+                                  child: Container(
+                                    decoration: BoxDecoration(
+                                        borderRadius: BorderRadius.circular(8),
+                                        image: DecorationImage(
+                                            image: NetworkImage(
+                                                "https://cdn.pixabay.com/photo/2020/01/11/14/36/winter-4757707__340.jpg"),
+                                            fit: BoxFit.cover)),
+                                    child: Stack(
+                                      children: [
+                                        Positioned(
+                                            right: 0,
+                                            top: 0,
+                                            child: IconButton(
+                                              icon: Icon(Icons.favorite),
+                                              onPressed: () {},
+                                              color: Colors.grey,
+                                            )),
+                                      ],
+                                    ),
+                                  ),
+                                  flex: 10,
+                                ),
+                                Expanded(
+                                  child: Padding(
+                                    padding: const EdgeInsets.only(top: 8),
+                                    child: Column(
+                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      children: [
+                                        Text(
+                                          "WINTER COAT",
+                                          style: TextStyle(
                                             color: Colors.grey,
-                                          )),
-                                    ],
-                                  ),
-                                ),
-                                flex: 10,
-                              ),
-                              Expanded(
-                                child: Padding(
-                                  padding: const EdgeInsets.only(top: 8),
-                                  child: Column(
-                                    crossAxisAlignment: CrossAxisAlignment.start,
-                                    children: [
-                                      Text(
-                                        "WINTER COAT",
-                                        style: TextStyle(
-                                          color: Colors.grey,
+                                          ),
                                         ),
-                                      ),
-                                      Text(
-                                        "S M XL",
-                                        style: TextStyle(color: Colors.black, fontSize: 12),
-                                      )
-                                    ],
+                                        Text(
+                                          "S M XL",
+                                          style: TextStyle(color: Colors.black, fontSize: 12),
+                                        )
+                                      ],
+                                    ),
                                   ),
+                                  flex: 2,
                                 ),
-                                flex: 2,
-                              ),
-                            ],
+                              ],
+                            ),
                           ),
                         );
                       }),
