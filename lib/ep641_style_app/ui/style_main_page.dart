@@ -135,6 +135,7 @@ class _StyleMainPageState extends State<StyleMainPage> {
                                                             ),
                                                           ),
                                                         ),
+                                                        Expanded(child: Text(""))
                                                       ],
                                                     )
                                                   ],
