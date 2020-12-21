@@ -128,22 +128,33 @@ class _StyleMainPageState extends State<StyleMainPage> {
                                                     Column(
                                                       children: [
                                                         Expanded(
-                                                          child: Container(
-                                                            width: 160,
-                                                            decoration: BoxDecoration(
-                                                              border: Border.all(color: Colors.black)
+                                                          flex: 8,
+                                                          child: Padding(
+                                                            padding: const EdgeInsets.all(8.0),
+                                                            child: Container(
+                                                              width: 120,
+                                                              decoration: BoxDecoration(
+                                                                border: Border.all(color: Colors.black),
+                                                                borderRadius: BorderRadius.circular(16)
+                                                              ),
                                                             ),
                                                           ),
                                                         ),
-                                                        Expanded(child: Text(""))
+                                                        Expanded(child: Text("ALL WISHLIST"))
                                                       ],
                                                     )
                                                   ],
                                                 )),
-                                            MaterialButton(
-                                              minWidth: double.infinity, onPressed: () {  },
-                                              child: Text("DONE"),
+                                            Padding(
+                                              padding: const EdgeInsets.all(8.0),
+                                              child: MaterialButton(
+                                                minWidth: double.infinity , onPressed: () {  },
+                                                child: Text("DONE", style: TextStyle(
+                                                  color: Colors.white
+                                                ),),
+                                                color: Colors.black,
 
+                                              ),
                                             )
                                           ],
                                         ),
