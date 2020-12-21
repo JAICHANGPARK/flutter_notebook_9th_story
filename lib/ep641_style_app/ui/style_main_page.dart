@@ -100,7 +100,12 @@ class _StyleMainPageState extends State<StyleMainPage> {
                         return GestureDetector(
                           onTap: (){
                             showBottomSheet(context: context, builder: (context) => Container(
-                              height: 350,
+                              height: 280,
+                              child: Column(
+                                children: [
+
+                                ],
+                              ),
                             ));
                           },
                           child: Container(
