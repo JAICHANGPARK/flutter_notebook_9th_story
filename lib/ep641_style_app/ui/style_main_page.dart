@@ -100,19 +100,30 @@ class _StyleMainPageState extends State<StyleMainPage> {
                         return GestureDetector(
                           onTap: (){
                             showModalBottomSheet(context: context, builder: (context) => Container(
-                              height: 280,
-                              child: Column(
-                                children: [
-                                    Row(
-                                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                      children: [
-                                        IconButton(icon: Icon(Icons.clear), onPressed: (){}),
-                                        Text("ADD TO COLLECTION"),
-                                        IconButton(icon: Icon(Icons.add), onPressed: (){}),
 
-                                      ],
-                                    )
-                                ],
+                              decoration: BoxDecoration(
+                                  color: Colors.transparent,
+
+                              ),
+                              height: 280,
+                              child: Container(
+                                decoration: BoxDecoration(
+                                  color: Colors.white,
+                                    borderRadius: BorderRadius.circular(8)
+                                ),
+                                child: Column(
+                                  children: [
+                                      Row(
+                                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                        children: [
+                                          IconButton(icon: Icon(Icons.clear), onPressed: (){}),
+                                          Text("ADD TO COLLECTION"),
+                                          IconButton(icon: Icon(Icons.add), onPressed: (){}),
+
+                                        ],
+                                      )
+                                  ],
+                                ),
                               ),
                             ));
                           },
