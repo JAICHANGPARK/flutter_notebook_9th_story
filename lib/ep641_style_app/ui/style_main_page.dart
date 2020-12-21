@@ -124,6 +124,13 @@ class _StyleMainPageState extends State<StyleMainPage> {
                                                 height: 240,
                                                 child: ListView(
                                                   scrollDirection: Axis.horizontal,
+                                                  children: [
+                                                    Container(
+                                                      decoration: BoxDecoration(
+                                                        border: Border.all(color: Colors.black)
+                                                      ),
+                                                    )
+                                                  ],
                                                 )),
                                           ],
                                         ),
