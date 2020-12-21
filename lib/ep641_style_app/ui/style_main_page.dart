@@ -121,18 +121,27 @@ class _StyleMainPageState extends State<StyleMainPage> {
                                               ],
                                             ),
                                             Container(
-                                                height: 240,
+                                                height: 200,
                                                 child: ListView(
                                                   scrollDirection: Axis.horizontal,
                                                   children: [
-                                                    Container(
-                                                      width: 160,
-                                                      decoration: BoxDecoration(
-                                                        border: Border.all(color: Colors.black)
-                                                      ),
+                                                    Column(
+                                                      children: [
+                                                        Container(
+                                                          width: 160,
+                                                          decoration: BoxDecoration(
+                                                            border: Border.all(color: Colors.black)
+                                                          ),
+                                                        ),
+                                                      ],
                                                     )
                                                   ],
                                                 )),
+                                            MaterialButton(
+                                              minWidth: double.infinity, onPressed: () {  },
+                                              child: Text("DONE"),
+
+                                            )
                                           ],
                                         ),
                                       ),
