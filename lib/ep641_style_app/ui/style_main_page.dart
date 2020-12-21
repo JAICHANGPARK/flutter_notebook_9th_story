@@ -98,7 +98,11 @@ class _StyleMainPageState extends State<StyleMainPage> {
                       itemCount: 10,
                       itemBuilder: (context, index) {
                         return GestureDetector(
-                          
+                          onTap: (){
+                            showBottomSheet(context: context, builder: (context) => Container(
+                              height: 350,
+                            ));
+                          },
                           child: Container(
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
