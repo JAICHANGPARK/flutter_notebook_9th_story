@@ -126,6 +126,7 @@ class _StyleMainPageState extends State<StyleMainPage> {
                                                   scrollDirection: Axis.horizontal,
                                                   children: [
                                                     Container(
+                                                      width: 160,
                                                       decoration: BoxDecoration(
                                                         border: Border.all(color: Colors.black)
                                                       ),
