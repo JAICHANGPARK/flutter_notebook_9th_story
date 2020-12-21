@@ -13,6 +13,7 @@ class _StyleMainPageState extends State<StyleMainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       body: SafeArea(
         child: Column(
           children: [
