@@ -186,6 +186,7 @@ class _StyleMainPageState extends State<StyleMainPage> {
         ),
       ),
       bottomNavigationBar: BottomNavigationBar(
+        backgroundColor: Colors.white,
         selectedItemColor: Colors.black,
         unselectedItemColor: Colors.grey,
         currentIndex: _pageIdx,
