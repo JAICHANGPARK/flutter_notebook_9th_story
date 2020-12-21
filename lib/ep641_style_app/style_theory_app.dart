@@ -7,6 +7,9 @@ class StyleTheoryApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: StyleMainPage(),
+      theme: ThemeData(
+        canvasColor: Colors.transparent
+      ),
     );
   }
 }
