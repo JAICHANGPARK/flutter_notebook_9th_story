@@ -99,11 +99,15 @@ class _StyleMainPageState extends State<StyleMainPage> {
                       itemBuilder: (context, index) {
                         return GestureDetector(
                           onTap: (){
-                            showBottomSheet(context: context, builder: (context) => Container(
+                            showModalBottomSheet(context: context, builder: (context) => Container(
                               height: 280,
                               child: Column(
                                 children: [
-
+                                    Row(
+                                      children: [
+                                        IconButton(icon: Icon(Icons.clear), onPressed: (){}),
+                                      ],
+                                    )
                                 ],
                               ),
                             ));
