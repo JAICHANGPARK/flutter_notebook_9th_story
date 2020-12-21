@@ -104,8 +104,12 @@ class _StyleMainPageState extends State<StyleMainPage> {
                               child: Column(
                                 children: [
                                     Row(
+                                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                       children: [
                                         IconButton(icon: Icon(Icons.clear), onPressed: (){}),
+                                        Text("ADD TO COLLECTION"),
+                                        IconButton(icon: Icon(Icons.add), onPressed: (){}),
+
                                       ],
                                     )
                                 ],
