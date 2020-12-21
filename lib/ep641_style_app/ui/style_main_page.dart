@@ -115,7 +115,9 @@ class _StyleMainPageState extends State<StyleMainPage> {
                                             Row(
                                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                               children: [
-                                                IconButton(icon: Icon(Icons.clear), onPressed: () {}),
+                                                IconButton(icon: Icon(Icons.clear), onPressed: () {
+                                                  Navigator.pop(context);
+                                                }),
                                                 Text("ADD TO COLLECTION"),
                                                 IconButton(icon: Icon(Icons.add), onPressed: () {}),
                                               ],
@@ -123,6 +125,7 @@ class _StyleMainPageState extends State<StyleMainPage> {
                                             Container(
                                                 height: 200,
                                                 child: ListView.builder(
+                                                  itemCount: 10,
                                                   scrollDirection: Axis.horizontal,
                                                   itemBuilder: (context, index){
                                                     return Column(
