@@ -99,34 +99,36 @@ class _StyleMainPageState extends State<StyleMainPage> {
                       itemCount: 10,
                       itemBuilder: (context, index) {
                         return GestureDetector(
-                          onTap: (){
-                            showModalBottomSheet(context: context, builder: (context) => Container(
-
-                              decoration: BoxDecoration(
-                                  color: Colors.transparent,
-
-                              ),
-                              height: 280,
-                              child: Container(
-                                decoration: BoxDecoration(
-                                  color: Colors.white,
-                                    borderRadius: BorderRadius.circular(16)
-                                ),
-                                child: Column(
-                                  children: [
-                                      Row(
-                                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                        children: [
-                                          IconButton(icon: Icon(Icons.clear), onPressed: (){}),
-                                          Text("ADD TO COLLECTION"),
-                                          IconButton(icon: Icon(Icons.add), onPressed: (){}),
-
-                                        ],
-                                      )
-                                  ],
-                                ),
-                              ),
-                            ));
+                          onTap: () {
+                            showModalBottomSheet(
+                                context: context,
+                                builder: (context) => Container(
+                                      decoration: BoxDecoration(
+                                        color: Colors.transparent,
+                                      ),
+                                      height: 320,
+                                      child: Container(
+                                        decoration:
+                                            BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(16)),
+                                        child: Column(
+                                          children: [
+                                            Row(
+                                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                              children: [
+                                                IconButton(icon: Icon(Icons.clear), onPressed: () {}),
+                                                Text("ADD TO COLLECTION"),
+                                                IconButton(icon: Icon(Icons.add), onPressed: () {}),
+                                              ],
+                                            ),
+                                            Container(
+                                                height: 240,
+                                                child: ListView(
+                                                  scrollDirection: Axis.horizontal,
+                                                )),
+                                          ],
+                                        ),
+                                      ),
+                                    ));
                           },
                           child: Container(
                             child: Column(
