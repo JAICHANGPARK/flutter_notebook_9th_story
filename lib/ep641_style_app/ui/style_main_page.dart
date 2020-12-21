@@ -127,10 +127,12 @@ class _StyleMainPageState extends State<StyleMainPage> {
                                                   children: [
                                                     Column(
                                                       children: [
-                                                        Container(
-                                                          width: 160,
-                                                          decoration: BoxDecoration(
-                                                            border: Border.all(color: Colors.black)
+                                                        Expanded(
+                                                          child: Container(
+                                                            width: 160,
+                                                            decoration: BoxDecoration(
+                                                              border: Border.all(color: Colors.black)
+                                                            ),
                                                           ),
                                                         ),
                                                       ],
