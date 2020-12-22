@@ -115,9 +115,11 @@ class _StyleMainPageState extends State<StyleMainPage> {
                                             Row(
                                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                               children: [
-                                                IconButton(icon: Icon(Icons.clear), onPressed: () {
-                                                  Navigator.pop(context);
-                                                }),
+                                                IconButton(
+                                                    icon: Icon(Icons.clear),
+                                                    onPressed: () {
+                                                      Navigator.pop(context);
+                                                    }),
                                                 Text("ADD TO COLLECTION"),
                                                 IconButton(icon: Icon(Icons.add), onPressed: () {}),
                                               ],
@@ -127,7 +129,7 @@ class _StyleMainPageState extends State<StyleMainPage> {
                                                 child: ListView.builder(
                                                   itemCount: 10,
                                                   scrollDirection: Axis.horizontal,
-                                                  itemBuilder: (context, index){
+                                                  itemBuilder: (context, index) {
                                                     return Column(
                                                       children: [
                                                         Expanded(
@@ -138,8 +140,7 @@ class _StyleMainPageState extends State<StyleMainPage> {
                                                               width: 120,
                                                               decoration: BoxDecoration(
                                                                   border: Border.all(color: Colors.black),
-                                                                  borderRadius: BorderRadius.circular(16)
-                                                              ),
+                                                                  borderRadius: BorderRadius.circular(16)),
                                                             ),
                                                           ),
                                                         ),
@@ -151,12 +152,13 @@ class _StyleMainPageState extends State<StyleMainPage> {
                                             Padding(
                                               padding: const EdgeInsets.all(8.0),
                                               child: MaterialButton(
-                                                minWidth: double.infinity , onPressed: () {  },
-                                                child: Text("DONE", style: TextStyle(
-                                                  color: Colors.white
-                                                ),),
+                                                minWidth: double.infinity,
+                                                onPressed: () {},
+                                                child: Text(
+                                                  "DONE",
+                                                  style: TextStyle(color: Colors.white),
+                                                ),
                                                 color: Colors.black,
-
                                               ),
                                             )
                                           ],
