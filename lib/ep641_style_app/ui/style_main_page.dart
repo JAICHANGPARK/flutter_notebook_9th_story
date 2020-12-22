@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_9th_story/ep641_style_app/ui/filter_page.dart';
 
 class StyleMainPage extends StatefulWidget {
   @override
@@ -49,7 +50,10 @@ class _StyleMainPageState extends State<StyleMainPage> {
                                 )
                               ],
                             ),
-                            GestureDetector(child: Icon(Icons.tune))
+                            GestureDetector(child: Icon(Icons.tune),
+                            onTap: () => Navigator.push(context, MaterialPageRoute(
+                              builder: (context) => StyleFilterPage()
+                            )),)
                           ],
                         ),
                       )),
