@@ -8,6 +8,8 @@ class StyleFilterPage extends StatefulWidget {
 class _StyleFilterPageState extends State<StyleFilterPage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+
+    );
   }
 }
