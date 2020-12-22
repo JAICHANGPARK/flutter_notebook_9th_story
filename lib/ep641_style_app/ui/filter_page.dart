@@ -26,28 +26,31 @@ class _StyleFilterPageState extends State<StyleFilterPage> {
         centerTitle: true,
       ),
       body: SingleChildScrollView(
-        child: Column(
-          children: [
-          Container(
-            child: Column(
-              children: [
-                Text("SIZES"),
-                Row(
-                  children: [
-                    Container(
-                      height: 38,
-                      width: 38,
-                      decoration: BoxDecoration(
-                        shape: BoxShape.circle,
-                        border: Border.all(Colors.grey)
-                      ),
-                    )
-                  ],
-                )
-              ],
-            ),
-          )
-          ],
+        child: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Column(
+            children: [
+            Container(
+              child: Column(
+                children: [
+                  Text("SIZES"),
+                  Row(
+                    children: [
+                      Container(
+                        height: 42,
+                        width: 42,
+                        decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                          border: Border.all(color: Colors.grey)
+                        ),
+                      )
+                    ],
+                  )
+                ],
+              ),
+            )
+            ],
+          ),
         ),
       ),
       bottomNavigationBar: BottomAppBar(
