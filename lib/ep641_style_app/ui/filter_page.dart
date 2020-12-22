@@ -12,7 +12,10 @@ class _StyleFilterPageState extends State<StyleFilterPage> {
       backgroundColor: Colors.white,
       appBar: AppBar(
         backgroundColor: Colors.white,
-        leading: InkWell(child: Icon(Icons.clear),),
+        leading: InkWell(child: Icon(Icons.clear),
+        onTap: (){
+          Navigator.pop(context);
+        },),
         iconTheme: IconThemeData(
           color: Colors.black
         ),
