@@ -49,7 +49,7 @@ class _StyleMainPageState extends State<StyleMainPage> {
                                 )
                               ],
                             ),
-                            Icon(Icons.tune)
+                            GestureDetector(child: Icon(Icons.tune))
                           ],
                         ),
                       )),
