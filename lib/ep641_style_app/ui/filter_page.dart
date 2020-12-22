@@ -28,7 +28,25 @@ class _StyleFilterPageState extends State<StyleFilterPage> {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            
+          Container(
+            child: Column(
+              children: [
+                Text("SIZES"),
+                Row(
+                  children: [
+                    Container(
+                      height: 38,
+                      width: 38,
+                      decoration: BoxDecoration(
+                        shape: BoxShape.circle,
+                        border: Border.all(Colors.grey)
+                      ),
+                    )
+                  ],
+                )
+              ],
+            ),
+          )
           ],
         ),
       ),
