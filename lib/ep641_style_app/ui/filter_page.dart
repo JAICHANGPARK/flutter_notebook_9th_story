@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-class  extends StatefulWidget {
+class StyleFilterPage extends StatefulWidget {
   @override
-  _FilterPageState createState() => _FilterPageState();
+  _StyleFilterPageState createState() => _StyleFilterPageState();
 }
 
-class _FilterPageState extends State<FilterPage> {
+class _StyleFilterPageState extends State<StyleFilterPage> {
   @override
   Widget build(BuildContext context) {
     return Container();
