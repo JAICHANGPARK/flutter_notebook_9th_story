@@ -19,10 +19,10 @@ class _StyleFilterPageState extends State<StyleFilterPage> {
           },
         ),
         iconTheme: IconThemeData(color: Colors.black),
-        title: Text("FILTERS"),
-        titleTextStyle: TextStyle(
+        title: Text("FILTERS", style: TextStyle(
           color: Colors.black
-        ),
+        ),),
+        
         centerTitle: true,
       ),
     );
