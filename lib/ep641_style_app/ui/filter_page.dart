@@ -9,7 +9,7 @@ class _StyleFilterPageState extends State<StyleFilterPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Color(0xfffafafa),
       appBar: AppBar(
         backgroundColor: Colors.white,
         leading: InkWell(
@@ -27,9 +27,28 @@ class _StyleFilterPageState extends State<StyleFilterPage> {
       ),
       body: ListView(
         children: [
-          
+
         ],
-      )
+      ),
+      bottomNavigationBar: BottomAppBar(
+        elevation: 8,
+        child: Container(
+          height: 72,
+          child: Row(
+            children: [
+              Expanded(child: OutlineButton(
+                child: Text("RESET"),
+              )),
+              Expanded(child: MaterialButton(
+                color: Colors.black,
+                textColor: Colors.white,
+                child: Text("APPLY"),
+              )),
+
+            ],
+          ),
+        ),
+      ),
     );
   }
 }
