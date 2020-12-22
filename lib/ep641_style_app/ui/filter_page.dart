@@ -31,57 +31,72 @@ class _StyleFilterPageState extends State<StyleFilterPage> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-            Container(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Text("SIZES"),
-                  ),
-                  SizedBox(height: 8,),
-                  Row(
-                    children: [
-                      Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 4),
-                        child: Container(
-
-                          height: 42,
-                          width: 42,
-                          decoration: BoxDecoration(
-                            shape: BoxShape.circle,
-                            border: Border.all(color: Colors.grey)
+              Container(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Text("SIZES"),
+                    ),
+                    SizedBox(
+                      height: 8,
+                    ),
+                    Row(
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 4),
+                          child: Container(
+                            height: 42,
+                            width: 42,
+                            decoration: BoxDecoration(shape: BoxShape.circle, border: Border.all(color: Colors.grey)),
                           ),
                         ),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 4),
-                        child: Container(
-                          height: 42,
-                          width: 42,
-                          decoration: BoxDecoration(
-                              shape: BoxShape.circle,
-                              border: Border.all(color: Colors.grey)
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 4),
+                          child: Container(
+                            height: 42,
+                            width: 42,
+                            decoration: BoxDecoration(shape: BoxShape.circle, border: Border.all(color: Colors.grey)),
                           ),
                         ),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 4),
-                        child: Container(
-                          height: 42,
-                          width: 42,
-                          decoration: BoxDecoration(
-                              shape: BoxShape.circle,
-                              border: Border.all(color: Colors.grey)
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 4),
+                          child: Container(
+                            height: 42,
+                            width: 42,
+                            decoration: BoxDecoration(shape: BoxShape.circle, border: Border.all(color: Colors.grey)),
                           ),
                         ),
-                      )
-
-                    ],
-                  )
-                ],
-              ),
-            )
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 4),
+                          child: Container(
+                            height: 42,
+                            width: 42,
+                            decoration: BoxDecoration(shape: BoxShape.circle, border: Border.all(color: Colors.grey)),
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 4),
+                          child: Container(
+                            height: 42,
+                            width: 42,
+                            decoration: BoxDecoration(shape: BoxShape.circle, border: Border.all(color: Colors.grey)),
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 4),
+                          child: Container(
+                            height: 42,
+                            width: 42,
+                            decoration: BoxDecoration(shape: BoxShape.circle, border: Border.all(color: Colors.grey)),
+                          ),
+                        )
+                      ],
+                    )
+                  ],
+                ),
+              )
             ],
           ),
         ),
@@ -92,23 +107,24 @@ class _StyleFilterPageState extends State<StyleFilterPage> {
           height: 72,
           child: Row(
             children: [
-              Expanded(child: Padding(
+              Expanded(
+                  child: Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: OutlineButton(
-                  onPressed: () {  },
+                  onPressed: () {},
                   child: Text("RESET"),
                 ),
               )),
-              Expanded(child: Padding(
+              Expanded(
+                  child: Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: MaterialButton(
                   color: Colors.black,
                   textColor: Colors.white,
-                  onPressed: () {  },
+                  onPressed: () {},
                   child: Text("APPLY"),
                 ),
               )),
-
             ],
           ),
         ),
