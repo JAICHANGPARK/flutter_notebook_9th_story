@@ -36,13 +36,21 @@ class _StyleFilterPageState extends State<StyleFilterPage> {
           height: 72,
           child: Row(
             children: [
-              Expanded(child: OutlineButton(
-                child: Text("RESET"),
+              Expanded(child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: OutlineButton(
+                  onPressed: () {  },
+                  child: Text("RESET"),
+                ),
               )),
-              Expanded(child: MaterialButton(
-                color: Colors.black,
-                textColor: Colors.white,
-                child: Text("APPLY"),
+              Expanded(child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: MaterialButton(
+                  color: Colors.black,
+                  textColor: Colors.white,
+                  onPressed: () {  },
+                  child: Text("APPLY"),
+                ),
               )),
 
             ],
