@@ -9,7 +9,7 @@ class _StyleFilterPageState extends State<StyleFilterPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
+      backgroundColor: Colors.white,
     );
   }
 }
