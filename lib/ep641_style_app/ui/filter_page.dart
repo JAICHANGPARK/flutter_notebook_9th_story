@@ -25,10 +25,12 @@ class _StyleFilterPageState extends State<StyleFilterPage> {
         ),
         centerTitle: true,
       ),
-      body: ListView(
-        children: [
-
-        ],
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            
+          ],
+        ),
       ),
       bottomNavigationBar: BottomAppBar(
         elevation: 8,
