@@ -218,23 +218,23 @@ class _StyleFilterPageState extends State<StyleFilterPage> {
                 child: ExpansionTile(
                   title: Text("COLOR"),
                   children: [
-                    SizedBox(
-                      height: 8,
-                    ),
-                    Container(
-                      width: double.infinity,
-                      height: 100,
-                      child: GridView.count(
-                          crossAxisCount: 8,
-                          childAspectRatio: 0.95,
-                          children: colorList
-                              .map((e) => Padding(
-                                    padding: const EdgeInsets.symmetric(horizontal: 4),
-                                    child: Container(
-                                      decoration: BoxDecoration(color: e, shape: BoxShape.circle),
-                                    ),
-                                  ))
-                              .toList()),
+                    Padding(
+                      padding: const EdgeInsets.symmetric(vertical: 16),
+                      child: Container(
+                        width: double.infinity,
+                        height: 100,
+                        child: GridView.count(
+                            crossAxisCount: 8,
+                            childAspectRatio: 0.95,
+                            children: colorList
+                                .map((e) => Padding(
+                                      padding: const EdgeInsets.symmetric(horizontal: 4),
+                                      child: Container(
+                                        decoration: BoxDecoration(color: e, shape: BoxShape.circle),
+                                      ),
+                                    ))
+                                .toList()),
+                      ),
                     )
                   ],
                 ),
