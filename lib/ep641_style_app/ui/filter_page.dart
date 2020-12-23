@@ -104,6 +104,11 @@ class _StyleFilterPageState extends State<StyleFilterPage> {
                               shape: BoxShape.circle,
                               border: Border.all(color: Colors.grey),
                             ),
+                            child: Center(
+                              child: Text("M", style: TextStyle(
+                                  color: Colors.grey
+                              ),),
+                            ),
                           ),
                         ),
                         Padding(
