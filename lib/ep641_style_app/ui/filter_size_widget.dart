@@ -1,14 +1,18 @@
 import 'package:flutter/material.dart';
 
 
-class FilterSizeWidget extends StatelessWidget {
+class FilterSizeWidget extends StatefulWidget {
+
+  @override
+  _FilterSizeWidgetState createState() => _FilterSizeWidgetState();
+}
+
+class _FilterSizeWidgetState extends State<FilterSizeWidget> {
   @override
   Widget build(BuildContext context) {
     return  InkWell(
       onTap: (){
-        setState(() {
-          _sizeSelected = 0;
-        });
+       
       },
       child: Container(
         height: 42,
