@@ -65,7 +65,7 @@ class _StyleFilterPageState extends State<StyleFilterPage> {
                         Padding(
                           padding: const EdgeInsets.symmetric(horizontal: 4),
                           child: InkWell(
-                            onTap: (){
+                            onTap: () {
                               setState(() {
                                 _sizeSelected = 0;
                               });
@@ -74,10 +74,9 @@ class _StyleFilterPageState extends State<StyleFilterPage> {
                               height: 42,
                               width: 42,
                               decoration: BoxDecoration(
-                                shape: BoxShape.circle,
-                                border: Border.all(color: Colors.grey),
-                                color: _sizeSelected == 0 ? Colors.black : Colors.white
-                              ),
+                                  shape: BoxShape.circle,
+                                  border: Border.all(color: Colors.grey),
+                                  color: _sizeSelected == 0 ? Colors.black : Colors.white),
                               child: Center(
                                 child: Text(
                                   "XXS",
@@ -90,7 +89,7 @@ class _StyleFilterPageState extends State<StyleFilterPage> {
                         Padding(
                           padding: const EdgeInsets.symmetric(horizontal: 4),
                           child: InkWell(
-                            onTap: (){
+                            onTap: () {
                               setState(() {
                                 _sizeSelected = 1;
                               });
@@ -99,10 +98,9 @@ class _StyleFilterPageState extends State<StyleFilterPage> {
                               height: 42,
                               width: 42,
                               decoration: BoxDecoration(
-                                shape: BoxShape.circle,
-                                border: Border.all(color: Colors.grey),
-                                  color: _sizeSelected == 1 ? Colors.black : Colors.white
-                              ),
+                                  shape: BoxShape.circle,
+                                  border: Border.all(color: Colors.grey),
+                                  color: _sizeSelected == 1 ? Colors.black : Colors.white),
                               child: Center(
                                 child: Text(
                                   "XS",
@@ -115,7 +113,7 @@ class _StyleFilterPageState extends State<StyleFilterPage> {
                         Padding(
                           padding: const EdgeInsets.symmetric(horizontal: 4),
                           child: InkWell(
-                            onTap: (){
+                            onTap: () {
                               setState(() {
                                 _sizeSelected = 2;
                               });
@@ -139,7 +137,7 @@ class _StyleFilterPageState extends State<StyleFilterPage> {
                         Padding(
                           padding: const EdgeInsets.symmetric(horizontal: 4),
                           child: InkWell(
-                            onTap: (){
+                            onTap: () {
                               setState(() {
                                 _sizeSelected = 3;
                               });
@@ -163,7 +161,7 @@ class _StyleFilterPageState extends State<StyleFilterPage> {
                         Padding(
                           padding: const EdgeInsets.symmetric(horizontal: 4),
                           child: InkWell(
-                            onTap: (){
+                            onTap: () {
                               setState(() {
                                 _sizeSelected = 4;
                               });
@@ -176,9 +174,10 @@ class _StyleFilterPageState extends State<StyleFilterPage> {
                                 border: Border.all(color: Colors.grey),
                               ),
                               child: Center(
-                                child: Text("L", style: TextStyle(
-                                    color: Colors.grey
-                                ),),
+                                child: Text(
+                                  "L",
+                                  style: TextStyle(color: Colors.grey),
+                                ),
                               ),
                             ),
                           ),
@@ -186,7 +185,7 @@ class _StyleFilterPageState extends State<StyleFilterPage> {
                         Padding(
                           padding: const EdgeInsets.symmetric(horizontal: 4),
                           child: InkWell(
-                            onTap: (){
+                            onTap: () {
                               setState(() {
                                 _sizeSelected = 5;
                               });
@@ -199,9 +198,10 @@ class _StyleFilterPageState extends State<StyleFilterPage> {
                                 border: Border.all(color: Colors.grey),
                               ),
                               child: Center(
-                                child: Text("XL", style: TextStyle(
-                                    color: Colors.grey
-                                ),),
+                                child: Text(
+                                  "XL",
+                                  style: TextStyle(color: Colors.grey),
+                                ),
                               ),
                             ),
                           ),
@@ -211,38 +211,61 @@ class _StyleFilterPageState extends State<StyleFilterPage> {
                   ],
                 ),
               ),
-              SizedBox(height: 16,),
-
+              SizedBox(
+                height: 16,
+              ),
               Container(
                 child: ExpansionTile(
                   title: Text("COLOR"),
-
                   children: [
-
                     SizedBox(
                       height: 8,
                     ),
                     Container(
                       width: double.infinity,
                       height: 100,
-                      child: GridView.count(crossAxisCount: 8,
+                      child: GridView.count(
+                          crossAxisCount: 8,
                           childAspectRatio: 0.95,
-                          children: colorList.map((e) => Padding(
-                            padding: const EdgeInsets.symmetric(horizontal: 4),
-                            child: Container(
-                              decoration: BoxDecoration(
-                                  color: e,
-                                  shape: BoxShape.circle
-                              ),
-
-                            ),
-                          )).toList()
-
-                      ),
+                          children: colorList
+                              .map((e) => Padding(
+                                    padding: const EdgeInsets.symmetric(horizontal: 4),
+                                    child: Container(
+                                      decoration: BoxDecoration(color: e, shape: BoxShape.circle),
+                                    ),
+                                  ))
+                              .toList()),
                     )
                   ],
                 ),
-               
+              ),
+              SizedBox(
+                height: 16,
+              ),
+              Container(
+                child: ExpansionTile(
+                  title: Text("PRINT"),
+                  children: [
+                    SizedBox(
+                      height: 8,
+                    ),
+                    Container(
+                      width: double.infinity,
+                      height: 100,
+                      child: GridView.count(
+                          crossAxisCount: 8,
+                          childAspectRatio: 0.95,
+                          children: colorList
+                              .map((e) => Padding(
+                                    padding: const EdgeInsets.symmetric(horizontal: 4),
+                                    child: Container(
+                                      decoration: BoxDecoration(color: e, shape: BoxShape.circle),
+                                    ),
+                                  ))
+                              .toList()),
+                    )
+                  ],
+                ),
               )
             ],
           ),
