@@ -211,15 +211,14 @@ class _StyleFilterPageState extends State<StyleFilterPage> {
                   ],
                 ),
               ),
+              SizedBox(height: 16,),
 
               Container(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
+                child: ExpansionTile(
+                  title: Text("COLOR"),
+
                   children: [
-                    Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: Text("COLOR"),
-                    ),
+
                     SizedBox(
                       height: 8,
                     ),
@@ -227,22 +226,23 @@ class _StyleFilterPageState extends State<StyleFilterPage> {
                       width: double.infinity,
                       height: 100,
                       child: GridView.count(crossAxisCount: 8,
-                        childAspectRatio: 0.95,
-                        children: colorList.map((e) => Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 4),
-                          child: Container(
-                            decoration: BoxDecoration(
-                              color: e,
-                              shape: BoxShape.circle
-                            ),
+                          childAspectRatio: 0.95,
+                          children: colorList.map((e) => Padding(
+                            padding: const EdgeInsets.symmetric(horizontal: 4),
+                            child: Container(
+                              decoration: BoxDecoration(
+                                  color: e,
+                                  shape: BoxShape.circle
+                              ),
 
-                          ),
-                        )).toList()
+                            ),
+                          )).toList()
 
                       ),
                     )
                   ],
                 ),
+               
               )
             ],
           ),
