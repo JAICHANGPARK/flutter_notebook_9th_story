@@ -18,7 +18,10 @@ class _StyleFilterPageState extends State<StyleFilterPage> {
     Colors.indigo,
     Colors.purple,
     Colors.pink,
-    Collors.red
+    Colors.red,
+    Colors.orange,
+    Colors.yellow,
+    Colors.green,
   ];
 
   @override
@@ -220,10 +223,9 @@ class _StyleFilterPageState extends State<StyleFilterPage> {
                     SizedBox(
                       height: 8,
                     ),
-                    Row(
-                      children: [
+                    GridView.count(crossAxisCount: 8,
+                      children: colorList.map((e) => Container()).toList()
 
-                      ],
                     )
                   ],
                 ),
