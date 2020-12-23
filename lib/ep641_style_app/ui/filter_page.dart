@@ -84,7 +84,7 @@ class _StyleFilterPageState extends State<StyleFilterPage> {
                             width: 42,
                             decoration: BoxDecoration(shape: BoxShape.circle, border: Border.all(color: Colors.grey),),
                             child: Center(
-                              child: Text("XXS", style: TextStyle(
+                              child: Text("S", style: TextStyle(
                                   color: Colors.grey
                               ),),
                             ),
