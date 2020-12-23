@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_9th_story/ep641_style_app/ui/filter_size_widget.dart';
 
 class StyleFilterPage extends StatefulWidget {
   @override
@@ -47,7 +48,7 @@ class _StyleFilterPageState extends State<StyleFilterPage> {
                       children: [
                         Padding(
                           padding: const EdgeInsets.symmetric(horizontal: 4),
-                          child: 
+                          child: FilterSizeWidget(),
                         ),
                         Padding(
                           padding: const EdgeInsets.symmetric(horizontal: 4),
