@@ -121,6 +121,11 @@ class _StyleFilterPageState extends State<StyleFilterPage> {
                               shape: BoxShape.circle,
                               border: Border.all(color: Colors.grey),
                             ),
+                            child: Center(
+                              child: Text("L", style: TextStyle(
+                                  color: Colors.grey
+                              ),),
+                            ),
                           ),
                         ),
                         Padding(
@@ -131,6 +136,11 @@ class _StyleFilterPageState extends State<StyleFilterPage> {
                             decoration: BoxDecoration(
                               shape: BoxShape.circle,
                               border: Border.all(color: Colors.grey),
+                            ),
+                            child: Center(
+                              child: Text("XL", style: TextStyle(
+                                  color: Colors.grey
+                              ),),
                             ),
                           ),
                         )
