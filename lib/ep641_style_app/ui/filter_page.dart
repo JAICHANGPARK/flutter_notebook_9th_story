@@ -6,6 +6,7 @@ class StyleFilterPage extends StatefulWidget {
 }
 
 class _StyleFilterPageState extends State<StyleFilterPage> {
+  num _sizeSelected = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
