@@ -229,7 +229,7 @@ class _StyleFilterPageState extends State<StyleFilterPage> {
                       child: GridView.count(crossAxisCount: 8,
                         childAspectRatio: 0.95,
                         children: colorList.map((e) => Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 8),
+                          padding: const EdgeInsets.symmetric(horizontal: 4),
                           child: Container(
                             decoration: BoxDecoration(
                               color: e,
