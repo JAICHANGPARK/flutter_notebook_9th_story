@@ -12,7 +12,7 @@ class _FilterSizeWidgetState extends State<FilterSizeWidget> {
   Widget build(BuildContext context) {
     return  InkWell(
       onTap: (){
-       
+
       },
       child: Container(
         height: 42,
