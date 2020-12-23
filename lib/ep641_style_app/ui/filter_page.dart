@@ -223,17 +223,23 @@ class _StyleFilterPageState extends State<StyleFilterPage> {
                     SizedBox(
                       height: 8,
                     ),
-                    GridView.count(crossAxisCount: 8,
-                      children: colorList.map((e) => Container(
-                        height: 42,
-                        width: 42,
-                        decoration: BoxDecoration(
-                          color: e,
-                          shape: BoxShape.circle
-                        ),
+                    Container(
+                      width: double.infinity,
+                      height: 100,
+                      child: GridView.count(crossAxisCount: 8,
+                        childAspectRatio: 0.95,
+                        children: colorList.map((e) => Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 8),
+                          child: Container(
+                            decoration: BoxDecoration(
+                              color: e,
+                              shape: BoxShape.circle
+                            ),
 
-                      )).toList()
+                          ),
+                        )).toList()
 
+                      ),
                     )
                   ],
                 ),
