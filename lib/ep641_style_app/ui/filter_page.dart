@@ -224,7 +224,15 @@ class _StyleFilterPageState extends State<StyleFilterPage> {
                       height: 8,
                     ),
                     GridView.count(crossAxisCount: 8,
-                      children: colorList.map((e) => Container()).toList()
+                      children: colorList.map((e) => Container(
+                        height: 42,
+                        width: 42,
+                        decoration: BoxDecoration(
+                          color: e,
+                          shape: BoxShape.circle
+                        ),
+
+                      )).toList()
 
                     )
                   ],
