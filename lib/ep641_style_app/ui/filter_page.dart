@@ -48,7 +48,28 @@ class _StyleFilterPageState extends State<StyleFilterPage> {
                       children: [
                         Padding(
                           padding: const EdgeInsets.symmetric(horizontal: 4),
-                          child: FilterSizeWidget(),
+                          child: InkWell(
+                            onTap: (){
+                              setState(() {
+                                _sizeSelected = 0;
+                              });
+                            },
+                            child: Container(
+                              height: 42,
+                              width: 42,
+                              decoration: BoxDecoration(
+                                shape: BoxShape.circle,
+                                border: Border.all(color: Colors.grey),
+                                color: _sizeSelected == 0 ? Colors.black : Colors.white
+                              ),
+                              child: Center(
+                                child: Text(
+                                  "XXS",
+                                  style: TextStyle(color: Colors.grey),
+                                ),
+                              ),
+                            ),
+                          ),
                         ),
                         Padding(
                           padding: const EdgeInsets.symmetric(horizontal: 4),
