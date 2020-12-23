@@ -8,6 +8,19 @@ class StyleFilterPage extends StatefulWidget {
 
 class _StyleFilterPageState extends State<StyleFilterPage> {
   num _sizeSelected = 0;
+
+  List<Color> colorList = [
+    Colors.black,
+    Colors.grey,
+    Colors.white,
+    Colors.brown[100],
+    Colors.brown,
+    Colors.indigo,
+    Colors.purple,
+    Colors.pink,
+    Collors.red
+  ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -202,157 +215,14 @@ class _StyleFilterPageState extends State<StyleFilterPage> {
                   children: [
                     Padding(
                       padding: const EdgeInsets.all(8.0),
-                      child: Text("SIZES"),
+                      child: Text("COLOR"),
                     ),
                     SizedBox(
                       height: 8,
                     ),
                     Row(
                       children: [
-                        Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 4),
-                          child: InkWell(
-                            onTap: (){
-                              setState(() {
-                                _sizeSelected = 0;
-                              });
-                            },
-                            child: Container(
-                              height: 42,
-                              width: 42,
-                              decoration: BoxDecoration(
-                                  shape: BoxShape.circle,
-                                  border: Border.all(color: Colors.grey),
-                                  color: _sizeSelected == 0 ? Colors.black : Colors.white
-                              ),
-                              child: Center(
-                                child: Text(
-                                  "XXS",
-                                  style: TextStyle(color: Colors.grey),
-                                ),
-                              ),
-                            ),
-                          ),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 4),
-                          child: InkWell(
-                            onTap: (){
-                              setState(() {
-                                _sizeSelected = 1;
-                              });
-                            },
-                            child: Container(
-                              height: 42,
-                              width: 42,
-                              decoration: BoxDecoration(
-                                  shape: BoxShape.circle,
-                                  border: Border.all(color: Colors.grey),
-                                  color: _sizeSelected == 1 ? Colors.black : Colors.white
-                              ),
-                              child: Center(
-                                child: Text(
-                                  "XS",
-                                  style: TextStyle(color: Colors.grey),
-                                ),
-                              ),
-                            ),
-                          ),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 4),
-                          child: InkWell(
-                            onTap: (){
-                              setState(() {
-                                _sizeSelected = 2;
-                              });
-                            },
-                            child: Container(
-                              height: 42,
-                              width: 42,
-                              decoration: BoxDecoration(
-                                shape: BoxShape.circle,
-                                border: Border.all(color: Colors.grey),
-                              ),
-                              child: Center(
-                                child: Text(
-                                  "S",
-                                  style: TextStyle(color: Colors.grey),
-                                ),
-                              ),
-                            ),
-                          ),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 4),
-                          child: InkWell(
-                            onTap: (){
-                              setState(() {
-                                _sizeSelected = 3;
-                              });
-                            },
-                            child: Container(
-                              height: 42,
-                              width: 42,
-                              decoration: BoxDecoration(
-                                shape: BoxShape.circle,
-                                border: Border.all(color: Colors.grey),
-                              ),
-                              child: Center(
-                                child: Text(
-                                  "M",
-                                  style: TextStyle(color: Colors.grey),
-                                ),
-                              ),
-                            ),
-                          ),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 4),
-                          child: InkWell(
-                            onTap: (){
-                              setState(() {
-                                _sizeSelected = 4;
-                              });
-                            },
-                            child: Container(
-                              height: 42,
-                              width: 42,
-                              decoration: BoxDecoration(
-                                shape: BoxShape.circle,
-                                border: Border.all(color: Colors.grey),
-                              ),
-                              child: Center(
-                                child: Text("L", style: TextStyle(
-                                    color: Colors.grey
-                                ),),
-                              ),
-                            ),
-                          ),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 4),
-                          child: InkWell(
-                            onTap: (){
-                              setState(() {
-                                _sizeSelected = 5;
-                              });
-                            },
-                            child: Container(
-                              height: 42,
-                              width: 42,
-                              decoration: BoxDecoration(
-                                shape: BoxShape.circle,
-                                border: Border.all(color: Colors.grey),
-                              ),
-                              child: Center(
-                                child: Text("XL", style: TextStyle(
-                                    color: Colors.grey
-                                ),),
-                              ),
-                            ),
-                          ),
-                        )
+
                       ],
                     )
                   ],
