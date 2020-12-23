@@ -291,7 +291,9 @@ class _StyleFilterPageState extends State<StyleFilterPage> {
                 child: MaterialButton(
                   color: Colors.black,
                   textColor: Colors.white,
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.pop(context);
+                  },
                   child: Text("APPLY"),
                 ),
               )),
