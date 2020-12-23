@@ -49,7 +49,10 @@ class _StyleFilterPageState extends State<StyleFilterPage> {
                           child: Container(
                             height: 42,
                             width: 42,
-                            decoration: BoxDecoration(shape: BoxShape.circle, border: Border.all(color: Colors.grey)),
+                            decoration: BoxDecoration(
+                              shape: BoxShape.circle,
+                              border: Border.all(color: Colors.grey),
+                            ),
                             child: Center(
                               child: Text(
                                 "XXS",
