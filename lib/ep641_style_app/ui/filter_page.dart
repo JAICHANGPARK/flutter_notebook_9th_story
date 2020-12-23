@@ -47,7 +47,7 @@ class _StyleFilterPageState extends State<StyleFilterPage> {
                       children: [
                         Padding(
                           padding: const EdgeInsets.symmetric(horizontal: 4),
-                          child:
+                          child: 
                         ),
                         Padding(
                           padding: const EdgeInsets.symmetric(horizontal: 4),
