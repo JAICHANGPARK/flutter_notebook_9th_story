@@ -71,9 +71,10 @@ class _StyleFilterPageState extends State<StyleFilterPage> {
                               border: Border.all(color: Colors.grey),
                             ),
                             child: Center(
-                              child: Text("XS", style: TextStyle(
-                                  color: Colors.grey
-                              ),),
+                              child: Text(
+                                "XS",
+                                style: TextStyle(color: Colors.grey),
+                              ),
                             ),
                           ),
                         ),
@@ -82,11 +83,15 @@ class _StyleFilterPageState extends State<StyleFilterPage> {
                           child: Container(
                             height: 42,
                             width: 42,
-                            decoration: BoxDecoration(shape: BoxShape.circle, border: Border.all(color: Colors.grey),),
+                            decoration: BoxDecoration(
+                              shape: BoxShape.circle,
+                              border: Border.all(color: Colors.grey),
+                            ),
                             child: Center(
-                              child: Text("S", style: TextStyle(
-                                  color: Colors.grey
-                              ),),
+                              child: Text(
+                                "S",
+                                style: TextStyle(color: Colors.grey),
+                              ),
                             ),
                           ),
                         ),
@@ -95,7 +100,10 @@ class _StyleFilterPageState extends State<StyleFilterPage> {
                           child: Container(
                             height: 42,
                             width: 42,
-                            decoration: BoxDecoration(shape: BoxShape.circle, border: Border.all(color: Colors.grey)),
+                            decoration: BoxDecoration(
+                              shape: BoxShape.circle,
+                              border: Border.all(color: Colors.grey),
+                            ),
                           ),
                         ),
                         Padding(
