@@ -297,7 +297,9 @@ class _StyleFilterPageState extends State<StyleFilterPage> {
                                       padding: const EdgeInsets.symmetric(horizontal: 4),
                                       child: Container(
                                         decoration: BoxDecoration(color: Colors.white, border: Border.all(color: Colors.grey)),
+                                        child: Center(child: Text(e),),
                                       ),
+
                                     ))
                                 .toList()),
                       ),
