@@ -24,6 +24,10 @@ class _StyleFilterPageState extends State<StyleFilterPage> {
     Colors.green,
   ];
 
+  List<String> silhouetteList = [
+    "A-LINE",
+  ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
