@@ -30,8 +30,8 @@ class _StyleFilterPageState extends State<StyleFilterPage> {
     "PENCIL",
     "SHIFT",
     "CIRCLE",
-    "TURE",
-
+    "TUBE",
+    "NONE",
   ];
 
   @override
