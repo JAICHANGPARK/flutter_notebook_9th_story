@@ -26,6 +26,12 @@ class _StyleFilterPageState extends State<StyleFilterPage> {
 
   List<String> silhouetteList = [
     "A-LINE",
+    "FIT AND FLARE",
+    "PENCIL",
+    "SHIFT",
+    "CIRCLE",
+    "TURE",
+
   ];
 
   @override
