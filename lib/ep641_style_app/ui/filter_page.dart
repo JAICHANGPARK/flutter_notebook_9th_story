@@ -266,6 +266,34 @@ class _StyleFilterPageState extends State<StyleFilterPage> {
                     )
                   ],
                 ),
+              ),
+              SizedBox(
+                height: 16,
+              ),
+              Container(
+                child: ExpansionTile(
+                  title: Text("PRINT"),
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.symmetric(vertical: 16),
+                      child: Container(
+                        width: double.infinity,
+                        height: 100,
+                        child: GridView.count(
+                            crossAxisCount: 8,
+                            childAspectRatio: 0.95,
+                            children: colorList
+                                .map((e) => Padding(
+                              padding: const EdgeInsets.symmetric(horizontal: 4),
+                              child: Container(
+                                decoration: BoxDecoration(color: e, shape: BoxShape.circle),
+                              ),
+                            ))
+                                .toList()),
+                      ),
+                    )
+                  ],
+                ),
               )
             ],
           ),
