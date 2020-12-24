@@ -282,7 +282,7 @@ class _StyleFilterPageState extends State<StyleFilterPage> {
               ),
               Container(
                 child: ExpansionTile(
-                  title: Text("PRINT"),
+                  title: Text("SILHOUETTE"),
                   children: [
                     Padding(
                       padding: const EdgeInsets.symmetric(vertical: 16),
@@ -294,11 +294,11 @@ class _StyleFilterPageState extends State<StyleFilterPage> {
                             childAspectRatio: 0.95,
                             children: colorList
                                 .map((e) => Padding(
-                              padding: const EdgeInsets.symmetric(horizontal: 4),
-                              child: Container(
-                                decoration: BoxDecoration(color: e, shape: BoxShape.circle),
-                              ),
-                            ))
+                                      padding: const EdgeInsets.symmetric(horizontal: 4),
+                                      child: Container(
+                                        decoration: BoxDecoration(color: e, border: Border.all(color: Colors.grey)),
+                                      ),
+                                    ))
                                 .toList()),
                       ),
                     )
