@@ -1,20 +1,17 @@
 import 'package:flutter/material.dart';
 
-
 class WorkoutPlansApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       initialRoute: '/',
       routes: {
-        "/" : (context) => WorkoutEnterPage(),
-        "/main" : (context) => WorkoutMainPage(),
-
+        "/": (context) => WorkoutEnterPage(),
+        "/main": (context) => WorkoutMainPage(),
       },
     );
   }
 }
-
 
 class WorkoutEnterPage extends StatelessWidget {
   @override
@@ -23,7 +20,13 @@ class WorkoutEnterPage extends StatelessWidget {
       backgroundColor: Colors.black,
       body: Stack(
         children: [
-          
+          Positioned(child: Placeholder()),
+          Positioned(
+            child: Placeholder(),
+            left: 16,
+            right: 16,
+            bottom: 16,
+          ),
         ],
       ),
     );
@@ -41,4 +44,3 @@ class _WorkoutMainPageState extends State<WorkoutMainPage> {
     return Container();
   }
 }
-
