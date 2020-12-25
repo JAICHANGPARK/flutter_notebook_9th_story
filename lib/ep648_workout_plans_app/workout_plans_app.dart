@@ -19,7 +19,14 @@ class WorkoutPlansApp extends StatelessWidget {
 class WorkoutEnterPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      backgroundColor: Colors.black,
+      body: Stack(
+        children: [
+          
+        ],
+      ),
+    );
   }
 }
 
