@@ -20,13 +20,12 @@ class WorkoutEnterPage extends StatelessWidget {
       backgroundColor: Colors.black,
       body: Stack(
         children: [
-          Positioned(child: Container(
+          Positioned(
+              child: Container(
             decoration: BoxDecoration(
-              image: DecorationImage(
-                image: NetworkImage("https://cdn.pixabay.com/photo/2017/04/20/08/35/sport-2245029_960_720.jpg"),
-                fit: BoxFit.fitHeight
-              )
-            ),
+                image: DecorationImage(
+                    image: NetworkImage("https://cdn.pixabay.com/photo/2017/04/20/08/35/sport-2245029_960_720.jpg"),
+                    fit: BoxFit.fitHeight)),
           )),
           Positioned(
             child: Column(
@@ -35,39 +34,37 @@ class WorkoutEnterPage extends StatelessWidget {
                 Text(
                   "Become stronger with our workout plans",
                   textAlign: TextAlign.center,
-                  style: TextStyle(color: Colors.white,
-                  fontSize: 28),
+                  style: TextStyle(color: Colors.white, fontSize: 28),
                 ),
                 Text(
                   "Our premade workout plans will help your become a better version of yourself",
                   textAlign: TextAlign.center,
-                  style: TextStyle(color: Colors.grey,
-                      fontSize: 18),
+                  style: TextStyle(color: Colors.grey, fontSize: 18),
                 ),
                 MaterialButton(
                   minWidth: double.infinity,
                   color: Colors.greenAccent,
-                  onPressed: () {  },
-                  child: Text("Get Started", style: TextStyle(
-                      fontSize: 16
-                  ),),
+                  onPressed: () {},
+                  child: Text(
+                    "Get Started",
+                    style: TextStyle(fontSize: 16),
+                  ),
                   padding: EdgeInsets.symmetric(vertical: 12),
                 ),
-
                 MaterialButton(
                   minWidth: double.infinity,
                   color: Colors.white,
-                  onPressed: () {  },
+                  onPressed: () {},
                   padding: EdgeInsets.symmetric(vertical: 12),
-                  child: Text("Login", style: TextStyle(
-                    fontSize: 16
-                  ),),
+                  child: Text(
+                    "Login",
+                    style: TextStyle(fontSize: 16),
+                  ),
                 ),
                 Text(
                   "Become a coach",
                   textAlign: TextAlign.center,
-                  style: TextStyle(color: Colors.grey,
-                      fontSize: 18),
+                  style: TextStyle(color: Colors.grey, fontSize: 18),
                 ),
               ],
             ),
