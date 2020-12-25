@@ -296,13 +296,18 @@ class _StyleFilterPageState extends State<StyleFilterPage> {
                             mainAxisSpacing: 8,
                             children: silhouetteList
                                 .map((e) => Padding(
-                                      padding: const EdgeInsets.symmetric(horizontal: 4, ),
-                                      child: Container(
-                                        decoration: BoxDecoration(color: Colors.transparent, border: Border.all(color: Colors.grey),
-                                        borderRadius: BorderRadius.circular(16)),
-                                        child: Center(child: Text(e),),
+                                      padding: const EdgeInsets.symmetric(
+                                        horizontal: 4,
                                       ),
-
+                                      child: Container(
+                                        decoration: BoxDecoration(
+                                            color: Colors.transparent,
+                                            border: Border.all(color: Colors.grey),
+                                            borderRadius: BorderRadius.circular(16)),
+                                        child: Center(
+                                          child: Text(e),
+                                        ),
+                                      ),
                                     ))
                                 .toList()),
                       ),
