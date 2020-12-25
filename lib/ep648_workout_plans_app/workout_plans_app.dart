@@ -41,13 +41,15 @@ class WorkoutEnterPage extends StatelessWidget {
                   color: Colors.greenAccent,
                   onPressed: () {  },
                   child: Text("Get Started"),
+                  padding: EdgeInsets.symmetric(vertical: 12),
                 ),
 
                 MaterialButton(
                   minWidth: double.infinity,
                   color: Colors.white,
                   onPressed: () {  },
-                  child: Text("Get Started"),
+                  padding: EdgeInsets.symmetric(vertical: 12),
+                  child: Text("Login"),
                 )
               ],
             ),
