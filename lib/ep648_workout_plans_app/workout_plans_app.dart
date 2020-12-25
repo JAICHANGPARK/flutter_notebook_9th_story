@@ -24,7 +24,7 @@ class WorkoutEnterPage extends StatelessWidget {
             decoration: BoxDecoration(
               image: DecorationImage(
                 image: NetworkImage("https://cdn.pixabay.com/photo/2017/04/20/08/35/sport-2245029_960_720.jpg"),
-                fit: BoxFit.cover
+                fit: BoxFit.fitHeight
               )
             ),
           )),
