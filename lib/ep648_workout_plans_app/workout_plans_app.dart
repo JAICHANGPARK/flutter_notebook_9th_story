@@ -20,9 +20,12 @@ class WorkoutEnterPage extends StatelessWidget {
       backgroundColor: Colors.black,
       body: Stack(
         children: [
-          // Positioned(child: Placeholder()),
+          Positioned(child: Container(
+
+          )),
           Positioned(
             child: Column(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 Text(
                   "Become stronger with our workout plans",
@@ -50,7 +53,13 @@ class WorkoutEnterPage extends StatelessWidget {
                   onPressed: () {  },
                   padding: EdgeInsets.symmetric(vertical: 12),
                   child: Text("Login"),
-                )
+                ),
+                Text(
+                  "Become a coach",
+                  textAlign: TextAlign.center,
+                  style: TextStyle(color: Colors.grey,
+                      fontSize: 18),
+                ),
               ],
             ),
             left: 16,
