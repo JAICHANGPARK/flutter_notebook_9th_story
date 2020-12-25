@@ -26,8 +26,9 @@ class WorkoutEnterPage extends StatelessWidget {
               children: [
                 Text(
                   "Become stronger with our workout plans",
+                  textAlign: TextAlign.center,
                   style: TextStyle(color: Colors.white,
-                  fontSize: 32),
+                  fontSize: 28),
                 )
               ],
             ),
