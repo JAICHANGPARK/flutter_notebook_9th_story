@@ -21,7 +21,12 @@ class WorkoutEnterPage extends StatelessWidget {
       body: Stack(
         children: [
           Positioned(child: Container(
-
+            decoration: BoxDecoration(
+              image: DecorationImage(
+                image: NetworkImage("https://cdn.pixabay.com/photo/2017/04/20/08/35/sport-2245029_960_720.jpg"),
+                fit: BoxFit.cover
+              )
+            ),
           )),
           Positioned(
             child: Column(
@@ -43,7 +48,9 @@ class WorkoutEnterPage extends StatelessWidget {
                   minWidth: double.infinity,
                   color: Colors.greenAccent,
                   onPressed: () {  },
-                  child: Text("Get Started"),
+                  child: Text("Get Started", style: TextStyle(
+                      fontSize: 16
+                  ),),
                   padding: EdgeInsets.symmetric(vertical: 12),
                 ),
 
@@ -52,7 +59,9 @@ class WorkoutEnterPage extends StatelessWidget {
                   color: Colors.white,
                   onPressed: () {  },
                   padding: EdgeInsets.symmetric(vertical: 12),
-                  child: Text("Login"),
+                  child: Text("Login", style: TextStyle(
+                    fontSize: 16
+                  ),),
                 ),
                 Text(
                   "Become a coach",
