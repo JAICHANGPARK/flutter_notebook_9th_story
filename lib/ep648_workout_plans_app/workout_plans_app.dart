@@ -24,10 +24,11 @@ class WorkoutEnterPage extends StatelessWidget {
           Positioned(
             child: Column(
               children: [
-                Text("Become stronger with our workout plans",
-                style: TextStyle(
-                  color: Colors.white
-                ),)
+                Text(
+                  "Become stronger with our workout plans",
+                  style: TextStyle(color: Colors.white,
+                  fontSize: 32),
+                )
               ],
             ),
             left: 16,
