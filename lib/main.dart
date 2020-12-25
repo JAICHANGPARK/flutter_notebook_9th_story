@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'ep641_style_app/style_theory_app.dart';
+import 'ep648_workout_plans_app/workout_plans_app.dart';
 
 main() {
   runApp(WorkoutPlansApp());
