@@ -36,7 +36,19 @@ class WorkoutEnterPage extends StatelessWidget {
                   style: TextStyle(color: Colors.grey,
                       fontSize: 18),
                 ),
+                MaterialButton(
+                  minWidth: double.infinity,
+                  color: Colors.greenAccent,
+                  onPressed: () {  },
+                  child: Text("Get Started"),
+                ),
 
+                MaterialButton(
+                  minWidth: double.infinity,
+                  color: Colors.white,
+                  onPressed: () {  },
+                  child: Text("Get Started"),
+                )
               ],
             ),
             left: 16,
