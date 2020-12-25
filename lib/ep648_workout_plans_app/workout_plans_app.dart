@@ -20,10 +20,18 @@ class WorkoutEnterPage extends StatelessWidget {
       backgroundColor: Colors.black,
       body: Stack(
         children: [
-          Positioned(child: Placeholder()),
+          // Positioned(child: Placeholder()),
           Positioned(
-            child: Placeholder(),
+            child: Column(
+              children: [
+                Text("Become stronger with our workout plans",
+                style: TextStyle(
+                  color: Colors.white
+                ),)
+              ],
+            ),
             left: 16,
+            top: MediaQuery.of(context).size.height / 2,
             right: 16,
             bottom: 16,
           ),
