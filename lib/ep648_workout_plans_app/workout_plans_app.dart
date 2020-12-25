@@ -29,7 +29,14 @@ class WorkoutEnterPage extends StatelessWidget {
                   textAlign: TextAlign.center,
                   style: TextStyle(color: Colors.white,
                   fontSize: 28),
-                )
+                ),
+                Text(
+                  "Our premade workout plans will help your become a better version of yourself",
+                  textAlign: TextAlign.center,
+                  style: TextStyle(color: Colors.grey,
+                      fontSize: 18),
+                ),
+
               ],
             ),
             left: 16,
