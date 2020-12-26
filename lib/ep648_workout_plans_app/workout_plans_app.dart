@@ -113,9 +113,10 @@ class _WorkoutMainPageState extends State<WorkoutMainPage> {
                       fontWeight: FontWeight.bold
                     ),),
                     Container(
-                      height: 58,
+                      height: 54,
                       decoration: BoxDecoration(
-                        color: Colors.white
+                        color: Colors.white.withOpacity(0.3),
+                        borderRadius: BorderRadius.circular(27)
                       ),
                       child: Row(
                         children: [
