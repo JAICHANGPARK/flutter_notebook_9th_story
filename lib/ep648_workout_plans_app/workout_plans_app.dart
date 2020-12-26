@@ -151,11 +151,14 @@ class _WorkoutMainPageState extends State<WorkoutMainPage> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Expanded(
+                      flex: 1,
                         child: Text(
                       "RECOMMENDED WORKOUTS",
                       style: TextStyle(color: Colors.white, fontSize: 12),
                     )),
-                    Expanded(child: ListView.builder(
+                    Expanded(
+                      flex: 10,
+                        child: ListView.builder(
                         itemCount: 10,
                         scrollDirection: Axis.horizontal,
                         itemBuilder: (context, index) {
