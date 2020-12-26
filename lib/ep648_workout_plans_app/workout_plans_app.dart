@@ -98,8 +98,11 @@ class _WorkoutMainPageState extends State<WorkoutMainPage> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Container(
+                margin: EdgeInsets.symmetric(horizontal: 16),
                 height: 140,
                 child: Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text("Thursday, November 26th", style: TextStyle(
                       color: Colors.grey,
