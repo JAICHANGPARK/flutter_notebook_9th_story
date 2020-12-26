@@ -149,12 +149,13 @@ class _WorkoutMainPageState extends State<WorkoutMainPage> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Expanded(child: Text("RECOMMENDED WORKOUTS", style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 12
-                    ),)),
+                    Expanded(
+                        child: Text(
+                      "RECOMMENDED WORKOUTS",
+                      style: TextStyle(color: Colors.white, fontSize: 12),
+                    )),
                     Expanded(child: ListView.builder(itemBuilder: (context, index) {
-
+                      return Container();
                     }))
                   ],
                 ),
