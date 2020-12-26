@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class WorkoutPlansApp extends StatelessWidget {
@@ -128,6 +129,7 @@ class _WorkoutMainPageState extends State<WorkoutMainPage> {
         child: Container(height: 72,
         color: Colors.black,
         child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
             IconButton(
               color: Colors.tealAccent,
@@ -135,15 +137,15 @@ class _WorkoutMainPageState extends State<WorkoutMainPage> {
             ),
             IconButton(
               color: Colors.tealAccent,
-              icon: Icon(Icons.home), onPressed: () {  },
+              icon: Icon(Icons.insert_chart), onPressed: () {  },
             ),
             IconButton(
               color: Colors.tealAccent,
-              icon: Icon(Icons.home), onPressed: () {  },
+              icon: Icon(Icons.calendar_today_outlined), onPressed: () {  },
             ),
             IconButton(
               color: Colors.tealAccent,
-              icon: Icon(Icons.home), onPressed: () {  },
+              icon: Icon(Icons.account_circle_outlined), onPressed: () {  },
             ),
 
           ],
