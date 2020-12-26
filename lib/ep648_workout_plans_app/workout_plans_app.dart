@@ -93,7 +93,12 @@ class _WorkoutMainPageState extends State<WorkoutMainPage> {
       backgroundColor: Colors.black,
       body: SingleChildScrollView(
         child:Column(
-
+          children: [
+            Container(
+              height: 120,
+              child: Placeholder(),
+            ),
+          ],
         ),
       )
     );
