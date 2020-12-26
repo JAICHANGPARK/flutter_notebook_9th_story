@@ -146,35 +146,37 @@ class _WorkoutMainPageState extends State<WorkoutMainPage> {
               ),
               Container(
                 height: 240,
-                margin: EdgeInsets.only(left: 16, ),
+                margin: EdgeInsets.only(
+                  left: 16,
+                ),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Expanded(
-                      flex: 1,
+                        flex: 1,
                         child: Text(
-                      "RECOMMENDED WORKOUTS",
-                      style: TextStyle(color: Colors.white, fontSize: 12),
-                    )),
+                          "RECOMMENDED WORKOUTS",
+                          style: TextStyle(color: Colors.white, fontSize: 12),
+                        )),
                     Expanded(
-                      flex: 10,
+                        flex: 10,
                         child: ListView.builder(
-                        itemCount: 10,
-                        scrollDirection: Axis.horizontal,
-                        itemBuilder: (context, index) {
-                      return Container(
-                        width: 240,
-                        color: Colors.redAccent,
-                        child: Column(
-                          children: [
-                            Container(
-                              height: 140,
-                              color: Colors.blueAccent,
-                            )
-                          ],
-                        ),
-                      );
-                    }))
+                            itemCount: 10,
+                            scrollDirection: Axis.horizontal,
+                            itemBuilder: (context, index) {
+                              return Container(
+                                width: 240,
+                                color: Colors.redAccent,
+                                child: Column(
+                                  children: [
+                                    Container(
+                                      height: 140,
+                                      color: Colors.blueAccent,
+                                    )
+                                  ],
+                                ),
+                              );
+                            }))
                   ],
                 ),
               ),
