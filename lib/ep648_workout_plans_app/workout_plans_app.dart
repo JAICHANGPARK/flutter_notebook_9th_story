@@ -126,7 +126,13 @@ class _WorkoutMainPageState extends State<WorkoutMainPage> {
                                   decoration: InputDecoration(hintText: "Search anything", border: InputBorder.none),
                                 ),
                               )),
-                          Expanded(flex: 2, child: CircleAvatar()),
+                          Expanded(flex: 2, child: CircleAvatar(
+                            backgroundColor: Colors.white,
+                            foregroundColor: Colors.black,
+                            child: Center(
+                              child: Icon(Icons.search),
+                            ),
+                          )),
                         ],
                       ),
                     )
