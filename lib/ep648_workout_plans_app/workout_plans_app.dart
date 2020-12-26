@@ -95,15 +95,22 @@ class _WorkoutMainPageState extends State<WorkoutMainPage> {
       body: SafeArea(
         child: SingleChildScrollView(
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Container(
                 height: 140,
                 child: Column(
                   children: [
-                    Text("Thursday, November 26th"),
-                    Text("Let's crush it, Dream"),
+                    Text("Thursday, November 26th", style: TextStyle(
+                      color: Colors.grey,
+                    ),),
+                    Text("Let's crush it, Dream", style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold
+                    ),),
                     Container(
-                      height: 64,
+                      height: 58,
                       decoration: BoxDecoration(
                         color: Colors.white
                       ),
