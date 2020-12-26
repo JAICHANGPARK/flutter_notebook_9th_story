@@ -126,13 +126,15 @@ class _WorkoutMainPageState extends State<WorkoutMainPage> {
                                   decoration: InputDecoration(hintText: "Search anything", border: InputBorder.none),
                                 ),
                               )),
-                          Expanded(flex: 2, child: CircleAvatar(
-                            backgroundColor: Colors.white,
-                            foregroundColor: Colors.black,
-                            child: Center(
-                              child: Icon(Icons.search),
-                            ),
-                          )),
+                          Expanded(
+                              flex: 2,
+                              child: CircleAvatar(
+                                backgroundColor: Colors.white,
+                                foregroundColor: Colors.black,
+                                child: Center(
+                                  child: Icon(Icons.search),
+                                ),
+                              )),
                         ],
                       ),
                     )
@@ -144,7 +146,14 @@ class _WorkoutMainPageState extends State<WorkoutMainPage> {
               ),
               Container(
                 height: 240,
-                child: Placeholder(),
+                child: Column(
+                  children: [
+                    Expanded(child: Text("RECOMMENDED WORKOUTS")),
+                    Expanded(child: ListView.builder(itemBuilder: (context, index){
+                      
+                    }))
+                  ],
+                ),
               ),
               SizedBox(
                 height: 24,
