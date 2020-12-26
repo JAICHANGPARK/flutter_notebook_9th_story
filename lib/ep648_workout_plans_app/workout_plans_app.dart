@@ -90,7 +90,9 @@ class _WorkoutMainPageState extends State<WorkoutMainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(),
+      body: SingleChildScrollView(
+        child:Column(),
+      )
     );
   }
 }
