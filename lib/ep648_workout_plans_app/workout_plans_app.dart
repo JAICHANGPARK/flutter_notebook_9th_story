@@ -165,7 +165,8 @@ class _WorkoutMainPageState extends State<WorkoutMainPage> {
                             scrollDirection: Axis.horizontal,
                             itemBuilder: (context, index) {
                               return Container(
-                                width: 240,
+                                width: 260,
+                                margin: EdgeInsets.only(right: 16),
                                 color: Colors.redAccent,
                                 child: Column(
                                   children: [
@@ -185,7 +186,12 @@ class _WorkoutMainPageState extends State<WorkoutMainPage> {
               ),
               Container(
                 height: 140,
-                child: Placeholder(),
+                child: Column(
+                  children: [
+                    Text("SPECIAL OFFER".,),
+
+                  ],
+                ),
               ),
               SizedBox(
                 height: 24,
