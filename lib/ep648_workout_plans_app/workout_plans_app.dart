@@ -146,6 +146,7 @@ class _WorkoutMainPageState extends State<WorkoutMainPage> {
               ),
               Container(
                 height: 240,
+                margin: EdgeInsets.only(left: 16, ),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -155,7 +156,14 @@ class _WorkoutMainPageState extends State<WorkoutMainPage> {
                       style: TextStyle(color: Colors.white, fontSize: 12),
                     )),
                     Expanded(child: ListView.builder(itemBuilder: (context, index) {
-                      return Container();
+                      return Container(
+                        color: Colors.redAccent,
+                        child: Column(
+                          children: [
+                            
+                          ],
+                        ),
+                      );
                     }))
                   ],
                 ),
