@@ -188,7 +188,22 @@ class _WorkoutMainPageState extends State<WorkoutMainPage> {
                 height: 140,
                 child: Column(
                   children: [
-                    Text("SPECIAL OFFER".,),
+                    Text("SPECIAL OFFER", style: TextStyle(
+                      color: Colors.white
+                    ),),
+                    Card(
+                      color: Colors.white.withOpacity(0.2),
+
+                      child: Padding(
+                        padding: const EdgeInsets.all(16.0),
+                        child: Row(
+                          children: [
+                            Icon(Icons.star, color: Colors.greenAccent,),
+                            Text("")
+                          ],
+                        ),
+                      ),
+                    )
 
                   ],
                 ),
