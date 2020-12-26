@@ -98,7 +98,23 @@ class _WorkoutMainPageState extends State<WorkoutMainPage> {
             children: [
               Container(
                 height: 140,
-                child: Placeholder(),
+                child: Column(
+                  children: [
+                    Text("Thursday, November 26th"),
+                    Text("Let's crush it, Dream"),
+                    Container(
+                      height: 64,
+                      decoration: BoxDecoration(
+                        color: Colors.white
+                      ),
+                      child: Row(
+                        children: [
+
+                        ],
+                      ),
+                    )
+                  ],
+                ),
               ),
               SizedBox(
                 height: 24,
