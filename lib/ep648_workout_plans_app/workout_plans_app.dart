@@ -187,6 +187,7 @@ class _WorkoutMainPageState extends State<WorkoutMainPage> {
               Container(
                 height: 140,
                 child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text("SPECIAL OFFER", style: TextStyle(
                       color: Colors.white
