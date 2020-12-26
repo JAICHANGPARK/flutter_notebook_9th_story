@@ -90,48 +90,40 @@ class _WorkoutMainPageState extends State<WorkoutMainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Colors.black,
-        body: SafeArea(
-          child: SingleChildScrollView(
-            child: Column(
-              children: [
-                Container(
-                  height: 140,
-                  child: Placeholder(),
-                ),
-                SizedBox(height: 24,),
-                Container(
-                  height: 240,
-                  child: Placeholder(),
-                ),
-                SizedBox(height: 24,),
-                Container(
-                  height: 140,
-                  child: Placeholder(),
-                ),
-                SizedBox(height: 24,),
-                Container(
-                  height: 240,
-                  child: Placeholder(),
-                ),
-              ],
-            ),
+      backgroundColor: Colors.black,
+      body: SafeArea(
+        child: SingleChildScrollView(
+          child: Column(
+            children: [
+              Container(
+                height: 140,
+                child: Placeholder(),
+              ),
+              SizedBox(
+                height: 24,
+              ),
+              Container(
+                height: 240,
+                child: Placeholder(),
+              ),
+              SizedBox(
+                height: 24,
+              ),
+              Container(
+                height: 140,
+                child: Placeholder(),
+              ),
+              SizedBox(
+                height: 24,
+              ),
+              Container(
+                height: 240,
+                child: Placeholder(),
+              ),
+            ],
           ),
-        ));
+        ),
+      ),
+    );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
