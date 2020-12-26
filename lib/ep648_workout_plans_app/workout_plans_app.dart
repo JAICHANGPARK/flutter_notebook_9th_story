@@ -134,14 +134,17 @@ class _WorkoutMainPageState extends State<WorkoutMainPage> {
               icon: Icon(Icons.home), onPressed: () {  },
             ),
             IconButton(
-              icon: Icon(Icons.home),
+              color: Colors.tealAccent,
+              icon: Icon(Icons.home), onPressed: () {  },
             ),
             IconButton(
-              icon: Icon(Icons.home),
+              color: Colors.tealAccent,
+              icon: Icon(Icons.home), onPressed: () {  },
             ),
             IconButton(
-              icon: Icon(Icons.home),
-            )
+              color: Colors.tealAccent,
+              icon: Icon(Icons.home), onPressed: () {  },
+            ),
 
           ],
         ),),
