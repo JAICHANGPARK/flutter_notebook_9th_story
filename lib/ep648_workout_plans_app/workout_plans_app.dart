@@ -104,6 +104,16 @@ class _WorkoutMainPageState extends State<WorkoutMainPage> {
                   height: 240,
                   child: Placeholder(),
                 ),
+                SizedBox(height: 24,),
+                Container(
+                  height: 140,
+                  child: Placeholder(),
+                ),
+                SizedBox(height: 24,),
+                Container(
+                  height: 240,
+                  child: Placeholder(),
+                ),
               ],
             ),
           ),
