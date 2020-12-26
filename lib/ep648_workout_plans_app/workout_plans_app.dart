@@ -129,6 +129,19 @@ class _WorkoutMainPageState extends State<WorkoutMainPage> {
         color: Colors.black,
         child: Row(
           children: [
+            IconButton(
+              color: Colors.tealAccent,
+              icon: Icon(Icons.home), onPressed: () {  },
+            ),
+            IconButton(
+              icon: Icon(Icons.home),
+            ),
+            IconButton(
+              icon: Icon(Icons.home),
+            ),
+            IconButton(
+              icon: Icon(Icons.home),
+            )
 
           ],
         ),),
@@ -136,3 +149,18 @@ class _WorkoutMainPageState extends State<WorkoutMainPage> {
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
