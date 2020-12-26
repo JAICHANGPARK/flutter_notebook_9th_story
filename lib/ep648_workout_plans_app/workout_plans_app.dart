@@ -44,7 +44,9 @@ class WorkoutEnterPage extends StatelessWidget {
                 MaterialButton(
                   minWidth: double.infinity,
                   color: Colors.greenAccent,
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.of(context).push(MaterialPageRoute(builder: (context) => WorkoutMainPage()));
+                  },
                   child: Text(
                     "Get Started",
                     style: TextStyle(fontSize: 16),
@@ -87,6 +89,32 @@ class WorkoutMainPage extends StatefulWidget {
 class _WorkoutMainPageState extends State<WorkoutMainPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: Container(),
+    );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
