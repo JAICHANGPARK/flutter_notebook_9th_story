@@ -108,7 +108,7 @@ class _WorkoutMainPageState extends State<WorkoutMainPage> {
                       color: Colors.grey,
                       fontSize: 12
                     ),),
-                    Text("Let's crush it, Dream", style: TextStyle(
+                    Text("Let's crush it, Dream 🔥", style: TextStyle(
                       color: Colors.white,
                       fontSize: 24,
                       fontWeight: FontWeight.bold
@@ -121,7 +121,10 @@ class _WorkoutMainPageState extends State<WorkoutMainPage> {
                       ),
                       child: Row(
                         children: [
-
+                            Expanded(
+                                flex: 8,child: TextField()),
+                          Expanded(
+                              flex: 2,child: CircleAvatar()),
                         ],
                       ),
                     )
