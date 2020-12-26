@@ -122,7 +122,15 @@ class _WorkoutMainPageState extends State<WorkoutMainPage> {
                       child: Row(
                         children: [
                             Expanded(
-                                flex: 8,child: TextField()),
+                                flex: 8,child: Padding(
+                                  padding: const EdgeInsets.all(8.0),
+                                  child: TextField(
+                              decoration: InputDecoration(
+                                  hintText: "Search anything",
+                                border: InputBorder.none
+                              ),
+                            ),
+                                )),
                           Expanded(
                               flex: 2,child: CircleAvatar()),
                         ],
