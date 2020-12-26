@@ -124,6 +124,15 @@ class _WorkoutMainPageState extends State<WorkoutMainPage> {
           ),
         ),
       ),
+      bottomNavigationBar: BottomAppBar(
+        child: Container(height: 72,
+        color: Colors.black,
+        child: Row(
+          children: [
+
+          ],
+        ),),
+      ),
     );
   }
 }
