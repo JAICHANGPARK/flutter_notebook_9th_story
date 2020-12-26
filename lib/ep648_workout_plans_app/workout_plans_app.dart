@@ -104,35 +104,29 @@ class _WorkoutMainPageState extends State<WorkoutMainPage> {
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text("Thursday, November 26th", style: TextStyle(
-                      color: Colors.grey,
-                      fontSize: 12
-                    ),),
-                    Text("Let's crush it, Dream 🔥", style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 24,
-                      fontWeight: FontWeight.bold
-                    ),),
+                    Text(
+                      "Thursday, November 26th",
+                      style: TextStyle(color: Colors.grey, fontSize: 12),
+                    ),
+                    Text(
+                      "Let's crush it, Dream 🔥",
+                      style: TextStyle(color: Colors.white, fontSize: 24, fontWeight: FontWeight.bold),
+                    ),
                     Container(
                       height: 54,
-                      decoration: BoxDecoration(
-                        color: Colors.white.withOpacity(0.3),
-                        borderRadius: BorderRadius.circular(27)
-                      ),
+                      decoration:
+                          BoxDecoration(color: Colors.white.withOpacity(0.3), borderRadius: BorderRadius.circular(27)),
                       child: Row(
                         children: [
-                            Expanded(
-                                flex: 8,child: Padding(
-                                  padding: const EdgeInsets.all(8.0),
-                                  child: TextField(
-                              decoration: InputDecoration(
-                                  hintText: "Search anything",
-                                border: InputBorder.none
-                              ),
-                            ),
-                                )),
                           Expanded(
-                              flex: 2,child: CircleAvatar()),
+                              flex: 8,
+                              child: Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: TextField(
+                                  decoration: InputDecoration(hintText: "Search anything", border: InputBorder.none),
+                                ),
+                              )),
+                          Expanded(flex: 2, child: CircleAvatar()),
                         ],
                       ),
                     )
@@ -165,46 +159,36 @@ class _WorkoutMainPageState extends State<WorkoutMainPage> {
         ),
       ),
       bottomNavigationBar: BottomAppBar(
-        child: Container(height: 72,
-        color: Colors.black,
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceAround,
-          children: [
-            IconButton(
-              color: Colors.tealAccent,
-              icon: Icon(Icons.home), onPressed: () {  },
-            ),
-            IconButton(
-              color: Colors.tealAccent,
-              icon: Icon(Icons.insert_chart), onPressed: () {  },
-            ),
-            IconButton(
-              color: Colors.tealAccent,
-              icon: Icon(Icons.calendar_today_outlined), onPressed: () {  },
-            ),
-            IconButton(
-              color: Colors.tealAccent,
-              icon: Icon(Icons.account_circle_outlined), onPressed: () {  },
-            ),
-
-          ],
-        ),),
+        child: Container(
+          height: 72,
+          color: Colors.black,
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: [
+              IconButton(
+                color: Colors.tealAccent,
+                icon: Icon(Icons.home),
+                onPressed: () {},
+              ),
+              IconButton(
+                color: Colors.tealAccent,
+                icon: Icon(Icons.insert_chart),
+                onPressed: () {},
+              ),
+              IconButton(
+                color: Colors.tealAccent,
+                icon: Icon(Icons.calendar_today_outlined),
+                onPressed: () {},
+              ),
+              IconButton(
+                color: Colors.tealAccent,
+                icon: Icon(Icons.account_circle_outlined),
+                onPressed: () {},
+              ),
+            ],
+          ),
+        ),
       ),
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
