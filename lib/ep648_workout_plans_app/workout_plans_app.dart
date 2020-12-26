@@ -186,7 +186,7 @@ class _WorkoutMainPageState extends State<WorkoutMainPage> {
               ),
               Container(
                 height: 140,
-                crossAxisAlignment: CrossAxisAlignment.start,
+                margin: EdgeInsets.symmetric(horizontal: 16),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
