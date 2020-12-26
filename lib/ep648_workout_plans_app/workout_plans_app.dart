@@ -147,10 +147,14 @@ class _WorkoutMainPageState extends State<WorkoutMainPage> {
               Container(
                 height: 240,
                 child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Expanded(child: Text("RECOMMENDED WORKOUTS")),
-                    Expanded(child: ListView.builder(itemBuilder: (context, index){
-                      
+                    Expanded(child: Text("RECOMMENDED WORKOUTS", style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 12
+                    ),)),
+                    Expanded(child: ListView.builder(itemBuilder: (context, index) {
+
                     }))
                   ],
                 ),
