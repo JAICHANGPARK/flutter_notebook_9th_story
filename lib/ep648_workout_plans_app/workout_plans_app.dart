@@ -155,12 +155,19 @@ class _WorkoutMainPageState extends State<WorkoutMainPage> {
                       "RECOMMENDED WORKOUTS",
                       style: TextStyle(color: Colors.white, fontSize: 12),
                     )),
-                    Expanded(child: ListView.builder(itemBuilder: (context, index) {
+                    Expanded(child: ListView.builder(
+                        itemCount: 10,
+                        scrollDirection: Axis.horizontal,
+                        itemBuilder: (context, index) {
                       return Container(
+                        width: 240,
                         color: Colors.redAccent,
                         child: Column(
                           children: [
-                            
+                            Container(
+                              height: 140,
+                              color: Colors.blueAccent,
+                            )
                           ],
                         ),
                       );
