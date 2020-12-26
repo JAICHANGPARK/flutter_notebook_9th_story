@@ -87,6 +87,6 @@ class WorkoutMainPage extends StatefulWidget {
 class _WorkoutMainPageState extends State<WorkoutMainPage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold();
   }
 }
