@@ -195,7 +195,12 @@ class _WorkoutMainPageState extends State<WorkoutMainPage> {
                                       ),
                                     ),
                                     Text("Upper Body Attack", style: TextStyle(
-                                      color: Colors.white
+                                      color: Colors.white,
+                                      fontSize: 16
+                                    ),),
+                                    Text("Carefully prepared plan to make your muscles work like never before",
+                                    style: TextStyle(
+                                      color: Colors.grey
                                     ),)
                                   ],
                                 ),
