@@ -88,6 +88,15 @@ class WorkoutMainPage extends StatefulWidget {
 }
 
 class _WorkoutMainPageState extends State<WorkoutMainPage> {
+
+
+  List<String> workoutImgs = [
+    "https://cdn.pixabay.com/photo/2017/08/07/14/02/people-2604149__340.jpg",
+    "https://cdn.pixabay.com/photo/2017/04/27/08/29/sport-2264825__340.jpg",
+    
+  ];
+
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -190,23 +199,25 @@ class _WorkoutMainPageState extends State<WorkoutMainPage> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text("SPECIAL OFFER", style: TextStyle(
-                      color: Colors.white
-                    ),),
+                    Text(
+                      "SPECIAL OFFER",
+                      style: TextStyle(color: Colors.white),
+                    ),
                     Card(
                       color: Colors.white.withOpacity(0.2),
-
                       child: Padding(
                         padding: const EdgeInsets.all(16.0),
                         child: Row(
                           children: [
-                            Icon(Icons.star, color: Colors.greenAccent,),
+                            Icon(
+                              Icons.star,
+                              color: Colors.greenAccent,
+                            ),
                             Text("")
                           ],
                         ),
                       ),
                     )
-
                   ],
                 ),
               ),
