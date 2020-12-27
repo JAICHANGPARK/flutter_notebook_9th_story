@@ -99,6 +99,8 @@ class _WorkoutMainPageState extends State<WorkoutMainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomPadding: false,
+      resizeToAvoidBottomInset: false,
       backgroundColor: Colors.black,
       body: SafeArea(
         child: SingleChildScrollView(
