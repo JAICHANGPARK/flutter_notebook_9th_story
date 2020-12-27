@@ -223,7 +223,7 @@ class _WorkoutMainPageState extends State<WorkoutMainPage> {
                     Card(
                       color: Colors.white.withOpacity(0.2),
                       child: Padding(
-                        padding: const EdgeInsets.all(16.0),
+                        padding: const EdgeInsets.all(8.0),
                         child: Row(
                           children: [
                             SizedBox(
@@ -231,9 +231,20 @@ class _WorkoutMainPageState extends State<WorkoutMainPage> {
                               height: 48,
                               child: Stack(
                                 children: [
-                                  Icon(
-                                    Icons.star,
-                                    color: Colors.greenAccent,
+                                  Positioned(
+                                    left: 0,
+                                    top: 16,
+                                    bottom: 16,
+                                    right: 0,
+                                    child: Transform.rotate(
+                                      angle: 0.7,
+                                      child: Icon(
+
+                                        Icons.star,
+                                        color: Colors.greenAccent,
+                                        size: 32,
+                                      ),
+                                    ),
                                   ),
                                   Positioned(
                                     left: 16,
