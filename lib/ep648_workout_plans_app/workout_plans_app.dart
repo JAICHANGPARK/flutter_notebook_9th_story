@@ -88,6 +88,8 @@ class WorkoutMainPage extends StatefulWidget {
 }
 
 class _WorkoutMainPageState extends State<WorkoutMainPage> {
+
+  int pageIdx = 0;
   List<String> workoutImgs = [
     "https://cdn.pixabay.com/photo/2017/08/07/14/02/people-2604149__340.jpg",
     "https://cdn.pixabay.com/photo/2017/04/27/08/29/sport-2264825__340.jpg",
@@ -175,7 +177,6 @@ class _WorkoutMainPageState extends State<WorkoutMainPage> {
                                 width: 260,
                                 margin: EdgeInsets.only(right: 16),
                                 padding: EdgeInsets.only(bottom: 8, right: 8),
-                                color: Colors.redAccent,
                                 child: Column(
                                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -258,22 +259,38 @@ class _WorkoutMainPageState extends State<WorkoutMainPage> {
               IconButton(
                 color: Colors.tealAccent,
                 icon: Icon(Icons.home),
-                onPressed: () {},
+                onPressed: () {
+                  setState(() {
+                    pageIdx = 0;
+                  });
+                },
               ),
               IconButton(
                 color: Colors.tealAccent,
                 icon: Icon(Icons.insert_chart),
-                onPressed: () {},
+                onPressed: () {
+                  setState(() {
+                    pageIdx = 1;
+                  });
+                },
               ),
               IconButton(
                 color: Colors.tealAccent,
                 icon: Icon(Icons.calendar_today_outlined),
-                onPressed: () {},
+                onPressed: () {
+                  setState(() {
+                    pageIdx = 2;
+                  });
+                },
               ),
               IconButton(
                 color: Colors.tealAccent,
                 icon: Icon(Icons.account_circle_outlined),
-                onPressed: () {},
+                onPressed: () {
+                  setState(() {
+                    pageIdx = 3;
+                  });
+                },
               ),
             ],
           ),
