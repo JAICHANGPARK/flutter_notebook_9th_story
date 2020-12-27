@@ -88,7 +88,6 @@ class WorkoutMainPage extends StatefulWidget {
 }
 
 class _WorkoutMainPageState extends State<WorkoutMainPage> {
-
   int pageIdx = 0;
   List<String> workoutImgs = [
     "https://cdn.pixabay.com/photo/2017/08/07/14/02/people-2604149__340.jpg",
@@ -251,18 +250,21 @@ class _WorkoutMainPageState extends State<WorkoutMainPage> {
                                     bottom: 0,
                                     right: 0,
                                     child: Transform.rotate(
-                                      angle: 0.7,
+                                      angle: 0.2,
                                       child: Icon(
                                         Icons.star,
-                                        color: Colors.greenAccent,
-                                        size: 32,
+                                        color: Colors.greenAccent[100],
+                                        size: 48,
                                       ),
-                                    ),)
+                                    ),
+                                  )
                                 ],
-
                               ),
                             ),
-                            Text("")
+                            Text("Invite 4 friends and get a free Premium plan for 1 month!",
+                            style: TextStyle(
+                              color: Colors.white
+                            ),)
                           ],
                         ),
                       ),
@@ -299,7 +301,8 @@ class _WorkoutMainPageState extends State<WorkoutMainPage> {
               ),
               IconButton(
                 color: pageIdx == 1 ? Colors.tealAccent : Colors.grey,
-                icon: Icon(Icons.insert_chart,
+                icon: Icon(
+                  Icons.insert_chart,
                 ),
                 onPressed: () {
                   setState(() {
