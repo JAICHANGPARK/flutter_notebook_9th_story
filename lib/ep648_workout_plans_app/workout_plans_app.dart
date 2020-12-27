@@ -210,10 +210,11 @@ class _WorkoutMainPageState extends State<WorkoutMainPage> {
                 height: 24,
               ),
               Container(
-                height: 140,
+                height: 100,
                 margin: EdgeInsets.symmetric(horizontal: 16),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
                     Text(
                       "SPECIAL OFFER",
