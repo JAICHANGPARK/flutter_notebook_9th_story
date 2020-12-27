@@ -176,6 +176,8 @@ class _WorkoutMainPageState extends State<WorkoutMainPage> {
                                 margin: EdgeInsets.only(right: 16),
                                 color: Colors.redAccent,
                                 child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Container(
                                       height: 140,
