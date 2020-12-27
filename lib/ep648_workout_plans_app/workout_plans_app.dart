@@ -266,8 +266,9 @@ class _WorkoutMainPageState extends State<WorkoutMainPage> {
                 },
               ),
               IconButton(
-                color: Colors.tealAccent,
-                icon: Icon(Icons.insert_chart),
+                color: pageIdx == 1 ? Colors.tealAccent : Colors.grey,
+                icon: Icon(Icons.insert_chart,
+                ),
                 onPressed: () {
                   setState(() {
                     pageIdx = 1;
