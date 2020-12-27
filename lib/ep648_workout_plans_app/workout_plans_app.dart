@@ -94,6 +94,7 @@ class _WorkoutMainPageState extends State<WorkoutMainPage> {
     "https://cdn.pixabay.com/photo/2017/08/07/14/02/people-2604149__340.jpg",
     "https://cdn.pixabay.com/photo/2017/04/27/08/29/sport-2264825__340.jpg",
     "https://cdn.pixabay.com/photo/2016/03/27/07/08/man-1282232__340.jpg",
+    "https://cdn.pixabay.com/photo/2017/04/25/20/18/sport-2260736__340.jpg",
   ];
 
 
