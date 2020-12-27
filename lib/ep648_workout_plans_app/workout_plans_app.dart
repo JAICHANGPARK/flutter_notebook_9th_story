@@ -261,10 +261,14 @@ class _WorkoutMainPageState extends State<WorkoutMainPage> {
                                 ],
                               ),
                             ),
-                            Text("Invite 4 friends and get a free Premium plan for 1 month!",
-                            style: TextStyle(
-                              color: Colors.white
-                            ),)
+                            Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Text("Invite 4 friends and get a free\nPremium plan for 1 month!",
+                              style: TextStyle(
+                                color: Colors.white,
+                                letterSpacing: 1.5
+                              ),),
+                            )
                           ],
                         ),
                       ),
