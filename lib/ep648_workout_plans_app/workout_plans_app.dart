@@ -226,9 +226,27 @@ class _WorkoutMainPageState extends State<WorkoutMainPage> {
                         padding: const EdgeInsets.all(16.0),
                         child: Row(
                           children: [
-                            Icon(
-                              Icons.star,
-                              color: Colors.greenAccent,
+                            SizedBox(
+                              width: 64,
+                              height: 48,
+                              child: Stack(
+                                children: [
+                                  Icon(
+                                    Icons.star,
+                                    color: Colors.greenAccent,
+                                  ),
+                                  Positioned(
+                                    left: 16,
+                                    top: 0,
+                                    bottom: 0,
+                                    right: 0,
+                                    child: Icon(
+                                    Icons.star,
+                                    color: Colors.greenAccent,
+                                  ),)
+                                ],
+
+                              ),
                             ),
                             Text("")
                           ],
