@@ -88,15 +88,12 @@ class WorkoutMainPage extends StatefulWidget {
 }
 
 class _WorkoutMainPageState extends State<WorkoutMainPage> {
-
-
   List<String> workoutImgs = [
     "https://cdn.pixabay.com/photo/2017/08/07/14/02/people-2604149__340.jpg",
     "https://cdn.pixabay.com/photo/2017/04/27/08/29/sport-2264825__340.jpg",
     "https://cdn.pixabay.com/photo/2016/03/27/07/08/man-1282232__340.jpg",
     "https://cdn.pixabay.com/photo/2017/04/25/20/18/sport-2260736__340.jpg",
   ];
-
 
   @override
   Widget build(BuildContext context) {
@@ -182,26 +179,23 @@ class _WorkoutMainPageState extends State<WorkoutMainPage> {
                                   children: [
                                     Container(
                                       height: 140,
-
                                       decoration: BoxDecoration(
                                           color: Colors.blueAccent,
-                                        image: DecorationImage(
-                                          image: NetworkImage(
-                                            workoutImgs[index],
-                                          ),
-                                          fit: BoxFit.cover
-                                        ),
-                                        borderRadius: BorderRadius.circular(8)
-                                      ),
+                                          image: DecorationImage(
+                                              image: NetworkImage(
+                                                workoutImgs[index],
+                                              ),
+                                              fit: BoxFit.cover),
+                                          borderRadius: BorderRadius.circular(8)),
                                     ),
-                                    Text("Upper Body Attack", style: TextStyle(
-                                      color: Colors.white,
-                                      fontSize: 16
-                                    ),),
-                                    Text("Carefully prepared plan to make your muscles work like never before",
-                                    style: TextStyle(
-                                      color: Colors.grey
-                                    ),)
+                                    Text(
+                                      "Upper Body Attack",
+                                      style: TextStyle(color: Colors.white, fontSize: 16),
+                                    ),
+                                    Text(
+                                      "Carefully prepared plan to make your muscles work like never before",
+                                      style: TextStyle(color: Colors.grey),
+                                    )
                                   ],
                                 ),
                               );
