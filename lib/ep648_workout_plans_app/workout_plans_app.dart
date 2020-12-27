@@ -182,16 +182,21 @@ class _WorkoutMainPageState extends State<WorkoutMainPage> {
                                   children: [
                                     Container(
                                       height: 140,
-                                      color: Colors.blueAccent,
+
                                       decoration: BoxDecoration(
+                                          color: Colors.blueAccent,
                                         image: DecorationImage(
                                           image: NetworkImage(
                                             workoutImgs[index],
                                           ),
                                           fit: BoxFit.cover
-                                        )
+                                        ),
+                                        borderRadius: BorderRadius.circular(8)
                                       ),
-                                    )
+                                    ),
+                                    Text("Upper Body Attack", style: TextStyle(
+                                      color: Colors.white
+                                    ),)
                                   ],
                                 ),
                               );
