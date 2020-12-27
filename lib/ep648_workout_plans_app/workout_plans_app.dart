@@ -171,7 +171,7 @@ class _WorkoutMainPageState extends State<WorkoutMainPage> {
                     Expanded(
                         flex: 10,
                         child: ListView.builder(
-                            itemCount: 10,
+                            itemCount: workoutImgs.length,
                             scrollDirection: Axis.horizontal,
                             itemBuilder: (context, index) {
                               return Container(
@@ -183,6 +183,14 @@ class _WorkoutMainPageState extends State<WorkoutMainPage> {
                                     Container(
                                       height: 140,
                                       color: Colors.blueAccent,
+                                      decoration: BoxDecoration(
+                                        image: DecorationImage(
+                                          image: NetworkImage(
+                                            workoutImgs[index],
+                                          ),
+                                          fit: BoxFit.cover
+                                        )
+                                      ),
                                     )
                                   ],
                                 ),
