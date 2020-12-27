@@ -257,7 +257,7 @@ class _WorkoutMainPageState extends State<WorkoutMainPage> {
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
               IconButton(
-                color: Colors.tealAccent,
+                color: pageIdx == 0 ? Colors.tealAccent : Colors.grey,
                 icon: Icon(Icons.home),
                 onPressed: () {
                   setState(() {
@@ -276,7 +276,7 @@ class _WorkoutMainPageState extends State<WorkoutMainPage> {
                 },
               ),
               IconButton(
-                color: Colors.tealAccent,
+                color: pageIdx == 2 ? Colors.tealAccent : Colors.grey,
                 icon: Icon(Icons.calendar_today_outlined),
                 onPressed: () {
                   setState(() {
@@ -285,7 +285,7 @@ class _WorkoutMainPageState extends State<WorkoutMainPage> {
                 },
               ),
               IconButton(
-                color: Colors.tealAccent,
+                color: pageIdx == 3 ? Colors.tealAccent : Colors.grey,
                 icon: Icon(Icons.account_circle_outlined),
                 onPressed: () {
                   setState(() {
