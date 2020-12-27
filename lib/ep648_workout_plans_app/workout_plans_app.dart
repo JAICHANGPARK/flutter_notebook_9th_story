@@ -239,7 +239,6 @@ class _WorkoutMainPageState extends State<WorkoutMainPage> {
                                     child: Transform.rotate(
                                       angle: 0.7,
                                       child: Icon(
-
                                         Icons.star,
                                         color: Colors.greenAccent,
                                         size: 32,
@@ -251,10 +250,14 @@ class _WorkoutMainPageState extends State<WorkoutMainPage> {
                                     top: 0,
                                     bottom: 0,
                                     right: 0,
-                                    child: Icon(
-                                    Icons.star,
-                                    color: Colors.greenAccent,
-                                  ),)
+                                    child: Transform.rotate(
+                                      angle: 0.7,
+                                      child: Icon(
+                                        Icons.star,
+                                        color: Colors.greenAccent,
+                                        size: 32,
+                                      ),
+                                    ),)
                                 ],
 
                               ),
