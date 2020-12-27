@@ -133,6 +133,9 @@ class _WorkoutMainPageState extends State<WorkoutMainPage> {
                               child: Padding(
                                 padding: const EdgeInsets.all(8.0),
                                 child: TextField(
+                                  style: TextStyle(
+                                    color: Colors.white
+                                  ),
                                   decoration: InputDecoration(hintText: "Search anything", border: InputBorder.none),
                                 ),
                               )),
@@ -283,11 +286,29 @@ class _WorkoutMainPageState extends State<WorkoutMainPage> {
                 height: 24,
               ),
               Container(
-                height: 240,
+                height: 240,margin: EdgeInsets.symmetric(horizontal: 16),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-
+                    Text(
+                      "OTHER WORKOUTS",
+                      style: TextStyle(color: Colors.white),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.symmetric(vertical: 8),
+                      child: Container(
+                        height: 160,
+                        decoration: BoxDecoration(
+                          color: Colors.blue,
+                          image: DecorationImage(
+                            image: NetworkImage(
+                              "https://cdn.pixabay.com/photo/2016/11/22/22/25/abs-1850926__340.jpg"
+                            ),
+                            fit: BoxFit.cover
+                          )
+                        ),
+                      ),
+                    )
                   ],
                 ),
               ),
